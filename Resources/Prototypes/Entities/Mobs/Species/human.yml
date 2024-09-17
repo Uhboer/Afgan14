@@ -34,6 +34,7 @@
     reagentId: Semen
     quantityPerUpdate: 20
     growthDelay: 30
+  - type: Hearing
 
 - type: entity
   parent: BaseSpeciesDummy
