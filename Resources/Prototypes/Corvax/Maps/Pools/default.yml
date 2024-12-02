@@ -1,0 +1,5 @@
+- type: gameMapPool
+  id: CorvaxDefaultMapPool
+  maps:
+  - Afgan_gora
+

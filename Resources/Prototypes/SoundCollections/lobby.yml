@@ -1,0 +1,12 @@
+- type: soundCollection
+  id: LobbyMusic
+  files:
+    - /Audio/Lobby/america.ogg
+    - /Audio/Lobby/hamas.ogg
+    - /Audio/Lobby/scrocher.ogg
+    - /Audio/Lobby/palistine.ogg
+    - /Audio/Lobby/soulbreakers.ogg
+    - /Audio/Lobby/kuntu.ogg
+    - /Audio/Lobby/halal.ogg
+    - /Audio/Lobby/sirya.ogg
+    - /Audio/Lobby/afgan.ogg

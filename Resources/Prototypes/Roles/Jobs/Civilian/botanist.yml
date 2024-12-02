@@ -1,0 +1,31 @@
+- type: job
+  id: Botanist
+  name: job-name-botanist
+  description: job-description-botanist
+  playTimeTracker: JobBotanist
+  startingGear: BotanistGear
+  icon: "JobIconBotanist"
+  supervisors: job-supervisors-hire
+  access:
+  - Salvage
+
+- type: startingGear
+  id: BotanistGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitTaliban
+    back: ClothingBackpackSatchelLeather
+    shoes: ClothingShoesBootsCombatFilled
+    mask: ClothingMaskBalistic
+    head: ClothingHeadHatTaliban
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterVestWebMerc
+    suitstorage: WeaponSubMachineGunLuty
+    id: SalvageIDCard
+    pocket1: RadioHandheld
+    pocket2: Torch
+  storage:
+    back:
+    - BaseMagazineLuty20
+    - BaseMagazineLuty20
+    - BaseMagazineLuty20
+    - FlippoEngravedLighter

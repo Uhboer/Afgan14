@@ -1,0 +1,11 @@
+- type: entity
+  parent: ClothingBeltStorageBase
+  id: ClothingBeltRPC
+  name: РПС
+  description: разгрузочно-поясничная система каждого солдата.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Belts/rpc.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Belts/rpc.rsi

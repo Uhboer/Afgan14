@@ -1,0 +1,89 @@
+- type: reaction
+  id: AfganMorphine
+  reactants:
+    AfganOpium:
+      amount: 1
+    AfganLariy:
+      amount: 1
+  products:
+    AfganMorphine: 2
+
+- type: reaction
+  id: AfganMaterit
+  reactants:
+    AfganGovnoToxin:
+      amount: 1
+    AfganLariy:
+      amount: 1
+  products:
+    AfganMaterit: 1
+
+- type: reaction
+  id: CreateMateria
+  impact: Low
+  quantized: true
+  conserveEnergy: false
+  reactants:
+    AfganMaterit:
+      amount: 15
+    AfganFlamer:
+      amount: 15
+  effects:
+    - !type:CreateEntityReactionEffect
+      entity: AfganMateria
+
+- type: reaction
+  id: CreateMateriaBlood
+  impact: Low
+  quantized: true
+  conserveEnergy: false
+  reactants:
+    AfganMaterit:
+      amount: 15
+    Blood:
+      amount: 15
+  effects:
+    - !type:CreateEntityReactionEffect
+      entity: AfganMateriaBlood
+
+- type: reaction
+  id: CreateMateriaGold
+  impact: Low
+  quantized: true
+  conserveEnergy: false
+  reactants:
+    AfganMaterit:
+      amount: 15
+    AfganReliver:
+      amount: 15
+  effects:
+    - !type:CreateEntityReactionEffect
+      entity: AfganMateriaGold
+    - !type:AreaReactionEffect
+      duration: 1
+      prototypeId: Smoke
+      sound:
+        path: /Audio/Effects/smoke.ogg
+
+- type: reaction
+  id: AfganBombinKabom
+  minTemp: 10
+  priority: 20
+  reactants:
+    AfganBombin:
+      amount: 1
+    AfganGovnoToxin:
+      amount: 1
+  effects:
+  - !type:ExplosionReactionEffect
+    explosionType: Minibomb
+    maxIntensity: 500
+    intensityPerUnit: 10
+    intensitySlope: 1
+    maxTotalIntensity: 500
+  - !type:PopupMessage
+    messages: [ "bombin-explosion" ]
+    type: Pvs
+    visualType: LargeCaution
+  products:
+    AfganMaterit: 5

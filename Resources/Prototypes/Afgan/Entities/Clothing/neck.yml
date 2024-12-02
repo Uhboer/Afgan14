@@ -1,0 +1,47 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckNaplechniki
+  name: стальные наплечники
+  description: сделано из стали.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Neck/stal.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.95
+  - type: ClothingSpeedModifier
+    walkModifier: 0.98
+    sprintModifier: 0.98
+  - type: Reflect
+    reflectProb: 0.02
+  - type: Tag
+    tags:
+      - Naplechniki
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckNaplechnikiCrimson
+  name: багровые наплечники
+  description: сделано из ...
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Neck/crimson.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.85
+        Slash: 0.85
+        Piercing: 0.75
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.95
+  - type: Reflect
+    reflectProb: 0.05
+  - type: Construction
+    graph: NaplechGraph
+    node: naplech

@@ -1,0 +1,27 @@
+- type: job
+  id: Boxer
+  name: job-name-boxer
+  description: job-description-boxer
+  canBeAntag: false
+  playTimeTracker: JobBoxer
+  startingGear: BoxerGear
+  icon: "JobIconBoxer"
+  supervisors: job-supervisors-hop
+  access:
+  - Service
+
+- type: startingGear
+  id: BoxerGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitPovstanKurtka
+    belt: ClothingBeltRPC
+    shoes: ClothingShoesBootsSalvage
+    head: ClothingHeadHelmetPovstanec
+    gloves: ClothingHandsGlovesFingerless
+    pocket1: RadioHandheldSecurity
+    pocket2: CombatKnife
+  storage:
+    belt:
+    - CheapLighter
+    - Torch
+    - SyringeOpium

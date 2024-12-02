@@ -1,0 +1,40 @@
+- type: job
+  id: Reporter
+  name: job-name-reporter
+  description: job-description-reporter
+  playTimeTracker: JobReporter
+  canBeAntag: false
+  startingGear: ReporterGear
+  icon: "JobIconReporter"
+  supervisors: job-supervisors-everyone
+  access:
+  - Service
+  - Maintenance
+
+- type: startingGear
+  id: ReporterGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitPovstan
+    back: ClothingBackpackSatchelLeather
+    eyes: ClothingEyesVision
+    shoes: ClothingShoesBootsMercFilled
+    mask: ClothingMaskBalistic
+    head: ClothingHeadHelmetPovstanec
+    gloves: ClothingHandsMercGlovesCombat
+    outerClothing: ClothingOuterVestWebMerc
+    suitstorage: WeaponSubMachineGunLuty
+    pocket1: RadioHandheldSecurity
+    pocket2: Torch
+  storage:
+    back:
+    - BaseMagazineLuty20
+    - BaseMagazineLuty20
+    - BaseMagazineLuty20
+    - BaseMagazineLuty20
+    - BaseMagazineLuty20
+    - PipeBomb
+    - FireBomb
+    - SyringeOpium
+    - SyringeOpium
+    - AfganGorn
+

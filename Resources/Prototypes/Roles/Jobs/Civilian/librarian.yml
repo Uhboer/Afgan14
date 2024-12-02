@@ -1,0 +1,32 @@
+- type: job
+  id: Librarian
+  name: job-name-librarian
+  description: job-description-librarian
+  setPreference: false
+  playTimeTracker: JobLibrarian
+  startingGear: LibrarianGear
+  icon: "JobIconLibrarian"
+  supervisors: job-supervisors-hop
+  access:
+  - Service
+  - Maintenance
+
+- type: startingGear
+  id: LibrarianGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHamas
+    belt: ClothingBeltRPC
+    shoes: ClothingShoesBootsCombatFilled
+    mask: ClothingMaskHamas
+    head: ClothingHeadHelmetHamas
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterVestWeb
+    id: SalvageIDCard
+    pocket1: RadioHandheld
+    pocket2: Torch
+  storage:
+    belt:
+    - BaseMagazineMP9evil
+    - BaseMagazineMP9evil
+    - BaseMagazineMP9evil
+    - SyringeOpium

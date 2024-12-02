@@ -1,0 +1,12 @@
+- type: lobbyBackground
+  id: Gora
+  background: /Textures/LobbyScreens/gora.png
+
+- type: lobbyBackground
+  id: Chuvakiafgan
+  background: /Textures/LobbyScreens/chuvakiafgan.png
+
+- type: lobbyBackground
+  id: Gorlanhadibu
+  background: /Textures/LobbyScreens/gorlanhadibu.png
+  

@@ -1,0 +1,98 @@
+- type: entity
+  name: ТВАРЬ
+  id: MobTvar
+  parent: MobJuk
+  description: БЕГИ БЕГИ БЕГИ
+  suffix: afgan14
+  components:
+  - type: NpcFactionMember
+    factions:
+    - PrirodaAfgana
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Afgan/Mobs/tvar.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: tvar
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      300: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      200: 0.5
+  - type: Bloodstream
+    bloodReagent: FluorosulfuricAcid
+    bloodMaxVolume: 800
+  - type: MeleeWeapon
+    altDisarm: false
+    angle: 0
+    soundHit:
+     path: /Audio/Afgan/Wearpons/Melee/chop.ogg
+    animation: WeaponArcBite
+    damage:
+      groups:
+        Brute: 30
+  - type: DamageStateVisuals
+    rotate: true
+    states:
+      Alive:
+        Base: tvar
+      Critical:
+        Base: crit
+      Dead:
+        Base: dead
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: SheetPlasma
+    amount: 30
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 400
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:PlaySoundBehavior
+            sound:
+              path: /Audio/Effects/gib1.ogg
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              SheetPlasma:
+                min: 30
+                max: 30
+  - type: MovementSpeedModifier
+    baseSprintSpeed: 12
+    baseWalkSpeed: 8
+  - type: Speech
+    speechSounds: Oblezliy
+    speechVerb: Oblezliy
+  - type: GhostRole
+    prob: 1
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: ТВАРЬ
+    description: УБИВАЙ. ЭТИ СУКИ ПРИЛЕТЕЛИ НА ТВОЮ ПЛАНЕТУ, ТЫ ТУТ ЦАРЬ. ОНИ ВСЕ УМРУТ.
+    rules: УБИВАЙ
+  - type: GhostTakeoverAvailable
+  - type: NightVision
+    isToggle: true
+    color: "#f1110e"
+
+- type: entity
+  name: Tvar Spawner
+  suffix: afgan14
+  id: SpawnMobTvar
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: tvar
+      sprite: Afgan/Mobs/tvar.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - MobTvar

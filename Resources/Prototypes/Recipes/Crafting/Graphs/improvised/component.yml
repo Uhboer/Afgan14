@@ -1,0 +1,542 @@
+- type: constructionGraph
+  id: MP9Graph
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: mp9
+      steps:
+      - tag: RukoiatMP9Evil
+        icon:
+          sprite: Afgan/Objects/Сomponents/mp2.rsi
+          state: icon
+        name: рукоять МП9
+      - tag: DetaliMP9Evil
+        icon:
+          sprite: Afgan/Objects/Сomponents/detali.rsi
+          state: icon
+        name: детали для ПП
+      - tag: KropusMP9Evil
+        icon:
+          sprite: Afgan/Objects/Сomponents/mp1.rsi
+          state: icon
+        name: корпус МП9
+        doAfter: 5
+  - node: mp9
+    entity: WeaponSubMachineGunPM9
+
+- type: constructionGraph
+  id: LutyGraph
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: luty
+      steps:
+      - tag: RukoiatLuty
+        icon:
+          sprite: Afgan/Objects/Сomponents/luty2.rsi
+          state: icon
+        name: рукоять МП9
+      - tag: DetaliMP9Evil
+        icon:
+          sprite: Afgan/Objects/Сomponents/detali.rsi
+          state: icon
+        name: детали для ПП
+      - tag: KropusLuty
+        icon:
+          sprite: Afgan/Objects/Сomponents/luty1.rsi
+          state: icon
+        name: корпус МП9
+        doAfter: 5
+  - node: luty
+    entity: WeaponSubMachineGunLuty
+
+- type: constructionGraph
+  id: PipeGraph
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: pipe
+      steps:
+      - tag: Izolenta
+        icon:
+          sprite: Objects/Trash/trash5.rsi
+          state: icon
+        name: изолента
+      - tag: Gayki
+        icon:
+          sprite: Objects/Trash/trash3.rsi
+          state: icon
+        name: гайки
+      - tag: PipeV
+        icon:
+          sprite: Objects/Trash/trash1.rsi
+          state: icon
+        name: водонапорная труба
+        doAfter: 5
+  - node: pipe
+    entity: AfganPipegun
+
+- type: constructionGraph
+  id: ArmorGraph
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: armor
+      steps:
+      - tag: Izolenta
+        icon:
+          sprite: Objects/Trash/trash5.rsi
+          state: icon
+        name: изолента
+      - tag: Jelezaka
+        icon:
+          sprite: Objects/Trash/trash4.rsi
+          state: icon
+        name: Кусок металла
+        doAfter: 5
+  - node: armor
+    entity: ClothingOuterVestStal
+
+- type: constructionGraph
+  id: MaskGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: mask
+          steps:
+            - tag: Izolenta
+              icon:
+                sprite: Objects/Trash/trash5.rsi
+                state: icon
+              name: изолента
+            - material: Steel
+              amount: 15
+              doAfter: 8
+    - node: mask
+      entity: ClothingMaskBalistic
+
+- type: constructionGraph
+  id: AKGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: ak
+          steps:
+            - tag: AKpart2
+              icon:
+                sprite: Afgan/Objects/AK-parts/ak74-1part.rsi
+                state: icon
+              name: корпус ак74
+            - tag: AKpart1
+              icon:
+                sprite: Afgan/Objects/AK-parts/ak74-2part.rsi
+                state: icon
+              name: самодельный газблок и ствол
+            - tag: AKpart3
+              icon:
+                sprite: Afgan/Objects/AK-parts/ak74-3part.rsi
+                state: icon
+              name: детали калаша
+            - material: WoodPlank
+              amount: 25
+              doAfter: 10
+    - node: ak
+      entity: WeaponRifleAKSamodel
+
+- type: constructionGraph
+  id: AltinGraph
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: altin
+      steps:
+      - tag: BlackHemelet
+        icon:
+          sprite: Afgan/Clothing/Head/bhemelet.rsi
+          state: icon
+        name: стальной шлем
+      - tag: WeldingMask
+        icon:
+          sprite: Clothing/Head/Welding/welding.rsi
+          state: icon
+        name: сварочная маска
+        doAfter: 5
+  - node: altin
+    entity: ClothingHeadHelmetAltin
+
+- type: constructionGraph
+  id: BronikGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: bronik
+          steps:
+            - tag: Plastina
+              icon:
+                sprite: Afgan/Objects/kevlar.rsi
+                state: icon
+              name: кевларовая пластина
+            - material: Cloth
+              amount: 20
+              doAfter: 10
+    - node: bronik
+      entity: ClothingOuterVestWeb
+
+- type: constructionGraph
+  id: UkrepBronikGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: ukrepbronik
+          steps:
+            - tag: Plastina
+              icon:
+                sprite: Afgan/Objects/kevlar.rsi
+                state: icon
+              name: кевларовая пластина
+            - material: Cloth
+              amount: 10
+            - tag: Bronik
+              icon:
+                sprite: Clothing/OuterClothing/Vests/webvest.rsi
+                state: icon
+              name: Кевларовый бронежилет
+              doAfter: 10
+    - node: ukrepbronik
+      entity: ClothingOuterVestWebMerc
+
+- type: constructionGraph
+  id: MaceGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: mace
+          steps:
+            - material: Steel
+              amount: 10
+            - material: WoodPlank
+              amount: 10
+              doAfter: 6
+    - node: mace
+      entity: AfganMace
+
+- type: constructionGraph
+  id: SwordGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: sword
+          steps:
+            - material: Steel
+              amount: 18
+            - material: WoodPlank
+              amount: 2
+              doAfter: 8
+    - node: sword
+      entity: AfganSword
+
+- type: constructionGraph
+  id: AlebardGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: alebard
+          steps:
+            - material: Steel
+              amount: 15
+            - material: WoodPlank
+              amount: 5
+              doAfter: 8
+    - node: alebard
+      entity: AfganAlebard
+
+- type: constructionGraph
+  id: BoltGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: bolt
+          steps:
+            - tag: PipeV
+              icon:
+                sprite: Objects/Trash/trash1.rsi
+                state: icon
+              name: Водонапорная труба
+            - tag: PipeV
+              icon:
+                sprite: Objects/Trash/trash1.rsi
+                state: icon
+              name: Водонапорная труба
+            - tag: Pricel
+              icon:
+                sprite: Afgan/Objects/Сomponents/pricel.rsi
+                state: icon
+              name: оптика
+            - tag: ModularReceiver
+              icon:
+                sprite: Objects/Misc/modular_receiver.rsi
+                state: icon
+              name: модульный ресивер
+            - material: Plastic
+              amount: 10
+              doAfter: 10
+    - node: bolt
+      entity: AfganWeaponPipeSniper
+
+- type: constructionGraph
+  id: PnvGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: pnv
+          steps:
+            - tag: PNVcarcas
+              icon:
+                sprite: Afgan/Objects/Сomponents/carcas-pnv.rsi
+                state: icon
+              name: Каркас ПНВ
+            - tag: Gayki
+              icon:
+                sprite: Objects/Trash/trash3.rsi
+                state: icon
+              name: Гайки
+            - material: Glass
+              amount: 15
+            - material: Plasma
+              amount: 15
+              doAfter: 15
+    - node: pnv
+      entity: ClothingEyesVision
+
+- type: constructionGraph
+  id: BerciGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: berci
+          steps:
+            - tag: SteelBoots
+              icon:
+                sprite: Afgan/Clothing/Boots/steel.rsi
+                state: icon
+              name: стальные поножи
+            - tag: Plastina
+              icon:
+                sprite: Afgan/Objects/kevlar.rsi
+                state: icon
+              name: кевларовая пластина
+            - material: Steel
+              amount: 5
+            - material: Cloth
+              amount: 5
+              doAfter: 10
+    - node: berci
+      entity: ClothingShoesBootsSteelUpgrade
+
+- type: constructionGraph
+  id: PlasmaGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: plasma
+          steps:
+            - tag: Plastina
+              icon:
+                sprite: Afgan/Objects/kevlar.rsi
+                state: icon
+              name: кевларовая пластина
+            - tag: Bronik
+              icon:
+                sprite: Clothing/OuterClothing/Vests/webvest.rsi
+                state: icon
+              name: Кевларовый бронежилет
+            - material: Plasma
+              amount: 30
+              doAfter: 10
+    - node: plasma
+      entity: ClothingOuterVestPlasma
+
+- type: constructionGraph
+  id: TarashGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: tarash
+          steps:
+            - tag: ModularReceiver
+              icon:
+                sprite: Objects/Misc/modular_receiver.rsi
+                state: icon
+              name: модульный ресивер
+            - tag: PipeV
+              icon:
+                sprite: Objects/Trash/trash1.rsi
+                state: icon
+              name: водонапорная труба
+            - tag: Gayki
+              icon:
+                sprite: Objects/Trash/trash3.rsi
+                state: icon
+              name: гайки
+            - tag: PrikladSH
+              icon:
+                sprite: Afgan/Objects/AK-parts/tarashnikov-part.rsi
+                state: icon
+              name: приклад из лопаты
+            - material: Plastic
+              amount: 5
+              doAfter: 10
+    - node: tarash
+      entity: WeaponRifleTarashnikov
+
+- type: constructionGraph
+  id: GarmorGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: garmor
+          steps:
+            - tag: Plastina
+              icon:
+                sprite: Afgan/Objects/kevlar.rsi
+                state: icon
+              name: пластина из кевлара
+            - tag: BronikUkrep
+              icon:
+                sprite: Clothing/OuterClothing/Vests/mercwebvest.rsi
+                state: icon
+              name: укреплённый бронежилет
+            - material: Steel
+              amount: 10
+            - material: Cloth
+              amount: 10
+              doAfter: 10
+    - node: garmor
+      entity: ClothingOuterVestGiga
+
+- type: constructionGraph
+  id: GSwordGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: gsword
+          steps:
+            - tag: Sword
+              icon:
+                sprite: Afgan/Weapons/Melee/sword.rsi
+                state: icon
+              name: меч
+            - tag: MateriaG
+              icon:
+                sprite: Afgan/Objects/materiagold.rsi
+                state: icon
+              name: материя ???
+              doAfter: 8
+    - node: gsword
+      entity: AfganSwordGold
+
+- type: constructionGraph
+  id: DMaskGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: dmask
+          steps:
+            - tag: BalMask
+              icon:
+                sprite: Afgan/Clothing/Mask/balmask.rsi
+                state: icon
+              name: балистическая маска
+            - tag: MateriaB
+              icon:
+                sprite: Afgan/Objects/materiablood.rsi
+                state: icon
+              name: материя ???
+              doAfter: 8
+    - node: dmask
+      entity: ClothingMaskBalisticEvil
+
+- type: constructionGraph
+  id: RingGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: ring
+          steps:
+            - tag: Materia
+              icon:
+                sprite: Afgan/Objects/materia.rsi
+                state: icon
+              name: материя ???
+            - tag: MateriaB
+              icon:
+                sprite: Afgan/Objects/materiablood.rsi
+                state: icon
+              name: материя ???
+            - tag: MateriaG
+              icon:
+                sprite: Afgan/Objects/materiagold.rsi
+                state: icon
+              name: материя ???
+              doAfter: 8
+    - node: ring
+      entity: ClothingHandsGlovesRing
+
+- type: constructionGraph
+  id: NaplechGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: naplech
+          steps:
+            - tag: Naplechniki
+              icon:
+                sprite: Afgan/Clothing/Neck/stal.rsi
+                state: icon
+              name: стальные наплечники
+            - tag: Materia
+              icon:
+                sprite: Afgan/Objects/materia.rsi
+                state: icon
+              name: материя ???
+              doAfter: 8
+    - node: naplech
+      entity: ClothingNeckNaplechnikiCrimson
+
+- type: constructionGraph
+  id: ArrowGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: arrow
+          steps:
+            - material: WoodPlank
+              amount: 5
+            - material: Cloth
+              amount: 1
+              doAfter: 5
+    - node: arrow
+      entity: ArrowRegular

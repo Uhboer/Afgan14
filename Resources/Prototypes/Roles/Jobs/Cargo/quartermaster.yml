@@ -1,0 +1,48 @@
+- type: job
+  id: Quartermaster
+  name: job-name-qm
+  description: job-description-qm
+  setPreference: false
+  playTimeTracker: JobQuartermaster
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobCargoTechnician
+      time: 5400 #1.5 hrs
+    - !type:RoleTimeRequirement
+      role: JobSalvageSpecialist
+      time: 21600 #6 hrs # Corvax-RoleTime
+    - !type:DepartmentTimeRequirement
+      department: Cargo
+      time: 36000 #10 hrs # Corvax-RoleTime
+#    - !type:OverallPlaytimeRequirement
+#      time: 144000 #40 hrs
+  weight: 10
+  startingGear: QuartermasterGear
+  icon: "JobIconQuarterMaster"
+  supervisors: job-supervisors-captain
+  canBeAntag: false
+  access:
+  - Cargo
+  - Salvage
+  - Quartermaster
+  - Maintenance
+  - Command
+  - Brig
+  - Cryogenics
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+
+- type: startingGear
+  id: QuartermasterGear
+  equipment:
+    id: QuartermasterPDA
+    ears: ClothingHeadsetQM
+    belt: BoxFolderClipboard
+    pocket1: AppraisalTool
+  storage:
+    back:
+    - Flash

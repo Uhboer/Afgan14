@@ -1,0 +1,24 @@
+- type: job
+  id: AtmosphericTechnician
+  name: job-name-atmostech
+  description: job-description-atmostech
+  canBeAntag: false
+  playTimeTracker: JobAtmosphericTechnician
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Engineering
+      time: 0
+  startingGear: AtmosphericTechnicianGear
+  icon: "JobIconAtmosphericTechnician"
+  supervisors: job-supervisors-everyone
+  access:
+  - Maintenance
+
+- type: startingGear
+  id: AtmosphericTechnicianGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitShtany
+    belt: ClothingBeltQuiverFilled
+    back: BowImprovised
+    pocket1: SurvivalKnife
+    pocket2: Torch

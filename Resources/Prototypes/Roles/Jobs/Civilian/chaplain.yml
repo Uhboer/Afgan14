@@ -1,0 +1,41 @@
+- type: job
+  id: Chaplain
+  name: job-name-chaplain
+  description: job-description-chaplain
+  canBeAntag: false
+  playTimeTracker: JobChaplain
+  startingGear: ChaplainGear
+  icon: "JobIconChaplain"
+  supervisors: job-supervisors-hire
+  access:
+  - Chapel
+  - Salvage
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: BibleUser #Lets them heal with bibles
+
+- type: startingGear
+  id: ChaplainGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHamas
+    back: ClothingBackpackSatchelMedical
+    belt: BibleKoran
+    shoes: ClothingShoesBootsCombatFilled
+    mask: ClothingMaskHamas
+    head: ClothingHeadHelmetCherep
+    gloves: ClothingHandsGlovesCombat
+    id: SalvageIDCard
+    pocket1: RadioHandheld
+    pocket2: Torch
+  storage:
+    back:
+    - DrapesItem
+    - Hemostat
+    - Cautery
+    - Scalpel
+    - Saw
+    - Retractor
+    - SyringeOpium
+    - SyringeOpium
+    - SyringeOpium

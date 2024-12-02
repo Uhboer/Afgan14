@@ -1,0 +1,41 @@
+- type: job
+  id: Bartender
+  name: job-name-bartender
+  description: job-description-bartender
+  canBeAntag: false
+  playTimeTracker: JobBartender
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Civilian
+      time: 0
+  startingGear: BartenderGear
+  icon: "JobIconBartender"
+  supervisors: job-supervisors-everyone
+  access:
+  - Salvage
+  - Command
+  - Quartermaster
+
+- type: startingGear
+  id: BartenderGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitTaliban
+    back: ClothingBackpackSatchelLeather
+    belt: AfganSwordGold
+    shoes: ClothingShoesBootsSteel
+    neck: ClothingNeckNaplechniki
+    mask: ClothingMaskHamas
+    head: ClothingHeadHelmetAltin
+    gloves: ClothingHandsGlovesStal
+    outerClothing: ClothingOuterVestPravitel
+    suitstorage: WeaponRifleAKSamodel
+    id: CentcomIDCard
+    pocket1: RadioHandheld
+    pocket2: Torch
+  storage:
+    back:
+    - MagazineLightRifleAK
+    - MagazineLightRifleAK
+    - MagazineLightRifleAK
+    - FlippoEngravedLighter
+

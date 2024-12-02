@@ -1,0 +1,16 @@
+- type: constructionGraph
+  id: Quiver
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: Quiver
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 2
+      - material: WoodPlank
+        amount: 10
+        doAfter: 4
+  - node: Quiver
+    entity: ClothingBeltQuiver

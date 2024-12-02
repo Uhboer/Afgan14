@@ -1,0 +1,380 @@
+- type: entity
+  name: сральня
+  description: обдристанная вонючая сральня.
+  id: Sralna
+  parent: BaseStructure
+  suffix: afgan14
+  components:
+  - type: Anchorable
+  - type: Transform
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: PlaceableSurface
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.4
+        density: 190
+        mask:
+        - MachineMask
+        layer:
+        - None
+  - type: Sprite
+    sprite: Afgan/Structures/Toilet/sralna.rsi
+    state: sralna
+    scale: 0.8, 0.8
+    snapCardinals: true
+  - type: Icon
+    sprite: Afgan/Structures/Toilet/sralna.rsi
+    state: sralna
+  - type: Clickable
+  - type: Strap
+    whitelist:
+      components:
+      - HumanoidAppearance
+  - type: SolutionContainerManager
+    solutions:
+      drainBuffer:
+        maxVol: 100
+      tank:
+        maxVol: 500
+        reagents:
+        - ReagentId: Water
+          Quantity: 100
+        - ReagentId: GastroToxin
+          Quantity: 100
+  - type: DrainableSolution
+    solution: tank
+  - type: ReagentTank
+  - type: DumpableSolution
+  - type: SecretStash
+    secretPartName: говно
+    examineStash: говна
+    openableStash: true
+  - type: PlungerUse
+
+- type: entity
+  parent: PosterBase
+  id: Trup
+  name: труп повстанца
+  description: гнилой труп подвешенного повстанца
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Structures/trup.rsi
+    state: trup
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Weapons/Xeno/alien_claw_flesh2.ogg
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          FoodMeatHuman:
+            min: 1
+            max: 4
+        offset: 0
+
+- type: entity
+  id: PoweredLightStolb
+  name: фонарный столб
+  description: старинный фонарный столб
+  suffix: afgan14
+  parent: PoweredLightPostSmallEmpty
+  components:
+  - type: Sprite
+    sprite: Afgan/Structures/lightpost.rsi
+    state: base
+    offset: 0.3, 0.2
+  - type: PointLight
+    enabled: true
+    radius: 15
+    energy: 1
+    softness: 0.9
+    color: "#FFD700"
+  - type: PoweredLight
+    hasLampOnSpawn: LightTube
+    damage:
+      types:
+        Heat: 2
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "0.18,0.35,-0.18,-0.35"
+        density: 2000
+        layer:
+        - WallLayer
+  - type: StaticPrice
+    price: 25
+  - type: AmbientOnPowered
+  - type: AmbientSound
+    enabled: false
+    volume: -12
+    range: 7
+    sound:
+      path: /Audio/Afgan/Misc/lamp.ogg
+
+
+- type: entity
+  name: дерьмо
+  parent: FoodMeatBase
+  id: FoodKakashka
+  description: чьё-то дерьмо.
+  suffix: afgan14
+  components:
+  - type: FlavorProfile
+    flavors:
+      - shit
+  - type: Tag
+    tags:
+    - Raw
+    - Meat
+  - type: Sprite
+    sprite: Afgan/Objects/shit.rsi
+    state: icon
+    scale: 0.8, 0.8
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: AfganGovnoToxin
+          Quantity: 10
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: AfganGovnoToxin
+        Quantity: 20
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Afgan/shit.ogg
+      params:
+        volume: 2
+  - type: CreamPie
+
+- type: entity
+  name: Shitspawn
+  suffix: afgan14
+  id: Shitspawner
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - sprite: Afgan/Objects/shit.rsi
+          state: icon
+    - type: RandomSpawner
+      prototypes:
+      - FoodKakashka
+      chance: 1
+      offset: 0.2
+
+- type: entity
+  parent: BaseItem
+  id: AfganRadio
+  name: старое радио
+  description: на нём записаны песени гражданской обороны.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/radio.rsi
+    state: icon
+  - type: Item
+    sprite: Afgan/Objects/radio.rsi
+    size: Ginormous
+  #- type: EmitSoundOnUse
+  #  sound:
+  #    collection: Radio
+  #- type: EmitSoundOnTrigger
+  #  sound:
+  #    collection: Radio
+  #- type: UseDelay
+  #  delay: 250.0
+  - type: MultiHandedItem
+  - type: Jukebox
+    onState: on
+    offState: off
+    selectState: select
+  - type: ActivatableUI
+    key: enum.JukeboxUiKey.Key
+  - type: UserInterface
+    interfaces:
+        enum.JukeboxUiKey.Key:
+          type: JukeboxBoundUserInterface
+
+- type: entity
+  parent: PosterBase
+  id: FlagAfgan
+  name: флаг Афгана
+  description: священный флаг.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Structures/flag.rsi
+    state: afgan
+
+- type: entity
+  parent: PosterBase
+  id: FlagPovstans
+  name: флаг Повстанцев
+  description: флаг повстанческого движения.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Structures/flagpov.rsi
+    state: base
+
+- type: entity
+  parent: BaseStructure
+  id: AfganMuzMat
+  name: музломат
+  description: Чувак, эта вечеринка отстой. Я, бля, ненавижу этих людей.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Structures/muzlomat.rsi
+    state: mat
+  - type: PointLight
+    radius: 6
+    energy: 4
+  - type: RgbLightController
+    layers: [ 0 ]
+  - type: AmbientSound
+    volume: 1
+    range: 16
+    sound:
+      path: /Audio/Afgan/Music/muzon.ogg
+
+- type: entity
+  parent: BaseItem
+  id: AfganGorn
+  name: горн
+  description: С его помощью повстанцы могут напевать свои красноречивые речи.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/gorn.rsi
+    state: icon
+  - type: Item
+    sprite: Afgan/Objects/gorn.rsi
+    size: Small
+  - type: EmitSoundOnUse
+    sound:
+      collection: Gorn
+  - type: EmitSoundOnTrigger
+    sound:
+      collection: Gorn
+  - type: UseDelay
+    delay: 20.0
+
+- type: entity
+  id: PaperAlchem
+  name: записка
+  description: оставленная кем-то бумажка.
+  suffix: afgan14. алхимики 1
+  parent: Paper
+  components:
+  - type: Paper
+    content: book-text-alchem-one
+
+- type: entity
+  id: PaperAlchem2
+  name: записка
+  description: оставленная кем-то бумажка.
+  suffix: afgan14. алхимики 2
+  parent: Paper
+  components:
+  - type: Paper
+    content: book-text-alchem-two
+
+- type: entity
+  id: PaperAlchem3
+  name: записка
+  description: оставленная кем-то бумажка.
+  suffix: afgan14. алхимики 3
+  parent: Paper
+  components:
+  - type: Paper
+    content: book-text-alchem-three
+
+- type: entity
+  id: PaperAlchem4
+  name: записка
+  description: оставленная кем-то бумажка.
+  suffix: afgan14. алхимики 4
+  parent: Paper
+  components:
+  - type: Paper
+    content: book-text-alchem-four
+
+- type: entity
+  id: PaperPovstans
+  name: записка
+  description: оставленная кем-то бумажка.
+  suffix: afgan14. повстанцы
+  parent: Paper
+  components:
+  - type: Paper
+    content: book-text-povstans
+
+- type: entity
+  parent: BaseItem
+  id: AfganMateria
+  name: материя
+  description: Неизвестная хрень.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/materia.rsi
+    state: icon
+  - type: Item
+    sprite: Afgan/Objects/materia.rsi
+    size: Normal
+  - type: Tag
+    tags:
+      - Materia
+
+- type: entity
+  parent: BaseItem
+  id: AfganMateriaBlood
+  name: материя крови
+  description: Неизвестная хрень.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/materiablood.rsi
+    state: icon
+  - type: Item
+    sprite: Afgan/Objects/materiablood.rsi
+    size: Normal
+  - type: Tag
+    tags:
+      - MateriaB
+
+- type: entity
+  parent: BaseItem
+  id: AfganMateriaGold
+  name: материя золота
+  description: Неизвестная хрень.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/materiagold.rsi
+    state: icon
+  - type: Item
+    sprite: Afgan/Objects/materiagold.rsi
+    size: Normal
+  - type: Tag
+    tags:
+      - MateriaG

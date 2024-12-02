@@ -1,0 +1,59 @@
+- type: entity
+  name: ПНВ
+  id: ClothingEyesVision
+  parent: BaseItem
+  description: Прибор Ночного Видения, что идеально пригодился-бы в темной дюне Афгана.
+  suffix: afgan14
+  components:
+  - type: Item
+  - type: Sprite
+    sprite: Afgan/Clothing/Eyes/PNV.rsi
+    state: icon
+  - type: Clothing
+    sprite: Afgan/Clothing/Eyes/PNV.rsi
+    layers:
+      - state: equipped-EYES
+      - state: equipped-EYES-Power
+        shader: unshaded
+        visible: true
+        map: ["equipped-EYES-Power"]
+    quickEquip: true
+    slots: [ Eyes ]
+  - type: UseDelay
+    delay: 4
+  - type: PNV
+  - type: Construction
+    graph: PnvGraph
+    node: pnv
+  - type: ToggleableLightVisuals
+  spriteLayer: equipped-EYES-Power
+  inhandVisuals:
+  clothingVisuals:
+    eyes:
+    - state: equipped-EYES-Power
+
+- type: entity
+  id: NVToggleAction
+  name: Переключение ПНВ
+  description: Переключает ваше ПНВ
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: InstantAction
+    useDelay: 2.5
+    icon:
+      sprite: Afgan/Clothing/Eyes/PNV.rsi
+      state: icon
+    event: !type:NVInstantActionEvent
+
+- type: entity
+  id: SwitchNightVision
+  name: Переключение ночного зрения
+  description: Переключает ночное зрение
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: InstantAction
+    useDelay: 2.5
+    icon:
+      sprite: Afgan/Clothing/Eyes/PNV.rsi
+      state: icon
+    event: !type:NVInstantActionEvent

@@ -1,0 +1,40 @@
+- type: job
+  id: Chef
+  name: job-name-chef
+  description: job-description-chef
+  setPreference: false
+  playTimeTracker: JobChef
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Civilian
+      time: 3600 #1 hrs # Corvax-RoleTime
+  startingGear: ChefGear
+  icon: "JobIconChef"
+  supervisors: job-supervisors-hop
+  access:
+  - Service
+  - Maintenance
+  - Kitchen
+  extendedAccess:
+  - Hydroponics
+  - Bar
+
+- type: startingGear
+  id: ChefGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHamas
+    belt: ClothingBeltRPC
+    shoes: ClothingShoesBootsCombatFilled
+    mask: ClothingMaskHamas
+    head: ClothingHeadHelmetHamas
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterVestWeb
+    id: SalvageIDCard
+    pocket1: RadioHandheld
+    pocket2: Torch
+  storage:
+    belt:
+    - BaseMagazineMP9evil
+    - BaseMagazineMP9evil
+    - BaseMagazineMP9evil
+    - SyringeOpium

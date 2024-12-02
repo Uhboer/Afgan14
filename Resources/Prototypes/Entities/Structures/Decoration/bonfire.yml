@@ -1,0 +1,64 @@
+- type: entity
+  id: Bonfire
+  parent: BaseHeaterMachine
+  name: bonfire
+  description: What can be better than a late evening under the sky with guitar and friends?
+  suffix: afgan14
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: Structures/Decoration/bonfire.rsi
+    layers:
+      - state: bonfire
+      - state: burning
+  - type: PointLight
+    radius: 5
+    energy: 3
+    color: "#FFC90C"
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 50
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+  - type: AmbientSound
+    volume: -5
+    range: 5
+    sound:
+      path: /Audio/Ambience/Objects/fireplace.ogg
+  - type: EntityHeater
+  - type: ItemPlacer
+    maxEntities: 4
+    whitelist:
+      components:
+      - Temperature
+  - type: PlaceableSurface
+  - type: StepTrigger
+    requiredTriggeredSpeed: 0
+    intersectRatio: 0.1
+    blacklist:
+      tags:
+        - Catwalk
+  - type: TileEntityEffect
+    effects:
+    - !type:FlammableReaction
+      multiplier: 3.75
+      multiplierOnExisting: 0.75
+    - !type:Ignite
+
+- type: entity
+  id: LegionnaireBonfire
+  parent: Bonfire
+  name: legionnaire bonfire
+  description: There, in the land of lava and ash, place to to cook marshmallow and potato.
+  components:
+  - type: Sprite
+    layers:
+      - state: legionnaire_bonfire
+  - type: PointLight
+    color: "#FF5601"

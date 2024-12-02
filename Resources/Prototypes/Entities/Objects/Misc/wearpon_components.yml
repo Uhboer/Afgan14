@@ -1,0 +1,192 @@
+- type: entity
+  id: WearponComponentRukoiatMP9Evil
+  parent: BaseItem
+  name: Самодельная рукоять от мп9 evil gun
+  description: самоделка.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/Сomponents/mp2.rsi
+    state: icon
+  - type: Item
+    size: Small
+  - type: Tag
+    tags:
+      - RukoiatMP9Evil
+
+- type: entity
+  id: WearponComponentDetaliMP9Evil
+  parent: BaseItem
+  name: Самодельные детали для ПП
+  description: самоделка.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/Сomponents/detali.rsi
+    state: icon
+  - type: Item
+    size: Small
+  - type: Tag
+    tags:
+      - DetaliMP9Evil
+
+- type: entity
+  id: WearponComponentKropusMP9Evil
+  parent: BaseItem
+  name: Корпус от мп9 evil gun
+  description: самоделка.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/Сomponents/mp1.rsi
+    state: icon
+  - type: Item
+    size: Normal
+  - type: Tag
+    tags:
+      - KropusMP9Evil
+
+- type: entity
+  id: WearponComponentKropusLuty
+  parent: BaseItem
+  name: Корпус от ПП Luty
+  description: самоделка.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/Сomponents/luty1.rsi
+    state: icon
+  - type: Item
+    size: Normal
+  - type: Tag
+    tags:
+      - KropusLuty
+
+- type: entity
+  id: WearponComponentRukoiatLuty
+  parent: BaseItem
+  name: Самодельная рукоять от ПП Luty
+  description: самоделка.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/Сomponents/luty2.rsi
+    state: icon
+  - type: Item
+    size: Small
+  - type: Tag
+    tags:
+      - RukoiatLuty
+
+- type: entity
+  id: WearponComponentAK1
+  parent: BaseItem
+  name: самодельный ствол и газблок АК74
+  description: самоделка.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/AK-parts/ak74-2part.rsi
+    state: icon
+  - type: Item
+    size: Normal
+  - type: Tag
+    tags:
+      - AKpart1
+
+- type: entity
+  id: WearponComponentAK2
+  parent: BaseItem
+  name: корпус АК74
+  description: самоделка.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/AK-parts/ak74-1part.rsi
+    state: icon
+  - type: Item
+    size: Normal
+  - type: Tag
+    tags:
+      - AKpart2
+
+- type: entity
+  id: PlastinaKevlar
+  parent: BaseItem
+  name: кевларовая пластина
+  description: самоделка.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/kevlar.rsi
+    state: icon
+  - type: Item
+    size: Large
+  - type: Tag
+    tags:
+      - Plastina
+
+- type: entity
+  id: WearponComponentAK3
+  parent: BaseItem
+  name: детали калаша
+  description: самоделка.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/AK-parts/ak74-3part.rsi
+    state: icon
+  - type: Item
+    size: Normal
+  - type: Tag
+    tags:
+      - AKpart3
+
+- type: entity
+  id: WearponComponentPricel
+  parent: BaseItem
+  name: оптика
+  description: самоделка.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/Сomponents/pricel.rsi
+    state: icon
+  - type: Item
+    size: Normal
+  - type: Tag
+    tags:
+      - Pricel
+
+
+- type: entity
+  id: WearponComponentCarcasPNV
+  parent: BaseItem
+  name: каркас ПНВ
+  description: самоделка.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/Сomponents/carcas-pnv.rsi
+    state: icon
+  - type: Item
+    size: Normal
+  - type: Tag
+    tags:
+      - PNVcarcas
+
+- type: entity
+  id: WearponComponentSH
+  parent: BaseItem
+  name: приклад из лопаты
+  description: самоделка.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/AK-parts/tarashnikov-part.rsi
+    state: icon
+  - type: Item
+    size: Normal
+  - type: Tag
+    tags:
+      - PrikladSH

@@ -1,0 +1,41 @@
+- type: moodEffect
+  id: Handcuffed
+  moodChange: -8
+
+- type: moodEffect
+  id: Suffocating
+  moodChange: -10
+  timeout: 50
+
+- type: moodEffect
+  id: OnFire
+  moodChange: -10
+  timeout: 300
+
+- type: moodEffect
+  id: Creampied
+  moodChange: -8
+
+- type: moodEffect
+  id: MobSlipped
+  moodChange: -7
+  timeout: 180
+
+- type: moodEffect
+  id: MobVomit
+  moodChange: -10
+  timeout: 480
+
+- type: moodEffect
+  id: MobLowPressure
+  moodChange: -20
+  timeout: 50
+
+- type: moodEffect
+  id: MobHighPressure
+  moodChange: -20
+  timeout: 50
+
+- type: moodEffect
+  id: Dead
+  moodChange: -1000

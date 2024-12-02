@@ -1,0 +1,53 @@
+- type: entity
+  name: Trash Spawner
+  id: RandomSpawner
+  parent: MarkerBase
+  suffix: 50
+  components:
+    - type: Sprite
+      layers:
+        - state: red
+        - sprite: Objects/Consumable/Food/snacks.rsi
+          state: pistachio-trash
+    - type: RandomSpawner
+      rarePrototypes:
+        - WearponComponentRukoiatLuty
+        - WearponComponentAK2
+        - WearponComponentRukoiatMP9Evil
+        - WearponComponentDetaliMP9Evil
+        - WearponComponentAK3
+        - WearponComponentKropusMP9Evil
+        - WearponComponentKropusLuty
+        - WearponComponentCarcasPNV
+      rareChance: 0.01
+      prototypes:
+        - Trash1
+        - Trash2
+        - Trash3
+        - Trash4
+        - Trash5
+        - Trash6
+        - Trash7
+        - Trash8
+        - Trash9
+        - Trash10
+        - Trash11
+        - WearponComponentSH
+        - OrganHumanStomach
+        - OrganHumanHeart
+        - MaterialBones1
+        - FoodKakashka
+      chance: 0.1
+      offset: 0.2
+  placement:
+    mode: AlignTileAny
+
+- type: entity
+  parent: RandomSpawner
+  id: RandomSpawner100
+  suffix: 100
+  placement:
+    mode: AlignTileAny
+  components:
+  - type: RandomSpawner
+    chance: 0.5

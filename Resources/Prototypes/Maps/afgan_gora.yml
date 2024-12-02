@@ -1,0 +1,31 @@
+- type: gameMap
+  id: Afgan_gora
+  mapName: "Афган: Гора"
+  mapPath: /Maps/afgan_gora.yml
+  minPlayers: 0
+  maxPlayers: 100
+  fallback: true
+  stations:
+    Afgan_gora:
+      stationProto: StandardStationArena
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: '{0} Афган {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: 'Пизда всем'
+        - type: StationJobs
+          availableJobs:
+            Bartender: [ 1, 1 ]
+            Botanist: [ 2, 2 ]
+            Chaplain: [ 1, 1 ]
+            Passenger: [ 20, 20 ]
+            #rab
+            AtmosphericTechnician: [ -1, -1 ]
+            #povstans
+            Reporter: [ 1, 1 ]
+            Boxer: [ 10, 10 ]
+            #alchemiks
+            TechnicalAssistant: [3, 3]
+
+

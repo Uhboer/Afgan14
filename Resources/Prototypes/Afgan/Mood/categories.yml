@@ -1,0 +1,8 @@
+- type: moodCategory
+  id: Health
+
+- type: moodCategory
+  id: Hunger
+
+- type: moodCategory
+  id: Thirst

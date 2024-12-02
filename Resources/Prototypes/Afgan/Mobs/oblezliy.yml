@@ -1,0 +1,185 @@
+- type: entity
+  name: облезлый
+  parent: MobSvin
+  id: MobOblezliy
+  suffix: afgan14 ПОЛИМОРФ АЛХИМИКА
+  description: Ранее он был человеком, который не сумел укрыться во время Великой Бури, за что и поплатился.
+  components:
+  - type: GhostRole
+    prob: 1
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: облезлый
+    description: Ранее он был человеком, который не сумел укрыться во время Великой Бури, за что и поплатился.
+    rules: выживайте. убивайте. мстите.
+  - type: Speech
+    speechSounds: Oblezliy
+    speechVerb: Oblezliy
+  - type: NpcFactionMember
+    factions:
+    - Oblez
+  - type: NameIdentifier
+    group: Oblezliy
+  - type: MobsterAccent
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: bob
+      sprite: Afgan/Mobs/oblezliy.rsi
+  - type: MeleeWeapon
+    soundHit:
+      collection: PunchPower
+    angle: 30
+    animation: WeaponArcFist
+    attackRate: 2
+    damage:
+      types:
+        Blunt: 5
+  - type: Inventory
+    templateId: human
+    speciesId: human
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 30
+    baseSprintSpeed : 35
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      100: Critical
+      150: Dead
+  - type: NightVision
+    isToggle: true
+    color: "#808080"
+  - type: Loadout
+    prototypes:
+    - NonPuzoGear
+
+- type: entity
+  name: Oblezliy Spawner
+  suffix: afgan14
+  id: SpawnMobOblezliy
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: bob
+      sprite: Afgan/Mobs/oblezliy.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - MobOblezliyWild
+
+- type: entity
+  name: облезлый
+  parent: MobOblezliy
+  id: MobOblezliyWild
+  suffix: afgan14 ДИКИЙ
+  description: Ранее он был человеком, который не сумел укрыться во время Великой Бури, за что и поплатился.
+  components:
+  - type: Loadout
+    prototypes:
+    - NonPuzoGear
+    - NedoAfganec
+    - NedoBrodaga
+    - NedoBrodaga2
+    - NedoBrodaga3
+    - NedoBrodaga4
+    - NedoBrodaga5
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      70: Critical
+      110: Dead
+
+- type: entity
+  name: Oblezliy Timed Spawner
+  id: OblezliyTimedSpawner
+  parent: MarkerBase
+  suffix: afgan14
+  components:
+    - type: Sprite
+      layers:
+      - state: blue
+      - sprite: Afgan/Mobs/oblezliy.rsi
+        state: bob
+      - state: ai
+    - type: Timer
+    - type: TimedSpawner
+      prototypes:
+      - MobOblezliyWild
+      chance: 0.15
+      intervalSeconds: 100
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 1
+
+- type: startingGear
+  id: NonPuzoGear
+  equipment:
+    shoes: ClothingShoesBootsSandal
+
+- type: startingGear
+  id: NedoAfganec
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHamas
+    shoes: ClothingShoesBootsCombat
+    mask: ClothingMaskHamas
+    head: ClothingHeadHelmetHamas
+    gloves: ClothingHandsGlovesCombat
+    id: SalvageIDCard
+
+- type: startingGear
+  id: NedoBrodaga
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitShtany
+    belt: ClothingBeltQuiverFilled
+    back: BowImprovised
+
+- type: startingGear
+  id: NedoBrodaga2
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitShtany
+    back: SpearBone
+    head: ClothingHeadHelmetBone
+
+- type: startingGear
+  id: NedoBrodaga3
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitAlchem
+    back: AfganPipegun
+    head: ClothingHeadHatTaliban
+    belt: ClothingBeltRPC
+  storage:
+    belt:
+    - ShellShotgunIncendiary
+    - ShellShotgunIncendiary
+    - ShellShotgunIncendiary
+    - ShellShotgun
+    - ShellShotgun
+    - ShellShotgun
+    - ShellShotgunImprovised
+    - ShellShotgunImprovised
+    - ShellShotgunImprovised
+    - ShellShotgunSlug
+
+- type: startingGear
+  id: NedoBrodaga4
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitPovstanKurtka
+    head: ClothingHeadHelmetCherep
+    back: ClothingBackpackSatchelLeather
+    suitstorage: WeaponSubMachineGunPM9
+  storage:
+    back:
+    - BaseMagazineMP9evil
+    - BaseMagazineMP9evil
+    - BaseMagazineLuty20
+    - BaseMagazineLuty20
+
+- type: startingGear
+  id: NedoBrodaga5
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitRab
+    head: ClothingHeadHatWelding
+    back: AfganAlebard
+    gloves: ClothingHandsGlovesFingerless

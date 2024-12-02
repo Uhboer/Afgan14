@@ -1,0 +1,31 @@
+- type: job
+  id: Passenger
+  name: job-name-passenger
+  description: job-description-passenger
+  canBeAntag: false
+  playTimeTracker: JobPassenger
+  startingGear: PassengerGear
+  icon: "JobIconPassenger"
+  supervisors: job-supervisors-hire
+  access:
+  - Salvage
+
+- type: startingGear
+  id: PassengerGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHamas
+    belt: ClothingBeltRPC
+    shoes: ClothingShoesBootsCombatFilled
+    mask: ClothingMaskHamas
+    head: ClothingHeadHelmetHamas
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterVestWeb
+    id: SalvageIDCard
+    pocket1: RadioHandheld
+    pocket2: Torch
+  storage:
+    belt:
+    - BaseMagazineMP9evil
+    - BaseMagazineMP9evil
+    - BaseMagazineMP9evil
+    - SyringeOpium

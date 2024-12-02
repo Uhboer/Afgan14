@@ -1,0 +1,517 @@
+- type: construction
+  name: baseball bat
+  id: bat
+  graph: WoodenBat
+  startNode: start
+  targetNode: bat
+  category: construction-category-weapons
+  description: A robust baseball bat.
+  icon:
+    sprite: Objects/Weapons/Melee/baseball_bat.rsi
+    state: icon
+  objectType: Item
+
+- type: construction
+  name: ghost sheet
+  id: ghost_sheet
+  graph: GhostSheet
+  startNode: start
+  targetNode: ghost_sheet
+  category: construction-category-clothing
+  description: Become a spooky ghost. Boo!
+  icon:
+    sprite: Clothing/OuterClothing/Misc/ghostsheet.rsi
+    state: icon
+  objectType: Item
+
+- type: construction
+  name: makeshift handcuffs
+  id: makeshifthandcuffs
+  graph: makeshifthandcuffs
+  startNode: start
+  targetNode: cuffscable
+  category: construction-category-tools
+  description: "Homemade handcuffs crafted from spare cables."
+  icon: { sprite: Objects/Misc/cablecuffs.rsi, state: cuff }
+  objectType: Item
+
+- type: construction
+  name: makeshift stunprod
+  id: makeshiftstunprod
+  graph: makeshiftstunprod
+  startNode: start
+  targetNode: msstunprod
+  category: construction-category-weapons
+  description: "Homemade stunprod."
+  icon: { sprite: Objects/Weapons/Melee/stunprod.rsi, state: stunprod_off }
+  objectType: Item
+
+- type: construction
+  name: muzzle
+  id: muzzle
+  graph: Muzzle
+  startNode: start
+  targetNode: muzzle
+  category: construction-category-tools
+  objectType: Item
+  description: "A muzzle to shut your victim up."
+  icon:
+    sprite: Clothing/Mask/muzzle.rsi
+    state: icon
+
+- type: construction
+  name: improvised pneumatic cannon
+  id: pneumaticcannon
+  graph: PneumaticCannon
+  startNode: start
+  targetNode: cannon
+  category: construction-category-weapons
+  objectType: Item
+  description: This son of a gun can fire anything that fits in it using just a little gas.
+  icon:
+    sprite: Objects/Weapons/Guns/Cannons/pneumatic_cannon.rsi
+    state: icon
+
+- type: construction
+  name: gauze
+  id: gauze
+  graph: Gauze
+  startNode: start
+  targetNode: gauze
+  category: construction-category-tools
+  objectType: Item
+  description: When you've really got nothing left.
+  icon:
+    sprite: Objects/Specific/Medical/medical.rsi
+    state: gauze
+
+- type: construction
+  name: blindfold
+  id: blindfold
+  graph: Blindfold
+  startNode: start
+  targetNode: blindfold
+  category: construction-category-tools
+  objectType: Item
+  description: Better hope everyone turns a blind eye to you crafting this sussy item...
+  icon:
+    sprite: Clothing/Eyes/Misc/blindfold.rsi
+    state: icon
+
+- type: construction
+  name: flower wreath
+  id: flowerwreath
+  graph: flowerwreath
+  startNode: start
+  targetNode: flowerwreath
+  category: construction-category-clothing
+  description: A wreath of colourful flowers. Can be worn both on head and neck.
+  icon:
+    sprite: Clothing/Head/Misc/flower-wreath.rsi
+    state: icon
+  objectType: Item
+
+- type: construction
+  name: damp rag
+  id: rag
+  graph: Rag
+  startNode: start
+  targetNode: rag
+  category: construction-category-tools
+  objectType: Item
+  description: A damp rag to clean up the ground. Better than slipping around all day.
+  icon:
+    sprite: Objects/Specific/Janitorial/rag.rsi
+    state: rag
+
+- type: construction
+  name: improvised shotgun
+  id: improvisedshotgun
+  graph: ImprovisedShotgunGraph
+  startNode: start
+  targetNode: shotgun
+  category: construction-category-weapons
+  objectType: Item
+  description: A shitty, single-shot shotgun made from salvaged and hand-crafted gun parts. Ammo not included.
+  icon:
+    sprite: Objects/Weapons/Guns/Shotguns/improvised_shotgun.rsi
+    state: icon
+
+- type: construction
+  name: improvised shotgun shell
+  id: ShellShotgunImprovised
+  graph: ImprovisedShotgunShellGraph
+  startNode: start
+  targetNode: shell
+  category: construction-category-weapons
+  objectType: Item
+  description: A homemade shotgun shell that shoots painful glass shrapnel. The spread is so wide that it couldn't hit the broad side of a Barn
+  icon:
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    state: improvised
+
+- type: construction
+  name: rifle stock
+  id: riflestock
+  graph: RifleStockGraph
+  startNode: start
+  targetNode: riflestock
+  category: construction-category-weapons
+  objectType: Item
+  description: A stock carved out of wood, vital for improvised firearms.
+  icon:
+    sprite: Objects/Misc/rifle_stock.rsi
+    state: icon
+
+- type: construction
+  name: fire bomb
+  id: firebomb
+  graph: FireBomb
+  startNode: start
+  targetNode: firebomb
+  category: construction-category-weapons
+  objectType: Item
+  description: A weak, improvised incendiary device.
+  icon:
+    sprite: Objects/Weapons/Bombs/ied.rsi
+    state: icon
+
+- type: construction
+  name: cotton woven cloth
+  id: CottonWovenCloth
+  graph: CottonObjects
+  startNode: start
+  targetNode: cottoncloth
+  category: construction-category-misc
+  description: "A homemade piece of cotton cloth, it feels coarse."
+  icon:
+    sprite: Objects/Materials/materials.rsi
+    state: cloth_3
+  objectType: Item
+
+- type: construction
+  name: straw hat
+  id: strawHat
+  graph: StrawHat
+  startNode: start
+  targetNode: strawhat
+  category: construction-category-clothing
+  description: A fancy hat for hot days! Not recommended to wear near fires.
+  icon:
+    sprite: Clothing/Head/Hats/straw_hat.rsi
+    state: icon
+  objectType: Item
+
+- type: construction
+  name: pipe bomb
+  id: pipebomb
+  graph: PipeBomb
+  startNode: start
+  targetNode: pipebomb
+  category: construction-category-weapons
+  objectType: Item
+  description: An improvised explosive made from pipes and wire.
+  icon:
+    sprite: Objects/Weapons/Bombs/pipebomb.rsi
+    state: icon
+
+### НАШЕ
+
+- type: construction
+  name: МП9 "Evil Gun"
+  id: MP9EvilGun
+  graph: MP9Graph
+  startNode: start
+  targetNode: mp9
+  category: construction-category-weapons
+  description: real evil
+  icon:
+    sprite: Objects/Weapons/Guns/SMGs/pm9evilgun.rsi
+    state: icon
+  objectType: Item
+
+- type: construction
+  name: ПП "Люти"
+  id: LutyGun
+  graph: LutyGraph
+  startNode: start
+  targetNode: luty
+  category: construction-category-weapons
+  description: real devil
+  icon:
+    sprite: Objects/Weapons/Guns/SMGs/ppLuty.rsi
+    state: icon
+  objectType: Item
+
+- type: construction
+  name: Самодельный дробовик из трубы
+  id: PipeGun
+  graph: PipeGraph
+  startNode: start
+  targetNode: pipe
+  category: construction-category-weapons
+  description: real pipe
+  icon:
+    sprite: Objects/Weapons/Guns/Snipers/bolt_gun_wood.rsi
+    state: base
+  objectType: Item
+
+- type: construction
+  name: Самодельная стальная броня
+  id: SamodelArmor
+  graph: ArmorGraph
+  startNode: start
+  targetNode: armor
+  category: construction-category-weapons
+  description: real armor
+  icon:
+    sprite: Afgan/Clothing/Armor/samodel.rsi
+    state: icon
+  objectType: Item
+
+- type: construction
+  name: Самодельная баллистическая маска
+  id: SamodelMask
+  graph: MaskGraph
+  startNode: start
+  targetNode: mask
+  category: construction-category-weapons
+  description: real mask
+  icon:
+    sprite: Afgan/Clothing/Mask/balmask.rsi
+    state: icon
+  objectType: Item
+
+- type: construction
+  name: Самодельный АК-74
+  id: SamodelAK
+  graph: AKGraph
+  startNode: start
+  targetNode: ak
+  category: construction-category-weapons
+  description: real ak
+  icon:
+    sprite: Afgan/Weapons/Guns/Rifels/samodel_AK.rsi
+    state: icon
+  objectType: Item
+
+- type: construction
+  name: Алтын
+  id: SamodeAltin
+  graph: AltinGraph
+  startNode: start
+  targetNode: altin
+  category: construction-category-weapons
+  description: real altin
+  icon:
+    sprite: Afgan/Clothing/Head/altin.rsi
+    state: icon
+  objectType: Item
+
+- type: construction
+  name: Кевларовый Бронежилет
+  id: SamodelBronik
+  graph: BronikGraph
+  startNode: start
+  targetNode: bronik
+  category: construction-category-weapons
+  description: real bronik. Ткань можно получить, убивая тканежуков.
+  icon:
+    sprite: Clothing/OuterClothing/Vests/webvest.rsi
+    state: icon
+  objectType: Item
+
+- type: construction
+  name: Укреплённый Кевларовый Бронежилет
+  id: SamodelUkrepBronik
+  graph: UkrepBronikGraph
+  startNode: start
+  targetNode: ukrepbronik
+  category: construction-category-weapons
+  description: real ukrep bronik. Ткань можно получить, убивая тканежуков.
+  icon:
+    sprite: Clothing/OuterClothing/Vests/mercwebvest.rsi
+    state: icon
+  objectType: Item
+
+- type: construction
+  name: Самодельная Булава
+  id: SamodelMace
+  graph: MaceGraph
+  startNode: start
+  targetNode: mace
+  category: construction-category-weapons
+  description: real mace. Robust wearpon.
+  icon:
+    sprite: Afgan/Weapons/Melee/mace.rsi
+    state: icon
+  objectType: Item
+
+- type: construction
+  name: Самодельный Меч
+  id: SamodelSword
+  graph: SwordGraph
+  startNode: start
+  targetNode: sword
+  category: construction-category-weapons
+  description: real sword. Robust wearpon.
+  icon:
+    sprite: Afgan/Weapons/Melee/sword.rsi
+    state: icon
+  objectType: Item
+
+- type: construction
+  name: Самодельная Алебарда
+  id: SamodelAlebard
+  graph: AlebardGraph
+  startNode: start
+  targetNode: alebard
+  category: construction-category-weapons
+  description: real alebard. Robust wearpon.
+  icon:
+    sprite: Afgan/Weapons/Melee/alebard.rsi
+    state: icon
+  objectType: Item
+
+- type: construction
+  name: Самодельная Болтовка из водонапорных труб
+  id: SamodelBolt
+  graph: BoltGraph
+  startNode: start
+  targetNode: bolt
+  category: construction-category-weapons
+  description: real boltovka.
+  icon:
+    sprite: Afgan/Weapons/Guns/pipesniper.rsi
+    state: base
+  objectType: Item
+
+- type: construction
+  name: ПНВ
+  id: SamodelPnv
+  graph: PnvGraph
+  startNode: start
+  targetNode: pnv
+  category: construction-category-weapons
+  description: real PNV.
+  icon:
+    sprite: Afgan/Clothing/Eyes/PNV.rsi
+    state: icon
+  objectType: Item
+
+- type: construction
+  name: Бронеберцы
+  id: SamodelBerci
+  graph: BerciGraph
+  startNode: start
+  targetNode: berci
+  category: construction-category-weapons
+  description: real berci.
+  icon:
+    sprite: Afgan/Clothing/Boots/berci.rsi
+    state: icon
+  objectType: Item
+
+- type: construction
+  name: Броня из плазмы
+  id: SamodelPlasma
+  graph: PlasmaGraph
+  startNode: start
+  targetNode: plasma
+  category: construction-category-weapons
+  description: real plasma.
+  icon:
+    sprite: Afgan/Clothing/Armor/plasma.rsi
+    state: icon
+  objectType: Item
+
+- type: construction
+  name: ТАРАШНИКОВ
+  id: SamodelTarash
+  graph: TarashGraph
+  startNode: start
+  targetNode: tarash
+  category: construction-category-weapons
+  description: real Tarashnikov.
+  icon:
+    sprite: Afgan/Weapons/Guns/Rifels/tarashnikov.rsi
+    state: icon
+  objectType: Item
+
+- type: construction
+  name: Сверх крепкий бронежилет
+  id: SamodelGarmor
+  graph: GarmorGraph
+  startNode: start
+  targetNode: garmor
+  category: construction-category-weapons
+  description: real giga armor.
+  icon:
+    sprite: Afgan/Clothing/Armor/gigavest.rsi
+    state: icon
+  objectType: Item
+
+- type: construction
+  name: Золтой Меч (алхимия)
+  id: AlchemGSword
+  graph: GSwordGraph
+  startNode: start
+  targetNode: gsword
+  category: construction-category-weapons
+  description: real golden sword.
+  icon:
+    sprite: Afgan/Weapons/Melee/swordgold.rsi
+    state: icon
+  objectType: Item
+
+- type: construction
+  name: Дьявольская Маска (алхимия)
+  id: AlchemDMask
+  graph: DMaskGraph
+  startNode: start
+  targetNode: dmask
+  category: construction-category-weapons
+  description: real demon.
+  icon:
+    sprite: Afgan/Clothing/Mask/balmaskevil.rsi
+    state: icon
+  objectType: Item
+
+- type: construction
+  name: Кольцо (алхимия)
+  id: AlchemRing
+  graph: RingGraph
+  startNode: start
+  targetNode: ring
+  category: construction-category-weapons
+  description: real ring.
+  icon:
+    sprite: Afgan/Clothing/Gloves/ring.rsi
+    state: icon
+  objectType: Item
+
+- type: construction
+  name: Наплечники (алхимия)
+  id: AlchemNaplech
+  graph: NaplechGraph
+  startNode: start
+  targetNode: naplech
+  category: construction-category-weapons
+  description: real crimson.
+  icon:
+    sprite: Afgan/Clothing/Neck/crimson.rsi
+    state: icon
+  objectType: Item
+
+- type: construction
+  name: Стрела
+  id: SamodelArrow
+  graph: ArrowGraph
+  startNode: start
+  targetNode: arrow
+  category: construction-category-weapons
+  description: real arrow.
+  icon:
+    sprite: Objects/Weapons/Guns/Projectiles/arrows.rsi
+    state: base
+  objectType: Item

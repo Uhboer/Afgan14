@@ -1,0 +1,65 @@
+- type: ambientMusic
+  id: Holy
+  sound:
+    params:
+      volume: -9
+    collection: AmbienceHoly
+  rules: NearPrayable
+  priority: 6
+
+## Fallback if nothing else found
+- type: ambientMusic
+  id: General
+  sound:
+    params:
+      volume: -10
+    collection: AmbienceGeneral
+  rules: AlwaysTrue
+
+- type: soundCollection
+  id: AmbienceGeneral
+  files:
+    - /Audio/Ambience/ambigen1.ogg
+    - /Audio/Ambience/ambigen3.ogg
+    - /Audio/Ambience/ambigen4.ogg
+    - /Audio/Ambience/ambigen5.ogg
+    - /Audio/Ambience/ambigen6.ogg
+    - /Audio/Ambience/ambigen7.ogg
+    - /Audio/Ambience/ambigen8.ogg
+    - /Audio/Ambience/ambigen9.ogg
+    - /Audio/Ambience/ambigen10.ogg
+    - /Audio/Ambience/ambigen11.ogg
+    - /Audio/Ambience/ambigen12.ogg
+    - /Audio/Ambience/ambigen14.ogg
+    - /Audio/Ambience/ambigen15.ogg
+    - /Audio/Ambience/ambigen16.ogg
+    - /Audio/Ambience/ambigen17.ogg
+    - /Audio/Ambience/ambigen18.ogg
+    - /Audio/Ambience/ambigen19.ogg
+    - /Audio/Ambience/ambigen20.ogg
+
+- type: soundCollection
+  id: AmbienceHoly
+  files:
+    - /Audio/Ambience/ambicha1.ogg
+    - /Audio/Ambience/ambicha2.ogg
+    - /Audio/Ambience/ambicha3.ogg
+    - /Audio/Ambience/ambicha4.ogg
+    - /Audio/Ambience/ambiholy.ogg
+    - /Audio/Ambience/ambiholy2.ogg
+    - /Audio/Ambience/ambiholy3.ogg
+
+# Rules
+- type: rules
+  id: AlwaysTrue
+  rules:
+    - !type:AlwaysTrueRule
+
+- type: rules
+  id: NearPrayable
+  rules:
+    - !type:NearbyComponentsRule
+      anchored: true
+      components:
+        - type: Prayable
+      range: 6

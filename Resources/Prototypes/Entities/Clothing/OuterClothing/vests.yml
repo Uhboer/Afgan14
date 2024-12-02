@@ -1,0 +1,219 @@
+#Web vest
+- type: entity
+  parent: [ClothingOuterStorageBase, AllowSuitStorageClothing]
+  id: ClothingOuterVestWeb
+  name: кевларовый жилет
+  description: A synthetic armor vest. This one has added webbing and ballistic plates.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Vests/webvest.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Vests/webvest.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.7
+        Heat: 0.9
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: ClothingSpeedModifier
+    walkModifier: 0.94
+    sprintModifier: 0.94
+  - type: Construction
+    graph: BronikGraph
+    node: bronik
+  - type: Tag
+    tags:
+      - Bronik
+
+#Mercenary web vest
+- type: entity
+  parent: ClothingOuterVestWeb #web vest so it should have some pockets for ammo
+  id: ClothingOuterVestWebMerc
+  name: merc web vest
+  description: A high-quality armored vest made from a hard synthetic material. It's surprisingly flexible and light, despite formidable armor plating.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Vests/mercwebvest.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Vests/mercwebvest.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.6
+        Heat: 0.8
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: ClothingSpeedModifier
+    walkModifier: 0.93
+    sprintModifier: 0.93
+  - type: Construction
+    graph: UkrepBronikGraph
+    node: ukrepbronik
+  - type: Tag
+    tags:
+      - BronikUkrep
+
+#Detective's vest
+- type: entity
+  parent: ClothingOuterArmorBasic
+  id: ClothingOuterVestDetective
+  name: detective's vest
+  description: A hard-boiled private investigator's armored vest.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Vests/detvest.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Vests/detvest.rsi
+
+#Hazard vest
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterVestHazard
+  name: hi-viz vest
+  description: A high-visibility vest used in work zones.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Vests/hazard.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Vests/hazard.rsi
+  - type: Tag
+    tags:
+    - HiViz
+
+#(Bartender) vest
+- type: entity
+  parent: ClothingOuterBase
+  id: ClothingOuterVest
+  name: vest
+  description: A thick vest with a rubbery, water-resistant shell.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Vests/vest.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Vests/vest.rsi
+
+#Tank Harness
+- type: entity
+  parent: [ClothingOuterBase, AllowSuitStorageClothingGasTanks]
+  id: ClothingOuterVestTank
+  name: tank harness
+  description: A simple harness that can hold a gas tank.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Vests/tankharness.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Vests/tankharness.rsi
+
+#НАШЕЕЕ
+- type: entity
+  parent: ClothingOuterVestWeb
+  id: ClothingOuterVestStal
+  name: самодельная броня
+  description: стальная пластина на верёвке
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Armor/samodel.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Armor/samodel.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.85
+  - type: Construction
+    graph: ArmorGraph
+    node: armor
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: Reflect
+    reflectProb: 0.05
+
+- type: entity
+  parent: ClothingOuterVestWeb
+  id: ClothingOuterVestPravitel
+  name: бронежилет Правителя
+  description: эта броня была подарена Правителю лучшим кузнецом Афгана перед самой его кончиной.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Armor/pravitelvest.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Armor/pravitelvest.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.5
+        Heat: 0.7
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: ClothingSpeedModifier
+    walkModifier: 0.94
+    sprintModifier: 0.94
+  - type: Reflect
+    reflectProb: 0.01
+
+- type: entity
+  parent: ClothingOuterVestWeb
+  id: ClothingOuterVestPlasma
+  name: плазмажилет
+  description: Броня из редкого металла. Обладает повышенной пулестойкостью, но плохой защитой для ближнего боя.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Armor/plasma.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Armor/plasma.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.35
+        Heat: 0.9
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: ClothingSpeedModifier
+    walkModifier: 0.85
+    sprintModifier: 0.9
+  - type: Reflect
+    reflectProb: 0.05
+  - type: Construction
+    graph: PlasmaGraph
+    node: plasma
+
+- type: entity
+  parent: ClothingOuterVestWeb
+  id: ClothingOuterVestGiga
+  name: сверх укреплённый бронежилет
+  description: В нем несколько плотных слоёв кевлара и материала, что ловит осколки от пуль.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Armor/gigavest.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Armor/gigavest.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.55
+        Slash: 0.55
+        Piercing: 0.45
+        Heat: 0.65
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: ClothingSpeedModifier
+    walkModifier: 0.8
+    sprintModifier: 0.8
+  - type: Reflect
+    reflectProb: 0.05

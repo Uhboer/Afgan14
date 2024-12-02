@@ -1,0 +1,453 @@
+- type: latheRecipe
+  id: LightTube
+  result: LightTube
+  category: Lights
+  completetime: 2
+  materials:
+    Steel: 50
+    Glass: 50
+
+- type: latheRecipe
+  id: LedLightTube
+  result: LedLightTube
+  category: Lights
+  completetime: 2
+  materials:
+    Steel: 50
+    Glass: 50
+
+- type: latheRecipe
+  id: SodiumLightTube
+  result: SodiumLightTube
+  category: Lights
+  completetime: 2
+  materials:
+    Steel: 50
+    Glass: 50
+
+- type: latheRecipe
+  id: ExteriorLightTube
+  result: ExteriorLightTube
+  category: Lights
+  completetime: 2
+  materials:
+    Steel: 50
+    Glass: 50
+
+- type: latheRecipe
+  id: LightBulb
+  result: LightBulb
+  category: Lights
+  completetime: 2
+  materials:
+    Steel: 50
+    Glass: 50
+
+- type: latheRecipe
+  id: LedLightBulb
+  result: LedLightBulb
+  category: Lights
+  completetime: 2
+  materials:
+    Steel: 50
+    Glass: 50
+
+- type: latheRecipe
+  id: GlowstickRed
+  result: GlowstickRed
+  category: Lights
+  completetime: 2
+  materials:
+    Plastic: 50
+
+- type: latheRecipe
+  id: Flare
+  result: Flare
+  category: Lights
+  completetime: 2
+  materials:
+    Plastic: 50
+
+- type: latheRecipe
+  id: FlashlightLantern
+  result: EmptyFlashlightLantern
+  category: Lights
+  completetime: 2
+  materials:
+    Steel: 100
+    Glass: 100
+    Plastic: 100
+
+- type: latheRecipe
+  id: FireExtinguisher
+  result: FireExtinguisher
+  category: Tools
+  completetime: 2
+  materials:
+    Steel: 200
+
+- type: latheRecipe
+  id: Matchbox
+  result: Matchbox
+  completetime: 1
+  materials:
+    Wood: 100
+
+- type: latheRecipe
+  id: SynthesizerInstrument
+  result: SynthesizerInstrument
+  completetime: 4
+  materials:
+    Steel: 300
+    Plastic: 300
+    Glass: 100
+
+- type: latheRecipe
+  id: NodeScanner
+  result: NodeScanner
+  category: Tools
+  completetime: 2
+  materials:
+    Steel: 100
+    Plastic: 50
+
+- type: latheRecipe
+  id: AirTank
+  result: AirTank
+  completetime: 4
+  materials:
+    Steel: 300
+
+- type: latheRecipe
+  id: ClothingShoesBootsMagSci
+  result: ClothingShoesBootsMagSci
+  completetime: 10
+  materials:
+    Steel: 1000
+    Plastic: 500
+
+- type: latheRecipe
+  id: ClothingShoesBootsMoon
+  result: ClothingShoesBootsMoon
+  completetime: 2
+  materials:
+    Steel: 600
+
+- type: latheRecipe
+  id: ClothingShoesBootsSpeed
+  result: ClothingShoesBootsSpeed
+  completetime: 2
+  materials:
+    Steel: 1500
+    Plastic: 1000
+    Silver: 500
+
+- type: latheRecipe
+  id: ModularReceiver
+  result: ModularReceiver
+  completetime: 12
+  materials:
+    Steel: 1000
+    Plastic: 1000
+
+- type: latheRecipe
+  id: FauxTileAstroGrass
+  result: FloorTileItemAstroGrass
+  completetime: 1
+  materials:
+    Plastic: 100
+
+- type: latheRecipe
+  id: FauxTileMowedAstroGrass
+  result: FloorTileItemMowedAstroGrass
+  completetime: 1
+  materials:
+    Plastic: 100
+
+- type: latheRecipe
+  id: FauxTileJungleAstroGrass
+  result: FloorTileItemJungleAstroGrass
+  completetime: 1
+  materials:
+    Plastic: 100
+
+- type: latheRecipe
+  id: FauxTileAstroIce
+  result: FloorTileItemAstroIce
+  completetime: 1
+  materials:
+    Plastic: 100
+
+- type: latheRecipe
+  id: FauxTileAstroSnow
+  result: FloorTileItemAstroSnow
+  completetime: 1
+  materials:
+    Plastic: 100
+
+- type: latheRecipe
+  id: FloorGreenCircuit
+  result: FloorTileItemGCircuit4
+  completetime: 2
+  materials:
+    Steel: 100
+
+- type: latheRecipe
+  id: FloorBlueCircuit
+  result: FloorTileItemBCircuit4
+  completetime: 2
+  materials:
+    Steel: 100
+
+- type: latheRecipe
+  id: HandheldStationMap
+  result: HandheldStationMapEmpty
+  completetime: 2
+  materials:
+    Steel: 300
+    Plastic: 100
+
+- type: latheRecipe
+  id: ClothingHeadHatWelding
+  result: ClothingHeadHatWelding
+  completetime: 2
+  materials:
+    Steel: 400
+    Glass: 200
+
+- type: latheRecipe
+  id: ClothingHeadHatCone
+  result: ClothingHeadHatCone
+  completetime: 3
+  materials:
+    Plastic: 200
+
+#НАШЕ
+
+- type: latheRecipe
+  id: MP9part1
+  result: WearponComponentRukoiatMP9Evil
+  completetime: 5
+  materials:
+    Steel: 600
+
+- type: latheRecipe
+  id: MP9part2
+  result: WearponComponentDetaliMP9Evil
+  completetime: 5
+  materials:
+    Steel: 300
+
+- type: latheRecipe
+  id: MP9part3
+  result: WearponComponentKropusMP9Evil
+  completetime: 6
+  materials:
+    Steel: 1200
+
+- type: latheRecipe
+  id: Magaz1
+  result: BaseMagazineMP9evil
+  completetime: 2
+  materials:
+    Steel: 200
+
+- type: latheRecipe
+  id: Magaz2
+  result: BaseMagazineLuty20
+  completetime: 2
+  materials:
+    Steel: 300
+
+- type: latheRecipe
+  id: Cartride9mm
+  result: BaseCartridge9mm
+  completetime: 1
+  materials:
+    Steel: 10
+    Plastic: 10
+
+- type: latheRecipe
+  id: Lutypart1
+  result: WearponComponentKropusLuty
+  completetime: 5
+  materials:
+    Steel: 2000
+
+- type: latheRecipe
+  id: Lutypart2
+  result: WearponComponentRukoiatLuty
+  completetime: 5
+  materials:
+    Steel: 700
+
+- type: latheRecipe
+  id: Izolenta
+  result: Trash5
+  completetime: 3
+  materials:
+    Plastic: 100
+
+- type: latheRecipe
+  id: Pipe
+  result: Trash1
+  completetime: 5
+  materials:
+    Steel: 1000
+
+- type: latheRecipe
+  id: Gayki
+  result: Trash3
+  completetime: 4
+  materials:
+    Steel: 500
+
+- type: latheRecipe
+  id: Jelezaka
+  result: Trash4
+  completetime: 5
+  materials:
+    Steel: 800
+
+- type: latheRecipe
+  id: ShallImproved
+  result: ShellShotgunImprovised
+  completetime: 1
+  materials:
+    Steel: 100
+
+- type: latheRecipe
+  id: BlackHemelet
+  result: ClothingHeadHelmetBlack
+  completetime: 8
+  materials:
+    Steel: 1000
+
+- type: latheRecipe
+  id: Plastic
+  result: SheetPlastic1
+  completetime: 1
+  materials:
+    Steel: 300
+
+- type: latheRecipe
+  id: Plastic10
+  result: SheetPlastic10
+  completetime: 3
+  materials:
+    Steel: 3000
+
+- type: latheRecipe
+  id: AK1
+  result: WearponComponentAK1
+  completetime: 10
+  materials:
+    Steel: 2000
+
+- type: latheRecipe
+  id: AK2
+  result: WearponComponentAK2
+  completetime: 10
+  materials:
+    Steel: 3000
+
+- type: latheRecipe
+  id: AK3
+  result: WearponComponentAK3
+  completetime: 10
+  materials:
+    Steel: 1500
+
+- type: latheRecipe
+  id: AKmagaz
+  result: MagazineLightRifleAK
+  completetime: 4
+  materials:
+    Steel: 1000
+
+- type: latheRecipe
+  id: AKmagaz60
+  result: MagazineLightRifleAK60
+  completetime: 5
+  materials:
+    Steel: 2300
+
+- type: latheRecipe
+  id: HatWelding
+  result: ClothingHeadHatWelding
+  completetime: 8
+  materials:
+    Steel: 1000
+
+- type: latheRecipe
+  id: Gloves
+  result: ClothingHandsGlovesStal
+  completetime: 6
+  materials:
+    Steel: 1000
+
+- type: latheRecipe
+  id: Boots
+  result: ClothingShoesBootsSteel
+  completetime: 6
+  materials:
+    Steel: 1000
+
+- type: latheRecipe
+  id: Naplechniki
+  result: ClothingNeckNaplechniki
+  completetime: 6
+  materials:
+    Steel: 500
+
+- type: latheRecipe
+  id: Plastina
+  result: PlastinaKevlar
+  completetime: 8
+  materials:
+    Steel: 2500
+
+- type: latheRecipe
+  id: Pricel
+  result: WearponComponentPricel
+  completetime: 10
+  materials:
+    Steel: 1000
+    Plastic: 500
+
+- type: latheRecipe
+  id: .50BMG
+  result: Cartridge50BMG
+  completetime: 5
+  materials:
+    Steel: 800
+    Plastic: 300
+
+- type: latheRecipe
+  id: PNVpart
+  result: WearponComponentCarcasPNV
+  completetime: 10
+  materials:
+    Steel: 3000
+    Plastic: 3000
+
+- type: latheRecipe
+  id: Hauberk
+  result: ClothingUniformJumpsuitHauberk
+  completetime: 10
+  materials:
+    Steel: 3000
+
+- type: latheRecipe
+  id: prikladSH
+  result: WearponComponentSH
+  completetime: 10
+  materials:
+    Plastic: 500
+
+- type: latheRecipe
+  id: ShellShotgun
+  result: ShellShotgun
+  completetime: 2
+  materials:
+    Plastic: 500

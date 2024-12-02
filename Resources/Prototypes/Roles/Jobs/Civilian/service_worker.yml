@@ -1,0 +1,37 @@
+﻿- type: job
+  id: ServiceWorker
+  name: job-name-serviceworker
+  description: job-description-serviceworker
+  setPreference: false
+  playTimeTracker: JobServiceWorker
+  startingGear: ServiceWorkerGear
+  icon: "JobIconServiceWorker"
+  supervisors: job-supervisors-service
+  canBeAntag: true # Corvax-MRP: Available not only for newbies
+  access:
+  - Service
+  - Maintenance
+  - Bar
+  - Kitchen
+  extendedAccess:
+  - Hydroponics
+
+- type: startingGear
+  id: ServiceWorkerGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHamas
+    belt: ClothingBeltRPC
+    shoes: ClothingShoesBootsCombatFilled
+    mask: ClothingMaskHamas
+    head: ClothingHeadHelmetHamas
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterVestWeb
+    id: SalvageIDCard
+    pocket1: RadioHandheld
+    pocket2: Torch
+  storage:
+    belt:
+    - BaseMagazineMP9evil
+    - BaseMagazineMP9evil
+    - BaseMagazineMP9evil
+    - SyringeOpium

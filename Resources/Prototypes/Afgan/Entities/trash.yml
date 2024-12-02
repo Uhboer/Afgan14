@@ -1,0 +1,169 @@
+- type: entity
+  id: Trash1
+  parent: BaseItem
+  name: водопроводная труба
+  description: мусор, используемый для создания оружия кустарного производства.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Objects/Trash/trash1.rsi
+    state: icon
+  - type: Item
+    size: Normal
+  - type: Tag
+    tags:
+      - PipeV
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Blunt: 10
+        Structural: 3
+    soundHit:
+      collection: MetalThud
+
+- type: entity
+  id: Trash2
+  parent: BaseItem
+  name: кусок древесины
+  description: мусор.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Objects/Trash/trash2.rsi
+    state: icon
+  - type: Item
+    size: Normal
+
+- type: entity
+  id: Trash3
+  parent: BaseItem
+  name: гайки
+  description: мусор, используемый для создания оружия кустарного производства.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Objects/Trash/trash3.rsi
+    state: icon
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+      - Gayki
+
+- type: entity
+  id: Trash4
+  parent: BaseItem
+  name: ржавый кусок металлолома
+  description: мусор, используемый для создания оружия кустарного производства.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Objects/Trash/trash4.rsi
+    state: icon
+  - type: Item
+    size: Small
+  - type: Tag
+    tags:
+      - Jelezaka
+
+- type: entity
+  id: Trash5
+  parent: BaseItem
+  name: изолента
+  description: мусор, используемый для создания оружия кустарного производства.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Objects/Trash/trash5.rsi
+    state: icon
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+      - Izolenta
+
+- type: entity
+  id: Trash6
+  parent: BaseItem
+  name: обломки древесины
+  description: мусор.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/Trash/trash6.rsi
+    state: icon
+  - type: Item
+    size: Normal
+
+- type: entity
+  id: Trash7
+  parent: BaseItem
+  name: побитая каска
+  description: мусор.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/Trash/trash7.rsi
+    state: icon
+  - type: Item
+    size: Normal
+
+- type: entity
+  id: Trash8
+  parent: BaseItem
+  name: чья-то нога
+  description: мусор.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/Trash/trash8.rsi
+    state: icon
+  - type: Item
+    size: Normal
+
+- type: entity
+  id: Trash9
+  parent: BaseItem
+  name: чей-то палец
+  description: мусор.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/Trash/trash9.rsi
+    state: icon
+  - type: Item
+    size: Tiny
+
+- type: entity
+  id: Trash10
+  parent: BaseItem
+  name: камень
+  description: просто... камень...
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/Trash/trash10.rsi
+    state: icon
+  - type: Item
+    size: Tiny
+  - type: EmbeddableProjectile
+    sound: /Audio/Weapons/star_hit.ogg
+  - type: LandAtCursor
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 8
+
+- type: entity
+  id: Trash11
+  parent: BaseItem
+  name: гнилое бревно
+  description: мусор.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/Trash/trash11.rsi
+    state: icon
+  - type: Item
+    size: Tiny

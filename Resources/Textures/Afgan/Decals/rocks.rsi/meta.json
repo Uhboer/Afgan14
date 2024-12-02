@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "hui hui pizda",
+  "size": {
+    "x": 57,
+    "y": 52
+  },
+  "states": [
+    {
+      "name": "rocks"
+    }
+  ]
+}

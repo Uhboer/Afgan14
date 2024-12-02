@@ -1,0 +1,95 @@
+- type: jukebox
+  id: Rossiyskiy_specnaz
+  name: GSN - Российский спецназ
+  path:
+    path: /Audio/Afgan/Music/YA_rossijjskijj_specnaz.ogg
+
+- type: jukebox
+  id: Vagner
+  name: GSN - Вагнер
+  path:
+    path: /Audio/Afgan/Music/A_ya_povyshe_zakatayu_rukava.ogg
+
+- type: jukebox
+  id: Afgan
+  name: G.O. - Афганский синдром
+  path:
+    path: /Audio/Afgan/Music/Afganskijj_sindrom.ogg
+
+- type: jukebox
+  id: Pirojok
+  name: G.O. - Беспонтовый пирожок
+  path:
+    path: /Audio/Afgan/Music/Bespontovyjj_pirozhok.ogg
+
+- type: jukebox
+  id: Temno
+  name: G.O. - И снова темно
+  path:
+    path: /Audio/Afgan/Music/I_snova_temno.ogg
+
+- type: jukebox
+  id: Pesna
+  name: G.O. - Превосходная песня
+  path:
+    path: /Audio/Afgan/Music/Prevoskhodnaya_pesnya.ogg
+
+- type: jukebox
+  id: Otrad
+  name: G.O. - Отряд не заметил потери бойца
+  path:
+    path: /Audio/Afgan/Music/Otryad_ne_zametil_poteri_bojjca.ogg
+
+- type: jukebox
+  id: Sdohnet
+  name: G.O. - Кто сдохнет первым?
+  path:
+    path: /Audio/Afgan/Music/Kto_sdokhnet_pervym.ogg
+
+- type: jukebox
+  id: Shinel
+  name: G.O. - Бери шинель
+  path:
+    path: /Audio/Afgan/Music/Beri_shinel.ogg
+
+- type: jukebox
+  id: Led
+  name: G.O. - Мы лёд
+  path:
+    path: /Audio/Afgan/Music/My_ljod.ogg
+
+- type: jukebox
+  id: Lenin
+  name: G.O. - Песня о Ленине
+  path:
+    path: /Audio/Afgan/Music/Pesnya_o_Lenine.ogg
+
+- type: jukebox
+  id: PoPlanu
+  name: G.O. - Всё идёт по плану
+  path:
+    path: /Audio/Afgan/Music/Vsjo_idjot_po_planu.ogg
+
+- type: jukebox
+  id: Miasokombinat
+  name: P.O.G.O. - Мясокомбинат
+  path:
+    path: /Audio/Afgan/Music/Myasokombinat.ogg
+
+- type: jukebox
+  id: Pamyat
+  name: P.O.G.O. - Память
+  path:
+    path: /Audio/Afgan/Music/Pamyat.ogg
+
+- type: jukebox
+  id: Borov
+  name: P.O.G.O. - Красный боров
+  path:
+    path: /Audio/Afgan/Music/Krasnyj_borov.ogg
+
+- type: jukebox
+  id: Udar
+  name: P.O.G.O. - Резкий удар
+  path:
+    path: /Audio/Afgan/Music/Rezkij_udar.ogg

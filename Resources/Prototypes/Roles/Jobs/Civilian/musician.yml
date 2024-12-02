@@ -1,0 +1,36 @@
+- type: job
+  id: Musician
+  name: job-name-musician
+  description: job-description-musician
+  setPreference: false
+  playTimeTracker: JobMusician
+  startingGear: MusicianGear
+  icon: "JobIconMusician"
+  supervisors: job-supervisors-hop # Corvax-JobSupervisors
+  access:
+  - Maintenance # TODO Remove maint access for all gimmick jobs once access work is completed
+  - Theatre
+  special:
+  - !type:GiveItemOnHolidaySpecial
+    holiday: MikuDay
+    prototype: BoxPerformer
+
+- type: startingGear
+  id: MusicianGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHamas
+    belt: ClothingBeltRPC
+    shoes: ClothingShoesBootsCombatFilled
+    mask: ClothingMaskHamas
+    head: ClothingHeadHelmetHamas
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterVestWeb
+    id: SalvageIDCard
+    pocket1: RadioHandheld
+    pocket2: Torch
+  storage:
+    belt:
+    - BaseMagazineMP9evil
+    - BaseMagazineMP9evil
+    - BaseMagazineMP9evil
+    - SyringeOpium

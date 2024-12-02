@@ -1,0 +1,24 @@
+- type: job
+  id: Scientist
+  name: job-name-scientist
+  description: job-description-scientist
+  setPreference: false
+  playTimeTracker: JobScientist
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Science
+      time: 10800 #3 hrs # Corvax-RoleTime
+  startingGear: ScientistGear
+  icon: "JobIconScientist"
+  supervisors: job-supervisors-rd
+  access:
+  - Research
+  - Maintenance
+
+- type: startingGear
+  id: ScientistGear
+  equipment:
+    ears: ClothingHeadsetScience
+  #storage:
+    #back:
+    #- Stuff

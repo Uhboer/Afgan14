@@ -1,0 +1,5 @@
+- type: gameMapPool
+  id: DefaultMapPool
+  maps:
+  - Afgan_gora
+

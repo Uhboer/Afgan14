@@ -1,0 +1,7 @@
+- type: alert
+  id: PacifiedZone
+  icons:
+  - sprite: Afgan/Objects/shit.rsi
+    state: icon
+  name: alerts-pacified-zone-name
+  description: alerts-pacified-zone-desc

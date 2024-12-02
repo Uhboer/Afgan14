@@ -1,0 +1,25 @@
+- type: soundCollection
+  id: Radio
+  files:
+    - /Audio/Afgan/Music/Afganskijj_sindrom.ogg
+    - /Audio/Afgan/Music/Bespontovyjj_pirozhok.ogg
+    - /Audio/Afgan/Music/I_snova_temno.ogg
+    - /Audio/Afgan/Music/Prevoskhodnaya_pesnya.ogg
+    - /Audio/Afgan/Music/Otryad_ne_zametil_poteri_bojjca.ogg
+    - /Audio/Afgan/Music/Myasokombinat.ogg
+    - /Audio/Afgan/Music/Pamyat.ogg
+    - /Audio/Afgan/Music/Kto_sdokhnet_pervym.ogg
+    - /Audio/Afgan/Music/Krasnyj_borov.ogg
+    - /Audio/Afgan/Music/A_ya_povyshe_zakatayu_rukava.ogg
+    - /Audio/Afgan/Music/Beri_shinel.ogg
+    - /Audio/Afgan/Music/My_ljod.ogg
+    - /Audio/Afgan/Music/Pesnya_o_Lenine.ogg
+    - /Audio/Afgan/Music/Rezkij_udar.ogg
+    - /Audio/Afgan/Music/Vsjo_idjot_po_planu.ogg
+    - /Audio/Afgan/Music/YA_rossijjskijj_specnaz.ogg
+
+- type: soundCollection
+  id: Gorn
+  files:
+    - /Audio/Afgan/Music/allah_pidoras.ogg
+    - /Audio/Afgan/Music/allaha_pidorasa.ogg

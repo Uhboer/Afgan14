@@ -1,0 +1,225 @@
+- type: entity
+  name: гриб
+  parent: BaseStructure
+  id: GribBlevun
+  suffix: afgan14, blebun
+  description: попробуешь на вкус?
+  components:
+    - type: Sprite
+      sprite: Afgan/Structures/Mushrooms/blevun.rsi
+      state: structure
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+      loot:
+        All: GribBlebunGather
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+
+- type: entityLootTable
+  id: GribBlebunGather
+  entries:
+  - id: FoodGribBlevun
+    amount: 1
+    maxAmount: 1
+
+- type: entity
+  name: гриб
+  parent: FoodProduceBase
+  id: FoodGribBlevun
+  description: попробуешь на вкус?
+  suffix: afgan14
+  components:
+  - type: Produce
+  - type: Sprite
+    sprite: Afgan/Structures/Mushrooms/blevun.rsi
+    state: object
+  - type: FlavorProfile
+    flavors:
+      - spaceshroom
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: AfganReliver
+        Quantity: 5
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: AfganGovnoToxin
+          Quantity: 10
+  - type: StaticPrice
+    price: 20
+
+##2
+
+- type: entity
+  name: гриб
+  parent: BaseStructure
+  id: GribHeal
+  suffix: afgan14, heal
+  description: попробуешь на вкус?
+  components:
+    - type: Sprite
+      sprite: Afgan/Structures/Mushrooms/heal.rsi
+      state: structure
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+      loot:
+        All: GribHealGather
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+
+- type: entityLootTable
+  id: GribHealGather
+  entries:
+  - id: FoodGribHeal
+    amount: 1
+    maxAmount: 1
+
+- type: entity
+  name: гриб
+  parent: FoodProduceBase
+  id: FoodGribHeal
+  description: попробуешь на вкус?
+  suffix: afgan14
+  components:
+  - type: Produce
+  - type: Sprite
+    sprite: Afgan/Structures/Mushrooms/heal.rsi
+    state: object
+  - type: FlavorProfile
+    flavors:
+      - spaceshroom
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: AfganBombin
+        Quantity: 15
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: AfganLariy
+          Quantity: 15
+  - type: StaticPrice
+    price: 20
+
+##3
+
+- type: entity
+  name: гриб
+  parent: BaseStructure
+  id: GribNarco
+  suffix: afgan14, narco
+  description: попробуешь на вкус?
+  components:
+    - type: Sprite
+      sprite: Afgan/Structures/Mushrooms/narco.rsi
+      state: structure
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+      loot:
+        All: GribNarcoGather
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+
+- type: entityLootTable
+  id: GribNarcoGather
+  entries:
+  - id: FoodGribNarco
+    amount: 1
+    maxAmount: 1
+
+- type: entity
+  name: гриб
+  parent: FoodProduceBase
+  id: FoodGribNarco
+  description: попробуешь на вкус?
+  suffix: afgan14
+  components:
+  - type: Produce
+  - type: Sprite
+    sprite: Afgan/Structures/Mushrooms/narco.rsi
+    state: object
+  - type: FlavorProfile
+    flavors:
+      - spaceshroom
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: AfganFlamer
+        Quantity: 10
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: AfganOpium
+          Quantity: 15
+  - type: StaticPrice
+    price: 20

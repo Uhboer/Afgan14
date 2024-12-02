@@ -1,0 +1,25 @@
+﻿- type: job
+  id: TechnicalAssistant
+  name: job-name-technical-assistant
+  description: job-description-technical-assistant
+  playTimeTracker: JobTechnicalAssistant
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 0
+  startingGear: TechnicalAssistantGear
+  icon: "JobIconTechnicalAssistant"
+  supervisors: job-supervisors-everyone
+  access:
+  - Maintenance
+
+- type: startingGear
+  id: TechnicalAssistantGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitAlchem
+    shoes: ClothingShoesBootsSandal
+    gloves: ClothingHandsGlovesFingerless
+    pocket1: Torch
+    pocket2: CombatKnife
+    outerClothing: ClothingOuterMantia
+    back: ClothingBackpackSatchelLeather
+    eyes: ClothingEyesGlassesChemical

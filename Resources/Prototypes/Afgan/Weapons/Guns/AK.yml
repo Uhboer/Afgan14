@@ -1,0 +1,168 @@
+- type: entity
+  name: Самодельный АК-74
+  parent: BaseWeaponRifle
+  id: WeaponRifleAKSamodel
+  description: Ебучий самосбор... Зато мощный.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Weapons/Guns/Rifels/samodel_AK.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    minAngle: 28
+    maxAngle: 40
+    fireRate: 5
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/rifle2.ogg
+  - type: GunWieldBonus
+    minAngle: -19
+    maxAngle: -17
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineLightRifleAK
+        insertSound: /Audio/AfganWearpons/outmag.ogg
+        ejectSound: /Audio/AfganWearpons/inmag.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineLightRifle
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgeLightRifleAK
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgeLightRifle
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: Construction
+    graph: AKGraph
+    node: ak
+
+
+
+- type: entity
+  id: MagazineLightRifleAK
+  name: магазин для калашникова
+  suffix: afgan14
+  parent: BaseMagazineLightRifle
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeLightRifleAK
+  - type: Sprite
+    sprite: Afgan/Weapons/Guns/Ammunition/samodel_ak_magaz.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: MagazineLightRifleAK60
+  name: магазин для калашникова на 60 патрон
+  suffix: afgan14
+  parent: BaseMagazineLightRifle
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeLightRifleAK
+    capacity: 60
+  - type: Sprite
+    sprite: Afgan/Weapons/Guns/Ammunition/samodel_ak_magaz60.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: CartridgeLightRifleAK
+  suffix: afgan14
+  name: патрон 5.45
+  parent: BaseCartridgeLightRifle
+  components:
+  - type: CartridgeAmmo
+    proto: BulletLightRifleAK
+
+- type: entity
+  id: BulletLightRifleAK
+  name: пуля 5.45
+  parent: BaseBullet
+  noSpawn: true
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 16
+
+- type: entity
+  name: ТАРАШНИКОВ
+  parent: BaseWeaponRifle
+  id: WeaponRifleTarashnikov
+  description: Еще более дешёвая версия калаша. Воистину ужасен.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Weapons/Guns/Rifels/tarashnikov.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    minAngle: 35
+    maxAngle: 55
+    fireRate: 4
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/rifle2.ogg
+  - type: GunWieldBonus
+    minAngle: -20
+    maxAngle: -18
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineLightRifleAK
+        insertSound: /Audio/AfganWearpons/outmag.ogg
+        ejectSound: /Audio/AfganWearpons/inmag.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineLightRifle
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgeLightRifleAK
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgeLightRifle
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: Construction
+    graph: TarashGraph
+    node: tarash

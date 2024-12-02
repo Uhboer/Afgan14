@@ -1,0 +1,129 @@
+- type: entity
+  parent: ClothingHeadHelmetBasic
+  id: ClothingHeadHelmetHamas
+  name: шлем Хамаса
+  description: Чёрный шлем с повязкой Хамаса.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Head/hamashemelet.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Head/hamashemelet.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.9
+  - type: ClothingSpeedModifier
+    walkModifier: 0.98
+    sprintModifier: 0.98
+  - type: Reflect
+    reflectProb: 0.05
+
+- type: entity
+  parent: ClothingHeadHelmetBasic
+  id: ClothingHeadHelmetBlack
+  name: шлем из стали
+  description: Чёрный шлем.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Head/bhemelet.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Head/bhemelet.rsi
+  - type: Tag
+    tags:
+      - BlackHemelet
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+  - type: ClothingSpeedModifier
+    walkModifier: 0.97
+    sprintModifier: 0.97
+  - type: Reflect
+    reflectProb: 0.03
+
+- type: entity
+  parent: ClothingHeadHelmetBasic
+  id: ClothingHeadHelmetPovstanec
+  name: шлем повстанцев
+  description: покрашенный в зеленый цвет шлем.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Head/povstanhemelet.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Head/povstanhemelet.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.85
+        Slash: 0.85
+        Piercing: 0.8
+        Heat: 0.9
+  - type: ClothingSpeedModifier
+    walkModifier: 0.98
+    sprintModifier: 0.98
+  - type: Reflect
+    reflectProb: 0.05
+
+- type: entity
+  parent: ClothingHeadHelmetBasic
+  id: ClothingHeadHelmetAltin
+  name: алтын
+  description: довольно защищённый шлем
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Head/altin.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Head/altin.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.75
+        Slash: 0.75
+        Piercing: 0.7
+        Heat: 0.8
+  - type: EyeProtection
+  - type: IngestionBlocker
+  - type: FlashImmunity
+  - type: IdentityBlocker
+  - type: Construction
+    graph: AltinGraph
+    node: altin
+  - type: ClothingSpeedModifier
+    walkModifier: 0.96
+    sprintModifier: 0.96
+  - type: Reflect
+    reflectProb: 0.07
+
+- type: entity
+  parent: ClothingHeadHelmetBasic
+  id: ClothingHeadHelmetCherep
+  name: ржавый шлем
+  description: ржавый стальной шлем с рисунком черепа. Достался от деда.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Head/cherep.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Head/cherep.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.85
+        Slash: 0.85
+        Piercing: 0.8
+        Heat: 0.9
+  - type: ClothingSpeedModifier
+    walkModifier: 0.98
+    sprintModifier: 0.98
+  - type: Reflect
+    reflectProb: 0.05
