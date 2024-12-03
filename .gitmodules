@@ -1,4 +1,4 @@
-[submodule "RobustToolbox"]
-	path = RobustToolbox
-	url = https://github.com/space-wizards/RobustToolbox.git
+[submodule "AfganToolbox"]
+	path = AfganToolbox
+	url = https://github.com/Uhboer/AfganToolbox.git
 	branch = master
