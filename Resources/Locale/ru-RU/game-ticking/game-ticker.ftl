@@ -40,7 +40,7 @@ latejoin-arrival-announcement =
        *[neuter] пробудился
     } в Афгане!
 latejoin-arrival-sender = Афган
-latejoin-arrivals-direction = ТЫ ВСЁ ПРОПУСТИЛ.
-latejoin-arrivals-direction-time = ТЫ ВСЁ ПРОПУСТИЛ.
+latejoin-arrivals-direction = Ты пробудился поздно. Сейчас ты пешере пробудившихся. Иди по указаниям и тропинкам у выхода с пещеры на свою базу.
+latejoin-arrivals-direction-time = ы пробудился поздно. Сейчас ты пешере пробудившихся. Иди по указаниям и тропинкам у выхода с пещеры на свою базу.
 preset-not-enough-ready-players = Не удалось запустить пресет { $presetName }. Требуется { $minimumPlayers } игроков, но готовы только { $readyPlayersCount }.
 preset-no-one-ready = Не удалось запустить режим { $presetName }. Нет готовых игроков.

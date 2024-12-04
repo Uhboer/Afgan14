@@ -73,12 +73,12 @@ holiday-name-pride-month = Месяца гордости
 
 ## Custom congrats
 
-holiday-custom-cosmonautics-day = В этот день более 600 лет назад товарищ Юрий Гагарин первым полетел в космос!
-holiday-custom-mothers-day = С Днём матери в большинстве стран Северной и Южной Америки, Азии и Океании!
-holiday-custom-bastille-day = Вы слышите, как поёт народ?
-holiday-custom-friendship-day = Волшебного Дня дружбы!
-holiday-custom-talk-like-a-pirate-day = Разрази тебя Дэви Джонс! Говори как пират, иначе прогуляешься по доске, сухопутная крыса!
-holiday-custom-halloween = Ужасного Хэллоуина!
-holiday-custom-kindness-day = Совершите несколько неожиданных добрых поступков для незнакомцев!
-holiday-custom-christmas = Счастливого Рождества!
-holiday-custom-festive-season = Весёлых праздников!
+holiday-custom-cosmonautics-day = СЕГОДНЯ УМЕР МОЙ ДЕД
+holiday-custom-mothers-day = СЕГОДНЯ УМЕР МОЙ ДЕД
+holiday-custom-bastille-day = СЕГОДНЯ УМЕР МОЙ ДЕД
+holiday-custom-friendship-day = СЕГОДНЯ УМЕР МОЙ ДЕД
+holiday-custom-talk-like-a-pirate-day = РСЕГОДНЯ УМЕР МОЙ ДЕД
+holiday-custom-halloween = СЕГОДНЯ УМЕР МОЙ ДЕД
+holiday-custom-kindness-day = СЕГОДНЯ УМЕР МОЙ ДЕД
+holiday-custom-christmas = СЕГОДНЯ УМЕР МОЙ ДЕД
+holiday-custom-festive-season = СЕГОДНЯ УМЕР МОЙ ДЕД
