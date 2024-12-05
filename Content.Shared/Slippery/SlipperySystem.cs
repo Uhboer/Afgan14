@@ -1,4 +1,4 @@
-using Content.Shared._Sunrise.Mood;
+using Content.Shared._Afgan.Mood;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Database;
 using Content.Shared.Inventory;

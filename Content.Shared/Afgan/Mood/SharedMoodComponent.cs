@@ -1,6 +1,6 @@
 using Content.Shared.Alert;
 
-namespace Content.Shared._Sunrise.Mood;
+namespace Content.Shared._Afgan.Mood;
 
 [RegisterComponent, AutoGenerateComponentState]
 public sealed partial class NetMoodComponent : Component

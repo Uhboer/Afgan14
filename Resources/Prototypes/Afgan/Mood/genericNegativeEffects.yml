@@ -9,7 +9,7 @@
 
 - type: moodEffect
   id: OnFire
-  moodChange: -10
+  moodChange: -15
   timeout: 300
 
 - type: moodEffect

@@ -4,7 +4,7 @@ using Content.Server.Body.Components;
 using Content.Server.Chat.Systems;
 using Content.Server.Chemistry.Containers.EntitySystems;
 using Content.Server.EntityEffects.EffectConditions;
-using Content.Shared._Sunrise.Mood;
+using Content.Shared._Afgan.Mood;
 using Content.Server.EntityEffects.Effects;
 using Content.Shared.Alert;
 using Content.Shared.Atmos;

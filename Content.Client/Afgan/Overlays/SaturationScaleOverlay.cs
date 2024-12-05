@@ -1,11 +1,11 @@
 ﻿using System.Numerics;
-using Content.Shared._Sunrise.Mood;
+using Content.Shared._Afgan.Mood;
 using Robust.Client.Graphics;
 using Robust.Client.Player;
 using Robust.Shared.Enums;
 using Robust.Shared.Prototypes;
 
-namespace Content.Client._Sunrise.Overlays;
+namespace Content.Client._Afgan.Overlays;
 
 public sealed class SaturationScaleOverlay : Overlay
 {

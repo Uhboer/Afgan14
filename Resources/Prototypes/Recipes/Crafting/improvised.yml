@@ -515,3 +515,16 @@
     sprite: Objects/Weapons/Guns/Projectiles/arrows.rsi
     state: base
   objectType: Item
+
+- type: construction
+  name: Костёр
+  id: BonFire
+  graph: BonfireGraph
+  startNode: start
+  targetNode: bonfire
+  category: construction-category-weapons
+  description: real bonfire.
+  icon:
+    sprite: Structures/Decoration/bonfire.rsi
+    state: bonfire
+  objectType: Structure

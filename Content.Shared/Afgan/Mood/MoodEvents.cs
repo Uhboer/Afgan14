@@ -1,6 +1,6 @@
 using Robust.Shared.Serialization;
 
-namespace Content.Shared._Sunrise.Mood;
+namespace Content.Shared._Afgan.Mood;
 
 [Serializable, NetSerializable]
 public sealed class MoodEffectEvent(string effectId, float effectModifier = 1f, float effectOffset = 0f) : EntityEventArgs

@@ -1,4 +1,4 @@
-using Content.Shared._Sunrise.Mood;
+using Content.Shared._Afgan.Mood;
 using Content.Shared.Alert;
 using Content.Shared.CCVar;
 using Content.Shared.Movement.Components;

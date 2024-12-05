@@ -3,7 +3,7 @@ using Content.Shared.FixedPoint;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Generic;
 
-namespace Content.Server._Sunrise.Mood;
+namespace Content.Server._Afgan.Mood;
 
 [RegisterComponent]
 public sealed partial class MoodComponent : Component

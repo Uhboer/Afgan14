@@ -1,5 +1,5 @@
 using System.Linq;
-using Content.Shared._Sunrise.Mood;
+using Content.Shared._Afgan.Mood;
 using Content.Shared.ActionBlocker;
 using Content.Shared.Administration.Components;
 using Content.Shared.Administration.Logs;
@@ -477,7 +477,7 @@ namespace Content.Shared.Cuffs
 
             var ev = new CuffedEvent(user, target);
             RaiseLocalEvent(target, ref ev);
-            // Sunrise-End
+
 
             return true;
         }

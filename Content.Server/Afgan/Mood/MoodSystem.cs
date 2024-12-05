@@ -1,5 +1,5 @@
 ﻿using Content.Server.Chat.Managers;
-using Content.Shared._Sunrise.Mood;
+using Content.Shared._Afgan.Mood;
 using Content.Shared.Alert;
 using Content.Shared.CCVar;
 using Content.Shared.Chat;
@@ -15,7 +15,7 @@ using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 
-namespace Content.Server._Sunrise.Mood;
+namespace Content.Server._Afgan.Mood;
 
 public sealed class MoodSystem : EntitySystem
 {

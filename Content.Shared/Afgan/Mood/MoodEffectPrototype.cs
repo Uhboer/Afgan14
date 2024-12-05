@@ -1,6 +1,6 @@
 using Robust.Shared.Prototypes;
 
-namespace Content.Shared._Sunrise.Mood;
+namespace Content.Shared._Afgan.Mood;
 
 [Prototype]
 public sealed class MoodEffectPrototype : IPrototype

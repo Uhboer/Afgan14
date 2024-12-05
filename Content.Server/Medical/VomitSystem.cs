@@ -4,7 +4,7 @@ using Content.Server.Chemistry.Containers.EntitySystems;
 using Content.Server.Fluids.EntitySystems;
 using Content.Server.Forensics;
 using Content.Server.Popups;
-using Content.Shared._Sunrise.Mood;
+using Content.Shared._Afgan.Mood;
 using Content.Server.Stunnable;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.IdentityManagement;

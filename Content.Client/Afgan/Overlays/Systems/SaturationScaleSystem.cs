@@ -1,9 +1,9 @@
-﻿using Content.Shared._Sunrise.Mood;
+﻿using Content.Shared._Afgan.Mood;
 using Content.Shared.GameTicking;
 using Robust.Client.Graphics;
 using Robust.Shared.Player;
 
-namespace Content.Client._Sunrise.Overlays.Systems;
+namespace Content.Client._Afgan.Overlays.Systems;
 
 public sealed class SaturationScaleSystem : EntitySystem
 {
