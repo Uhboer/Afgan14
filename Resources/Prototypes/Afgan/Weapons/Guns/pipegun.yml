@@ -53,7 +53,7 @@
   - type: Construction
     graph: BoltGraph
     node: bolt
-
+  - type: Telescope
 
 - type: entity
   parent: BaseCartridge

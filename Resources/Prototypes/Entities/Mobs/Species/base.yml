@@ -234,6 +234,7 @@
   abstract: true
   components:
   - type: Mood
+  - type: LayingDown
   - type: Barotrauma
     damage:
       types:

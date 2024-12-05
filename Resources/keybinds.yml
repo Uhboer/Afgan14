@@ -540,3 +540,11 @@ binds:
 - function: Hotbar9
   type: State
   key: Num9
+
+- function: ToggleStanding
+  type: State
+  key: R
+
+- function: LookUp
+  type: State
+  key: MouseRight

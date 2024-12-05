@@ -15,6 +15,7 @@ using Content.Shared.Standing;
 using Content.Shared.StatusEffect;
 using Content.Shared.Throwing;
 using Robust.Shared.Audio.Systems;
+using Robust.Shared.Containers;
 
 namespace Content.Shared.Stunnable;
 
@@ -26,6 +27,9 @@ public abstract class SharedStunSystem : EntitySystem
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly StandingStateSystem _standingState = default!;
     [Dependency] private readonly StatusEffectsSystem _statusEffect = default!;
+    [Dependency] private readonly SharedLayingDownSystem _layingDown = default!;
+    [Dependency] private readonly SharedContainerSystem _container = default!;
+
 
     /// <summary>
     /// Friction modifier for knocked down players.
@@ -106,12 +110,23 @@ public abstract class SharedStunSystem : EntitySystem
 
     private void OnKnockInit(EntityUid uid, KnockedDownComponent component, ComponentInit args)
     {
-        _standingState.Down(uid);
+        RaiseNetworkEvent(new CheckAutoGetUpEvent(GetNetEntity(uid)));
+        _layingDown.TryLieDown(uid, null, null, DropHeldItemsBehavior.DropIfStanding);
     }
 
     private void OnKnockShutdown(EntityUid uid, KnockedDownComponent component, ComponentShutdown args)
     {
-        _standingState.Stand(uid);
+        if (!TryComp(uid, out StandingStateComponent? standing))
+            return;
+
+        if (TryComp(uid, out LayingDownComponent? layingDown))
+        {
+            if (layingDown.AutoGetUp && !_container.IsEntityInContainer(uid))
+                _layingDown.TryStandUp(uid, layingDown);
+            return;
+        }
+
+        _standingState.Stand(uid, standing);
     }
 
     private void OnStandAttempt(EntityUid uid, KnockedDownComponent component, StandAttemptEvent args)

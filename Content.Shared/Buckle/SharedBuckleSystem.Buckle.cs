@@ -197,7 +197,7 @@ public abstract partial class SharedBuckleSystem
         ActionBlocker.UpdateCanMove(buckle);
         Appearance.SetData(buckle, StrapVisuals.State, buckle.Comp.Buckled);
         Appearance.SetData(buckle, RotationVisuals.RotationState, RotationState.Horizontal);
-        Dirty(buckle); 
+        Dirty(buckle);
     }
 
     /// <summary>

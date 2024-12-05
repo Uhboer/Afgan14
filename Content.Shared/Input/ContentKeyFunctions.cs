@@ -57,6 +57,9 @@ namespace Content.Shared.Input
         public static readonly BoundKeyFunction ZoomIn = "ZoomIn";
         public static readonly BoundKeyFunction ResetZoom = "ResetZoom";
 
+        public static readonly BoundKeyFunction ToggleStanding = "ToggleStanding";
+        public static readonly BoundKeyFunction LookUp = "LookUp";
+
         public static readonly BoundKeyFunction ArcadeUp = "ArcadeUp";
         public static readonly BoundKeyFunction ArcadeDown = "ArcadeDown";
         public static readonly BoundKeyFunction ArcadeLeft = "ArcadeLeft";
