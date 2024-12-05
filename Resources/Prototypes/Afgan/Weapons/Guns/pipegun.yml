@@ -37,7 +37,7 @@
   name: Болтовка из труб
   parent: [BaseWeaponSniper, BaseGunWieldable]
   id: AfganWeaponPipeSniper
-  description: довольно-таки мощная самоделка в руках профессионала.
+  description: довольно-таки мощная самоделка в руках профессионала. [ПРИЦЕЛ - ПКМ]
   suffix: afgan14
   components:
   - type: Sprite

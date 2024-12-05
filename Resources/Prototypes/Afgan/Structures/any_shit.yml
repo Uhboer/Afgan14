@@ -378,3 +378,26 @@
   - type: Tag
     tags:
       - MateriaG
+
+- type: entity
+  parent: BaseItem
+  id: AfganBoombox
+  name: бумбокс
+  description: Такого ниггерского дерьма вы еще не слышали!
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/boombox.rsi
+    state: icon
+  - type: Item
+    sprite: Afgan/Objects/boombox.rsi
+    size: Ginormous
+  - type: EmitSoundOnUse
+    sound:
+      collection: Boombox
+  - type: EmitSoundOnTrigger
+    sound:
+      collection: Boombox
+  - type: UseDelay
+    delay: 220.0
+  - type: MultiHandedItem

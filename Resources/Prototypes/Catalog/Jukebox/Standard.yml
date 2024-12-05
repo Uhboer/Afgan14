@@ -93,3 +93,9 @@
   name: P.O.G.O. - Резкий удар
   path:
     path: /Audio/Afgan/Music/Rezkij_udar.ogg
+
+- type: jukebox
+  id: Afgan2
+  name: Афган
+  path:
+    path: /Audio/Afgan/Music/afgan.ogg

@@ -23,3 +23,11 @@
   files:
     - /Audio/Afgan/Music/allah_pidoras.ogg
     - /Audio/Afgan/Music/allaha_pidorasa.ogg
+
+- type: soundCollection
+  id: Boombox
+  files:
+    - /Audio/Afgan/Music/fire.ogg
+    - /Audio/Afgan/Music/is.ogg
+    - /Audio/Afgan/Music/sad.ogg
+    - /Audio/Afgan/Music/sad2.ogg
