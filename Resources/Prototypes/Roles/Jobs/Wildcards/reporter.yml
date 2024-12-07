@@ -27,6 +27,7 @@
     pocket2: Torch
   storage:
     back:
+    - PaperMedic
     - BaseMagazineLuty20
     - BaseMagazineLuty20
     - BaseMagazineLuty20

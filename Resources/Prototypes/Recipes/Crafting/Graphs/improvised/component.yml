@@ -115,7 +115,7 @@
                 state: icon
               name: изолента
             - material: Steel
-              amount: 15
+              amount: 10
               doAfter: 8
     - node: mask
       entity: ClothingMaskBalistic
@@ -185,7 +185,7 @@
                 state: icon
               name: кевларовая пластина
             - material: Cloth
-              amount: 20
+              amount: 15
               doAfter: 10
     - node: bronik
       entity: ClothingOuterVestWeb
@@ -223,9 +223,9 @@
         - to: mace
           steps:
             - material: Steel
-              amount: 10
+              amount: 5
             - material: WoodPlank
-              amount: 10
+              amount: 2
               doAfter: 6
     - node: mace
       entity: AfganMace
@@ -239,7 +239,7 @@
         - to: sword
           steps:
             - material: Steel
-              amount: 18
+              amount: 5
             - material: WoodPlank
               amount: 2
               doAfter: 8
@@ -255,9 +255,9 @@
         - to: alebard
           steps:
             - material: Steel
-              amount: 15
-            - material: WoodPlank
               amount: 5
+            - material: WoodPlank
+              amount: 2
               doAfter: 8
     - node: alebard
       entity: AfganAlebard
@@ -342,9 +342,7 @@
               name: кевларовая пластина
             - material: Steel
               amount: 5
-            - material: Cloth
-              amount: 5
-              doAfter: 10
+              doAfter: 5
     - node: berci
       entity: ClothingShoesBootsSteelUpgrade
 
@@ -367,7 +365,7 @@
                 state: icon
               name: Кевларовый бронежилет
             - material: Plasma
-              amount: 30
+              amount: 20
               doAfter: 10
     - node: plasma
       entity: ClothingOuterVestPlasma
@@ -449,7 +447,7 @@
               icon:
                 sprite: Afgan/Objects/materiagold.rsi
                 state: icon
-              name: материя ???
+              name: материя золота
               doAfter: 8
     - node: gsword
       entity: AfganSwordGold
@@ -471,7 +469,7 @@
               icon:
                 sprite: Afgan/Objects/materiablood.rsi
                 state: icon
-              name: материя ???
+              name: материя крови
               doAfter: 8
     - node: dmask
       entity: ClothingMaskBalisticEvil
@@ -488,17 +486,17 @@
               icon:
                 sprite: Afgan/Objects/materia.rsi
                 state: icon
-              name: материя ???
+              name: материя
             - tag: MateriaB
               icon:
                 sprite: Afgan/Objects/materiablood.rsi
                 state: icon
-              name: материя ???
+              name: материя крови
             - tag: MateriaG
               icon:
                 sprite: Afgan/Objects/materiagold.rsi
                 state: icon
-              name: материя ???
+              name: материя золота
               doAfter: 8
     - node: ring
       entity: ClothingHandsGlovesRing
@@ -520,7 +518,7 @@
               icon:
                 sprite: Afgan/Objects/materia.rsi
                 state: icon
-              name: материя ???
+              name: материя
               doAfter: 8
     - node: naplech
       entity: ClothingNeckNaplechnikiCrimson
@@ -534,10 +532,8 @@
         - to: arrow
           steps:
             - material: WoodPlank
-              amount: 5
-            - material: Cloth
-              amount: 1
-              doAfter: 5
+              amount: 4
+              doAfter: 2
     - node: arrow
       entity: ArrowRegular
 
@@ -554,12 +550,3 @@
               doAfter: 8
     - node: bonfire
       entity: Bonfire
-      edges:
-        - to: start
-          steps:
-            - tool: Prying
-              doAfter: 5
-          completed:
-            - !type:SpawnPrototype
-              prototype: MaterialWoodPlank1
-              amount: 5

@@ -30,6 +30,7 @@
     pocket2: Torch
   storage:
     back:
+    - PaperMedic
     - DrapesItem
     - Hemostat
     - Cautery
