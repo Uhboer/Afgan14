@@ -528,3 +528,29 @@
     sprite: Structures/Decoration/bonfire.rsi
     state: bonfire
   objectType: Structure
+
+- type: construction
+  name: Рюкзак
+  id: SamodelBackpack
+  graph: BackpackGraph
+  startNode: start
+  targetNode: backpack
+  category: construction-category-weapons
+  description: real backpack.
+  icon:
+    sprite: Clothing/Back/Backpacks/merc.rsi
+    state: icon
+  objectType: Item
+
+- type: construction
+  name: Верстак
+  id: WorkStation
+  graph: WorkGraph
+  startNode: start
+  targetNode: work
+  category: construction-category-weapons
+  description: real workstation.
+  icon:
+    sprite: Afgan/Structures/workstation.rsi
+    state: workstation
+  objectType: Structure

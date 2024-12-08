@@ -451,3 +451,10 @@
   completetime: 2
   materials:
     Plastic: 500
+
+- type: latheRecipe
+  id: Wrench1
+  result: Wrench
+  completetime: 3
+  materials:
+    Steel: 500

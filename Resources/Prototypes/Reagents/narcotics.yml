@@ -482,7 +482,7 @@
         key: SeeingRainbows
         component: SeeingRainbows
         type: Add
-        time: 5
+        time: 3
         refresh: false
       - !type:Emote
         emote: Laugh
@@ -508,7 +508,7 @@
         time: 20
         type: Remove
       - !type:Drunk
-        boozePower: 8
+        boozePower: 2
       - !type:GenericStatusEffect
         key: TemporaryBlindness
         component: TemporaryBlindness
@@ -570,7 +570,7 @@
       effects:
       - !type:MovespeedModifier
         walkSpeedModifier: 4.25
-        sprintSpeedModifier: 5.0
+        sprintSpeedModifier: 4.7
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
@@ -600,7 +600,7 @@
         key: SeeingRainbows
         component: SeeingRainbows
         type: Add
-        time: 10
+        time: 6
         refresh: false
       - !type:Emote
         emote: Salute

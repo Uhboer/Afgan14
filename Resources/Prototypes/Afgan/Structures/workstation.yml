@@ -39,6 +39,9 @@
         type: LatheBoundUserInterface
       enum.ResearchClientUiKey.Key:
         type: ResearchClientBoundUserInterface
+  - type: Construction
+    graph: WorkGraph
+    node: work
   - type: MaterialStorage
     whitelist:
       tags:
@@ -80,3 +83,4 @@
       - Hauberk
       - prikladSH
       - ShellShotgun
+      - Wrench1

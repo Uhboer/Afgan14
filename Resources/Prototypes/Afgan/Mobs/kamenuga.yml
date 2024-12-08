@@ -1,0 +1,104 @@
+- type: entity
+  name: каменюга
+  id: MobKamenuga
+  parent: MobJuk
+  description: эту хуйню в народе прозвали каменюгой. По сути это оживший кусок гороной породы.
+  suffix: afgan14
+  components:
+  - type: NpcFactionMember
+    factions:
+    - PrirodaAfgana
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Afgan/Mobs/kamenuga.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: juk
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      100: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      50: 0.5
+  - type: Bloodstream
+    bloodReagent: FluorosulfuricAcid
+    bloodMaxVolume: 800
+  - type: MeleeWeapon
+    altDisarm: false
+    angle: 0
+    soundHit:
+     path: /Audio/Afgan/shit.ogg
+    animation: WeaponArcSmash
+    damage:
+      groups:
+        Brute: 5
+  - type: DamageStateVisuals
+    rotate: true
+    states:
+      Alive:
+        Base: juk
+      Critical:
+        Base: crit
+      Dead:
+        Base: dead
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: SheetSteel
+    amount: 30
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 115
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:PlaySoundBehavior
+            sound:
+              path: /Audio/Effects/gib1.ogg
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              SheetSteel:
+                min: 10
+                max: 20
+  - type: MovementSpeedModifier
+    baseSprintSpeed: 2
+    baseWalkSpeed: 1
+
+- type: entity
+  name: Kamenuga Spawner
+  suffix: afgan14
+  id: SpawnMobKamenuga
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: juk
+      sprite: Afgan/Mobs/kamenuga.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - MobKamenuga
+
+- type: entity
+  name: Kamenuga Timed Spawner
+  id: KamenugaTimedSpawner
+  parent: MarkerBase
+  suffix: afgan14
+  components:
+    - type: Sprite
+      layers:
+      - state: blue
+      - sprite: Afgan/Mobs/kamenuga.rsi
+        state: juk
+      - state: ai
+    - type: Timer
+    - type: TimedSpawner
+      prototypes:
+      - MobKamenuga
+      chance: 0.20
+      intervalSeconds: 100
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 2

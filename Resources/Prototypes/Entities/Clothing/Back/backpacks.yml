@@ -185,10 +185,14 @@
   parent: ClothingBackpack
   id: ClothingBackpackMerc
   name: merc bag
+  suffix: afgan14, resprite
   description: A backpack that has been in many dangerous places, a reliable combat backpack.
   components:
     - type: Sprite
       sprite: Clothing/Back/Backpacks/merc.rsi
+    - type: Construction
+      graph: BackpackGraph
+      node: backpack
 
 #ERT
 - type: entity

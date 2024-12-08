@@ -550,3 +550,35 @@
               doAfter: 8
     - node: bonfire
       entity: Bonfire
+
+- type: constructionGraph
+  id: BackpackGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: backpack
+          steps:
+            - material: Cloth
+              amount: 15
+            - material: WoodPlank
+              amount: 10
+              doAfter: 2
+    - node: backpack
+      entity: ClothingBackpackMerc
+
+- type: constructionGraph
+  id: WorkGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: work
+          steps:
+            - material: WoodPlank
+              amount: 30
+            - material: Steel
+              amount: 30
+              doAfter: 10
+    - node: work
+      entity: WorkBench
