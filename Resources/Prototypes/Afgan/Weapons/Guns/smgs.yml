@@ -128,7 +128,7 @@
   - type: Gun
     minAngle: 8
     maxAngle: 15
-    cameraRecoilScalar: 7
+    cameraRecoilScalar: 4
     fireRate: 10
     soundGunshot:
       path: /Audio/AfganWearpons/soundLuty.ogg

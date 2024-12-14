@@ -22,7 +22,7 @@
     head: ClothingHeadHelmetPovstanec
     gloves: ClothingHandsMercGlovesCombat
     outerClothing: ClothingOuterVestWebMerc
-    suitstorage: WeaponSubMachineGunLuty
+    suitstorage: WeaponSubMachineGunPmRak
     pocket1: RadioHandheldSecurity
     pocket2: Torch
   storage:
