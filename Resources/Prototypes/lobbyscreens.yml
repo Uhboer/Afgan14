@@ -1,12 +1,19 @@
 - type: lobbyBackground
-  id: Gora
-  background: /Textures/LobbyScreens/gora.png
+  id: Brothers
+  background: /Textures/LobbyScreens/brothers.png
 
 - type: lobbyBackground
-  id: Chuvakiafgan
-  background: /Textures/LobbyScreens/chuvakiafgan.png
+  id: Gang
+  background: /Textures/LobbyScreens/gang.png
 
 - type: lobbyBackground
-  id: Gorlanhadibu
-  background: /Textures/LobbyScreens/gorlanhadibu.png
-  
+  id: Holy_war
+  background: /Textures/LobbyScreens/holy_war.png
+
+- type: lobbyBackground
+  id: Last_chance
+  background: /Textures/LobbyScreens/last_chance.png
+
+- type: lobbyBackground
+  id: Modjahed
+  background: /Textures/LobbyScreens/modjahed.png

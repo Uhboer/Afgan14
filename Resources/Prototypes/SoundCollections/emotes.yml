@@ -47,6 +47,18 @@
     - /Audio/Effects/Emotes/salute.ogg
 
 - type: soundCollection
+  id: Shiza
+  files:
+    - /Audio/Afgan/Shiza/death.ogg
+    - /Audio/Afgan/Shiza/go_kill.ogg
+    - /Audio/Afgan/Shiza/kill.ogg
+    - /Audio/Afgan/Shiza/none_of_this_is_real.ogg
+    - /Audio/Afgan/Shiza/you_need_to_wake_up.ogg
+    - /Audio/Afgan/Shiza/youve_been_dead_for_years.ogg
+    - /Audio/Afgan/Shiza/KILL_HER_NOW.ogg
+
+
+- type: soundCollection
   id: MaleCry
   files:
     - /Audio/Voice/Human/cry_male_1.ogg

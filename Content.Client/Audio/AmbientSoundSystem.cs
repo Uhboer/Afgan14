@@ -299,7 +299,7 @@ public sealed class AmbientSoundSystem : SharedAmbientSoundSystem
                 var audioParams = _params
                     .AddVolume(comp.Volume + _ambienceVolume)
                     // Randomise start so 2 sources don't increase their volume.
-                    .WithPlayOffset(_random.NextFloat(0.0f, 2.0f))
+                    .WithPlayOffset(_random.NextFloat(0.0f, 0.1f))
                     .WithMaxDistance(comp.Range);
 
                 var stream = _audio.PlayEntity(comp.Sound, Filter.Local(), uid, false, audioParams);

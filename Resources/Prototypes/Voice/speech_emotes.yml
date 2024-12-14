@@ -551,6 +551,13 @@
   chatMessages: [издаёт вех!]
 
 - type: emote
+  id: Shiza
+  name: chat-emote-name-shiza
+  category: Vocal
+  icon: Interface/Actions/scream.png
+  chatMessages: ["chat-emote-msg-shiza"]
+
+- type: emote
   id: Chirp
   name: chat-emote-name-chirp
   category: Vocal

@@ -451,8 +451,8 @@
     Narcotic:
       effects:
       - !type:MovespeedModifier
-        walkSpeedModifier: 3.25
-        sprintSpeedModifier: 3.0
+        walkSpeedModifier: 2.75
+        sprintSpeedModifier: 2.5
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
@@ -508,7 +508,7 @@
         time: 20
         type: Remove
       - !type:Drunk
-        boozePower: 2
+        boozePower: 6
       - !type:GenericStatusEffect
         key: TemporaryBlindness
         component: TemporaryBlindness
@@ -516,19 +516,12 @@
         - !type:ReagentThreshold
           min: 10.5
       - !type:Emote
-        emote: Crying
-        showInChat: true
-        probability: 1.0
+        emote: Shiza
+        showInChat: false
+        probability: 0.7
         conditions:
         - !type:ReagentThreshold
-          min: 10.5
-      - !type:Emote
-        emote: Scream
-        showInChat: true
-        probability: 4.0
-        conditions:
-        - !type:ReagentThreshold
-          min: 10.5
+          min: 10
       - !type:PopupMessage
         visualType: LargeCaution
         type: Local
@@ -610,9 +603,9 @@
         - !type:ReagentThreshold
           max: 10
       - !type:Emote
-        emote: Scream
-        showInChat: true
-        probability: 0.4
+        emote: Shiza
+        showInChat: false
+        probability: 0.7
         conditions:
         - !type:ReagentThreshold
           min: 10
@@ -626,7 +619,7 @@
         time: 20
         type: Remove
       - !type:Drunk
-        boozePower: 2
+        boozePower: 5
       - !type:GenericStatusEffect
         key: TemporaryBlindness
         component: TemporaryBlindness

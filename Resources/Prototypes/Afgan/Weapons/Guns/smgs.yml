@@ -6,20 +6,20 @@
   suffix: afgan14
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/SMGs/pm9evilgun.rsi
-    scale: "0.6, 0.6"
+    sprite: Afgan/Weapons/Guns/SMGs/pm9evilgun.rsi
+    scale: "0.7, 0.7"
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
   - type: Item
-    sprite: Objects/Weapons/Guns/SMGs/pm9evilgun64x.rsi
+    sprite: Afgan/Weapons/Guns/SMGs/pm9evilgun64x.rsi
   - type: Gun
     minAngle: 21
     maxAngle: 32
-    cameraRecoilScalar: 5
-    fireRate: 8
+    cameraRecoilScalar: 8
+    fireRate: 6
     soundGunshot:
       path: /Audio/AfganWearpons/soundMP9.ogg
   - type: MagazineVisuals
@@ -61,20 +61,20 @@
   suffix: afgan14
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/SMGs/ppLuty.rsi
-    scale: "0.7, 0.7"
+    sprite: Afgan/Weapons/Guns/SMGs/ppLuty.rsi
+    scale: "0.8, 0.8"
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
   - type: Item
-    sprite: Objects/Weapons/Guns/SMGs/pm9evilgun64x.rsi
+    sprite: Afgan/Weapons/Guns/SMGs/pm9evilgun64x.rsi
   - type: Gun
     minAngle: 18
     maxAngle: 27
     cameraRecoilScalar: 7
-    fireRate: 10
+    fireRate: 8
     soundGunshot:
       path: /Audio/AfganWearpons/soundLuty.ogg
   - type: MagazineVisuals
@@ -107,3 +107,55 @@
   - type: Construction
     graph: LutyGraph
     node: luty
+
+- type: entity
+  name: PM RAK
+  parent: BaseWeaponSubMachineGun
+  id: WeaponSubMachineGunPmRak
+  description: zammn, nigger.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Weapons/Guns/SMGs/pmRak.rsi
+    scale: "0.9, 0.9"
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    sprite: Afgan/Weapons/Guns/SMGs/pm9evilgun64x.rsi
+  - type: Gun
+    minAngle: 8
+    maxAngle: 15
+    cameraRecoilScalar: 7
+    fireRate: 10
+    soundGunshot:
+      path: /Audio/AfganWearpons/soundLuty.ogg
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/AfganWearpons/zatvor.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: BaseMagazineLuty20
+        insertSound: /Audio/AfganWearpons/outmag.ogg
+        ejectSound: /Audio/AfganWearpons/inmag.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineLuty20
+            - MagazineMP9evil
+      gun_chamber:
+        name: Chamber
+        startingItem: BaseCartridge9mm
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgePistol

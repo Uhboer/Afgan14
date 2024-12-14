@@ -36,8 +36,8 @@ alerts-battery-name = Батарея
 alerts-battery-desc = Если батарея разрядится, вы не сможете использовать свои способности.
 alerts-no-battery-name = Нет батареи
 alerts-no-battery-desc = У вас нет батареи, в результате чего вы не можете заряжаться или использовать свои способности.
-alerts-internals-name = Переключить баллон
-alerts-internals-desc = Включает или отключает подачу газа из баллона.
+alerts-internals-name = ...
+alerts-internals-desc = ...
 alerts-piloting-name = Пилотирование шаттла
 alerts-piloting-desc = Вы пилотируете шаттл. Щёлкните по иконке, чтобы прекратить пилотирование.
 alerts-hunger-name = [color=yellow]Голод[/color]

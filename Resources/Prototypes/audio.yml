@@ -37,6 +37,12 @@
     - /Audio/Ambience/ambigen18.ogg
     - /Audio/Ambience/ambigen19.ogg
     - /Audio/Ambience/ambigen20.ogg
+    - /Audio/Ambience/italy.ogg
+    - /Audio/Ambience/italy2.ogg
+    - /Audio/Ambience/italy3.ogg
+    - /Audio/Ambience/kador.ogg
+    - /Audio/Ambience/ladax.ogg
+
 
 - type: soundCollection
   id: AmbienceHoly

@@ -38,6 +38,8 @@
       collection: MaleGasp
     DefaultDeathgasp:
       collection: MaleDeathGasp
+    Shiza:
+      collection: Shiza
 
 - type: emoteSounds
   id: FemaleHuman
@@ -78,6 +80,8 @@
       collection: FemaleGasp
     DefaultDeathgasp:
       collection: FemaleDeathGasp
+    Shiza:
+      collection: Shiza
 
 - type: emoteSounds
   id: MaleReptilian
