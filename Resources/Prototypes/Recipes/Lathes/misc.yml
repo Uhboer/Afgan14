@@ -458,3 +458,10 @@
   completetime: 3
   materials:
     Steel: 500
+
+- type: latheRecipe
+  id: Pickaxe1
+  result: Pickaxe
+  completetime: 3
+  materials:
+    Steel: 500

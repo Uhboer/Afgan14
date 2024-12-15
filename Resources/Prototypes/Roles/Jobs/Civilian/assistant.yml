@@ -20,6 +20,7 @@
     head: ClothingHeadHelmetHamas
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterVestWeb
+    suitstorage: WeaponSubMachineGunPM9
     id: SalvageIDCard
     pocket1: RadioHandheld
     pocket2: Torch

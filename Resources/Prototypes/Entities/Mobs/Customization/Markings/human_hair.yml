@@ -5,3 +5,11 @@
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: bald
+
+- type: marking
+  id: HumanHairDave
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+    - sprite: Mobs/Customization/human_hair.rsi
+      state: dave

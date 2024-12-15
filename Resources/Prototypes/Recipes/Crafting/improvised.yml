@@ -226,7 +226,7 @@
   category: construction-category-weapons
   description: real evil
   icon:
-    sprite: Objects/Weapons/Guns/SMGs/pm9evilgun.rsi
+    sprite: Afgan/Weapons/Guns/SMGs/pm9evilgun.rsi
     state: icon
   objectType: Item
 
@@ -239,7 +239,7 @@
   category: construction-category-weapons
   description: real devil
   icon:
-    sprite: Objects/Weapons/Guns/SMGs/ppLuty.rsi
+    sprite: Afgan/Weapons/Guns/SMGs/ppLuty.rsi
     state: icon
   objectType: Item
 
