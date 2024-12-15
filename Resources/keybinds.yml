@@ -543,7 +543,7 @@ binds:
 
 - function: ToggleStanding
   type: State
-  key: R
+  key: V
 
 - function: LookUp
   type: State

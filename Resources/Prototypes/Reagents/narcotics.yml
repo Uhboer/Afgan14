@@ -451,8 +451,8 @@
     Narcotic:
       effects:
       - !type:MovespeedModifier
-        walkSpeedModifier: 2.75
-        sprintSpeedModifier: 2.5
+        walkSpeedModifier: 2.55
+        sprintSpeedModifier: 2.0
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
@@ -482,7 +482,7 @@
         key: SeeingRainbows
         component: SeeingRainbows
         type: Add
-        time: 3
+        time: 5
         refresh: false
       - !type:Emote
         emote: Laugh
@@ -508,7 +508,7 @@
         time: 20
         type: Remove
       - !type:Drunk
-        boozePower: 6
+        boozePower: 8
       - !type:GenericStatusEffect
         key: TemporaryBlindness
         component: TemporaryBlindness
@@ -562,8 +562,8 @@
     Narcotic:
       effects:
       - !type:MovespeedModifier
-        walkSpeedModifier: 4.25
-        sprintSpeedModifier: 4.7
+        walkSpeedModifier: 3.25
+        sprintSpeedModifier: 3.0
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
@@ -593,7 +593,7 @@
         key: SeeingRainbows
         component: SeeingRainbows
         type: Add
-        time: 6
+        time: 8
         refresh: false
       - !type:Emote
         emote: Salute

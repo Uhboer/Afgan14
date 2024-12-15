@@ -166,7 +166,7 @@
 - type: entity
   parent: ClothingOuterVestWeb
   id: ClothingOuterVestPlasma
-  name: плазмажилет
+  name: плазможилет
   description: Броня из редкого металла. Обладает повышенной пулестойкостью, но плохой защитой для ближнего боя.
   suffix: afgan14
   components:
@@ -177,15 +177,12 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.95
-        Slash: 0.95
-        Piercing: 0.35
-        Heat: 0.9
+        Piercing: 0.45
   - type: ExplosionResistance
     damageCoefficient: 0.9
   - type: ClothingSpeedModifier
-    walkModifier: 0.85
-    sprintModifier: 0.9
+    walkModifier: 0.65
+    sprintModifier: 0.65
   - type: Reflect
     reflectProb: 0.05
   - type: Construction
