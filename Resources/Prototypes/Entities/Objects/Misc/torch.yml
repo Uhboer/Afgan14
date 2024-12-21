@@ -78,3 +78,8 @@
     - type: Tag
       tags:
       - Torch
+    - type: MeleeWeapon
+      wideAnimationRotation: 180
+      damage:
+        types:
+          Heat: 3
