@@ -1,6 +1,6 @@
 - type: gameMap
   id: Afgan_gora
-  mapName: "Афган: Гора"
+  mapName: "Период: после Великой Бури"
   mapPath: /Maps/afgan_gora.yml
   minPlayers: 0
   maxPlayers: 100
@@ -18,7 +18,7 @@
           availableJobs:
             Bartender: [ 1, 1 ]
             Botanist: [ 2, 2 ]
-            Chaplain: [ 1, 1 ]
+            Chaplain: [ 2, 2 ]
             Passenger: [ 20, 20 ]
             #rab
             AtmosphericTechnician: [ -1, -1 ]

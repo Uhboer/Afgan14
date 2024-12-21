@@ -29,7 +29,7 @@
   - extended
   - shittersafari
   name: extended-title
-  showInVote: true #2boring2vote
+  showInVote: false #2boring2vote
   description: extended-description
   rules:
   - BasicStationEventScheduler
@@ -110,7 +110,7 @@
   name: death-match-title
   description: death-match-description
   maxPlayers: 15
-  showInVote: true
+  showInVote: false
   supportedMaps: DeathMatchMapPool
   rules:
     - DeathMatch31
@@ -121,7 +121,7 @@
     - nukeops
   name: nukeops-title
   description: nukeops-description
-  showInVote: true
+  showInVote: false
   rules:
     - Nukeops
     - SubGamemodesRule
@@ -137,7 +137,7 @@
     - revolutionaries
   name: rev-title
   description: rev-description
-  showInVote: true
+  showInVote: false
   rules:
     - Revolutionary
     - SubGamemodesRule
@@ -155,7 +155,7 @@
   - zomber
   name: zombie-title
   description: zombie-description
-  showInVote: true
+  showInVote: false
   rules:
   - Zombie
   - BasicStationEventScheduler
