@@ -223,7 +223,7 @@
   graph: MP9Graph
   startNode: start
   targetNode: mp9
-  category: construction-category-weapons
+  category: construction-category-afgan
   description: real evil
   icon:
     sprite: Afgan/Weapons/Guns/SMGs/pm9evilgun.rsi
@@ -236,7 +236,7 @@
   graph: LutyGraph
   startNode: start
   targetNode: luty
-  category: construction-category-weapons
+  category: construction-category-afgan
   description: real devil
   icon:
     sprite: Afgan/Weapons/Guns/SMGs/ppLuty.rsi
@@ -249,7 +249,7 @@
   graph: PipeGraph
   startNode: start
   targetNode: pipe
-  category: construction-category-weapons
+  category: construction-category-afgan
   description: real pipe
   icon:
     sprite: Objects/Weapons/Guns/Snipers/bolt_gun_wood.rsi
@@ -262,7 +262,7 @@
   graph: ArmorGraph
   startNode: start
   targetNode: armor
-  category: construction-category-weapons
+  category: construction-category-afgan
   description: real armor
   icon:
     sprite: Afgan/Clothing/Armor/samodel.rsi
@@ -275,7 +275,7 @@
   graph: MaskGraph
   startNode: start
   targetNode: mask
-  category: construction-category-weapons
+  category: construction-category-afgan
   description: real mask
   icon:
     sprite: Afgan/Clothing/Mask/balmask.rsi
@@ -288,7 +288,7 @@
   graph: AKGraph
   startNode: start
   targetNode: ak
-  category: construction-category-weapons
+  category: construction-category-afgan
   description: real ak
   icon:
     sprite: Afgan/Weapons/Guns/Rifels/samodel_AK.rsi
@@ -301,7 +301,7 @@
   graph: AltinGraph
   startNode: start
   targetNode: altin
-  category: construction-category-weapons
+  category: construction-category-afgan
   description: real altin
   icon:
     sprite: Afgan/Clothing/Head/altin.rsi
@@ -314,7 +314,7 @@
   graph: BronikGraph
   startNode: start
   targetNode: bronik
-  category: construction-category-weapons
+  category: construction-category-afgan
   description: real bronik. Ткань можно получить, убивая тканежуков.
   icon:
     sprite: Clothing/OuterClothing/Vests/webvest.rsi
@@ -327,7 +327,7 @@
   graph: UkrepBronikGraph
   startNode: start
   targetNode: ukrepbronik
-  category: construction-category-weapons
+  category: construction-category-afgan
   description: real ukrep bronik. Ткань можно получить, убивая тканежуков.
   icon:
     sprite: Clothing/OuterClothing/Vests/mercwebvest.rsi
@@ -340,7 +340,7 @@
   graph: MaceGraph
   startNode: start
   targetNode: mace
-  category: construction-category-weapons
+  category: construction-category-afgan
   description: real mace. Robust wearpon.
   icon:
     sprite: Afgan/Weapons/Melee/mace.rsi
@@ -353,7 +353,7 @@
   graph: SwordGraph
   startNode: start
   targetNode: sword
-  category: construction-category-weapons
+  category: construction-category-afgan
   description: real sword. Robust wearpon.
   icon:
     sprite: Afgan/Weapons/Melee/sword.rsi
@@ -366,7 +366,7 @@
   graph: AlebardGraph
   startNode: start
   targetNode: alebard
-  category: construction-category-weapons
+  category: construction-category-afgan
   description: real alebard. Robust wearpon.
   icon:
     sprite: Afgan/Weapons/Melee/alebard.rsi
@@ -379,7 +379,7 @@
   graph: BoltGraph
   startNode: start
   targetNode: bolt
-  category: construction-category-weapons
+  category: construction-category-afgan
   description: real boltovka.
   icon:
     sprite: Afgan/Weapons/Guns/pipesniper.rsi
@@ -392,7 +392,7 @@
   graph: PnvGraph
   startNode: start
   targetNode: pnv
-  category: construction-category-weapons
+  category: construction-category-afgan
   description: real PNV.
   icon:
     sprite: Afgan/Clothing/Eyes/PNV.rsi
@@ -405,7 +405,7 @@
   graph: BerciGraph
   startNode: start
   targetNode: berci
-  category: construction-category-weapons
+  category: construction-category-afgan
   description: real berci.
   icon:
     sprite: Afgan/Clothing/Boots/berci.rsi
@@ -418,7 +418,7 @@
   graph: PlasmaGraph
   startNode: start
   targetNode: plasma
-  category: construction-category-weapons
+  category: construction-category-afgan
   description: real plasma.
   icon:
     sprite: Afgan/Clothing/Armor/plasma.rsi
@@ -431,7 +431,7 @@
   graph: TarashGraph
   startNode: start
   targetNode: tarash
-  category: construction-category-weapons
+  category: construction-category-afgan
   description: real Tarashnikov.
   icon:
     sprite: Afgan/Weapons/Guns/Rifels/tarashnikov.rsi
@@ -444,7 +444,7 @@
   graph: GarmorGraph
   startNode: start
   targetNode: garmor
-  category: construction-category-weapons
+  category: construction-category-afgan
   description: real giga armor.
   icon:
     sprite: Afgan/Clothing/Armor/gigavest.rsi
@@ -457,7 +457,7 @@
   graph: GSwordGraph
   startNode: start
   targetNode: gsword
-  category: construction-category-weapons
+  category: construction-category-afgan
   description: real golden sword.
   icon:
     sprite: Afgan/Weapons/Melee/swordgold.rsi
@@ -470,7 +470,7 @@
   graph: DMaskGraph
   startNode: start
   targetNode: dmask
-  category: construction-category-weapons
+  category: construction-category-afgan
   description: real demon.
   icon:
     sprite: Afgan/Clothing/Mask/balmaskevil.rsi
@@ -483,7 +483,7 @@
   graph: RingGraph
   startNode: start
   targetNode: ring
-  category: construction-category-weapons
+  category: construction-category-afgan
   description: real ring.
   icon:
     sprite: Afgan/Clothing/Gloves/ring.rsi
@@ -496,7 +496,7 @@
   graph: NaplechGraph
   startNode: start
   targetNode: naplech
-  category: construction-category-weapons
+  category: construction-category-afgan
   description: real crimson.
   icon:
     sprite: Afgan/Clothing/Neck/crimson.rsi
@@ -509,7 +509,7 @@
   graph: ArrowGraph
   startNode: start
   targetNode: arrow
-  category: construction-category-weapons
+  category: construction-category-afgan
   description: real arrow.
   icon:
     sprite: Objects/Weapons/Guns/Projectiles/arrows.rsi
@@ -522,7 +522,7 @@
   graph: BonfireGraph
   startNode: start
   targetNode: bonfire
-  category: construction-category-weapons
+  category: construction-category-afgan
   description: real bonfire.
   icon:
     sprite: Structures/Decoration/bonfire.rsi
@@ -535,7 +535,7 @@
   graph: BackpackGraph
   startNode: start
   targetNode: backpack
-  category: construction-category-weapons
+  category: construction-category-afgan
   description: real backpack.
   icon:
     sprite: Clothing/Back/Backpacks/merc.rsi
@@ -548,7 +548,7 @@
   graph: WorkGraph
   startNode: start
   targetNode: work
-  category: construction-category-weapons
+  category: construction-category-afgan
   description: real workstation.
   icon:
     sprite: Afgan/Structures/workstation.rsi

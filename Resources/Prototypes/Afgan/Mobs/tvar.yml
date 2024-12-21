@@ -17,7 +17,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      300: Dead
+      250: Dead
   - type: SlowOnDamage
     speedModifierThresholds:
       200: 0.5
@@ -51,7 +51,7 @@
     thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 400
+          damage: 350
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]

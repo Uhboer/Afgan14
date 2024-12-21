@@ -17,3 +17,7 @@
 - type: lobbyBackground
   id: Modjahed
   background: /Textures/LobbyScreens/modjahed.png
+
+- type: lobbyBackground
+  id: Trailer
+  background: /Textures/LobbyScreens/trailer.png

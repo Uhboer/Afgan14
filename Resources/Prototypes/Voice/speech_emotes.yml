@@ -439,38 +439,32 @@
   id: Salute
   name: chat-emote-name-salute
   category: Hands
-  icon: Interface/Emotes/salute.png
+  icon: Interface/Actions/scream.png
   whitelist:
     components:
     - MobState
   chatMessages: ["chat-emote-msg-salute"]
   chatTriggers:
-    - salute
-    - salute.
-    - salute!
-    - salutes
-    - salutes.
-    - salutes!
-    # Corvax-Localization-Start
-    - салютует
-    - салютует.
-    - салютует!
     - славит аллаха!
     - славит аллаха
     - славит аллаха.
     - славит Аллаха!
     - славит Аллаха.
     - славит Аллаха
-    - отдаёт честь
-    - отдаёт честь.
-    - отдаёт честь!
-    - отдал честь
-    - отдал честь.
-    - отдал честь!
-    - отдала честь
-    - отдала честь.
-    - отдала честь!
-    # Corvax-Localization-End
+
+- type: emote
+  id: Slang
+  name: chat-emote-name-slang
+  category: Vocal
+  icon: Interface/Actions/scream.png
+  whitelist:
+    components:
+    - Vocal
+  chatMessages: ["chat-emote-msg-slang"]
+  chatTriggers:
+    - сленгует
+    - сленгует!
+    - сленгует.
 
 - type: emote
   id: Gasp

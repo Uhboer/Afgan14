@@ -44,7 +44,27 @@
 - type: soundCollection
   id: Salutes
   files:
-    - /Audio/Effects/Emotes/salute.ogg
+    - /Audio/Afgan/Mobs/Charges/charge_ar.ogg
+    - /Audio/Afgan/Mobs/Charges/charge_ar2.ogg
+    - /Audio/Afgan/Mobs/Charges/charge_ar3.ogg
+    - /Audio/Afgan/Mobs/Charges/charge_ar4.ogg
+    - /Audio/Afgan/Mobs/Charges/charge_ar5.ogg
+    - /Audio/Afgan/Mobs/Charges/charge_ar6.ogg
+    - /Audio/Afgan/Mobs/Charges/charge_ar7.ogg
+    - /Audio/Afgan/Mobs/Charges/charge_ar8.ogg
+
+- type: soundCollection
+  id: Slang
+  files:
+    - /Audio/Afgan/Mobs/Charges/charge_nig.ogg
+    - /Audio/Afgan/Mobs/Charges/charge_nig2.ogg
+    - /Audio/Afgan/Mobs/Charges/charge_nig3.ogg
+    - /Audio/Afgan/Mobs/Charges/charge_nig4.ogg
+    - /Audio/Afgan/Mobs/Charges/charge_nig5.ogg
+    - /Audio/Afgan/Mobs/Charges/charge_nig6.ogg
+    - /Audio/Afgan/Mobs/Charges/charge_nig7.ogg
+    - /Audio/Afgan/Mobs/Charges/charge_nig8.ogg
+
 
 - type: soundCollection
   id: Shiza

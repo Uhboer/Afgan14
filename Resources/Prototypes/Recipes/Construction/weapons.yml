@@ -125,7 +125,7 @@
   graph: WoodenBuckler
   startNode: start
   targetNode: woodenBuckler
-  category: construction-category-weapons
+  category: construction-category-afgan
   description: A nicely carved wooden shield!
   icon: { sprite: Objects/Weapons/Melee/shields.rsi, state: buckler-icon }
   objectType: Item
@@ -158,7 +158,7 @@
   graph: ImprovisedBow
   startNode: start
   targetNode: ImprovisedBow
-  category: construction-category-weapons
+  category: construction-category-afgan
   description: A shoddily constructed bow made out of wood and cloth. It's not much, but it's gotten the job done for millennia.
   icon: { sprite: Objects/Weapons/Guns/Bow/bow.rsi, state: unwielded }
   objectType: Item

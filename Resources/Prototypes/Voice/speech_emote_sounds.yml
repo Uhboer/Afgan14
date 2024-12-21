@@ -40,6 +40,10 @@
       collection: MaleDeathGasp
     Shiza:
       collection: Shiza
+    Salute:
+      collection: Salutes
+    Slang:
+      collection: Slang
 
 - type: emoteSounds
   id: FemaleHuman
@@ -82,6 +86,10 @@
       collection: FemaleDeathGasp
     Shiza:
       collection: Shiza
+    Salute:
+      collection: Salutes
+    Slang:
+      collection: Slang
 
 - type: emoteSounds
   id: MaleReptilian

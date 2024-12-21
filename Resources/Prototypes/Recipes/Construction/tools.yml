@@ -4,7 +4,7 @@
   graph: LightTorch
   startNode: start
   targetNode: torch
-  category: construction-category-tools
+  category: construction-category-afgan
   description: A torch fashioned from some wood.
   icon: { sprite: Objects/Misc/torch.rsi, state: icon }
   objectType: Item
