@@ -126,7 +126,7 @@
     damage:
       types:
         Poison: -0.2
-        Cold: -0.2
+        Cold: -0.3
         Blunt: -0.3
         Heat: -0.3
         Piercing: -0.2

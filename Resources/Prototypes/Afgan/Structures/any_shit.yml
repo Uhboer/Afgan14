@@ -120,7 +120,7 @@
   - type: AmbientOnPowered
   - type: AmbientSound
     enabled: false
-    volume: -12
+    volume: -4
     range: 7
     sound:
       path: /Audio/Afgan/Misc/lamp.ogg

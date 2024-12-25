@@ -41,7 +41,7 @@ public sealed class SpaceHeaterSystem : EntitySystem
         if (!TryComp<GasThermoMachineComponent>(uid, out var thermoMachine))
             return;
         thermoMachine.Cp = spaceHeater.HeatingCp;
-        thermoMachine.HeatCapacity = spaceHeater.PowerConsumption;
+        thermoMachine.HeatCapacity = 1000;
     }
 
     private void OnBeforeOpened(EntityUid uid, SpaceHeaterComponent spaceHeater, BeforeActivatableUIOpenEvent args)
@@ -60,15 +60,12 @@ public sealed class SpaceHeaterSystem : EntitySystem
 
     private void OnDeviceUpdated(EntityUid uid, SpaceHeaterComponent spaceHeater, ref AtmosDeviceUpdateEvent args)
     {
-        if (!_power.IsPowered(uid)
-            || !TryComp<GasThermoMachineComponent>(uid, out var thermoMachine))
-        {
+        if (!TryComp<GasThermoMachineComponent>(uid, out var thermoMachine))
             return;
-        }
 
         UpdateAppearance(uid);
 
-        // If in automatic temperature mode, check if we need to adjust the heat exchange direction
+        // Если в автоматическом режиме, проверяем необходимость регулировки направления теплообмена
         if (spaceHeater.Mode == SpaceHeaterMode.Auto)
         {
             var environment = _atmosphereSystem.GetContainingMixture(uid, args.Grid, args.Map);
@@ -94,12 +91,8 @@ public sealed class SpaceHeaterSystem : EntitySystem
 
     private void OnToggle(EntityUid uid, SpaceHeaterComponent spaceHeater, SpaceHeaterToggleMessage args)
     {
-        ApcPowerReceiverComponent? powerReceiver = null;
-        if (!Resolve(uid, ref powerReceiver))
-            return;
-
-        _power.TogglePower(uid);
-
+        // Просто переключаем состояние без проверки питания
+        spaceHeater.Enabled = !spaceHeater.Enabled;
         UpdateAppearance(uid);
         DirtyUI(uid, spaceHeater);
     }
@@ -140,15 +133,15 @@ public sealed class SpaceHeaterSystem : EntitySystem
         switch (spaceHeater.PowerLevel)
         {
             case SpaceHeaterPowerLevel.Low:
-                thermoMachine.HeatCapacity = spaceHeater.PowerConsumption / 2;
+                thermoMachine.HeatCapacity = -500;
                 break;
 
             case SpaceHeaterPowerLevel.Medium:
-                thermoMachine.HeatCapacity = spaceHeater.PowerConsumption;
+                thermoMachine.HeatCapacity = -1000;
                 break;
 
             case SpaceHeaterPowerLevel.High:
-                thermoMachine.HeatCapacity = spaceHeater.PowerConsumption * 2;
+                thermoMachine.HeatCapacity = -2000;
                 break;
         }
 
@@ -169,7 +162,7 @@ public sealed class SpaceHeaterSystem : EntitySystem
 
     private void UpdateAppearance(EntityUid uid)
     {
-        if (!_power.IsPowered(uid) || !TryComp<GasThermoMachineComponent>(uid, out var thermoMachine))
+        if (!TryComp<GasThermoMachineComponent>(uid, out var thermoMachine))
         {
             _appearance.SetData(uid, SpaceHeaterVisuals.State, SpaceHeaterState.Off);
             return;

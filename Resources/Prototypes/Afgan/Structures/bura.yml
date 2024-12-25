@@ -1,0 +1,30 @@
+- type: entity
+  id: Bura
+  parent: [BaseStructure]
+  name: снежная буря
+  description: холодно.
+  suffix: afgan14
+  components:
+  - type: AtmosDevice
+    joinSystem: true
+  - type: Sprite
+    sprite: Afgan/Structures/bura.rsi
+    state: bura
+    noRot: true
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          bounds: "0.1,0.1,0.1,0.1"
+        density: 1
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Physics
+    canCollide: false
+    bodyType: static
+  - type: Bura
+    coolingRate: 5.0
+    minTemperature: 174.15
