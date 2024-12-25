@@ -30,6 +30,8 @@
   - type: Construction
     graph: PipeGraph
     node: pipe
+  - type: Telescope
+    divisor: 1
 
 ####sniper rifle
 
@@ -37,7 +39,7 @@
   name: Болтовка из труб
   parent: [BaseWeaponSniper, BaseGunWieldable]
   id: AfganWeaponPipeSniper
-  description: довольно-таки мощная самоделка в руках профессионала. [ПРИЦЕЛ - ПКМ]
+  description: довольно-таки мощная самоделка в руках профессионала.
   suffix: afgan14
   components:
   - type: Sprite

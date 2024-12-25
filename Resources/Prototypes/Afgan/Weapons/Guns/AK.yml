@@ -55,7 +55,8 @@
   - type: Construction
     graph: AKGraph
     node: ak
-
+  - type: Telescope
+    divisor: 0.7
 
 
 - type: entity
@@ -167,3 +168,5 @@
   - type: Construction
     graph: TarashGraph
     node: tarash
+  - type: Telescope
+    divisor: 0.8

@@ -52,6 +52,8 @@
   - type: Construction
     graph: MP9Graph
     node: mp9
+  - type: Telescope
+    divisor: 0.9
 
 - type: entity
   name: Самодельный ПП Luty
@@ -107,12 +109,14 @@
   - type: Construction
     graph: LutyGraph
     node: luty
+  - type: Telescope
+    divisor: 0.8
 
 - type: entity
   name: PM RAK
   parent: BaseWeaponSubMachineGun
   id: WeaponSubMachineGunPmRak
-  description: zammn, nigger.
+  description: zammn, Kigger.
   suffix: afgan14
   components:
   - type: Sprite
@@ -160,3 +164,5 @@
           tags:
             - CartridgePistol
   - type: AmmoCounter
+  - type: Telescope
+    divisor: 0.5

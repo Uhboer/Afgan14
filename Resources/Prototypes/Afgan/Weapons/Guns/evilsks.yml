@@ -2,7 +2,7 @@
   name: дьявольская СКС
   parent: BaseWeaponRifle
   id: AfganWeaponSKS
-  description: крайне самосборная хрень [ПРИЦЕЛ - ПКМ]
+  description: крайне самосборная хрень.
   suffix: afgan14
   components:
   - type: Sprite
@@ -15,6 +15,7 @@
   - type: Clothing
     sprite: Afgan/Weapons/Guns/sks.rsi
   - type: Telescope
+    divisor: 0.4
   - type: GunWieldBonus
     minAngle: -20
     maxAngle: -18
