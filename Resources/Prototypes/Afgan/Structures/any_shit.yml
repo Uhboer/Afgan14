@@ -43,9 +43,9 @@
         maxVol: 500
         reagents:
         - ReagentId: Water
-          Quantity: 100
+          Quantity: 150
         - ReagentId: GastroToxin
-          Quantity: 100
+          Quantity: 50
   - type: DrainableSolution
     solution: tank
   - type: ReagentTank

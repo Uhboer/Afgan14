@@ -17,7 +17,7 @@
     slots:
     - Back
     - suitStorage
-  - type: AmmoCounter
+#  - type: AmmoCounter
   - type: Gun
     fireRate: 0.75
     selectedMode: SemiAuto

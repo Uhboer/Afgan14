@@ -14,7 +14,7 @@
     slots:
     - Back
     - suitStorage
-  - type: AmmoCounter
+#  - type: AmmoCounter
   - type: Gun
     minAngle: 2
     maxAngle: 16
