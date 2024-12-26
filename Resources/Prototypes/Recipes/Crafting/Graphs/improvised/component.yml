@@ -582,3 +582,37 @@
               doAfter: 10
     - node: work
       entity: WorkBench
+
+- type: constructionGraph
+  id: SksGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: sks
+          steps:
+            - tag: ModularReceiver
+              icon:
+                sprite: Objects/Misc/modular_receiver.rsi
+                state: icon
+              name: модульный ресивер
+            - tag: PipeV
+              icon:
+                sprite: Objects/Trash/trash1.rsi
+                state: icon
+              name: водонапорная труба
+            - tag: Gayki
+              icon:
+                sprite: Objects/Trash/trash3.rsi
+                state: icon
+              name: гайки
+            - tag: Izolenta
+              icon:
+                sprite: Objects/Trash/trash5.rsi
+                state: icon
+              name: изолента
+            - material: WoodPlank
+              amount: 15
+              doAfter: 10
+    - node: sks
+      entity: AfganWeaponSKS

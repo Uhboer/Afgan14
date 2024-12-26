@@ -56,6 +56,9 @@
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto
+  - type: Construction
+    graph: SksGraph
+    node: sks
 
 - type: entity
   parent: BaseCartridge

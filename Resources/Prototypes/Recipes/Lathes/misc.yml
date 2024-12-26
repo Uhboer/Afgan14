@@ -465,3 +465,10 @@
   completetime: 3
   materials:
     Steel: 500
+
+- type: latheRecipe
+  id: SKSmagaz
+  result: MagazineSKS
+  completetime: 3
+  materials:
+    Steel: 700

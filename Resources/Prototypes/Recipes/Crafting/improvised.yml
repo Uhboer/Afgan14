@@ -554,3 +554,16 @@
     sprite: Afgan/Structures/workstation.rsi
     state: workstation
   objectType: Structure
+
+- type: construction
+  name: Самодельная СКС
+  id: SamodelSks
+  graph: SksGraph
+  startNode: start
+  targetNode: sks
+  category: construction-category-afgan
+  description: real sks.
+  icon:
+    sprite: Afgan/Weapons/Guns/sks.rsi
+    state: icon
+  objectType: Item
