@@ -546,7 +546,7 @@
         - to: bonfire
           steps:
             - material: WoodPlank
-              amount: 15
+              amount: 10
               doAfter: 8
     - node: bonfire
       entity: Bonfire
@@ -576,9 +576,9 @@
         - to: work
           steps:
             - material: WoodPlank
-              amount: 30
+              amount: 20
             - material: Steel
-              amount: 30
+              amount: 20
               doAfter: 10
     - node: work
       entity: WorkBench
@@ -616,3 +616,17 @@
               doAfter: 10
     - node: sks
       entity: AfganWeaponSKS
+
+- type: constructionGraph
+  id: MattressGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: mattress
+          steps:
+            - material: WoodPlank
+              amount: 10
+              doAfter: 10
+    - node: mattress
+      entity: Mattress

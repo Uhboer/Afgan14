@@ -567,3 +567,16 @@
     sprite: Afgan/Weapons/Guns/sks.rsi
     state: icon
   objectType: Item
+
+- type: construction
+  name: Матрас
+  id: Mattress
+  graph: MattressGraph
+  startNode: start
+  targetNode: mattress
+  category: construction-category-afgan
+  description: real mattress.
+  icon:
+    sprite: Structures/Furniture/furniture.rsi
+    state: mattress
+  objectType: Structure

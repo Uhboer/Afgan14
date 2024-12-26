@@ -117,6 +117,7 @@
   id: Mattress
   name: mattress
   description: Better sleep in that then on the floor i guess.
+  suffix: afgan14 rework
   components:
   - type: Sprite
     state: mattress
@@ -132,6 +133,9 @@
         Piercing: -0.2
         Slash: -0.3
         Bloodloss: -0.1
+  - type: Construction
+    graph: MattressGraph
+    node: mattress
 
 - type: entity
   parent: Bed
