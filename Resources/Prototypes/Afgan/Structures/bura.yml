@@ -28,3 +28,8 @@
   - type: Bura
     coolingRate: 5.0
     minTemperature: 174.15
+  - type: AmbientSound
+    volume: -8
+    range: 2
+    sound:
+      path: /Audio/Afgan/Misc/winter.ogg
