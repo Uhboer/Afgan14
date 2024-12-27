@@ -1,0 +1,95 @@
+# Afgan Desert нашееее
+- type: tile
+  id: FloorAfgan
+  name: песок
+  sprite: /Textures/Tiles/Planet/Afgan/desert.png
+  variants: 6
+  placementVariants:
+  - 0.75
+  - 0.06
+  - 0.06
+  - 0.06
+  - 0.06
+  - 0.01
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepAfganSand
+  heatCapacity: 10000
+  weather: true
+  indestructible: true
+
+- type: tile
+  id: FloorLowAfgan
+  name: мокрый песок
+  sprite: /Textures/Tiles/Planet/Afgan/low_desert.png
+  variants: 6
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepAfganSand
+  heatCapacity: 10000
+  weather: false
+  indestructible: true
+
+- type: tile
+  id: FloorAfganRed
+  name: кровавый песок
+  sprite: /Textures/Tiles/Planet/Afgan/red.png
+  variants: 6
+  placementVariants:
+  - 0.75
+  - 0.06
+  - 0.06
+  - 0.06
+  - 0.06
+  - 0.01
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepAfganSand
+  heatCapacity: 10000
+  weather: false
+  indestructible: true
+
+- type: tile
+  id: FloorAfganRust
+  name: ржавый пол
+  sprite: /Textures/Tiles/Planet/Afgan/rust.png
+  variants: 6
+  placementVariants:
+  - 0.75
+  - 0.06
+  - 0.06
+  - 0.06
+  - 0.06
+  - 0.01
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepAfganMetall
+  heatCapacity: 10000
+  weather: false
+  indestructible: true
+
+- type: tile
+  id: FloorAfganWood
+  name: деревянный пол
+  sprite: /Textures/Tiles/Planet/Afgan/wood.png
+  variants: 6
+  placementVariants:
+  - 0.75
+  - 0.06
+  - 0.06
+  - 0.06
+  - 0.06
+  - 0.01
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepWood
+  heatCapacity: 10000
+  weather: false
+  indestructible: true

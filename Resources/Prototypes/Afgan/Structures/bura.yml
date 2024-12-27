@@ -19,12 +19,13 @@
           bounds: "0.1,0.1,0.1,0.1"
         density: 1
         mask:
-        - MachineMask
+        - FullTileMask
         layer:
-        - MachineLayer
+        - Opaque
   - type: Physics
     canCollide: false
     bodyType: static
+    layer: 0
   - type: Bura
     coolingRate: 5.0
     minTemperature: 174.15
