@@ -524,27 +524,3 @@
     sprite: Clothing/Head/Hoods/Coat/hoodweb.rsi
   - type: Clothing
     sprite: Clothing/Head/Hoods/Coat/hoodweb.rsi
-
-- type: entity
-  parent: ClothingHeadBase
-  id: ClothingHeadHatHoodMantia
-  name: капюшон мантии
-  description: капюшон великой мантии.
-  components:
-  - type: Sprite
-    sprite: Afgan/Clothing/Head/mantiahood.rsi
-  - type: Clothing
-    sprite: Afgan/Clothing/Head/mantiahood.rsi
-  - type: HideLayerClothing
-    slots:
-    - Hair
-  - type: IdentityBlocker
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
-        Heat: 0.7
-  - type: ExplosionResistance
-    damageCoefficient: 0.9

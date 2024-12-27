@@ -540,28 +540,3 @@
           Quantity: 20
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHatHoodWinterWeb
-
-### НАШЕ
-
-- type: entity
-  parent: ClothingOuterWinterCoatToggleable
-  id: ClothingOuterMantia
-  name: мантия алхимика
-  description: мантия великого ебанутого последнего алхимика Афгана.
-  suffix: afgan14
-  components:
-  - type: Sprite
-    sprite: Afgan/Clothing/Coats/mantia.rsi
-  - type: Clothing
-    sprite: Afgan/Clothing/Coats/mantia.rsi
-  - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHatHoodMantia
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.8
-        Slash: 0.8
-        Piercing: 0.6
-        Heat: 0.4
-  - type: ExplosionResistance
-    damageCoefficient: 0.3

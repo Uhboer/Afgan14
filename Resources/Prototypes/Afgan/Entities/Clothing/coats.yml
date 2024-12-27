@@ -1,0 +1,78 @@
+- type: entity
+  parent: ClothingOuterWinterCoatToggleable
+  id: ClothingOuterMantia
+  name: мантия алхимика
+  description: мантия великого ебанутого последнего алхимика Афгана.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Coats/mantia.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Coats/mantia.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodMantia
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.6
+        Heat: 0.4
+  - type: ExplosionResistance
+    damageCoefficient: 0.3
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatHoodMantia
+  name: капюшон мантии
+  description: капюшон великой мантии.
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Head/mantiahood.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Head/mantiahood.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+  - type: IdentityBlocker
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.7
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+
+- type: entity
+  parent: ClothingOuterWinterCoatToggleable
+  id: ClothingOuterAfganCoat
+  name: куртка
+  description: греет в экстримальных условиях.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Coats/coat.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Coats/coat.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodAfganCoat
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatHoodAfganCoat
+  name: капюшон
+  description: тебя не заебало шифткликать на всё подряд?
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Head/coathood.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Head/coathood.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
