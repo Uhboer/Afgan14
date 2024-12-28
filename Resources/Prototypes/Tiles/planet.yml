@@ -160,7 +160,7 @@
   footstepSounds:
     collection: FootstepSnow
   heatCapacity: 10000
-  weather: true
+  weather: false
   indestructible: true
 
 # Wasteland

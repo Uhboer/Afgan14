@@ -110,7 +110,7 @@
     sprite: /Textures/Effects/weather.rsi
     state: snowfall_med
   sound:
-    path: /Audio/Effects/Weather/snowstorm_weak.ogg
+    path: /Audio/Effects/Weather/snowstorm.ogg
     params:
       loop: true
       volume: -6
@@ -121,7 +121,7 @@
     sprite: /Textures/Effects/weather.rsi
     state: snowfall_heavy
   sound:
-    path: /Audio/Effects/Weather/snowstorm.ogg
+    path: /Audio/Afgan/Misc/winter.ogg
     params:
       loop: true
       volume: -6

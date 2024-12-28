@@ -29,3 +29,34 @@
             TechnicalAssistant: [3, 3]
 
 
+- type: gameMap
+  id: Afgan_winter
+  mapName: "Период: Зима"
+  mapPath: /Maps/afgan_winter.yml
+  minPlayers: 0
+  maxPlayers: 100
+  fallback: true
+  stations:
+    Afgan_winter:
+      stationProto: StandardStationArena
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: '{0} Афган {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: 'Пизда всем'
+        - type: StationJobs
+          availableJobs:
+            Bartender: [ 1, 1 ]
+            Botanist: [ 2, 2 ]
+            Chaplain: [ 2, 2 ]
+            Passenger: [ 20, 20 ]
+            #rab
+            AtmosphericTechnician: [ -1, -1 ]
+            #povstans
+            Reporter: [ 1, 1 ]
+            Boxer: [ 10, 10 ]
+            #alchemiks
+            TechnicalAssistant: [3, 3]
+
+
