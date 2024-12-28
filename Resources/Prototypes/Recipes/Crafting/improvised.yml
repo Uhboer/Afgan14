@@ -580,3 +580,16 @@
     sprite: Structures/Furniture/furniture.rsi
     state: mattress
   objectType: Structure
+
+- type: construction
+  name: Куртка
+  id: AfganCoat
+  graph: CoatGraph
+  startNode: start
+  targetNode: coat
+  category: construction-category-afgan
+  description: real coat.
+  icon:
+    sprite: Afgan/Clothing/Coats/coat.rsi
+    state: icon
+  objectType: Item

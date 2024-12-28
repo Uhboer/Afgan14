@@ -60,6 +60,9 @@
     clothingPrototype: ClothingHeadHatHoodAfganCoat
   - type: ExplosionResistance
     damageCoefficient: 0.9
+  - type: Construction
+    graph: CoatGraph
+    node: coat
 
 - type: entity
   parent: ClothingHeadBase

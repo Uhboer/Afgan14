@@ -630,3 +630,17 @@
               doAfter: 10
     - node: mattress
       entity: Mattress
+
+- type: constructionGraph
+  id: CoatGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: coat
+          steps:
+            - material: Cloth
+              amount: 10
+              doAfter: 5
+    - node: coat
+      entity: ClothingOuterAfganCoat
