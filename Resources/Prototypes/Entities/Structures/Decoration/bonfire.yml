@@ -53,6 +53,9 @@
   - type: Construction
     graph: BonfireGraph
     node: bonfire
+  - type: Grelka
+    heatingRate: 50.0
+    maxTemperature: 373.15
 
 - type: entity
   id: LegionnaireBonfire
