@@ -81,6 +81,7 @@
   - type: NightVision
     isToggle: true
     color: "#f1110e"
+    playSoundOn: false
 
 - type: entity
   name: Tvar Spawner

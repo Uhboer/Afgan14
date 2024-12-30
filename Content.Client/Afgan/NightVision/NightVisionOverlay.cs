@@ -1,4 +1,4 @@
-using Content.Shared.Backmen.Eye.NightVision.Components; //creater - vladospupuos
+using Content.Shared.Backmen.Eye.NightVision.Components;
 using Robust.Client.Graphics;
 using Robust.Client.Player;
 using Robust.Shared.Enums;
