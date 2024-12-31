@@ -57,4 +57,7 @@ public abstract partial class BaseSolutionInjectOnEventComponent : Component
     /// </summary>
     [DataField]
     public SlotFlags BlockSlots = SlotFlags.NONE;
+
+    [DataField]
+    public bool Shot = false;
 }
