@@ -93,7 +93,7 @@
       types:
         Piercing: 20
   - type: StaminaDamageOnCollide
-    damage: 20
+    damage: 15
 
 - type: entity
   id: MagazineSKS

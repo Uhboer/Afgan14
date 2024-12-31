@@ -37,9 +37,11 @@
     - /Audio/Ambience/ambigen18.ogg
     - /Audio/Ambience/ambigen19.ogg
     - /Audio/Ambience/ambigen20.ogg
+    - /Audio/Ambience/ambigen21.ogg
+    - /Audio/Ambience/ambigen22.ogg
+    - /Audio/Ambience/ambigen23.ogg
     - /Audio/Ambience/italy.ogg
     - /Audio/Ambience/italy2.ogg
-    - /Audio/Ambience/italy3.ogg
     - /Audio/Ambience/kador.ogg
     - /Audio/Ambience/ladax.ogg
 
@@ -50,10 +52,6 @@
     - /Audio/Ambience/ambicha1.ogg
     - /Audio/Ambience/ambicha2.ogg
     - /Audio/Ambience/ambicha3.ogg
-    - /Audio/Ambience/ambicha4.ogg
-    - /Audio/Ambience/ambiholy.ogg
-    - /Audio/Ambience/ambiholy2.ogg
-    - /Audio/Ambience/ambiholy3.ogg
 
 # Rules
 - type: rules
