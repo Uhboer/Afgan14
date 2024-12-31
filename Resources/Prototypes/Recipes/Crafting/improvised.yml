@@ -593,3 +593,16 @@
     sprite: Afgan/Clothing/Coats/coat.rsi
     state: icon
   objectType: Item
+
+- type: construction
+  name: Шприцемёт
+  id: Syringe
+  graph: SyringeGraph
+  startNode: start
+  targetNode: syringe
+  category: construction-category-afgan
+  description: real syringegun.
+  icon:
+    sprite: Afgan/Weapons/Guns/SyringeGuns/def.rsi
+    state: icon
+  objectType: Item

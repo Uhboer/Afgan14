@@ -34,6 +34,9 @@
       storagebase: !type:Container
         ents: []
   - type: SyringeGun
+  - type: Construction
+    graph: SyringeGraph
+    node: syringe
 
 #- type: entity
 #  name: rapid syringe gun

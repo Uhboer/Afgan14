@@ -644,3 +644,37 @@
               doAfter: 5
     - node: coat
       entity: ClothingOuterAfganCoat
+
+- type: constructionGraph
+  id: SyringeGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: syringe
+          steps:
+            - tag: Gayki
+              icon:
+                sprite: Objects/Trash/trash3.rsi
+                state: icon
+              name: гайки
+            - tag: ModularReceiver
+              icon:
+                sprite: Objects/Misc/modular_receiver.rsi
+                state: icon
+              name: модульный ресивер
+            - tag: DetaliMP9Evil
+              icon:
+                sprite: Afgan/Objects/Сomponents/detali.rsi
+                state: icon
+              name: детали ПП
+            - tag: Izolenta
+              icon:
+                sprite: Objects/Trash/trash5.rsi
+                state: icon
+              name: изолента
+            - material: Steel
+              amount: 15
+              doAfter: 10
+    - node: syringe
+      entity: SyringeGun

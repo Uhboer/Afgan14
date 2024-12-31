@@ -472,3 +472,10 @@
   completetime: 3
   materials:
     Steel: 700
+
+- type: latheRecipe
+  id: SyringeWS
+  result: Syringe
+  completetime: 1
+  materials:
+    Plastic: 100

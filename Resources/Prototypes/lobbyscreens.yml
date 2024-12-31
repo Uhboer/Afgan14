@@ -21,3 +21,15 @@
 - type: lobbyBackground
   id: Trailer
   background: /Textures/LobbyScreens/trailer.png
+
+- type: lobbyBackground
+  id: Mission
+  background: /Textures/LobbyScreens/mission.png
+
+- type: lobbyBackground
+  id: Army
+  background: /Textures/LobbyScreens/army.png
+
+- type: lobbyBackground
+  id: None_of_this_it_real
+  background: /Textures/LobbyScreens/none_of_this_it_real.png
