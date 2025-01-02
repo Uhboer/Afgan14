@@ -38,7 +38,7 @@ To obtain permission for server deployment:
 - Each server instance requires separate permission
 
 ## 5. Contact Information
-To obtain permission for server deployment, contact: [https://discord.gg/Zn3dAtunBX], @uhboer_
+To obtain permission for server deployment, contact: https://discord.gg/Zn3dAtunBX, @uhboer_
 
 ## 6. Enforcement
 
@@ -75,7 +75,7 @@ For the full GNU AGPL v3.0 license text, see:
 
 # Условия Использования
 
-Данное программное обеспечение лицензировано под GNU AGPL v3.0 с дополнительными условиями использования. Последнее обновление: 02.01.2025
+Данное программное обеспечение лицензировано под GNU AGPL v3.0 с дополнительными условиями использования. Последнее обновление: 02.01.2025. При любом расхождении с оригинальным текстом, оригинальный текст имеет большую правовую силу.
 
 ## 1. Ограничения по развертыванию серверов
 
