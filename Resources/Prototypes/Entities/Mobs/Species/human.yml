@@ -20,6 +20,7 @@
     hideLayersOnEquip:
     - Hair
     - Snout
+  - type: FootprintVisualizer
 
 - type: entity
   parent: BaseSpeciesDummy

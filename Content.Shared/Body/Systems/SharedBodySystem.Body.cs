@@ -14,6 +14,8 @@ using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
 using Robust.Shared.Map;
 using Robust.Shared.Utility;
+using Content.Shared.Rejuvenate;
+using Content.Shared.Silicons.Borgs.Components;
 
 namespace Content.Shared.Body.Systems;
 
