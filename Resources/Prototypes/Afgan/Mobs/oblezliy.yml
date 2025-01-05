@@ -55,6 +55,7 @@
   - type: Loadout
     prototypes:
     - NonPuzoGear
+  - type: FootprintVisualizer
 
 - type: entity
   name: Oblezliy Spawner

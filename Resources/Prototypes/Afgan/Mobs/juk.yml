@@ -115,6 +115,7 @@
   - type: MovementSpeedModifier
     baseSprintSpeed: 15
     baseWalkSpeed: 10
+  - type: FootprintVisualizer
 
 - type: entity
   name: Juk Spawner

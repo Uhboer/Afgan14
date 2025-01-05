@@ -82,6 +82,7 @@
     isToggle: true
     color: "#f1110e"
     playSoundOn: false
+  - type: FootprintVisualizer
 
 - type: entity
   name: Tvar Spawner

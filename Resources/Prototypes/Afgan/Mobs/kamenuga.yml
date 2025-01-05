@@ -66,6 +66,7 @@
   - type: MovementSpeedModifier
     baseSprintSpeed: 2
     baseWalkSpeed: 1
+  - type: FootprintVisualizer
 
 - type: entity
   name: Kamenuga Spawner

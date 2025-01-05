@@ -79,6 +79,7 @@
     playSoundOn: false
   - type: Loadout
     prototypes: [PuzoGear]
+  - type: FootprintVisualizer
 
 - type: entity
   name: Svin Angry Timed Spawner
