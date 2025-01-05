@@ -99,3 +99,15 @@
   name: Афган
   path:
     path: /Audio/Afgan/Music/afgan.ogg
+
+- type: jukebox
+  id: Fight_or_Flight
+  name: M.C. - Fight or Flight
+  path:
+    path: /Audio/Afgan/Music/Fight-or-Flight.ogg
+
+- type: jukebox
+  id: Calliope
+  name: M.C. - Calliope
+  path:
+    path: /Audio/Afgan/Music/Calliope.ogg
