@@ -1,0 +1,91 @@
+- type: entity
+  name: BIG CHUNGUS
+  id: MobChungus
+  parent: MobJuk
+  description: BIG CHUNGUS BIG CHUNGUS BIG CHUNGUS BIG CHUNGUS BIG CHUNGUS BIG CHUNGUS BIG CHUNGUS BIG CHUNGUS BIG CHUNGUS BIG CHUNGUS BIG CHUNGUS BIG CHUNGUS BIG CHUNGUS BIG CHUNGUS BIG CHUNGUS BIG CHUNGUS BIG CHUNGUS
+  suffix: afgan14, shitspawn
+  components:
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: Sprite
+    scale: 1.5, 1.5
+    drawdepth: Mobs
+    sprite: Afgan/Mobs/chungus.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: tvar
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      1000: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      500: 0.5
+  - type: Bloodstream
+    bloodReagent: FluorosulfuricAcid
+    bloodMaxVolume: 800
+  - type: MeleeWeapon
+    altDisarm: false
+    angle: 0
+    soundHit:
+     path: /Audio/Afgan/vomit.ogg
+    animation: WeaponArcBite
+    damage:
+      groups:
+        Brute: 30
+  - type: DamageStateVisuals
+    rotate: true
+    states:
+      Alive:
+        Base: tvar
+      Critical:
+        Base: crit
+      Dead:
+        Base: dead
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: ClothingHeadHatKKK
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 1000
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:PlaySoundBehavior
+            sound:
+              path: /Audio/Afgan/fataldeath.ogg
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              ClothingHeadHatKKK:
+                min: 1
+                max: 1
+  - type: MovementSpeedModifier
+    baseSprintSpeed: 2
+    baseWalkSpeed: 1
+  - type: Speech
+    speechSounds: Oblezliy
+    speechVerb: Oblezliy
+  - type: GhostRole
+    prob: 1
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: BIG CHUNGUS
+    description: BIG CHUNGUS BIG CHUNGUS BIG CHUNGUS BIG CHUNGUS
+    rules: BIG CHUNGUS BIG CHUNGUS BIG CHUNGUS BIG CHUNGUS
+  - type: GhostTakeoverAvailable
+  - type: NightVision
+    isToggle: true
+    color: "#f1110e"
+    playSoundOn: false
+  - type: FootprintVisualizer
+    minTemperature: 174.15
+  - type: AmbientSound
+    volume: 1
+    range: 20
+    sound:
+      path: /Audio/Afgan/Mobs/Chungus/chungus.ogg
