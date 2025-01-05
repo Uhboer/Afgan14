@@ -80,6 +80,7 @@
   - type: Loadout
     prototypes: [PuzoGear]
   - type: FootprintVisualizer
+  - type: LayingDown
 
 - type: entity
   name: Svin Angry Timed Spawner
