@@ -16,6 +16,7 @@
   - type: Item
     sprite: Afgan/Weapons/Guns/SMGs/pm9evilgun64x.rsi
   - type: Gun
+    cameraRecoilScalar: 0.25
     minAngle: 21
     maxAngle: 32
     fireRate: 6
@@ -72,6 +73,7 @@
   - type: Item
     sprite: Afgan/Weapons/Guns/SMGs/pm9evilgun64x.rsi
   - type: Gun
+    cameraRecoilScalar: 0.15
     minAngle: 18
     maxAngle: 27
     fireRate: 8
@@ -128,6 +130,7 @@
   - type: Item
     sprite: Afgan/Weapons/Guns/SMGs/pm9evilgun64x.rsi
   - type: Gun
+    cameraRecoilScalar: 0.09
     minAngle: 8
     maxAngle: 15
     fireRate: 10

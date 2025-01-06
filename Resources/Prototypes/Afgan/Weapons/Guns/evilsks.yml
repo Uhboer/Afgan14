@@ -50,6 +50,7 @@
     zeroVisible: true
   - type: Appearance
   - type: Gun
+    cameraRecoilScalar: 0.5
     minAngle: 29
     maxAngle: 42
     fireRate: 3
