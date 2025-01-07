@@ -70,16 +70,3 @@
       - state: tip
         map: [ "enum.AmmoVisualLayers.Tip" ]
         color: "#65fe08"
-
-- type: entity
-  id: BaseCartridge9mm
-  name: патрон 9мм
-  parent: BaseCartridgePistol
-  suffix: afgan14
-  components:
-  - type: CartridgeAmmo
-    proto: Bullet9mm
-  - type: Tag
-    tags:
-      - Cartridge
-      - Cartridge9mm

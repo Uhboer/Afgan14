@@ -1,0 +1,144 @@
+- type: entity
+  name: торгомат
+  description: Создан для связи с соседними секторами и планетами. В нем вы можете обменять крайне ценных жучков с вашей планеты.
+  id: Torgomat
+  parent: BaseStructure
+  suffix: afgan14
+  components:
+  - type: Transform
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        density: 190
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Sprite
+    sprite: Afgan/Structures/torgomat.rsi
+    state: mat
+    snapCardinals: true
+  - type: Icon
+    sprite: Afgan/Structures/torgomat.rsi
+    state: mat
+  - type: Clickable
+  - type: Appearance
+  - type: UserInterface
+    interfaces:
+      enum.StoreUiKey.Key:
+        type: StoreBoundUserInterface
+  - type: ActivatableUI
+    key: enum.StoreUiKey.Key
+  - type: Store
+    name: store-preset-name-Tuplink
+    categories:
+    - TorgomatWearpons
+    - TorgomatAmmo
+    - TorgomatDrugs
+    - TorgomatProviant
+    - TorgomatBombs
+    - TorgomatLegendary
+    currencyWhitelist:
+    - Bib
+    balance:
+      Telecrystal: 0
+
+- type: storeCategory
+  id: TorgomatWearpons
+  name: store-category-Tweapons
+  priority: 0
+
+- type: storeCategory
+  id: TorgomatAmmo
+  name: store-category-Tammo
+  priority: 1
+
+- type: storeCategory
+  id: TorgomatDrugs
+  name: store-category-Tdrugs
+  priority: 2
+
+- type: storeCategory
+  id: TorgomatProviant
+  name: store-category-Tproviant
+  priority: 3
+
+- type: storeCategory
+  id: TorgomatBombs
+  name: store-category-Tbombs
+  priority: 4
+
+- type: storeCategory
+  id: TorgomatLegendary
+  name: store-category-Tlegendary
+  priority: 5
+
+- type: entity
+  name: биб
+  parent: BaseItem
+  id: Bib
+  suffix: Afgan14
+  description: Странный жучок. Ценнится в других секторах, на него можно торговаться в торгомате.
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/bib.rsi
+    state: bib
+    scale: 0.7, 0.7
+  - type: Item
+    sprite: Afgan/Objects/bib.rsi
+    size: Tiny
+  - type: Stack
+    count: 1
+    stackType: Bib
+  - type: Currency
+    price:
+      Bib: 1
+
+- type: stack
+  id: Bib
+  name: биб
+  icon: Objects/Specific/Syndicate/telecrystal.rsi
+  spawn: Bib1
+
+- type: currency
+  id: Bib
+  displayName: store-currency-display-bib
+  cash:
+    1: Bib
+  canWithdraw: true
+
+- type: listing
+  id: TorgomatRak
+  name: PM-63 RAK
+  description: Мощная ППшка.
+  productEntity: WeaponSubMachineGunPmRak
+  cost:
+    Bib: 3
+  categories:
+  - TorgomatWearpons
+
+- type: listing
+  id: Torgomat9mm
+  name: магазина 9мм
+  description: качественный магазин, произведенный на заводе, вмещает 30 патрон, подходит для PM-63 RAK.
+  productEntity: BaseMagazinePP30
+  cost:
+    Bib: 1
+  categories:
+  - TorgomatAmmo
+
+- type: listing
+  id: TorgomatSyringeOpium
+  name: шприц опиума
+  description: В соседнем секторе афгана остались несколько алхимиков, которые активно торгуют опиумом.
+  productEntity: SyringeOpium
+  cost:
+    Bib: 2
+  categories:
+  - TorgomatDrugs

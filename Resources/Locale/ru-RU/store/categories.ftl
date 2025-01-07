@@ -20,3 +20,10 @@ store-caregory-spellbook-defensive = Защитные заклинания
 store-caregory-spellbook-utility = Вспомогательные заклинания
 store-caregory-spellbook-equipment = Волшебное снаряжение
 store-caregory-spellbook-events = Заклинания событий
+#afgan
+store-category-Tweapons = Пушки
+store-category-Tammo = Патроны
+store-category-Tdrugs = Наркота
+store-category-Tproviant = Провиант
+store-category-Tbombs = Бомбы
+store-category-Tlegendary = Легендарное
