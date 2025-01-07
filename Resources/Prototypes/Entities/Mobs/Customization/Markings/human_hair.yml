@@ -13,3 +13,11 @@
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: dave
+
+- type: marking
+  id: HumanHairLong
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+    - sprite: Mobs/Customization/human_hair.rsi
+      state: long
