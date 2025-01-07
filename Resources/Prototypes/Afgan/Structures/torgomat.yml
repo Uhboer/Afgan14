@@ -116,7 +116,7 @@
 - type: listing
   id: TorgomatRak
   name: PM-63 RAK
-  description: Мощная ППшка.
+  description: Украденный прямо с завода ПМ РАК. Номера закрашены, и само оружие пыльное.
   productEntity: WeaponSubMachineGunPmRak
   cost:
     Bib: 3
@@ -142,3 +142,13 @@
     Bib: 2
   categories:
   - TorgomatDrugs
+
+- type: listing
+  id: TorgomatKKK
+  name: ???
+  description: ???
+  productEntity: ClothingHeadHatKKK
+  cost:
+    Bib: 99999
+  categories:
+  - TorgomatLegendary
