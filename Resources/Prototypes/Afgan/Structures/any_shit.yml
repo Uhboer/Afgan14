@@ -411,3 +411,20 @@
   - type: UseDelay
     delay: 220.0
   - type: MultiHandedItem
+
+
+- type: entity
+  parent: BaseItem
+  id: AfganBinocle
+  name: бинокль
+  description: Смотри - не засмотрись. Смотреть в бинокль - ПКМ.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/binocle.rsi
+    state: icon
+    scale: 0.45, 0.45
+  - type: Item
+    size: Small
+  - type: Telescope
+    divisor: 0.08

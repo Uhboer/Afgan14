@@ -479,3 +479,11 @@
   completetime: 1
   materials:
     Plastic: 100
+
+- type: latheRecipe
+  id: Binocle
+  result: AfganBinocle
+  completetime: 2
+  materials:
+    Plastic: 100
+    Steel: 500
