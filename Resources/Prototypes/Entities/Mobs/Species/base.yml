@@ -253,6 +253,7 @@
         Brute: -0.07
 
   - type: Blindable
+  - type: Hearing
   # Other
   - type: Temperature
     heatDamageThreshold: 325

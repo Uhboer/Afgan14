@@ -21,6 +21,10 @@ using Robust.Server.GameObjects;
 using Robust.Shared.Audio;
 using Robust.Shared.Random;
 using InventoryComponent = Content.Shared.Inventory.InventoryComponent;
+using Content.Shared.Traits.Assorted.Components;
+using Robust.Shared.Random;
+using Content.Shared.Eye.Blinding.Systems;
+using Content.Shared._ERRORGATE.Hearing;
 
 namespace Content.Server.Flash
 {

@@ -38,6 +38,7 @@ public sealed partial class ContentAudioSystem : SharedContentAudioSystem
         UpdatesOutsidePrediction = true;
         InitializeAmbientMusic();
         InitializeLobbyMusic();
+        InitializeDeaf();
         SubscribeNetworkEvent<RoundRestartCleanupEvent>(OnRoundCleanup);
     }
 
