@@ -1,0 +1,22 @@
+- type: entity
+  name: ???
+  description: что это..?
+  parent: BaseLandMine
+  id: LandMineExplosiveAfgan
+  suffix: afgan14
+  components:
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 10
+    intensitySlope: 3
+    totalIntensity: 120 # about a ~4 tile radius
+    canCreateVacuum: false
+  - type: LandMine
+    sound:
+        path: /Audio/Afgan/Misc/mine.ogg
+        params:
+            maxDistance: 10
+  - type: StepTrigger
+    requiredTriggeredSpeed: 0
+    stepOn: true
