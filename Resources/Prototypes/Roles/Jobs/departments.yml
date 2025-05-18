@@ -13,7 +13,8 @@
   description: department-Engineering-description
   color: "#EFB341"
   roles:
-  - AtmosphericTechnician
+  - Captain
+  - HeadOfPersonnel
 
 - type: department
   id: Science

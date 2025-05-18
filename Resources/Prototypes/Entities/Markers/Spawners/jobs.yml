@@ -307,6 +307,7 @@
   id: SpawnPointCaptain
   parent: SpawnPointJobBase
   name: captain
+  suffix: afgan14
   components:
   - type: SpawnPoint
     job_id: Captain
@@ -319,6 +320,7 @@
   id: SpawnPointHeadOfPersonnel
   parent: SpawnPointJobBase
   name: headofpersonnel
+  suffix: afgan14
   components:
   - type: SpawnPoint
     job_id: HeadOfPersonnel

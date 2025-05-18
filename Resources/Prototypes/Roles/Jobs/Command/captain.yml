@@ -2,23 +2,11 @@
   id: Captain
   name: job-name-captain
   description: job-description-captain
-  setPreference: false
+  setPreference: true
   playTimeTracker: JobCaptain
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: Engineering
-      time: 72000 #20 hrs # Corvax-RoleTime
-    - !type:DepartmentTimeRequirement
-      department: Medical
-      time: 72000 #20 hrs # Corvax-RoleTime
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 72000 #20 hrs # Corvax-RoleTime
-    - !type:DepartmentTimeRequirement
-      department: Command
-      time: 54000 # 15 hours
     - !type:OverallPlaytimeRequirement
-      time: 504000 #140 hrs # Corvax-RoleTime
+      time: 1
   weight: 20
   startingGear: CaptainGear
   icon: "JobIconCaptain"
@@ -29,8 +17,6 @@
   accessGroups:
   - AllAccess
   special:
-  - !type:AddImplantSpecial
-    implants: [ MindShieldImplant ]
   - !type:AddComponentSpecial
     components:
       - type: CommandStaff
@@ -41,20 +27,19 @@
 - type: startingGear
   id: CaptainGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitHamas
-    belt: ClothingBeltRPC
-    eyes: ClothingEyesVision
-    shoes: ClothingShoesBootsCombatFilled
-    mask: ClothingMaskHamas
-    head: ClothingHeadHelmetHamas
-    gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterVestWeb
-    id: SalvageIDCard
-    pocket1: RadioHandheld
-    pocket2: Torch
+    jumpsuit: ClothingUniformJumpsuitPovstanKurtka
+    belt: ClothingBeltRope
+    eyes: ClothingEyesVisionEng
+    shoes: ClothingShoesBootsSteelUpgrade
+    head: ClothingHeadHelmetKaratel
+    gloves: ClothingHandsMercGlovesCombat
+    outerClothing: ClothingOuterVestKaratel
+    back: AfganThanded
+    pocket1: CombatKnife
+    pocket2: SurvivalKnife
   storage:
     belt:
-    - BaseMagazineMP9evil
-    - BaseMagazineMP9evil
-    - BaseMagazineMP9evil
-    - SyringeOpium
+    - AfganGrenade
+    - AfganGrenade
+    - AfganGrenade
+    - AfganGrenade

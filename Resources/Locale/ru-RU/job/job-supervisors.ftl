@@ -1,5 +1,5 @@
-job-supervisors-centcom = Центральному командованию
-job-supervisors-captain = капитану
+job-supervisors-centcom = СВОЕЙ КРОВОЖАДНОЙ ВОЛЕ
+job-supervisors-captain = инстинктам самосохранения
 job-supervisors-hop = Главе Повстанцев
 job-supervisors-hos = главе службы безопасности
 job-supervisors-ce = рабовладельцу

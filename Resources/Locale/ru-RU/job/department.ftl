@@ -1,8 +1,8 @@
 department-Cargo = Вы
 department-Civilian = Все
 department-Command = Говно
-department-Engineering = Ёбанное
+department-Engineering = Комплекс
 department-Medical = Гильдия алхимиков
 department-Security = Афган
 department-Science = Повстанцы
-department-Specific = иди нахуй
+department-Specific = wth

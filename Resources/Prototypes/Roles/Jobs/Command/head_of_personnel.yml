@@ -2,71 +2,38 @@
   id: HeadOfPersonnel
   name: job-name-hop
   description: job-description-hop
-  setPreference: false
+  setPreference: true
   playTimeTracker: JobHeadOfPersonnel
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: Engineering
-      time: 18000 #5 hrs # Corvax-RoleTime
-    - !type:DepartmentTimeRequirement
-      department: Medical
-      time: 18000 #5 hrs # Corvax-RoleTime
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 18000 #5 hrs # Corvax-RoleTime
-    - !type:DepartmentTimeRequirement
-      department: Command
-      time: 7200 # 2 hrs
     - !type:OverallPlaytimeRequirement
-      time: 64800 #18 hrs # Corvax-RoleTime
-  weight: 20
+      time: 0
   startingGear: HoPGear
   icon: "JobIconHeadOfPersonnel"
-  requireAdminNotify: true
+  requireAdminNotify: false
   supervisors: job-supervisors-captain
-  canBeAntag: false
+  canBeAntag: true
   access:
-  - Command
-  - HeadOfPersonnel
-  - Bar
-  - Service
-  - Maintenance
-  - Janitor
-  - Theatre
-  - Kitchen
-  - Chapel
-  - Hydroponics
-  - External
-  - Cryogenics
-  # I mean they'll give themselves the rest of the access levels *anyways*.
-  # As of 15/03/23 they can't do that so here's MOST of the rest of the access levels.
-  # Head level access that isn't their own was deliberately left out, get AA from the captain instead.
-  - Chemistry
-  - Engineering
-  - Research
-  - Detective
   - Salvage
-  - Security
-  - Brig
-  - Lawyer
-  - Cargo
-  - Atmospherics
-  - Medical
-  special:
-  - !type:AddImplantSpecial
-    implants: [ MindShieldImplant ]
-  - !type:AddComponentSpecial
-    components:
-      - type: CommandStaff
 
 - type: startingGear
   id: HoPGear
   equipment:
-    shoes: ClothingShoesColorBrown
-    id: HoPPDA
-    gloves: ClothingHandsGlovesHop
-    ears: ClothingHeadsetAltCommand
-    belt: BoxFolderClipboard
+    jumpsuit: ClothingUniformJumpsuitAlchem
+    back: ClothingBackpackMerc
+    shoes: ClothingShoesBootsSalvage
+    gloves: ClothingHandsGlovesFingerless
+    outerClothing: ClothingOuterVestStal
+    id: SalvageIDCard
+    ears: ClothingHeadsetGrey
+    head: ClothingHeadHatWelding
+    pocket1: FlashlightSeclite
+    pocket2: SurvivalKnife
   storage:
     back:
-    - Flash
+    - Crowbar
+    - Wirecutter
+    - Screwdriver
+    - Wrench
+    - Welder
+    - DrinkEnergyDrinkCan
+    - FoodSnackEnergy
