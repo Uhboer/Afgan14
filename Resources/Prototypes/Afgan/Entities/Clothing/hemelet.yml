@@ -127,3 +127,34 @@
     sprintModifier: 0.98
   - type: Reflect
     reflectProb: 0.05
+
+- type: entity
+  parent: ClothingHeadHelmetBasic
+  id: ClothingHeadHelmetKaratel
+  name: странный шлем
+  description: что это?
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Head/karatel.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Head/karatel.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.65
+        Piercing: 0.6
+        Heat: 0.7
+  - type: EyeProtection
+  - type: IngestionBlocker
+  - type: FlashImmunity
+  - type: IdentityBlocker
+  - type: Construction
+    graph: AltinGraph
+    node: altin
+  - type: ClothingSpeedModifier
+    walkModifier: 0.93
+    sprintModifier: 0.93
+  - type: Reflect
+    reflectProb: 0.005

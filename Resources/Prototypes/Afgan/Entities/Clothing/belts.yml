@@ -9,3 +9,15 @@
     sprite: Afgan/Clothing/Belts/rpc.rsi
   - type: Clothing
     sprite: Afgan/Clothing/Belts/rpc.rsi
+
+- type: entity
+  parent: ClothingBeltStorageBase
+  id: ClothingBeltRope
+  name: пояс-веревка
+  description: Надежно? Не думаю.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Belts/rope.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Belts/rope.rsi
