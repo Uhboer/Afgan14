@@ -151,11 +151,12 @@
   - type: IngestionBlocker
   - type: FlashImmunity
   - type: IdentityBlocker
-  - type: Construction
-    graph: AltinGraph
-    node: altin
   - type: ClothingSpeedModifier
     walkModifier: 0.93
     sprintModifier: 0.93
   - type: Reflect
     reflectProb: 0.005
+  - type: HideLayerClothing
+    slots:
+    - HeadTop
+    - HeadSide
