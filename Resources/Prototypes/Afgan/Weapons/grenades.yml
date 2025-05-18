@@ -1,0 +1,31 @@
+- type: entity
+  name: граната
+  description: граната?
+  parent: GrenadeBase
+  id: AfganGrenade
+  suffix: afgan14
+  components:
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 10
+    intensitySlope: 3
+    totalIntensity: 120 # about a ~4 tile radius
+    canCreateVacuum: false
+  - type: ClusterGrenade
+    fillPrototype: PelletClusterLethal
+    maxGrenadesCount: 30
+    grenadeType: enum.GrenadeType.Shoot
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Afgan/Wearpons/grenade_pin.ogg
+  - type: ContainerContainer
+    containers:
+      cluster-payload: !type:Container
+  - type: OnUseTimerTrigger
+    beepSound:
+      path: "/Audio/Afgan/Wearpons/grenade_pin.ogg"
+      params:
+        volume: 5
+    initialBeepDelay: 0
+    beepInterval: 50 # beeps total (at 0 and 2)
