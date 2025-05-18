@@ -33,6 +33,37 @@
     - state: equipped-EYES-Power
 
 - type: entity
+  name: инженерный монокль
+  id: ClothingEyesVision
+  parent: BaseItem
+  description: Поможет исследовать темные помещения.
+  suffix: afgan14
+  components:
+  - type: Item
+  - type: Sprite
+    sprite: Afgan/Clothing/Eyes/PNVKaratel.rsi
+    state: icon
+  - type: Clothing
+    sprite: Afgan/Clothing/Eyes/PNVKaratel.rsi
+    layers:
+      - state: equipped-EYES
+      - state: equipped-EYES-Power
+        shader: unshaded
+        visible: true
+        map: ["equipped-EYES-Power"]
+    quickEquip: true
+    slots: [ Eyes ]
+  - type: UseDelay
+    delay: 4
+  - type: PNV
+  - type: ToggleableLightVisuals
+  spriteLayer: equipped-EYES-Power
+  inhandVisuals:
+  clothingVisuals:
+    eyes:
+    - state: equipped-EYES-Power
+
+- type: entity
   id: NVToggleAction
   name: Переключение ПНВ
   description: Переключает ваше ПНВ
