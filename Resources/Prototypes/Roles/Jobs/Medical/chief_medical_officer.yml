@@ -42,9 +42,13 @@
 - type: startingGear
   id: CMOGear
   equipment:
-    id: CMOPDA
-    ears: ClothingHeadsetCMO
-    belt: ClothingBeltMedicalFilled
-  storage:
-    back:
-    - Flash
+    jumpsuit: ClothingUniformJumpsuitAlchem
+    back: ClothingBackpackMerc
+    shoes: ClothingShoesBootsSalvage
+    gloves: ClothingHandsGlovesFingerless
+    outerClothing: ClothingOuterVestStal
+    id: SalvageIDCard
+    ears: ClothingHeadsetGrey
+    head: ClothingHeadHatWelding
+    pocket1: FlashlightSeclite
+    pocket2: SurvivalKnife

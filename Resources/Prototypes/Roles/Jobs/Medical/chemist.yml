@@ -19,11 +19,13 @@
 - type: startingGear
   id: ChemistGear
   equipment:
-    id: ChemistryPDA
-    ears: ClothingHeadsetMedical
-    belt: ChemBag
-    pocket1: HandLabeler
-    eyes: ClothingEyesGlassesChemical
-  #storage:
-    #back:
-    #- Stuff
+    jumpsuit: ClothingUniformJumpsuitAlchem
+    back: ClothingBackpackMerc
+    shoes: ClothingShoesBootsSalvage
+    gloves: ClothingHandsGlovesFingerless
+    outerClothing: ClothingOuterVestStal
+    id: SalvageIDCard
+    ears: ClothingHeadsetGrey
+    head: ClothingHeadHatWelding
+    pocket1: FlashlightSeclite
+    pocket2: SurvivalKnife

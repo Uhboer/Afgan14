@@ -25,13 +25,13 @@
 - type: startingGear
   id: SeniorPhysicianGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitSeniorPhysician
-    back: ClothingBackpackMedicalFilled
-    shoes: ClothingShoesColorBlack
-    outerClothing: ClothingOuterCoatLabSeniorPhysician
-    id: SeniorPhysicianPDA
-    ears: ClothingHeadsetMedical
-    belt: ClothingBeltMedicalFilled
-  innerClothingSkirt: ClothingUniformJumpskirtSeniorPhysician
-  satchel: ClothingBackpackSatchelMedicalFilled
-  duffelbag: ClothingBackpackDuffelMedicalFilled
+    jumpsuit: ClothingUniformJumpsuitAlchem
+    back: ClothingBackpackMerc
+    shoes: ClothingShoesBootsSalvage
+    gloves: ClothingHandsGlovesFingerless
+    outerClothing: ClothingOuterVestStal
+    id: SalvageIDCard
+    ears: ClothingHeadsetGrey
+    head: ClothingHeadHatWelding
+    pocket1: FlashlightSeclite
+    pocket2: SurvivalKnife
