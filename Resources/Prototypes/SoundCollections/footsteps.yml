@@ -23,7 +23,6 @@
   - /Audio/Effects/Footsteps/catwalk2.ogg
   - /Audio/Effects/Footsteps/catwalk3.ogg
   - /Audio/Effects/Footsteps/catwalk4.ogg
-  - /Audio/Effects/Footsteps/catwalk5.ogg
 
 - type: soundCollection
   id: FootstepFloor
@@ -32,7 +31,6 @@
   - /Audio/Effects/Footsteps/floor2.ogg
   - /Audio/Effects/Footsteps/floor3.ogg
   - /Audio/Effects/Footsteps/floor4.ogg
-  - /Audio/Effects/Footsteps/floor5.ogg
 
 - type: soundCollection
   id: FootstepHull

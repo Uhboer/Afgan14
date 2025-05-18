@@ -93,3 +93,63 @@
   heatCapacity: 10000
   weather: false
   indestructible: true
+
+
+
+#complex
+
+- type: tile
+  id: FloorAfganComplex1
+  name: пол
+  sprite: /Textures/Tiles/Planet/Afgan/complex.png
+  variants: 1
+  placementVariants:
+  - 0.75
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepFloor
+  heatCapacity: 10000
+  weather: false
+  indestructible: true
+
+- type: tile
+  id: FloorAfganComplex2
+  name: пол
+  sprite: /Textures/Tiles/Planet/Afgan/complex2.png
+  variants: 1
+  placementVariants:
+  - 0.75
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepFloor
+  heatCapacity: 10000
+  weather: false
+  indestructible: true
+
+- type: tile
+  id: FloorAfganComplex3
+  name: пол
+  sprite: /Textures/Tiles/Planet/Afgan/complex3.png
+  variants: 1
+  placementVariants:
+  - 0.75
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepFloor
+  heatCapacity: 10000
+  weather: false
+  indestructible: true
+
+- type: tile
+  id: FloorAfganComplex4
+  name: пол
+  sprite: /Textures/Tiles/Planet/Afgan/complex4.png
+  variants: 1
+  placementVariants:
+  - 0.75
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepFloor
+  heatCapacity: 10000
+  weather: false
+  indestructible: true

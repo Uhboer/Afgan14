@@ -34,7 +34,7 @@
 
 - type: entity
   name: инженерный монокль
-  id: ClothingEyesVision
+  id: ClothingEyesVisionEng
   parent: BaseItem
   description: Поможет исследовать темные помещения.
   suffix: afgan14
@@ -56,6 +56,7 @@
   - type: UseDelay
     delay: 4
   - type: PNV
+    color: "#ffd500"
   - type: ToggleableLightVisuals
   spriteLayer: equipped-EYES-Power
   inhandVisuals:
