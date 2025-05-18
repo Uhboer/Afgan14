@@ -104,6 +104,9 @@
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge762
+    whitelist:
+      tags:
+        - Cartridge7_62
     capacity: 12
   - type: Sprite
     sprite: Afgan/Weapons/Guns/Ammunition/sks_magaz.rsi
