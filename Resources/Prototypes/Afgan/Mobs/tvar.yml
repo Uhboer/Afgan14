@@ -28,7 +28,7 @@
     altDisarm: false
     angle: 0
     soundHit:
-     path: /Audio/Afgan/Wearpons/Melee/chop.ogg
+     collection: Chops
     animation: WeaponArcBite
     damage:
       groups:

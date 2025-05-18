@@ -87,7 +87,7 @@
       types:
         Slash: 15
     soundHit:
-        path: /Audio/Afgan/Wearpons/Melee/chop.ogg
+        collection: Chops
   - type: Item
     sprite: Afgan/Weapons/Melee/alebard.rsi
     size: Ginormous
@@ -141,3 +141,57 @@
     - belt
     equipSound:
       path: /Audio/Items/unsheath.ogg
+
+
+- type: entity
+  name: двуручный меч
+  parent: BaseSword
+  id: AfganThanded
+  description: Мощнейший, древний двуручный меч.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Weapons/Melee/twohanded.rsi
+  - type: MeleeWeapon
+    attackRate: 0.9
+    damage:
+      types:
+        Slash: 5
+    soundHit:
+        collection: Thanded
+  - type: Item
+    sprite: Afgan/Weapons/Melee/twohanded.rsi
+    size: Ginormous
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - back
+    equipSound:
+      path: /Audio/Items/unsheath.ogg
+  - type: Wieldable
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 30
+        Structural: 15
+  - type: UseDelay
+  - type: Reflect
+    enabled: true
+    reflectProb: .1
+    spread: 90
+
+- type: soundCollection
+  id: Thanded
+  files:
+    - /Audio/Afgan/Wearpons/Melee/thanded1.ogg
+    - /Audio/Afgan/Wearpons/Melee/thanded2.ogg
+
+- type: soundCollection
+  id: Chops
+  files:
+    - /Audio/Afgan/Wearpons/Melee/chop.ogg
+    - /Audio/Afgan/Wearpons/Melee/chop2.ogg
+    - /Audio/Afgan/Wearpons/Melee/chop3.ogg
+    - /Audio/Afgan/Wearpons/Melee/chop4.ogg
+    - /Audio/Afgan/Wearpons/Melee/chop5.ogg
+    - /Audio/Afgan/Wearpons/Melee/chop6.ogg
