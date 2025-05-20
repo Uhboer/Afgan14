@@ -24,7 +24,6 @@
     gloves: ClothingHandsGlovesFingerless
     id: SalvageIDCard
     ears: ClothingHeadsetGrey
-    head: ClothingHeadHatWelding
     pocket1: FlashlightSeclite
     pocket2: SurvivalKnife
   storage:
