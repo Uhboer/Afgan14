@@ -27,7 +27,7 @@
 - type: startingGear
   id: CaptainGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitPovstanKurtka
+    jumpsuit: ClothingUniformJumpsuitKaratel
     belt: ClothingBeltRope
     eyes: ClothingEyesVisionEng
     shoes: ClothingShoesBootsSteelUpgrade
@@ -36,7 +36,7 @@
     outerClothing: ClothingOuterVestKaratel
     back: AfganThanded
     pocket1: CombatKnife
-    pocket2: SurvivalKnife
+    pocket2: KukriKnife
   storage:
     belt:
     - AfganGrenade

@@ -18,11 +18,10 @@
 - type: startingGear
   id: HoPGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitAlchem
-    back: ClothingBackpackMerc
+    jumpsuit: ClothingUniformJumpsuitAgent
+    back: ClothingBackpackSatchelLeather
     shoes: ClothingShoesBootsSalvage
     gloves: ClothingHandsGlovesFingerless
-    outerClothing: ClothingOuterVestStal
     id: SalvageIDCard
     ears: ClothingHeadsetGrey
     head: ClothingHeadHatWelding
