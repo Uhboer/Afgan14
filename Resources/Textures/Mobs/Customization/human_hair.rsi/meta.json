@@ -18,6 +18,18 @@
       {
         "name": "long",
         "directions": 4
+      },
+      {
+        "name": "rape",
+        "directions": 4
+      },
+      {
+        "name": "mlong",
+        "directions": 4
+      },
+      {
+        "name": "agent",
+        "directions": 4
       }
     ]
   }

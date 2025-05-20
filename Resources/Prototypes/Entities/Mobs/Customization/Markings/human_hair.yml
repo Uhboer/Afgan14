@@ -21,3 +21,27 @@
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: long
+
+- type: marking
+  id: HumanHairRape
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+    - sprite: Mobs/Customization/human_hair.rsi
+      state: rape
+
+- type: marking
+  id: HumanHairMlong
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+    - sprite: Mobs/Customization/human_hair.rsi
+      state: mlong
+
+- type: marking
+  id: HumanHairAgent
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+    - sprite: Mobs/Customization/human_hair.rsi
+      state: agent
