@@ -27,7 +27,7 @@
 - type: startingGear
   id: CaptainGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitKaratel
+    jumpsuit: ClothingUniformJumpsuitKaratelOrig
     belt: ClothingBeltRope
     eyes: ClothingEyesVisionEng
     shoes: ClothingShoesBootsSteelUpgrade

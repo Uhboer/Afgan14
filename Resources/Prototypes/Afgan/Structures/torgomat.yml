@@ -272,3 +272,13 @@
     Bib: 3
   categories:
   - TorgomatArmor
+
+- type: listing
+  id: TorgomatClothingClothingHeadHelmetITOBE
+  name: шлем
+  description: Выглядит неплохо.
+  productEntity: ClothingHeadHelmetITOBE
+  cost:
+    Bib: 3
+  categories:
+  - TorgomatArmor

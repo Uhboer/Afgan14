@@ -197,20 +197,20 @@
     maxAngle: 30
     fireRate: 4
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/rifle2.ogg
+      path: /Audio/AfganWearpons/g36.ogg
   - type: GunWieldBonus
     minAngle: -20
     maxAngle: -18
   - type: ChamberMagazineAmmoProvider
     soundRack:
-      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
+      path: /Audio/AfganWearpons/zatvor.ogg
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
         startingItem: MagazineLightRifleG34
-        insertSound: /Audio/AfganWearpons/outmag.ogg
-        ejectSound: /Audio/AfganWearpons/inmag.ogg
+        insertSound: /Audio/AfganWearpons/g36_magout.ogg
+        ejectSound: /Audio/AfganWearpons/g36_magin1.ogg
         priority: 2
         whitelist:
           tags:
