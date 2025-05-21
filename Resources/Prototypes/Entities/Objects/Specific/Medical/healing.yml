@@ -995,3 +995,18 @@
         reagents:
         - ReagentId: AfganOpium
           Quantity: 15
+
+- type: entity
+  name: шприц лария
+  parent: PrefilledSyringe
+  id: SyringeLariy
+  suffix: afgan14
+  description: моё спасение...
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      injector:
+        maxVol: 15
+        reagents:
+        - ReagentId: AfganLariy
+          Quantity: 15

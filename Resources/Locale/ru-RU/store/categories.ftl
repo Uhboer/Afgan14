@@ -24,6 +24,6 @@ store-caregory-spellbook-events = Заклинания событий
 store-category-Tweapons = Пушки
 store-category-Tammo = Патроны
 store-category-Tdrugs = Наркота
-store-category-Tproviant = Провиант
+store-category-Tarmor = Бронька
 store-category-Tbombs = Бомбы
 store-category-Tlegendary = Легендарное

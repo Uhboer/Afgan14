@@ -41,7 +41,7 @@
     - TorgomatWearpons
     - TorgomatAmmo
     - TorgomatDrugs
-    - TorgomatProviant
+    - TorgomatArmor
     - TorgomatBombs
     - TorgomatLegendary
     currencyWhitelist:
@@ -65,8 +65,8 @@
   priority: 2
 
 - type: storeCategory
-  id: TorgomatProviant
-  name: store-category-Tproviant
+  id: TorgomatArmor
+  name: store-category-Tarmor
   priority: 3
 
 - type: storeCategory
@@ -140,6 +140,16 @@
   productEntity: SyringeOpium
   cost:
     Bib: 2
+  categories:
+  - TorgomatDrugs
+
+- type: listing
+  id: TorgomatSyringeLariy
+  name: шприц лария
+  description: Это мой последний шанс...
+  productEntity: SyringeLariy
+  cost:
+    Bib: 3
   categories:
   - TorgomatDrugs
 
@@ -222,3 +232,43 @@
     Bib: 3
   categories:
   - TorgomatAmmo
+
+- type: listing
+  id: TorgomatClothingOuterVestWeb
+  name: кевларовый броник
+  description: Надежно и стильно? Может быть.
+  productEntity: ClothingOuterVestWeb
+  cost:
+    Bib: 5
+  categories:
+  - TorgomatArmor
+
+- type: listing
+  id: TorgomatClothingOuterVestWebMerc
+  name: укреп. кевларовый броник
+  description: Надежно и стильно? Скорее всего.
+  productEntity: ClothingOuterVestWebMerc
+  cost:
+    Bib: 8
+  categories:
+  - TorgomatArmor
+
+- type: listing
+  id: TorgomatClothingOuterVestGiga
+  name: сверх укреп. кевларовый броник
+  description: Надежно и стильно? Конечно, блять!
+  productEntity: ClothingOuterVestGiga
+  cost:
+    Bib: 15
+  categories:
+  - TorgomatArmor
+
+- type: listing
+  id: TorgomatClothingMaskBalistic
+  name: баллистическая маска
+  description: Защитит еблет от пуль.
+  productEntity: ClothingMaskBalistic
+  cost:
+    Bib: 3
+  categories:
+  - TorgomatArmor

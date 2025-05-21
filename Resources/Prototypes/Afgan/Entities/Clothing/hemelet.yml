@@ -160,3 +160,28 @@
     slots:
     - HeadTop
     - HeadSide
+
+
+- type: entity
+  parent: ClothingHeadHelmetBasic
+  id: ClothingHeadHelmetITOBE
+  name: шлем ITOBE
+  description: Я возлагаю на него большие надежды...
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Head/itobe.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Head/itobe.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.9
+  - type: ClothingSpeedModifier
+    walkModifier: 0.98
+    sprintModifier: 0.98
+  - type: Reflect
+    reflectProb: 0.05
