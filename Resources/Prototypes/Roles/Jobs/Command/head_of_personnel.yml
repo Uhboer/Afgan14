@@ -23,6 +23,7 @@
     shoes: ClothingShoesBootsSalvage
     gloves: ClothingHandsGlovesFingerless
     id: SalvageIDCard
+    mask: ClothingMaskGasITOBE
     ears: ClothingHeadsetGrey
     pocket1: FlashlightSeclite
     pocket2: SurvivalKnife

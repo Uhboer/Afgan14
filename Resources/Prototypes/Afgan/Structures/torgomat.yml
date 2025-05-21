@@ -202,3 +202,23 @@
     Bib: 3
   categories:
   - TorgomatBombs
+
+- type: listing
+  id: TorgomatWeaponRifleG36
+  name: G36
+  description: Мощь, стиль, мобильность. Что тебе еще, сука, надо?!
+  productEntity: WeaponRifleG36
+  cost:
+    Bib: 15
+  categories:
+  - TorgomatWearpons
+
+- type: listing
+  id: TorgomatMagazineLightRifleG34
+  name: магазин 5.56
+  description: используется для винтовки G36.
+  productEntity: MagazineLightRifleG34
+  cost:
+    Bib: 3
+  categories:
+  - TorgomatAmmo

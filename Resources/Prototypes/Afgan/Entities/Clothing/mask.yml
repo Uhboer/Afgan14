@@ -1,0 +1,112 @@
+- type: entity
+  parent: ClothingMaskBase
+  id: ClothingMaskHamas
+  name: Балаклава Хамаса
+  description: Маска бывшей террористической группировки Хамас.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Mask/hamasmask.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Mask/hamasmask.rsi
+  - type: Item
+    storedRotation: -90
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    hideOnToggle: true
+  - type: IdentityBlocker
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ClothingMaskBalistic
+  name: балистическая маска
+  description: защищает твоё немытое ебало от пуль и удара арматуры.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Mask/balmask.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Mask/balmask.rsi
+  - type: Item
+    storedRotation: -90
+  - type: HideLayerClothing
+    slots:
+    - Snout
+    hideOnToggle: true
+  - type: IdentityBlocker
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+  - type: Construction
+    graph: MaskGraph
+    node: mask
+  - type: ClothingSpeedModifier
+    walkModifier: 0.98
+    sprintModifier: 0.98
+  - type: Reflect
+    reflectProb: 0.05
+  - type: Tag
+    tags:
+      - BalMask
+
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ClothingMaskBalisticEvil
+  name: дьявольская маска
+  description: СГИНЬ.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Mask/balmaskevil.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Mask/balmaskevil.rsi
+  - type: Item
+    storedRotation: -90
+  - type: HideLayerClothing
+    slots:
+    - Snout
+    hideOnToggle: true
+  - type: IdentityBlocker
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.85
+        Heat: 0.85
+  - type: Construction
+    graph: MaskGraph
+    node: mask
+  - type: ClothingSpeedModifier
+    walkModifier: 0.96
+    sprintModifier: 0.96
+  - type: Reflect
+    reflectProb: 0.1
+
+- type: entity
+  parent: ClothingMaskPullableBase
+  id: ClothingMaskGasITOBE
+  name: противогаз ITOBE
+  description: Верный друг в экстренных ситуациях при переговорах с представителями фурри сообщества сс13.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Mask/agent.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Mask/agent.rsi
+  - type: BreathMask
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+  - type: HideLayerClothing
+    slots:
+    - Snout
+    hideOnToggle: true
