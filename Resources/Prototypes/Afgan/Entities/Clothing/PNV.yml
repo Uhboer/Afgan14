@@ -14,9 +14,8 @@
     layers:
       - state: equipped-EYES
       - state: equipped-EYES-Power
-        shader: unshaded
-        visible: true
         map: ["equipped-EYES-Power"]
+        shader: unshaded
     quickEquip: true
     slots: [ Eyes ]
   - type: UseDelay

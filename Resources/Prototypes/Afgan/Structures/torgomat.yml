@@ -119,7 +119,7 @@
   description: Украденный прямо с завода ПМ РАК. Номера закрашены, и само оружие пыльное.
   productEntity: WeaponSubMachineGunPmRak
   cost:
-    Bib: 3
+    Bib: 7
   categories:
   - TorgomatWearpons
 
@@ -129,7 +129,7 @@
   description: качественный магазин, произведенный на заводе, вмещает 30 патрон, подходит для PM-63 RAK.
   productEntity: BaseMagazinePP30
   cost:
-    Bib: 1
+    Bib: 2
   categories:
   - TorgomatAmmo
 
@@ -152,3 +152,53 @@
     Bib: 99999
   categories:
   - TorgomatLegendary
+
+- type: listing
+  id: TorgomatWeaponRevolverBlade
+  name: Блейд
+  description: Стандартное вооружение агентов.
+  productEntity: WeaponRevolverBlade
+  cost:
+    Bib: 4
+  categories:
+  - TorgomatWearpons
+
+- type: listing
+  id: TorgomatSpeedLoaderMagnum
+  name: спидлоадер 45 магнум
+  description: Подойдет для револьвера Blade.
+  productEntity: SpeedLoaderMagnum
+  cost:
+    Bib: 1
+  categories:
+  - TorgomatAmmo
+
+- type: listing
+  id: TorgomatSpeedLoaderMagnumIncendiary
+  name: спидлоадер 45 магнум - зажигательные
+  description: Подойдет для револьвера Blade.
+  productEntity: SpeedLoaderMagnumIncendiary
+  cost:
+    Bib: 2
+  categories:
+  - TorgomatAmmo
+
+- type: listing
+  id: TorgomatKukriKnife
+  name: Кукри
+  description: Активно используется вне комплекса для борьбы с надоедливой фауной.
+  productEntity: KukriKnife
+  cost:
+    Bib: 3
+  categories:
+  - TorgomatWearpons
+
+- type: listing
+  id: TorgomatAfganGrenade
+  name: граната
+  description: What makes me a good demoman???
+  productEntity: AfganGrenade
+  cost:
+    Bib: 3
+  categories:
+  - TorgomatBombs
