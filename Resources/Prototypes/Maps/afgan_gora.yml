@@ -11,9 +11,6 @@
       components:
         - type: StationNameSetup
           mapNameTemplate: '{0} Афган {1}'
-          nameGenerator:
-            !type:NanotrasenNameGenerator
-            prefixCreator: 'Пизда всем'
         - type: StationJobs
           availableJobs:
             Bartender: [ 1, 1 ]
@@ -42,9 +39,6 @@
       components:
         - type: StationNameSetup
           mapNameTemplate: '{0} Афган {1}'
-          nameGenerator:
-            !type:NanotrasenNameGenerator
-            prefixCreator: 'Пизда всем'
         - type: StationJobs
           availableJobs:
             Bartender: [ 1, 1 ]
@@ -60,3 +54,22 @@
             TechnicalAssistant: [3, 3]
 
 
+- type: gameMap
+  id: Afgan_escape
+  mapName: "Период: ESCAPE FROM AFGAN"
+  mapPath: /Maps/afgan_escape.yml
+  minPlayers: 0
+  maxPlayers: 100
+  fallback: true
+  stations:
+    Afgan_escape:
+      stationProto: StandardStationArena
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: '{0} ESCAPE FROM AFGAN {1}'
+        - type: StationJobs
+          availableJobs:
+            #ITOBE
+            HeadOfPersonnel: [ -1, -1 ]
+            #KARATEL
+            Captain: [1, 1]

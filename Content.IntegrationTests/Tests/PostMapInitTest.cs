@@ -82,7 +82,8 @@ namespace Content.IntegrationTests.Tests
             "Train",
             "Oasis",
             "Afgan_gora",
-            "Afgan_winter"
+            "Afgan_winter",
+            "Afgan_escape"
         };
 
         /// <summary>
