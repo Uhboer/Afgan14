@@ -135,12 +135,13 @@
       coefficients:
         Blunt: 0.8
         Slash: 0.8
-        Piercing: 0.9
+        Piercing: 0.8
   - type: Reflect
     reflectProb: 0.01
   - type: Unremoveable
   - type: ClothingSpeedModifier
-    walkModifier: 1
+    walkModifier: 1.5
+    sprintModifier: 1.5
 
 - type: entity
   parent: ClothingUniformBase
