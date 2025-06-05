@@ -47,3 +47,15 @@
       sound: "/Audio/Afgan/Music/Wizard.ogg"
     - type: UseDelay
       delay: 36.0
+
+- type: entity
+  parent: ClothingHeadBaseButcherable
+  id: ClothingHeadHatDirector
+  suffix: afgan14
+  name: директорская фуражка
+  description: Я здесь босс!
+  components:
+    - type: Sprite
+      sprite: Afgan/Clothing/Head/directorcap.rsi
+    - type: Clothing
+      sprite: Afgan/Clothing/Head/directorcap.rsi

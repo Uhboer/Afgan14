@@ -154,3 +154,15 @@
     sprite: Afgan/Clothing/Jumpsuit/itobe.rsi
   - type: Clothing
     sprite: Afgan/Clothing/Jumpsuit/itobe.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitDirector
+  name: костюм директора
+  description: Я чуствую в нем силу.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Jumpsuit/director.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Jumpsuit/director.rsi

@@ -1,0 +1,77 @@
+#afgan14
+
+- type: entity
+  parent: ClothingShoesMilitaryBase
+  id: ClothingShoesBootsSteel
+  name: стальные поножи
+  description: сделаны из стали. Прям как в средние века.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Boots/steel.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Boots/steel.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.9
+        Piercing: 0.95
+  - type: ClothingSpeedModifier
+    walkModifier: 0.96
+    sprintModifier: 0.96
+  - type: Reflect
+    reflectProb: 0.03
+  - type: Tag
+    tags:
+      - SteelBoots
+
+- type: entity
+  parent: ClothingShoesMilitaryBase
+  id: ClothingShoesBootsSandal
+  name: сандали
+  description: сандали из дерева.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Boots/sandali.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Boots/sandali.rsi
+
+- type: entity
+  parent: ClothingShoesMilitaryBase
+  id: ClothingShoesBootsSteelUpgrade
+  name: бронеберцы
+  description: высокие ботинки с кевларовой пластиной и стальной оболочкой.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Boots/berci.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Boots/berci.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.85
+        Piercing: 0.85
+  - type: ClothingSpeedModifier
+    walkModifier: 0.94
+    sprintModifier: 0.94
+  - type: Reflect
+    reflectProb: 0.05
+  - type: Construction
+    graph: BerciGraph
+    node: berci
+
+- type: entity
+  parent: ClothingShoesMilitaryBase
+  id: ClothingShoesBootsItobe
+  name: обувь
+  description: удобная обувь.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Boots/itobe.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Boots/itobe.rsi
