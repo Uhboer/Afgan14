@@ -62,7 +62,7 @@
        Blunt: 8
     soundHit:
       collection: PunchPower
-    animation: WeaponArcDisarm
+    animation: WeaponArcBite
     mustBeEquippedToUse: true
   - type: MeleeSpeech
   - type: ActivatableUI
@@ -76,3 +76,41 @@
   - type: Construction
     graph: RingGraph
     node: ring
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsGlovesClaws
+  name: когти
+  description: я всех убью нахуй!! АААА!!
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Gloves/claws.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Gloves/claws.rsi
+  - type: Fiber
+    fiberMaterial: fibers-durathread
+    fiberColor: fibers-black
+  - type: Insulated
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.9
+  - type: FingerprintMask
+  - type: Reflect
+    reflectProb: 0.05
+  - type: MeleeWeapon
+    autoAttack: true
+    attackRate: 4
+    damage:
+      types:
+       Slash: 7
+    soundHit:
+      collection: ClawsStrike
+    animation: WeaponArcClaw
+    mustBeEquippedToUse: true
+
+
