@@ -164,3 +164,29 @@
       collection: PunchPower
     animation: WeaponArcBite
     mustBeEquippedToUse: false
+
+- type: entity
+  parent: ClothingOuterVestWeb
+  id: ClothingOuterVestDirector
+  name: одеяния директора
+  description: Ты - самый лучший.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Armor/director.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Armor/director.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.75
+        Slash: 0.70
+        Piercing: 0.75
+        Heat: 0.75
+  - type: ExplosionResistance
+    damageCoefficient: 0.2
+  - type: ClothingSpeedModifier
+    walkModifier: 1.2
+    sprintModifier: 1.2
+  - type: Reflect
+    reflectProb: 0.001

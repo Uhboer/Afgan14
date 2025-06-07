@@ -110,3 +110,23 @@
     slots:
     - Snout
     hideOnToggle: true
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ClothingMaskDirector
+  name: маска Директора
+  description: Веет таинственностью.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Mask/director.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Mask/director.rsi
+  - type: Item
+    storedRotation: -90
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    hideOnToggle: true
+  - type: IdentityBlocker
