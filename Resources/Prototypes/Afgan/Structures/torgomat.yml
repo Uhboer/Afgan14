@@ -174,6 +174,26 @@
   - TorgomatLegendary
 
 - type: listing
+  id: TorgomatClothingOuterVestKaratel
+  name: Броня Дракона
+  description: Ты её, сука, не достоен.
+  productEntity: ClothingOuterVestKaratel
+  cost:
+    Bib: 50
+  categories:
+  - TorgomatLegendary
+
+- type: listing
+  id: TorgomatClothingHeadHelmetKaratel
+  name: странный шлем
+  description: Какого...
+  productEntity: ClothingHeadHelmetKaratel
+  cost:
+    Bib: 50
+  categories:
+  - TorgomatLegendary
+
+- type: listing
   id: TorgomatWeaponRevolverBlade
   name: Блейд
   description: Стандартное вооружение агентов.
@@ -270,6 +290,26 @@
   productEntity: ClothingOuterVestGiga
   cost:
     Bib: 15
+  categories:
+  - TorgomatArmor
+
+- type: listing
+  id: TorgomatClothingHandsGlovesClaws
+  name: когти
+  description: Я Логан, нахуй!
+  productEntity: ClothingHandsGlovesClaws
+  cost:
+    Bib: 10
+  categories:
+  - TorgomatArmor
+
+- type: listing
+  id: TorgomatClothingUniformJumpsuitHauberk
+  name: кольчуга
+  description: Ты че дохуя рыцарь?
+  productEntity: ClothingUniformJumpsuitHauberk
+  cost:
+    Bib: 12
   categories:
   - TorgomatArmor
 
