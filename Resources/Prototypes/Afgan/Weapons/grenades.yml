@@ -29,3 +29,7 @@
         volume: 5
     initialBeepDelay: 0
     beepInterval: 50 # beeps total (at 0 and 2)
+  - type: StaminaDamageOnHit
+    damage: 30
+  - type: StaminaDamageOnCollide
+    damage: 30
