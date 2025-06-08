@@ -130,3 +130,12 @@
     - Snout
     hideOnToggle: true
   - type: IdentityBlocker
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.75
+        Heat: 0.75
+  - type: Reflect
+    reflectProb: 0.05

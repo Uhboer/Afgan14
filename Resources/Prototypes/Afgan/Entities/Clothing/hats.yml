@@ -59,3 +59,10 @@
       sprite: Afgan/Clothing/Head/directorcap.rsi
     - type: Clothing
       sprite: Afgan/Clothing/Head/directorcap.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.8
+          Slash: 0.8
+          Piercing: 0.85
+          Heat: 0.85
