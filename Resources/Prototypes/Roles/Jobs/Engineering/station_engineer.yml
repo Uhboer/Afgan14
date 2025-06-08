@@ -32,3 +32,4 @@
     ears: ClothingHeadsetCommand
     head: ClothingHeadHatDirector
     id: UniversalIDCard
+    eyes: ClothingEyesVisionEng
