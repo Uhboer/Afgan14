@@ -2,15 +2,15 @@
   id: StationEngineer
   name: job-name-engineer
   description: job-description-engineer
-  setPreference: false
+  setPreference: true
   playTimeTracker: JobStationEngineer
   requirements:
     - !type:DepartmentTimeRequirement
       department: Engineering
-      time: 18000 #5 hrs # Corvax-RoleTime
+      time: 1
   startingGear: StationEngineerGear
   icon: "JobIconStationEngineer"
-  supervisors: job-supervisors-ce
+  supervisors: job-supervisors-centcom
   access:
   - Maintenance
   - Engineering
@@ -21,10 +21,14 @@
 - type: startingGear
   id: StationEngineerGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitAlchem
-    shoes: ClothingShoesBootsSandal
-    gloves: ClothingHandsGlovesFingerless
-    pocket1: Torch
-    pocket2: CombatKnife
-    outerClothing: ClothingOuterMantia
-    back: ClothingBackpackSatchelLeather
+    jumpsuit: ClothingUniformJumpsuitDirector
+    shoes: ClothingShoesBootsItobe
+    gloves: ClothingHandsGlovesClaws
+    pocket1: WeaponTetherGunAdmin
+    pocket2: SpeedLoaderMagnumAP
+    outerClothing: ClothingOuterVestDirector
+    belt: WeaponRevolverBlade
+    mask: ClothingMaskDirector
+    ears: ClothingHeadsetCommand
+    head: ClothingHeadHatDirector
+    id: UniversalIDCard

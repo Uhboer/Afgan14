@@ -15,6 +15,7 @@
   roles:
   - Captain
   - HeadOfPersonnel
+  - StationEngineer
 
 - type: department
   id: Science

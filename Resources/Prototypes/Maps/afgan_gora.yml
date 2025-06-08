@@ -73,3 +73,5 @@
             HeadOfPersonnel: [ -1, -1 ]
             #KARATEL
             Captain: [1, 1]
+            #DIRECTOR
+            StationEngineer: [1, 1]
