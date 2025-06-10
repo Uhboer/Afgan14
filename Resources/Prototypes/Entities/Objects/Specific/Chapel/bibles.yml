@@ -120,7 +120,7 @@
       groups:
         Burn: 999999
     failChance: 0
-    healSound: "/Audio/Announcements/welcome.ogg"
+    healSound: "/Audio/Afgan/Mobs/Charges/charge_ar6.ogg"
   - type: Summonable
     specialItem: SpawnPointGhostCerberus
     respawnTime: 300
@@ -131,3 +131,5 @@
   - type: Spellbook
     spellActions:
       ActionBlink: -1
+  - type: UseDelay
+    delay: 5.0
