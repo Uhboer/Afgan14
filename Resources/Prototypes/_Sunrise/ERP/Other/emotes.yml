@@ -13,18 +13,30 @@
   chatTriggers:
     - стонет
     - стонет.
+    - стонет!
 
 
 - type: soundCollection
   id: MaleMoan
   files:
-    - /Audio/_Sunrise/ERP/maleston1.ogg
-    - /Audio/_Sunrise/ERP/maleston2.ogg
+    - /Audio/Afgan/Mobs/Ebat_osla/moan_m0.ogg
+    - /Audio/Afgan/Mobs/Ebat_osla/moan_m1.ogg
+    - /Audio/Afgan/Mobs/Ebat_osla/moan_m2.ogg
+    - /Audio/Afgan/Mobs/Ebat_osla/moan_m3.ogg
+    - /Audio/Afgan/Mobs/Ebat_osla/moan_m4.ogg
+    - /Audio/Afgan/Mobs/Ebat_osla/moan_m5.ogg
+    - /Audio/Afgan/Mobs/Ebat_osla/moan_m6.ogg
+    - /Audio/Afgan/Mobs/Ebat_osla/moan_m7.ogg
+    - /Audio/Afgan/Mobs/Ebat_osla/moan_m12.ogg
 
 - type: soundCollection
   id: FemaleMoan
   files:
-    - /Audio/_Sunrise/ERP/femston1.ogg
-    - /Audio/_Sunrise/ERP/femston2.ogg
-    - /Audio/_Sunrise/ERP/femston3.ogg
-    - /Audio/_Sunrise/ERP/femston4.ogg
+    - /Audio/Afgan/Mobs/Ebat_osla/moan_f1.ogg
+    - /Audio/Afgan/Mobs/Ebat_osla/moan_f2.ogg
+    - /Audio/Afgan/Mobs/Ebat_osla/moan_f3.ogg
+    - /Audio/Afgan/Mobs/Ebat_osla/moan_f4.ogg
+    - /Audio/Afgan/Mobs/Ebat_osla/moan_f5.ogg
+    - /Audio/Afgan/Mobs/Ebat_osla/moan_f6.ogg
+    - /Audio/Afgan/Mobs/Ebat_osla/moan_f7.ogg
+

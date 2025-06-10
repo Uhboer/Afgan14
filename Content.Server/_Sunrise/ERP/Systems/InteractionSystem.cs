@@ -69,7 +69,7 @@ namespace Content.Server._Sunrise.ERP.Systems
                     compUser.TimeFromLastErp = _gameTiming.CurTime;
                 }
                 Spawn("EffectHearts", Transform(User).Coordinates);
-                if(_random.Prob(0.1f))
+                if(_random.Prob(0.4f))
                 {
                     _chat.TryEmoteWithChat(User, "Moan", ChatTransmitRange.Normal);
                 }
@@ -97,7 +97,7 @@ namespace Content.Server._Sunrise.ERP.Systems
                     compTarget.TimeFromLastErp = _gameTiming.CurTime;
                 }
                 Spawn("EffectHearts", Transform(Target).Coordinates);
-                if (_random.Prob(0.1f))
+                if (_random.Prob(0.5f))
                 {
                     _chat.TryEmoteWithChat(User, "Moan", ChatTransmitRange.Normal);
                 }

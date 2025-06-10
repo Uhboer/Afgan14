@@ -4,6 +4,8 @@
   icon: _Sunrise/Interface/ERP/blankIcon.png
   emotes:
   - жмёт руку %target
+  sounds:
+  - path: /Audio/Afgan/Mobs/Ebat_osla/hug.ogg
   userSex: Unsexed
   targetSex: Unsexed
   userWithoutCloth: false
@@ -17,6 +19,8 @@
   emotes:
   - обнимает %target
   - крепко обнимает %target
+  sounds:
+  - path: /Audio/Afgan/Mobs/Ebat_osla/hug.ogg
   userSex: Unsexed
   targetSex: Unsexed
   userWithoutCloth: false
@@ -29,6 +33,8 @@
   icon: _Sunrise/Interface/ERP/blankIcon.png
   emotes:
   - даёт пять %target
+  sounds:
+  - path: /Audio/Afgan/Mobs/Ebat_osla/bang1.ogg
   userSex: Unsexed
   targetSex: Unsexed
   userWithoutCloth: false
@@ -42,6 +48,8 @@
   emotes:
   - гладит %target по голове
   - гладит %target по головке
+  sounds:
+  - path: /Audio/Afgan/Mobs/Ebat_osla/hug.ogg
   userSex: Unsexed
   targetSex: Unsexed
   userWithoutCloth: false
@@ -53,12 +61,16 @@
 
 - type: interaction
   id: ERPfeet1
-  name: Вылизать ножки
+  name: Вылизать ножки (стать потным жирным хиканом)
   icon: _Sunrise/Interface/ERP/heartIcon.png
   emotes:
   - лижет ножки %target
   - начинает лизать ножки %target
   - подносит свой рот к ножкам %target, и начинает их лизать
+  sounds:
+  - path: /Audio/Afgan/Mobs/Ebat_osla/foot_wet1.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/foot_wet2.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/foot_wet3.ogg
   userSex: Unsexed
   targetSex: Unsexed
   userWithoutCloth: false
@@ -95,8 +107,8 @@
   userWithoutCloth: false
   targetWithoutCloth: false
   erp: true
-  lovePercentUser: 5
-  lovePercentTarget: 6
+  lovePercentUser: 3
+  lovePercentTarget: 4
 
 - type: interaction
   id: ERPkiss2
@@ -119,8 +131,8 @@
   userWithoutCloth: false
   targetWithoutCloth: false
   erp: true
-  lovePercentUser: 5
-  lovePercentTarget: 6
+  lovePercentUser: 3
+  lovePercentTarget: 4
 
 - type: interaction
   id: ERPbreast1
@@ -152,6 +164,10 @@
   - аккуратно сосёт соски %target
   - резко сосёт соски %target
   - нежно сосёт соски %target
+  sounds:
+  - path: /Audio/Afgan/Mobs/Ebat_osla/foot_wet1.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/foot_wet2.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/foot_wet3.ogg
   userSex: Unsexed
   targetSex: Female
   userWithoutCloth: false
@@ -162,19 +178,21 @@
 
 - type: interaction
   id: ERPanusInsert
-  name: Проникнуть в задницу
+  name: Долбить в зад
   icon: _Sunrise/Interface/ERP/heartIcon.png
   emotes:
-  - проникает в задницу %target
-  - проникнул в задницу %target
-  - резко проникает в задницу %target
-  - делает аккуратное проникновение в задницу %target
-  - делает резкое проникновение в задницу %target
+  - долбит задницу %target
+  - выдолбил задницу %target
+  - резко трахнул зад %target
+  - ебёт в задницу %target
+  - штурмует задницу %target
   sounds:
-  - path: /Audio/_Sunrise/ERP/hlup.ogg
-  - path: /Audio/_Sunrise/ERP/hlup2.ogg
-  - path: /Audio/_Sunrise/ERP/hlup3.ogg
-  - path: /Audio/_Sunrise/ERP/hlup4.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/bang1.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/bang2.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/bang3.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/bang4.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/bang5.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/bang6.ogg
   userSex: Male
   targetSex: Unsexed
   userWithoutCloth: true
@@ -185,34 +203,55 @@
 
 - type: interaction
   id: ERPvaginaInsert
-  name: Проникнуть в вагину
+  name: Трахнуть в вагину
   icon: _Sunrise/Interface/ERP/heartIcon.png
   emotes:
   - проникает в вагину %target
   - проникнул в вагину %target
   - резко проникает в вагину %target
-  - делает аккуратное проникновение в вагину %target
+  - ебёт в пизду %target
+  - трахает %target
+  - натягивает на хуй %target'у
   sounds:
-  - path: /Audio/_Sunrise/ERP/hlup.ogg
-  - path: /Audio/_Sunrise/ERP/hlup2.ogg
-  - path: /Audio/_Sunrise/ERP/hlup3.ogg
-  - path: /Audio/_Sunrise/ERP/hlup4.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/squelch1.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/squelch2.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/squelch3.ogg
   userSex: Male
   targetSex: Female
   userWithoutCloth: true
   targetWithoutCloth: true
   erp: true
-  lovePercentUser: 20
-  lovePercentTarget: 20
+  lovePercentUser: 23
+  lovePercentTarget: 23
+
+- type: interaction
+  id: ERPRide
+  name: Скакать на хуе
+  icon: _Sunrise/Interface/ERP/heartIcon.png
+  emotes:
+  - скачет на хуе %target'а
+  - оседлала %target'а
+  - прыгает на %target'е
+  sounds:
+  - path: /Audio/Afgan/Mobs/Ebat_osla/squelch1.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/squelch2.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/squelch3.ogg
+  userSex: Female
+  targetSex: Male
+  userWithoutCloth: true
+  targetWithoutCloth: true
+  erp: true
+  lovePercentUser: 24
+  lovePercentTarget: 25
+
 
 - type: interaction
   id: ERPvaginaLick
-  name: Вылизать вагину
+  name: Лизать пизду
   icon: _Sunrise/Interface/ERP/heartIcon.png
   emotes:
-  - нежно лижет вагину %target
-  - вылизывает вагину %target
-  - лижет вагинут %target
+  - лижет вагину %target
+  - лижет пизду %target
   userSex: Unsexed
   targetSex: Female
   userWithoutCloth: false
@@ -223,18 +262,28 @@
 
 - type: interaction
   id: ERPmasturbate
-  name: Мастурбировать
+  name: Дрочить цели
   icon: _Sunrise/Interface/ERP/heartIcon.png
   emotes:
   - аккуратно мастурбирует %target'у
   - мастурбирует %target'у
   - резко начинает мастурбировать %target'у
   - начинает мастурбировать %target'у
+  - надрачивает %target'у
+  - наяривает %target'у
   sounds:
-  - path: /Audio/_Sunrise/ERP/hlup.ogg
-  - path: /Audio/_Sunrise/ERP/hlup2.ogg
-  - path: /Audio/_Sunrise/ERP/hlup3.ogg
-  - path: /Audio/_Sunrise/ERP/hlup4.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/handjob1.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/handjob2.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/handjob3.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/handjob4.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/handjob5.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/handjob6.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/handjob7.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/handjob8.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/handjob9.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/handjob10.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/handjob11.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/handjob12.ogg
   userSex: Unsexed
   targetSex: Male
   userWithoutCloth: false
@@ -245,18 +294,26 @@
 
 - type: interaction
   id: ERPmasturbateSelf
-  name: Мастурбировать себе
+  name: Дрочить себе
   icon: _Sunrise/Interface/ERP/heartIcon.png
   emotes:
   - мастурбирует
   - мастурбирует, смотря на %target
-  - начинает мастурбировать
-  - начинает мастурбировать, смотря на %target
+  - дрочит
+  - наяривает
   sounds:
-  - path: /Audio/_Sunrise/ERP/hlup.ogg
-  - path: /Audio/_Sunrise/ERP/hlup2.ogg
-  - path: /Audio/_Sunrise/ERP/hlup3.ogg
-  - path: /Audio/_Sunrise/ERP/hlup4.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/handjob1.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/handjob2.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/handjob3.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/handjob4.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/handjob5.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/handjob6.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/handjob7.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/handjob8.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/handjob9.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/handjob10.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/handjob11.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/handjob12.ogg
   userSex: Unsexed
   targetSex: Unsexed
   userWithoutCloth: true
@@ -273,6 +330,21 @@
   - отсасывает у %target
   - сосёт у %target
   - делает минет %target
+  - заглатывает у %target
+  sounds:
+  - path: /Audio/Afgan/Mobs/Ebat_osla/bj1.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/bj2.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/bj3.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/bj4.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/bj5.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/bj6.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/bj7.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/bj8.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/bj9.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/bj10.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/bj11.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/bj12.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/bj13.ogg
   userSex: Unsexed
   targetSex: Male
   userWithoutCloth: false
@@ -288,6 +360,22 @@
   emotes:
   - заставляет сосать %target
   - заставляет делать минет %target
+  - суёт хуй в горло %target
+  - прочищает ротельник %target
+  sounds:
+  - path: /Audio/Afgan/Mobs/Ebat_osla/bj1.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/bj2.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/bj3.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/bj4.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/bj5.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/bj6.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/bj7.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/bj8.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/bj9.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/bj10.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/bj11.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/bj12.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/bj13.ogg
   userSex: Male
   targetSex: Unsexed
   userWithoutCloth: true
