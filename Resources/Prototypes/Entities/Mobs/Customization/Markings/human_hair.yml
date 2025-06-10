@@ -77,3 +77,11 @@
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: bedhead3
+
+- type: marking
+  id: HumanHairTail
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+    - sprite: Mobs/Customization/human_hair.rsi
+      state: tail

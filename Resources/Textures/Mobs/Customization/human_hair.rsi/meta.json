@@ -46,6 +46,10 @@
       {
         "name": "bedhead3",
         "directions": 4
+      },
+      {
+        "name": "tail",
+        "directions": 4
       }
     ]
   }

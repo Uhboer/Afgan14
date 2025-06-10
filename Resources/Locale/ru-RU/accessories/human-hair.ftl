@@ -8,3 +8,4 @@ marking-HumanHairNaura = Nigger Aura
 marking-HumanHairBedhead = Bedhead
 marking-HumanHairBedhead2 = Bedhead версия 2
 marking-HumanHairBedhead3 = Bedhead зализанная
+marking-HumanHairTail = Хвост
