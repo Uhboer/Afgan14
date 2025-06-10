@@ -45,3 +45,35 @@
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: agent
+
+- type: marking
+  id: HumanHairNaura
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+    - sprite: Mobs/Customization/human_hair.rsi
+      state: nuara
+
+- type: marking
+  id: HumanHairBedhead
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+    - sprite: Mobs/Customization/human_hair.rsi
+      state: bedhead
+
+- type: marking
+  id: HumanHairBedhead2
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+    - sprite: Mobs/Customization/human_hair.rsi
+      state: bedhead2
+
+- type: marking
+  id: HumanHairBedhead3
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+    - sprite: Mobs/Customization/human_hair.rsi
+      state: bedhead3

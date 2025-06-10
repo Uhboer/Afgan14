@@ -30,6 +30,18 @@
       {
         "name": "agent",
         "directions": 4
+      },
+        "name": "naura",
+        "directions": 4
+      },
+        "name": "bedhead",
+        "directions": 4
+      },
+        "name": "beadhead2",
+        "directions": 4
+      },
+        "name": "beadhead3",
+        "directions": 4
       }
     ]
   }

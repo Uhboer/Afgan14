@@ -1,6 +1,9 @@
-marking-HumanHairBalding = Лысая башка съешь пирожка
+marking-HumanHairBalding = Лысьё ебучее
 marking-HumanHairDave = Потный Кирюшка
 marking-HumanHairLong = Лохмотья
 marking-HumanHairRape = GOD OF RAPE
-marking-HumanHairMlong = god been saved
-marking-HumanHairAgent = Агент
+marking-HumanHairMlong = god will save me
+marking-HumanHairNaura = Nigger Aura
+marking-HumanHairBedhead = Bedhead
+marking-HumanHairBedhead2 = Бошка кровать зализанная
+marking-HumanHairBedhead3 = Бошка кровать версия 3
