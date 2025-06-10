@@ -52,7 +52,7 @@
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: nuara
+      state: naura
 
 - type: marking
   id: HumanHairBedhead
