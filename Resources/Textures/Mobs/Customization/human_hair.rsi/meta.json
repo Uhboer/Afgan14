@@ -31,16 +31,20 @@
         "name": "agent",
         "directions": 4
       },
+      {
         "name": "naura",
         "directions": 4
       },
+      {
         "name": "bedhead",
         "directions": 4
       },
-        "name": "beadhead2",
+      {
+        "name": "bedhead2",
         "directions": 4
       },
-        "name": "beadhead3",
+      {
+        "name": "bedhead3",
         "directions": 4
       }
     ]
