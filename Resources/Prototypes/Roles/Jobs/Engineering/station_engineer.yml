@@ -5,8 +5,7 @@
   setPreference: true
   playTimeTracker: JobStationEngineer
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: Engineering
+    - !type:OverallPlaytimeRequirement
       time: 1
   startingGear: StationEngineerGear
   icon: "JobIconStationEngineer"

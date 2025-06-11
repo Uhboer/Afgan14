@@ -75,3 +75,5 @@
             Captain: [1, 1]
             #DIRECTOR
             StationEngineer: [1, 1]
+            #GOR
+            CentralCommandOfficial: [1, 1]
