@@ -66,3 +66,36 @@
           Slash: 0.8
           Piercing: 0.85
           Heat: 0.85
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatRape
+  suffix: afgan14, DO NOT SPAWN
+  name: God Of Rape
+  description: He stalked me for about 5 minutes. I decided to stop and asked him, who he was. He stared at me and said,                     <<I AM THE GOD OF RAPE>>
+  components:
+    - type: Sprite
+      sprite: Afgan/Clothing/Head/rape.rsi
+    - type: Clothing
+      sprite: Afgan/Clothing/Head/rape.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.3
+          Slash: 0.3
+          Piercing: 0.3
+          Heat: 0.3
+          Caustic: 0.3
+          Radiation: 0.3
+    - type: ExplosionResistance
+      damageCoefficient: 0.3
+    - type: PressureProtection
+      highPressureMultiplier: 0
+      lowPressureMultiplier: 2000
+    - type: HideLayerClothing
+      slots:
+      - Hair
+      - Snout
+      - HeadTop
+      - HeadSide
+    - type: Unremoveable
