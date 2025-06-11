@@ -50,7 +50,7 @@
 - type: emoteSounds
   id: FemaleHuman
   params:
-    variation: 0.125
+    variation: 0.055
   sounds:
     Scream:
       collection: FemaleScreams

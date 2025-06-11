@@ -41,43 +41,8 @@
   targetWithoutCloth: false
   erp: false
 
-- type: interaction
-  id: pethead
-  name: Погладить по головке
-  icon: _Sunrise/Interface/ERP/blankIcon.png
-  emotes:
-  - гладит %target по голове
-  - гладит %target по головке
-  sounds:
-  - path: /Audio/Afgan/Mobs/Ebat_osla/hug.ogg
-  userSex: Unsexed
-  targetSex: Unsexed
-  userWithoutCloth: false
-  targetWithoutCloth: false
-  erp: false
-
 # Erp (help)
 
-
-- type: interaction
-  id: ERPfeet1
-  name: Вылизать ножки (стать потным жирным хиканом)
-  icon: _Sunrise/Interface/ERP/heartIcon.png
-  emotes:
-  - лижет ножки %target
-  - начинает лизать ножки %target
-  - подносит свой рот к ножкам %target, и начинает их лизать
-  sounds:
-  - path: /Audio/Afgan/Mobs/Ebat_osla/foot_wet1.ogg
-  - path: /Audio/Afgan/Mobs/Ebat_osla/foot_wet2.ogg
-  - path: /Audio/Afgan/Mobs/Ebat_osla/foot_wet3.ogg
-  userSex: Unsexed
-  targetSex: Unsexed
-  userWithoutCloth: false
-  targetWithoutCloth: false
-  erp: true
-  lovePercentUser: 0
-  lovePercentTarget: 2
 
 - type: interaction
   id: ERPkiss
@@ -107,74 +72,8 @@
   userWithoutCloth: false
   targetWithoutCloth: false
   erp: true
-  lovePercentUser: 3
-  lovePercentTarget: 4
-
-- type: interaction
-  id: ERPkiss2
-  name: Поцеловать шею
-  icon: _Sunrise/Interface/ERP/kissIcon.png
-  emotes:
-  - целует %target за шею
-  - нежно целует %target за шею
-  - слегка целует %target за шею
-  - настойчиво целует %target за шею
-  sounds:
-  - path: /Audio/_Sunrise/ERP/kiss1.ogg
-  - path: /Audio/_Sunrise/ERP/kiss2.ogg
-  - path: /Audio/_Sunrise/ERP/kiss3.ogg
-  - path: /Audio/_Sunrise/ERP/kiss4.ogg
-  - path: /Audio/_Sunrise/ERP/kiss5.ogg
-  - path: /Audio/_Sunrise/ERP/kiss6.ogg
-  userSex: Unsexed
-  targetSex: Unsexed
-  userWithoutCloth: false
-  targetWithoutCloth: false
-  erp: true
-  lovePercentUser: 3
-  lovePercentTarget: 4
-
-- type: interaction
-  id: ERPbreast1
-  name: Сжать грудь в ладони
-  icon: _Sunrise/Interface/ERP/heartIcon.png
-  emotes:
-  - сжимает грудь %target
-  - аккуратно сжимает грудь %target
-  - резко сжимает грудь %target
-  - сжимает грудь %target в ладони
-  - аккуратно сжимает грудь %target в ладони
-  - резко сжимает грудь %target в ладони
-  - лапает грудь %target
-  - мнёт грудь %target
-  userSex: Unsexed
-  targetSex: Female
-  userWithoutCloth: false
-  targetWithoutCloth: true
-  erp: true
-  lovePercentUser: 4
-  lovePercentTarget: 10
-
-- type: interaction
-  id: ERPbreast2
-  name: Пососать соски
-  icon: _Sunrise/Interface/ERP/heartIcon.png
-  emotes:
-  - сосёт соски %target
-  - аккуратно сосёт соски %target
-  - резко сосёт соски %target
-  - нежно сосёт соски %target
-  sounds:
-  - path: /Audio/Afgan/Mobs/Ebat_osla/foot_wet1.ogg
-  - path: /Audio/Afgan/Mobs/Ebat_osla/foot_wet2.ogg
-  - path: /Audio/Afgan/Mobs/Ebat_osla/foot_wet3.ogg
-  userSex: Unsexed
-  targetSex: Female
-  userWithoutCloth: false
-  targetWithoutCloth: true
-  erp: true
-  lovePercentUser: 5
-  lovePercentTarget: 13
+  lovePercentUser: 1
+  lovePercentTarget: 2
 
 - type: interaction
   id: ERPanusInsert
@@ -198,8 +97,8 @@
   userWithoutCloth: true
   targetWithoutCloth: true
   erp: true
-  lovePercentUser: 20
-  lovePercentTarget: 20
+  lovePercentUser: 13
+  lovePercentTarget: 8
 
 - type: interaction
   id: ERPvaginaInsert
@@ -216,13 +115,16 @@
   - path: /Audio/Afgan/Mobs/Ebat_osla/squelch1.ogg
   - path: /Audio/Afgan/Mobs/Ebat_osla/squelch2.ogg
   - path: /Audio/Afgan/Mobs/Ebat_osla/squelch3.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/bang4.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/bang5.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/bang6.ogg
   userSex: Male
   targetSex: Female
   userWithoutCloth: true
   targetWithoutCloth: true
   erp: true
-  lovePercentUser: 23
-  lovePercentTarget: 23
+  lovePercentUser: 15
+  lovePercentTarget: 15
 
 - type: interaction
   id: ERPRide
@@ -241,8 +143,8 @@
   userWithoutCloth: true
   targetWithoutCloth: true
   erp: true
-  lovePercentUser: 24
-  lovePercentTarget: 25
+  lovePercentUser: 15
+  lovePercentTarget: 15
 
 
 - type: interaction
@@ -252,13 +154,17 @@
   emotes:
   - лижет вагину %target
   - лижет пизду %target
+  sounds:
+  - path: /Audio/Afgan/Mobs/Ebat_osla/foot_wet1.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/foot_wet2.ogg
+  - path: /Audio/Afgan/Mobs/Ebat_osla/foot_wet3.ogg
   userSex: Unsexed
   targetSex: Female
   userWithoutCloth: false
   targetWithoutCloth: true
   erp: true
-  lovePercentUser: 4
-  lovePercentTarget: 12
+  lovePercentUser: 2
+  lovePercentTarget: 7
 
 - type: interaction
   id: ERPmasturbate
@@ -289,8 +195,8 @@
   userWithoutCloth: false
   targetWithoutCloth: true
   erp: true
-  lovePercentUser: 2
-  lovePercentTarget: 15
+  lovePercentUser: 1
+  lovePercentTarget: 5
 
 - type: interaction
   id: ERPmasturbateSelf
@@ -319,8 +225,8 @@
   userWithoutCloth: true
   targetWithoutCloth: false
   erp: true
-  lovePercentUser: 15
-  lovePercentTarget: 2
+  lovePercentUser: 5
+  lovePercentTarget: 1
 
 - type: interaction
   id: ERPbruh
@@ -350,8 +256,8 @@
   userWithoutCloth: false
   targetWithoutCloth: true
   erp: true
-  lovePercentUser: 3
-  lovePercentTarget: 15
+  lovePercentUser: 2
+  lovePercentTarget: 8
 
 - type: interaction
   id: ERPbruh2
@@ -381,5 +287,5 @@
   userWithoutCloth: true
   targetWithoutCloth: false
   erp: true
-  lovePercentUser: 15
-  lovePercentTarget: 3
+  lovePercentUser: 8
+  lovePercentTarget: 2
