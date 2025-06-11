@@ -83,6 +83,7 @@
     sprite: Afgan/Weapons/Melee/alebard.rsi
   - type: MeleeWeapon
     attackRate: 0.4
+    animation: WeaponArcBite
     damage:
       types:
         Slash: 15
@@ -119,6 +120,7 @@
     sprite: Afgan/Weapons/Melee/swordgold.rsi
   - type: MeleeWeapon
     attackRate: 1.5
+    animation: WeaponArcBite
     damage:
       types:
         Slash: 20
@@ -154,6 +156,7 @@
     sprite: Afgan/Weapons/Melee/twohanded.rsi
   - type: MeleeWeapon
     attackRate: 0.9
+    animation: WeaponArcBite
     damage:
       types:
         Slash: 5
