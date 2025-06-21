@@ -88,7 +88,7 @@
           Caustic: 0.3
           Radiation: 0.3
     - type: ExplosionResistance
-      damageCoefficient: 0.3
+      damageCoefficient: 0.8
     - type: PressureProtection
       highPressureMultiplier: 0
       lowPressureMultiplier: 2000

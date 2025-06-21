@@ -11,11 +11,7 @@
   icon: "JobIconStationEngineer"
   supervisors: job-supervisors-centcom
   access:
-  - Maintenance
-  - Engineering
-  - External
-  extendedAccess:
-  - Atmospherics
+  - AllAccess
 
 - type: startingGear
   id: StationEngineerGear
@@ -23,10 +19,8 @@
     jumpsuit: ClothingUniformJumpsuitDirector
     shoes: ClothingShoesBootsItobe
     gloves: ClothingHandsGlovesClaws
-    pocket1: WeaponTetherGunAdmin
-    pocket2: SpeedLoaderMagnumAP
+    pocket1: WeaponForceGunAdmin
     outerClothing: ClothingOuterVestDirector
-    belt: WeaponRevolverBlade
     mask: ClothingMaskDirector
     ears: ClothingHeadsetCommand
     head: ClothingHeadHatDirector
