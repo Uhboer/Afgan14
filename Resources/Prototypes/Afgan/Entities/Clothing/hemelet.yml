@@ -185,3 +185,29 @@
     sprintModifier: 0.98
   - type: Reflect
     reflectProb: 0.05
+
+
+
+- type: entity
+  parent: ClothingHeadHelmetBasic
+  id: ClothingHeadHelmetLight
+  name: шлем Святой Нации
+  description: шлем элиты святой нации.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Head/light.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Head/light.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.7
+        Heat: 0.8
+  - type: ClothingSpeedModifier
+    walkModifier: 0.98
+    sprintModifier: 0.98
+  - type: Reflect
+    reflectProb: 0.05

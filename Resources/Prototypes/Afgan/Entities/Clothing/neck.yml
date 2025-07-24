@@ -45,3 +45,15 @@
   - type: Construction
     graph: NaplechGraph
     node: naplech
+
+
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckLight
+  name: плащь Света
+  description: плащь великой Святой Нации. Без него - ты не являешься частью святой нации.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Neck/light.rsi
