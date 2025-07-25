@@ -43,3 +43,23 @@
     - AfganGrenade
     - AfganGrenade
     - AfganGrenade
+
+- type: startingGear
+  id: Karatel
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitKaratelOrig
+    belt: ClothingBeltRope
+    eyes: ClothingEyesVisionEng
+    shoes: ClothingShoesBootsSteelUpgrade
+    head: ClothingHeadHelmetKaratel
+    gloves: ClothingHandsMercGlovesCombat
+    outerClothing: ClothingOuterVestKaratel
+    back: AfganThanded
+    pocket1: CombatKnife
+    pocket2: KukriKnife
+  storage:
+    belt:
+    - AfganGrenade
+    - AfganGrenade
+    - AfganGrenade
+    - AfganGrenade

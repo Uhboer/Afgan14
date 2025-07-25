@@ -22,3 +22,12 @@
     back: BowImprovised
     pocket1: SurvivalKnife
     pocket2: Torch
+
+- type: startingGear
+  id: Oborvanec
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitShtany
+    belt: ClothingBeltQuiverFilled
+    back: BowImprovised
+    pocket1: SurvivalKnife
+    pocket2: Torch

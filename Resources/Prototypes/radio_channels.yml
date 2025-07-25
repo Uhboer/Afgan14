@@ -23,9 +23,9 @@
 - type: radioChannel
   id: Engineering
   name: chat-radio-engineering
-  keycode: 'и' # Corvax-Localization
+  keycode: 'в' # Вольдоксы
   frequency: 1357
-  color: "#f37746"
+  color: "#ed05a0"
 
 - type: radioChannel
   id: Medical
@@ -51,9 +51,9 @@
 - type: radioChannel
   id: Service
   name: chat-radio-service
-  keycode: 'с' # Corvax-Localization
+  keycode: 'с' # свет
   frequency: 1349
-  color: "#6ca729"
+  color: "#ffe500"
 
 - type: radioChannel
   id: Supply

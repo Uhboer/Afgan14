@@ -48,3 +48,14 @@
     pocket2: CombatKnife
     outerClothing: ClothingOuterMantia
     back: ClothingBackpackSatchelLeather
+
+- type: startingGear
+  id: Alchemest
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitAlchem
+    shoes: ClothingShoesBootsSandal
+    gloves: ClothingHandsGlovesFingerless
+    pocket1: Torch
+    pocket2: CombatKnife
+    outerClothing: ClothingOuterMantia
+    back: ClothingBackpackSatchelLeather

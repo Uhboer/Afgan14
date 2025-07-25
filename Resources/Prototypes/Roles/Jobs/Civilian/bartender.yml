@@ -39,3 +39,25 @@
     - MagazineLightRifleAK
     - FlippoEngravedLighter
 
+- type: startingGear
+  id: HeadAfganec
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitTaliban
+    back: ClothingBackpackSatchelLeather
+    belt: AfganSwordGold
+    shoes: ClothingShoesBootsSteel
+    neck: ClothingNeckNaplechniki
+    mask: ClothingMaskHamas
+    head: ClothingHeadHelmetAltin
+    gloves: ClothingHandsGlovesStal
+    outerClothing: ClothingOuterVestPravitel
+    suitstorage: WeaponRifleAKSamodel
+    id: CentcomIDCard
+    pocket1: RadioHandheld
+    pocket2: Torch
+  storage:
+    back:
+    - MagazineLightRifleAK
+    - MagazineLightRifleAK
+    - MagazineLightRifleAK
+    - FlippoEngravedLighter

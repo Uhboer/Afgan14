@@ -26,3 +26,17 @@
     head: ClothingHeadHatDirector
     id: UniversalIDCard
     eyes: ClothingEyesVisionEng
+
+- type: startingGear
+  id: Director
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitDirector
+    shoes: ClothingShoesBootsItobe
+    gloves: ClothingHandsGlovesClaws
+    pocket1: WeaponForceGunAdmin
+    outerClothing: ClothingOuterVestDirector
+    mask: ClothingMaskDirector
+    ears: ClothingHeadsetCommand
+    head: ClothingHeadHatDirector
+    id: UniversalIDCard
+    eyes: ClothingEyesVisionEng

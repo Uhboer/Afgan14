@@ -1,0 +1,19 @@
+- type: startingGear
+  id: LightWarrior
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitPovstanKurtka
+    belt: ClothingBeltRope
+    shoes: ClothingShoesBootsCombat
+    mask: ClothingMaskHamas
+    head: ClothingHeadHelmetCherep
+    gloves: ClothingHandsGlovesFingerless
+    outerClothing: ClothingOuterVestWebMerc
+    neck: ClothingNeckLight
+    pocket1: RadioHandheld
+    pocket2: Torch
+  storage:
+    belt:
+    - BaseMagazineMP9evil
+    - BaseMagazineMP9evil
+    - BaseMagazineMP9evil
+    - SyringeOpium

@@ -39,3 +39,28 @@
     - Bib
     - Bib
     - EmergencyOxygenTankFilled
+
+- type: startingGear
+  id: Agent
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitAgent
+    back: ClothingBackpackSatchelLeather
+    shoes: ClothingShoesBootsSalvage
+    gloves: ClothingHandsGlovesFingerless
+    id: SalvageIDCard
+    mask: ClothingMaskGasITOBE
+    ears: ClothingHeadsetGrey
+    pocket1: FlashlightSeclite
+    pocket2: SurvivalKnife
+  storage:
+    back:
+    - Crowbar
+    - Wirecutter
+    - Screwdriver
+    - Wrench
+    - Welder
+    - DrinkEnergyDrinkCan
+    - FoodSnackEnergy
+    - Bib
+    - Bib
+    - EmergencyOxygenTankFilled

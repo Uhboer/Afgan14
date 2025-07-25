@@ -23,3 +23,11 @@
     pocket1: Handcuffs
     pocket2: Handcuffs
     belt: AfganMace
+
+- type: startingGear
+  id: GodOfRape
+  equipment:
+    head: ClothingHeadHatRape
+    pocket1: Handcuffs
+    pocket2: Handcuffs
+    belt: AfganMace

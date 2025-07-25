@@ -1,0 +1,62 @@
+- type: entity
+  parent: ClothingHeadset
+  id: RadioLight
+  name: гарнитура Света
+  description: Устройство связи между бойцами Света.
+  suffix: afgan14
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyLight
+  - type: Sprite
+    sprite: Clothing/Ears/Headsets/base.rsi
+  - type: Clothing
+    sprite: Clothing/Ears/Headsets/base.rsi
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyLight
+  name: свет
+  description: нужен для связи.
+  components:
+  - type: EncryptionKey
+    channels:
+    - Service
+    defaultChannel: Service
+  - type: Sprite
+    layers:
+      - state: box
+      - state: encryptokey
+
+- type: entity
+  parent: ClothingHeadset
+  id: RadioVoldox
+  name: Имплант электроуха
+  description: Устройство связи между бойцами Света.
+  suffix: afgan14
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyVoldox
+  - type: Sprite
+    sprite: Afgan/Clothing/Ears/ear.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Ears/ear.rsi
+
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyVoldox
+  name: ключ
+  description: нужен для связи.
+  components:
+  - type: EncryptionKey
+    channels:
+    - Engineering
+    defaultChannel: Engineering
+  - type: Sprite
+    layers:
+      - state: box
+      - state: encryptokey

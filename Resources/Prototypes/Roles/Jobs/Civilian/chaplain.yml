@@ -40,3 +40,29 @@
     - SyringeOpium
     - SyringeOpium
     - SyringeOpium
+
+- type: startingGear
+  id: ChaplainAfganec
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHamas
+    back: ClothingBackpackSatchelMedical
+    belt: BibleKoran
+    shoes: ClothingShoesBootsCombatFilled
+    mask: ClothingMaskHamas
+    head: ClothingHeadHelmetCherep
+    gloves: ClothingHandsGlovesCombat
+    id: SalvageIDCard
+    pocket1: RadioHandheld
+    pocket2: Torch
+  storage:
+    back:
+    - PaperMedic
+    - DrapesItem
+    - Hemostat
+    - Cautery
+    - Scalpel
+    - Saw
+    - Retractor
+    - SyringeOpium
+    - SyringeOpium
+    - SyringeOpium
