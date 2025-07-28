@@ -139,3 +139,63 @@
         Heat: 0.75
   - type: Reflect
     reflectProb: 0.05
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ClothingMaskBalisticExo
+  name: маска экзоскелета
+  description: часть экзоскелета вольдокса.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Mask/exo.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Mask/exo.rsi
+  - type: Item
+    storedRotation: -90
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
+  - type: IdentityBlocker
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.8
+  - type: Reflect
+    reflectProb: 0.05
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ClothingMaskBalisticExoVoldemar
+  name: маска экзоскелета Вольдемара
+  description: часть экзоскелета лидера вольдокса Вольдемара.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Mask/exo_voldemar.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Mask/exo_voldemar.rsi
+  - type: Item
+    storedRotation: -90
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
+  - type: IdentityBlocker
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.75
+        Slash: 0.75
+        Piercing: 0.75
+        Heat: 0.75
+  - type: Reflect
+    reflectProb: 0.05

@@ -218,3 +218,56 @@
     sprintModifier: 0.65
   - type: Reflect
     reflectProb: 0.05
+
+
+- type: entity
+  parent: ClothingOuterVestWeb
+  id: ClothingOuterExo
+  name: экзоскелет
+  description: Технически-продвинутая вещь. Такую носят солдаты-вольдоксы.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Armor/exo.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Armor/exo.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.55
+        Slash: 0.55
+        Piercing: 0.55
+        Heat: 0.55
+  - type: ExplosionResistance
+    damageCoefficient: 0.85
+  - type: ClothingSpeedModifier
+    walkModifier: 0.45
+    sprintModifier: 0.45
+  - type: Reflect
+    reflectProb: 0.05
+
+- type: entity
+  parent: ClothingOuterVestWeb
+  id: ClothingOuterExoVoldemar
+  name: экзоскелет Вольдемара
+  description: Технически-продвинутая вещь. Такую носят солдаты-вольдоксы.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Armor/exo_voldemar.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Armor/exo_voldemar.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.45
+        Slash: 0.45
+        Piercing: 0.45
+        Heat: 0.45
+  - type: ExplosionResistance
+    damageCoefficient: 0.75
+  - type: ClothingSpeedModifier
+    walkModifier: 0.35
+    sprintModifier: 0.35
+  - type: Reflect
+    reflectProb: 0.09

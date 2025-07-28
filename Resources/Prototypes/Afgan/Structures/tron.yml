@@ -3,6 +3,7 @@
   id: ChairTrone
   parent: ChairBase
   description: Великий трон инквизитора Святой Нации.
+  suffix: afgan14
   components:
   - type: Sprite
     sprite: Afgan/Structures/tron.rsi
