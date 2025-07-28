@@ -62,5 +62,5 @@
       types:
         Heat: 20
         Piercing: 20
-        Blunt: 15
-        Slash: 15
+        Blunt: 20
+        Slash: 20

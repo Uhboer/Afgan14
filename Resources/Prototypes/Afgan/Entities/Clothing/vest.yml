@@ -246,6 +246,25 @@
   - type: Reflect
     reflectProb: 0.05
   - type: Unremoveable
+  - type: Charger
+    slotId: charger_slot
+    portable: true
+  - type: PowerChargerVisuals
+  - type: ApcPowerReceiver
+    needsPower: false
+    powerLoad: 0
+  - type: ContainerContainer
+    containers:
+      charger_slot: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      charger_slot:
+        ejectOnInteract: true
+        whitelist:
+          components:
+          - HitscanBatteryAmmoProvider
+          - ProjectileBatteryAmmoProvider
+
 
 - type: entity
   parent: ClothingOuterVestWeb
@@ -273,3 +292,21 @@
   - type: Reflect
     reflectProb: 0.09
   - type: Unremoveable
+  - type: Charger
+    slotId: charger_slot
+    portable: true
+  - type: PowerChargerVisuals
+  - type: ApcPowerReceiver
+    needsPower: false
+    powerLoad: 0
+  - type: ContainerContainer
+    containers:
+      charger_slot: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      charger_slot:
+        ejectOnInteract: true
+        whitelist:
+          components:
+          - HitscanBatteryAmmoProvider
+          - ProjectileBatteryAmmoProvider
