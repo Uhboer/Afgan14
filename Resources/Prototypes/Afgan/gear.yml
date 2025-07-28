@@ -25,3 +25,28 @@
     ears: RadioLight
     pocket1: SyringeLariy
     back: WeaponRifleAKSamodel
+
+
+- type: startingGear
+  id: Voldemar
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitKaratel
+    shoes: ClothingShoesBootsSteelUpgrade
+    head: ClothingHeadHelmetITOBE
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterExoVoldemar
+    ears: RadioVoldox
+    mask: ClothingMaskBalisticExoVoldemar
+    pocket1: KukriKnife
+
+- type: startingGear
+  id: Voldox
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitKaratel
+    shoes: ClothingShoesBootsSteelUpgrade
+    head: ClothingHeadHelmetITOBE
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterExo
+    ears: RadioVoldox
+    mask: ClothingMaskBalisticExo
+    pocket1: KukriKnife
