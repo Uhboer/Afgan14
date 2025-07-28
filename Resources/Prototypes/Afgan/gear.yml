@@ -5,7 +5,7 @@
     belt: ClothingBeltRope
     shoes: ClothingShoesBootsCombatFilled
     mask: ClothingMaskHamas
-    head: ClothingHeadHelmetCherep
+    head: ClothingHeadHelmetPovstanec
     gloves: ClothingHandsGlovesFingerless
     outerClothing: ClothingOuterVestWebMerc
     neck: ClothingNeckLight
@@ -38,6 +38,8 @@
     ears: RadioVoldox
     mask: ClothingMaskBalisticExoVoldemar
     pocket1: KukriKnife
+    suitstorage: WeaponRailgun
+    belt: WeaponRevolverBlade
 
 - type: startingGear
   id: Voldox
@@ -50,3 +52,32 @@
     ears: RadioVoldox
     mask: ClothingMaskBalisticExo
     pocket1: KukriKnife
+    suitstorage: WeaponRailgun
+    belt: WeaponRevolverBlade
+
+- type: startingGear
+  id: DalHead
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitAlchem
+    belt: ClothingBeltRPC
+    shoes: ClothingShoesBootsSteel
+    gloves: ClothingHandsGlovesRing
+    outerClothing: ClothingOuterVestGiga
+    neck: ClothingNeckNaplechnikiCrimson
+    mask: ClothingMaskBalisticEvil
+    pocket1: RadioHandheld
+    pocket2: MagazineSKS
+    suitstorage: AfganWeaponSKS
+
+
+- type: startingGear
+  id: Dal
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitShtany
+    shoes: ClothingShoesBootsSandal
+    gloves: ClothingHandsGlovesStal
+    neck: ClothingNeckNaplechniki
+    mask: ClothingMaskBalistic
+    head: ClothingHeadHelmetCherep
+    pocket1: RadioHandheld
+    back: ClothingBackpackMerc
