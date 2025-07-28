@@ -1,0 +1,20 @@
+- type: entity
+  name: трон
+  id: ChairTrone
+  parent: ChairBase
+  description: Великий трон инквизитора Святой Нации.
+  components:
+  - type: Sprite
+    sprite: Afgan/Structures/tron.rsi
+    state: tron
+    scale: 1.2, 1.4
+  - type: HealOnBuckle
+    damage:
+      types:
+        Poison: -0.2
+        Cold: -0.3
+        Blunt: -0.3
+        Heat: -0.3
+        Piercing: -0.2
+        Slash: -0.3
+        Bloodloss: -0.1
