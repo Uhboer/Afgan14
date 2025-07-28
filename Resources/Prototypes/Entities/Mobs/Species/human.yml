@@ -23,6 +23,17 @@
     - Hair
     - Snout
   - type: FootprintVisualizer
+  - type: SolutionContainerManager
+    solutions:
+      udder:
+        maxVol: 150
+        reagents:
+        - ReagentId: Semen
+          Quantity: 20
+  - type: Udder
+    reagentId: Semen
+    quantityPerUpdate: 20
+    growthDelay: 30
 
 - type: entity
   parent: BaseSpeciesDummy
