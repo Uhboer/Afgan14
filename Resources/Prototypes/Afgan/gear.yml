@@ -3,17 +3,25 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitPovstanKurtka
     belt: ClothingBeltRope
-    shoes: ClothingShoesBootsCombat
+    shoes: ClothingShoesBootsCombatFilled
     mask: ClothingMaskHamas
     head: ClothingHeadHelmetCherep
     gloves: ClothingHandsGlovesFingerless
     outerClothing: ClothingOuterVestWebMerc
     neck: ClothingNeckLight
-    pocket1: RadioHandheld
-    pocket2: Torch
-  storage:
-    belt:
-    - BaseMagazineMP9evil
-    - BaseMagazineMP9evil
-    - BaseMagazineMP9evil
-    - SyringeOpium
+    ears: RadioLight
+    pocket1: SyringeLariy
+
+- type: startingGear
+  id: LightInquisitor
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitPovstan
+    belt: AfganSwordGold
+    shoes: ClothingShoesBootsMercFilled
+    head: ClothingHeadHelmetLight
+    gloves: ClothingHandsMercGlovesCombat
+    outerClothing: ClothingOuterVestLight
+    neck: ClothingNeckLight
+    ears: RadioLight
+    pocket1: SyringeLariy
+    back: WeaponRifleAKSamodel
