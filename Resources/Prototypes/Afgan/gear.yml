@@ -11,6 +11,7 @@
     neck: ClothingNeckLight
     ears: RadioLight
     pocket1: SyringeLariy
+    back: WoodenBuckler
 
 - type: startingGear
   id: LightInquisitor

@@ -180,6 +180,13 @@
                   max: 5
     - type: StaticPrice
       price: 150
+    - type: Clothing
+      sprite: Afgan/Weapons/Melee/buckler_back.rsi
+      quickEquip: false
+      slots:
+      - back
+      equipSound:
+        path: /Audio/Items/unsheath.ogg
 
 - type: entity
   name: makeshift shield
