@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Uhbekoer",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "beam",
+      "delays": [
+        [
+          0.05,
+          0.05,
+          0.05
+        ]
+      ]
+    }
+  ]
+}

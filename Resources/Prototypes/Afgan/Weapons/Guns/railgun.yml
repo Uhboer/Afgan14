@@ -1,0 +1,66 @@
+- type: entity
+  name: раилган
+  parent: [BaseWeaponBattery, BaseGunWieldable]
+  id: WeaponRailgun
+  description: высокотехнологичная пушка Вольдоксов, плод 5 столетий в шахтах и лаборанских.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Weapons/Guns/railgun.rsi
+    scale: 0.8, 0.8
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-4
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: Clothing
+    sprite: Afgan/Weapons/Guns/railgun32.rsi
+  - type: Item
+    sprite: Afgan/Weapons/Guns/railgun32.rsi
+  - type: Battery
+    maxCharge: 400
+    startingCharge: 400
+  - type: Gun
+    projectileSpeed: 10
+    soundGunshot:
+      path: /Audio/Afgan/Wearpons/railgun.ogg
+      params:
+        variation: 0.2
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+  - type: ProjectileBatteryAmmoProvider
+    proto: BulletRail
+    fireCost: 100
+
+
+
+
+
+
+
+- type: entity
+  name : рельса
+  id: BulletRail
+  parent: BaseBullet
+  noSpawn: true
+  components:
+  - type: Reflective
+    reflective:
+    - Energy
+  - type: Sprite
+    sprite: Afgan/Weapons/Guns/beam.rsi
+    layers:
+    - state: beam
+      shader: unshaded
+  - type: StaminaDamageOnCollide
+    damage: 30
+  - type: Projectile
+    impactEffect: BulletImpactEffectKinetic
+    damage:
+      types:
+        Heat: 20
+        Piercing: 20
+        Blunt: 15
+        Slash: 15
