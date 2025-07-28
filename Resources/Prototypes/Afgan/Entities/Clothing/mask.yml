@@ -169,6 +169,7 @@
         Heat: 0.8
   - type: Reflect
     reflectProb: 0.05
+  - type: Unremoveable
 
 - type: entity
   parent: ClothingMaskBase
@@ -199,3 +200,4 @@
         Heat: 0.75
   - type: Reflect
     reflectProb: 0.05
+  - type: Unremoveable

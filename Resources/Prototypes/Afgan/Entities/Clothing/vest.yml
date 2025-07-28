@@ -245,6 +245,7 @@
     sprintModifier: 0.45
   - type: Reflect
     reflectProb: 0.05
+  - type: Unremoveable
 
 - type: entity
   parent: ClothingOuterVestWeb
@@ -271,3 +272,4 @@
     sprintModifier: 0.35
   - type: Reflect
     reflectProb: 0.09
+  - type: Unremoveable
