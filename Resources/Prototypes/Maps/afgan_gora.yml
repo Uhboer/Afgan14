@@ -77,3 +77,23 @@
             StationEngineer: [1, 1]
             #GOR
             CentralCommandOfficial: [1, 1]
+
+
+
+- type: gameMap
+  id: Afgan_faction
+  mapName: "Период: ВОЙНА ФРАКЦИЙ"
+  mapPath: /Maps/afgan_faction.yml
+  minPlayers: 0
+  maxPlayers: 100
+  fallback: true
+  stations:
+    Afgan_faction:
+      stationProto: StandardStationArena
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: '{0} FACTION WAR {1}'
+        - type: StationJobs
+          availableJobs:
+            #factioner
+            Janitor: [ -1, -1 ]
