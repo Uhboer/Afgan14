@@ -38,7 +38,7 @@
   description: department-Specific-description
   color: "#9FED58"
   roles:
-  - AtmosphericTechnician
+  - Janitor
 
 - type: department
   id: Medical

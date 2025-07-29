@@ -2,9 +2,9 @@
   id: Janitor
   name: job-name-janitor
   description: job-description-janitor
-  setPreference: false
+  setPreference: true
   playTimeTracker: JobJanitor
-  startingGear: JanitorGear
+  startingGear: FractionerGear
   icon: "JobIconJanitor"
   supervisors: job-supervisors-hop
   access:
@@ -26,6 +26,17 @@
   #storage:
     #back:
     #- Stuff
+
+
+- type: startingGear
+  id: FractionerGear
+  equipment:
+    shoes: ClothingShoesBootsSalvage
+    jumpsuit: ClothingUniformJumpsuitDirector
+
+
+
+
 
 - type: startingGear
   id: JanitorMaidGear
