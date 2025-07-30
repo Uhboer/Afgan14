@@ -55,7 +55,7 @@
     - state: beam
       shader: unshaded
   - type: StaminaDamageOnCollide
-    damage: 30
+    damage: 50
   - type: Projectile
     impactEffect: BulletImpactEffectKinetic
     damage:
