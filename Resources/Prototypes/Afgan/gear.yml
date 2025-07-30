@@ -27,7 +27,22 @@
     pocket1: SyringeLariy
     back: ClothingBackpackSatchelLeather
 
-
+- type: startingGear
+  id: LightAdmiral
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitPovstan
+    belt: ClothingBeltRope
+    shoes: ClothingShoesBootsSteelUpgrade
+    head: ClothingHeadHatDirector
+    gloves: ClothingHandsGlovesStal
+    outerClothing: ClothingOuterVestLight
+    neck: ClothingNeckCloakCentcomAdmiral
+    ears: RadioLight
+    eyes: ClothingEyesGlassesSunglasses
+    pocket1: SyringeLariy
+    pocket2: MagazineLightRifleG34
+    back: AfganThanded
+    suitstorage: WeaponRifleG36
 
 - type: startingGear
   id: LightInquisitor

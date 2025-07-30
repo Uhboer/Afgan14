@@ -51,8 +51,8 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckLight
-  name: плащь Света
-  description: плащь великой Святой Нации. Без него - ты не являешься частью святой нации.
+  name: плащ Света
+  description: плащ великой Святой Нации. Без него - ты не являешься частью святой нации.
   suffix: afgan14
   components:
   - type: Sprite
