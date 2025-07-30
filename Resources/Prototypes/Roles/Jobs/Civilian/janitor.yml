@@ -12,9 +12,10 @@
   - Janitor
   - Maintenance
   special:
-  - !type:GiveItemOnHolidaySpecial
-    holiday: GarbageDay
-    prototype: WeaponRevolverInspector
+  - !type:AddComponentSpecial
+    components:
+    - type: BibleUser
+
 
 - type: startingGear
   id: JanitorGear
