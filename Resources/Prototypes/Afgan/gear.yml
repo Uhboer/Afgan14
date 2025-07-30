@@ -14,6 +14,22 @@
     back: WoodenBuckler
 
 - type: startingGear
+  id: LightMedic
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitAgent
+    belt: ClothingBeltRopeFilledMedic
+    shoes: ClothingShoesBootsSalvage
+    head: ClothingHeadHatWelding
+    gloves: ClothingHandsMercGlovesCombat
+    outerClothing: ClothingOuterVestWeb
+    neck: ClothingNeckLight
+    ears: RadioLight
+    pocket1: SyringeLariy
+    back: ClothingBackpackSatchelLeather
+
+
+
+- type: startingGear
   id: LightInquisitor
   equipment:
     jumpsuit: ClothingUniformJumpsuitPovstan
@@ -25,6 +41,7 @@
     neck: ClothingNeckLight
     ears: RadioLight
     pocket1: SyringeLariy
+    pocket2: MagazineLightRifleAK60
     back: WeaponRifleAKSamodel
 
 

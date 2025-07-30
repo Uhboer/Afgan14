@@ -21,3 +21,16 @@
     sprite: Afgan/Clothing/Belts/rope.rsi
   - type: Clothing
     sprite: Afgan/Clothing/Belts/rope.rsi
+
+- type: entity
+  id: ClothingBeltRopeFilledMedic
+  parent: ClothingBeltRope
+  suffix: afgan14, Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: SyringeLariy
+    - id: SyringeLariy
+    - id: SyringeLariy
+    - id: SyringeLariy
+    - id: SyringeLariy
