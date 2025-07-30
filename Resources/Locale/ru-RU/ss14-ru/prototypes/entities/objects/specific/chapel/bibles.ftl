@@ -1,5 +1,5 @@
 ent-Bible = библия
-    .desc = Новая межзвёздная версия 2340.
+    .desc = В начале сотворил Бог небо и землю...
 # Corvax-HiddenDesc-Start
 ent-BibleNecronomicon = священный древний фолиант
     .suffix = некрономикон
