@@ -11,6 +11,7 @@
   - type: CartridgeAmmo
     proto: BulletLightRifle
   - type: Sprite
+    scale: 0.7, 0.7
     sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing_AK.rsi
     layers:
     - state: base

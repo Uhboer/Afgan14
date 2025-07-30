@@ -74,6 +74,7 @@
     proto: Bullet762
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
+    scale: 0.7, 0.7
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]

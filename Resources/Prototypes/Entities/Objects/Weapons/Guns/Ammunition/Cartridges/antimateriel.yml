@@ -10,6 +10,7 @@
   - type: CartridgeAmmo
     proto: BulletAntiMateriel
   - type: Sprite
+    scale: 0.7, 0.7
     sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
     layers:
     - state: base
