@@ -19,15 +19,13 @@
 - type: soundCollection
   id: MaleMoan
   files:
-    - /Audio/Afgan/Mobs/Ebat_osla/moan_m0.ogg
-    - /Audio/Afgan/Mobs/Ebat_osla/moan_m1.ogg
-    - /Audio/Afgan/Mobs/Ebat_osla/moan_m2.ogg
-    - /Audio/Afgan/Mobs/Ebat_osla/moan_m3.ogg
-    - /Audio/Afgan/Mobs/Ebat_osla/moan_m4.ogg
-    - /Audio/Afgan/Mobs/Ebat_osla/moan_m5.ogg
-    - /Audio/Afgan/Mobs/Ebat_osla/moan_m6.ogg
-    - /Audio/Afgan/Mobs/Ebat_osla/moan_m7.ogg
-    - /Audio/Afgan/Mobs/Ebat_osla/moan_m12.ogg
+    - /Audio/Afgan/Mobs/Ebat_osla/gachi1.ogg
+    - /Audio/Afgan/Mobs/Ebat_osla/gachi2.ogg
+    - /Audio/Afgan/Mobs/Ebat_osla/gachi3.ogg
+    - /Audio/Afgan/Mobs/Ebat_osla/gachi4.ogg
+    - /Audio/Afgan/Mobs/Ebat_osla/gachi5.ogg
+    - /Audio/Afgan/Mobs/Ebat_osla/gachi6.ogg
+    - /Audio/Afgan/Mobs/Ebat_osla/gachi7.ogg
 
 - type: soundCollection
   id: FemaleMoan
