@@ -1,0 +1,19 @@
+- type: entity
+  id: GateLightNation
+  parent: BlastDoor
+  name: врата
+  description: ОНИ НЕ ПРОЙДУТ!!
+  suffix: afgan14
+  components:
+    - type: AutoLinkReceiver
+      channel: GatesLight
+
+- type: entity
+  id: SignalButtonLightGates
+  parent: SignalButton
+  name: кнопка открытия врат
+  description: открывать только в экстренной ситуации или по приказу адмирала!
+  suffix: afgan14
+  components:
+    - type: AutoLinkTransmitter
+      channel: GatesLight
