@@ -1,0 +1,31 @@
+- type: entity
+  id: RandomHumanoidSpawnerLightWarrior
+  name: спавнер солдат святой нации
+  suffix: afgan14
+  components:
+    - type: Sprite
+      sprite: Afgan/Clothing/Neck/light.rsi
+      state: icon
+    - type: RandomMetadata
+      nameSegments:
+        - names_first_male
+        - names_last_male
+    - type: RandomHumanoidSpawner
+      settings: LightWarrior
+
+- type: randomHumanoidSettings
+  id: LightWarrior
+  parent: EventHumanoid
+  randomizeName: false
+  speciesBlacklist: ['Diona']
+  components:
+    - type: GhostRole
+      name: воин Святой Нации
+      description: ПО СВОИМ НЕ ХУЯРИТЬ
+      rules: ПО СВОИМ НЕ ХУЯРИТЬ
+    - type: Loadout
+      prototypes: [ LightWarrior ]
+    - type: RandomMetadata
+      nameSegments:
+        - names_first_male
+        - names_last_male
