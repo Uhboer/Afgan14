@@ -5,6 +5,8 @@
   setPreference: true
   playTimeTracker: JobCaptain
   requirements:
+    - !type:AgeRequirement
+      requiredAge: 20
     - !type:OverallPlaytimeRequirement
       time: 0
   weight: 20
@@ -17,6 +19,7 @@
   accessGroups:
   - AllAccess
   special:
+
   - !type:AddComponentSpecial
     components:
       - type: CommandStaff
