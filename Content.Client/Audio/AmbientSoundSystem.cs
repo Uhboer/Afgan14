@@ -16,6 +16,7 @@ using Robust.Client.GameObjects;
 using Robust.Shared.Audio.Effects;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Player;
+using Content.Shared._ERRORGATE.Hearing;
 
 namespace Content.Client.Audio;
 //TODO: This is using a incomplete version of the whole "only play nearest sounds" algo, that breaks down a bit should the ambient sound cap get hit.
@@ -174,6 +175,14 @@ public sealed class AmbientSoundSystem : SharedAmbientSoundSystem
             return;
         }
 
+        // FINSTER EDIT - We should mute all ambient sounds when players was deaf
+        if (EntityManager.TryGetComponent(player, out DeafComponent? deafComp))
+        {
+            ClearSounds();
+            return;
+        }
+        // FINSTER EDIT END
+
         ProcessNearbyAmbience(xform);
     }
 
@@ -241,6 +250,8 @@ public sealed class AmbientSoundSystem : SharedAmbientSoundSystem
         var metaQuery = GetEntityQuery<MetaDataComponent>();
         var mapPos = _xformSystem.GetMapCoordinates(playerXform);
 
+
+
         // Remove out-of-range ambiences
         foreach (var (comp, sound) in _playingSounds)
         {
@@ -299,11 +310,15 @@ public sealed class AmbientSoundSystem : SharedAmbientSoundSystem
                 var audioParams = _params
                     .AddVolume(comp.Volume + _ambienceVolume)
                     // Randomise start so 2 sources don't increase their volume.
-                    .WithPlayOffset(_random.NextFloat(0.0f, 0.1f))
+                    .WithPlayOffset(_random.NextFloat(0.0f, 100.0f))
                     .WithMaxDistance(comp.Range);
 
                 var stream = _audio.PlayEntity(comp.Sound, Filter.Local(), uid, false, audioParams);
-                _playingSounds[comp] = (stream.Value.Entity, comp.Sound, key);
+
+                if (stream == null)
+                    continue;
+
+                _playingSounds[comp] = (stream!.Value.Entity, comp.Sound, key);
                 playingCount++;
 
                 if (_playingSounds.Count >= _maxAmbientCount)
