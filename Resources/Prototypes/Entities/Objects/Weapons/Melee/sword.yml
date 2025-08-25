@@ -71,8 +71,6 @@
     sprite: Objects/Weapons/Melee/energykatana.rsi
   - type: MeleeWeapon
     wideAnimationRotation: -60
-    soundSwing:
-      collection: N14BladeMediumSwing
     damage:
       types:
         Slash: 30
