@@ -1,5 +1,4 @@
 using System.Linq;
-using Content.Server._ERRORGATE.Hearing;
 using Content.Server.Flash.Components;
 using Content.Shared.Flash.Components;
 using Content.Server.Light.EntitySystems;
@@ -154,39 +153,6 @@ namespace Content.Server.Flash
                     RaiseLocalEvent(user.Value, ref ev);
                 if (used != null)
                     RaiseLocalEvent(used.Value, ref ev);
-            }
-
-            flashDuration *= flashable.DurationMultiplier;
-
-            flashable.LastFlash = _timing.CurTime;
-            flashable.Duration = flashDuration / 1000f; // TODO: Make this sane...
-            Dirty(target, flashable);
-
-            if (HasComp<HearingComponent>(target))
-            {
-                var deafen = new HearingChangedEvent(target, false, false, flashDuration / 1000f, "You can't hear anything!");
-                RaiseLocalEvent(target, deafen);
-            }
-
-            if (TryComp<BlindableComponent>(target, out var blindable)
-                && !blindable.IsBlind
-                && _random.Prob(flashable.EyeDamageChance))
-                _blindingSystem.AdjustEyeDamage((target, blindable), flashable.EyeDamage);
-
-            if (stunDuration != null)
-            {
-                _stun.TryParalyze(target, stunDuration.Value, true);
-            }
-            else
-            {
-                _stun.TrySlowdown(target, TimeSpan.FromSeconds(flashDuration/1000f), true,
-                slowTo, slowTo);
-            }
-
-            if (displayPopup && user != null && target != user && Exists(user.Value))
-            {
-                _popup.PopupEntity(Loc.GetString("flash-component-user-blinds-you",
-                    ("user", Identity.Entity(user.Value, EntityManager))), target, target);
             }
         }
 
