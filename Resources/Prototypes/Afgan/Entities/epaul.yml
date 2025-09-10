@@ -25,3 +25,18 @@
   - type: PresetIdCard
     job: Passenger
     name: Воин
+
+
+- type: entity
+  parent: EpaulBase
+  id: EpaulMedik
+  name: погоны медика
+  components:
+    - type: Sprite
+      sprite: Afgan/Clothing/Epaul/medik.rsi
+      state: icon
+    - type: PresetIdCard
+      job: Passenger
+      name: Медик
+    - type: Clothing
+      sprite: Afgan/Clothing/Epaul/medik.rsi
