@@ -24,14 +24,11 @@
     - /Audio/Ambience/redsex.ogg
     - /Audio/Ambience/alien.ogg
     - /Audio/Ambience/titan.ogg
-    - /Audio/Ambience/danger.ogg
     - /Audio/Ambience/utopia.ogg
     - /Audio/Ambience/ravenheart1.ogg
     - /Audio/Ambience/unatko.ogg
     - /Audio/Ambience/dreamthief.ogg
     - /Audio/Ambience/emptiness.ogg
-    - /Audio/Ambience/nimfeach.ogg
-    - /Audio/Ambience/swing.ogg
     - /Audio/Ambience/sighting-desert.ogg
 
 - type: soundCollection
@@ -42,6 +39,7 @@
     - /Audio/Ambience/ladax.ogg
     - /Audio/Ambience/kador.ogg
     - /Audio/Ambience/popolz.ogg
+    - /Audio/Ambience/swing.ogg
 
 # Rules
 - type: rules
