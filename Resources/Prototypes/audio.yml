@@ -12,44 +12,34 @@
   id: General
   sound:
     params:
-      volume: -10
+      volume: -3
     collection: AmbienceGeneral
   rules: AlwaysTrue
 
 - type: soundCollection
   id: AmbienceGeneral
   files:
-    - /Audio/Ambience/ambigen1.ogg
-    - /Audio/Ambience/ambigen3.ogg
-    - /Audio/Ambience/ambigen7.ogg
-    - /Audio/Ambience/ambigen10.ogg
-    - /Audio/Ambience/ambigen11.ogg
-    - /Audio/Ambience/ambigen14.ogg
-    - /Audio/Ambience/ambigen16.ogg
-    - /Audio/Ambience/ambigen17.ogg
-    - /Audio/Ambience/ambigen18.ogg
-    - /Audio/Ambience/ambigen19.ogg
-    - /Audio/Ambience/ambigen20.ogg
-    - /Audio/Ambience/ambigen21.ogg
-    - /Audio/Ambience/ambigen22.ogg
-    - /Audio/Ambience/ambigen23.ogg
-    - /Audio/Ambience/italy.ogg
-    - /Audio/Ambience/italy2.ogg
-    - /Audio/Ambience/kador.ogg
-    - /Audio/Ambience/ladax.ogg
+    - /Audio/Ambience/ritual.ogg
+    - /Audio/Ambience/moans.ogg
+    - /Audio/Ambience/redsex.ogg
+    - /Audio/Ambience/alien.ogg
+    - /Audio/Ambience/titan.ogg
     - /Audio/Ambience/utopia.ogg
     - /Audio/Ambience/ravenheart1.ogg
     - /Audio/Ambience/unatko.ogg
     - /Audio/Ambience/dreamthief.ogg
     - /Audio/Ambience/emptiness.ogg
-    - /Audio/Ambience/nimfeach.ogg
+    - /Audio/Ambience/sighting-desert.ogg
 
 - type: soundCollection
   id: AmbienceHoly
   files:
-    - /Audio/Ambience/ambicha1.ogg
-    - /Audio/Ambience/ambicha2.ogg
-    - /Audio/Ambience/ambicha3.ogg
+    - /Audio/Ambience/italy.ogg
+    - /Audio/Ambience/italy2.ogg
+    - /Audio/Ambience/ladax.ogg
+    - /Audio/Ambience/kador.ogg
+    - /Audio/Ambience/popolz.ogg
+    - /Audio/Ambience/swing.ogg
 
 # Rules
 - type: rules
@@ -64,4 +54,4 @@
       anchored: true
       components:
         - type: Prayable
-      range: 6
+      range: 10
