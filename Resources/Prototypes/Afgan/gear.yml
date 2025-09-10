@@ -18,14 +18,32 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitAgent
     belt: ClothingBeltRopeFilledMedic
-    shoes: ClothingShoesBootsSalvage
-    head: ClothingHeadHatWelding
+    shoes: ClothingShoesBootsMercFilled
+    head: ClothingHeadHelmetITOBE
     gloves: ClothingHandsMercGlovesCombat
-    outerClothing: ClothingOuterVestWeb
+    outerClothing: ClothingOuterMedik
+    mask: ClothingMaskGasITOBE
     neck: ClothingNeckLight
     ears: RadioLight
     pocket1: SyringeLariy
     back: ClothingBackpackSatchelLeather
+
+- type: startingGear
+  id: LightCombat
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitPovstan
+    belt: ClothingBeltRope
+    shoes: ClothingShoesBootsSteelUpgrade
+    head: ClothingHeadHatDirector
+    gloves: ClothingHandsGlovesStal
+    outerClothing: ClothingOuterVestLight
+    neck: ClothingNeckCloakCentcomAdmiral
+    ears: RadioLight
+    eyes: ClothingEyesGlassesSunglasses
+    pocket1: SyringeLariy
+    pocket2: MagazineLightRifleG34
+    back: AfganThanded
+    suitstorage: WeaponRifleG36
 
 - type: startingGear
   id: LightAdmiral
@@ -87,6 +105,18 @@
     pocket1: KukriKnife
     suitstorage: WeaponRailgun
     belt: WeaponRevolverBlade
+
+- type: startingGear
+  id: DalWarlock
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitShtany
+    belt: AfganChaosFragment
+    shoes: ClothingShoesBootsSteelUpgrade
+    gloves: ClothingHandsGlovesStal
+    outerClothing: ClothingOuterVestWarlock
+    head: ClothingHeadHatWarlock
+    pocket1: RadioHandheld
+    back: WoodenBuckler
 
 - type: startingGear
   id: DalHead
