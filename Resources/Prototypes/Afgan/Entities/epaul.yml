@@ -1,0 +1,27 @@
+- type: entity
+  parent: Clothing
+  id: EpaulBase
+  name: погоны
+  description: Ношу их с честью!
+  abstract: false
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Epaul/warrior.rsi
+    state: icon
+  - type: Icon
+    sprite: Afgan/Clothing/Epaul/warrior.rsi
+    state: icon
+  - type: Clothing
+    slots:
+    - idcard
+    sprite: Afgan/Clothing/Epaul/warrior.rsi
+  - type: Item
+    size: Small
+    heldPrefix: default
+    storedRotation: -90
+  - type: Access
+  - type: IdCard
+  - type: PresetIdCard
+    job: Passenger
+    name: Воин

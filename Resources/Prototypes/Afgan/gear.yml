@@ -17,7 +17,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitAgent
     belt: ClothingBeltRopeFilledMedic
-    shoes: ClothingShoesBootsMercFilled
+    shoes: ClothingShoesBootsCombatFilled
     head: ClothingHeadHelmetITOBE
     gloves: ClothingHandsMercGlovesCombat
     outerClothing: ClothingOuterMedik
