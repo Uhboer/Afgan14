@@ -363,3 +363,30 @@
     sprintModifier: 0.8
   - type: Reflect
     reflectProb: 0.02
+
+
+- type: entity
+  parent: ClothingOuterVestWeb
+  id: ClothingOuterVestWarlock
+  name: доспех Варлока
+  description: Я - СИЛА. ИМ ПИЗДЕЦ!!
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Armor/warlock.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Armor/warlock.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.3
+        Slash: 0.3
+        Piercing: 0.3
+        Heat: 0.3
+  - type: ExplosionResistance
+    damageCoefficient: 0.3
+  - type: ClothingSpeedModifier
+    walkModifier: 0.4
+    sprintModifier: 0.4
+  - type: Reflect
+    reflectProb: 0.05
