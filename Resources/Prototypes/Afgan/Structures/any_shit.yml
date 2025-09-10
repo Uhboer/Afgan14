@@ -260,7 +260,7 @@
   parent: BaseItem
   id: AfganGorn
   name: горн
-  description: С его помощью повстанцы могут напевать свои красноречивые речи.
+  description: Горн, который используют перед боем.
   suffix: afgan14
   components:
   - type: Sprite
@@ -276,7 +276,9 @@
     sound:
       collection: Gorn
   - type: UseDelay
-    delay: 20.0
+    delay: 12.0
+  - type: Whistle
+    distance: 15
 
 - type: entity
   id: PaperAlchem

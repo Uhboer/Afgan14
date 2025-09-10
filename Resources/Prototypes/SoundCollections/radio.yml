@@ -21,8 +21,7 @@
 - type: soundCollection
   id: Gorn
   files:
-    - /Audio/Afgan/Music/allah_pidoras.ogg
-    - /Audio/Afgan/Music/allaha_pidorasa.ogg
+    - /Audio/Afgan/Gorn/gorn.ogg
 
 - type: soundCollection
   id: Boombox
