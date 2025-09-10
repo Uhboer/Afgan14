@@ -211,3 +211,27 @@
     sprintModifier: 0.98
   - type: Reflect
     reflectProb: 0.05
+
+- type: entity
+  parent: ClothingHeadHelmetBasic
+  id: ClothingHeadHelmetITOBEMedium
+  name: прочный шлем
+  description: Думаю, от рельсотрона спасёт.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Head/mhemelet.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Head/mhemelet.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.7
+        Heat: 0.9
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: Reflect
+    reflectProb: 0.05
