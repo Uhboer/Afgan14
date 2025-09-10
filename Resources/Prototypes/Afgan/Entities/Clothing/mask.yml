@@ -1,7 +1,7 @@
 - type: entity
   parent: ClothingMaskBase
   id: ClothingMaskHamas
-  name: Балаклава Хамаса
+  name: Балаклава
   description: Маска бывшей террористической группировки Хамас.
   suffix: afgan14
   components:
@@ -21,7 +21,7 @@
 - type: entity
   parent: ClothingMaskBase
   id: ClothingMaskBalistic
-  name: балистическая маска
+  name: баллистическая маска
   description: защищает твоё немытое ебало от пуль и удара арматуры.
   suffix: afgan14
   components:

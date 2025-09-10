@@ -4,7 +4,6 @@
     jumpsuit: ClothingUniformJumpsuitPovstanKurtka
     belt: ClothingBeltRope
     shoes: ClothingShoesBootsCombatFilled
-    mask: ClothingMaskHamas
     head: ClothingHeadHelmetPovstanec
     gloves: ClothingHandsGlovesFingerless
     outerClothing: ClothingOuterVestWebMerc
@@ -29,21 +28,19 @@
     back: ClothingBackpackSatchelLeather
 
 - type: startingGear
-  id: LightCombat
+  id: LightJager
   equipment:
-    jumpsuit: ClothingUniformJumpsuitPovstan
+    jumpsuit: ClothingUniformJumpsuitHauberk
     belt: ClothingBeltRope
     shoes: ClothingShoesBootsSteelUpgrade
-    head: ClothingHeadHatDirector
+    head: ClothingHeadHelmetITOBEMedium
     gloves: ClothingHandsGlovesStal
-    outerClothing: ClothingOuterVestLight
-    neck: ClothingNeckCloakCentcomAdmiral
+    outerClothing: ClothingOuterVestBronikHeavy
+    neck: ClothingNeckLight
     ears: RadioLight
-    eyes: ClothingEyesGlassesSunglasses
     pocket1: SyringeLariy
-    pocket2: MagazineLightRifleG34
-    back: AfganThanded
-    suitstorage: WeaponRifleG36
+    mask: ClothingMaskBalistic
+    back: WoodenBuckler
 
 - type: startingGear
   id: LightAdmiral
