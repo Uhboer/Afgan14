@@ -1,7 +1,7 @@
 - type: entity
   parent: Clothing
   id: EpaulBase
-  name: погоны
+  name: погоны воина
   description: Ношу их с честью!
   abstract: false
   suffix: afgan14
@@ -23,7 +23,7 @@
   - type: Access
   - type: IdCard
   - type: PresetIdCard
-    job: Passenger
+    job: Warden
     name: Воин
 
 
@@ -36,7 +36,6 @@
       sprite: Afgan/Clothing/Epaul/medik.rsi
       state: icon
     - type: PresetIdCard
-      job: Passenger
       name: Медик
     - type: Clothing
       sprite: Afgan/Clothing/Epaul/medik.rsi
@@ -51,7 +50,6 @@
       sprite: Afgan/Clothing/Epaul/jager.rsi
       state: icon
     - type: PresetIdCard
-      job: Passenger
       name: Джаггернаут
     - type: Clothing
       sprite: Afgan/Clothing/Epaul/jager.rsi
@@ -65,7 +63,6 @@
       sprite: Afgan/Clothing/Epaul/inquisitor.rsi
       state: icon
     - type: PresetIdCard
-      job: Passenger
       name: Инквизитор
     - type: Clothing
       sprite: Afgan/Clothing/Epaul/inquisitor.rsi
@@ -80,7 +77,6 @@
       sprite: Afgan/Clothing/Epaul/admiral.rsi
       state: icon
     - type: PresetIdCard
-      job: Passenger
       name: АДМИРАЛ
     - type: Clothing
       sprite: Afgan/Clothing/Epaul/admiral.rsi
