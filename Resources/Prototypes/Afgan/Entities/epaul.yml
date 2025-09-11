@@ -40,3 +40,47 @@
       name: Медик
     - type: Clothing
       sprite: Afgan/Clothing/Epaul/medik.rsi
+
+
+- type: entity
+  parent: EpaulBase
+  id: EpaulJager
+  name: погоны джаггернаута
+  components:
+    - type: Sprite
+      sprite: Afgan/Clothing/Epaul/jager.rsi
+      state: icon
+    - type: PresetIdCard
+      job: Passenger
+      name: Джаггернаут
+    - type: Clothing
+      sprite: Afgan/Clothing/Epaul/jager.rsi
+
+- type: entity
+  parent: EpaulBase
+  id: EpaulInquisitor
+  name: погоны инквизитора
+  components:
+    - type: Sprite
+      sprite: Afgan/Clothing/Epaul/inquisitor.rsi
+      state: icon
+    - type: PresetIdCard
+      job: Passenger
+      name: Инквизитор
+    - type: Clothing
+      sprite: Afgan/Clothing/Epaul/inquisitor.rsi
+
+
+- type: entity
+  parent: EpaulBase
+  id: EpaulAdmiral
+  name: погоны адмирала
+  components:
+    - type: Sprite
+      sprite: Afgan/Clothing/Epaul/admiral.rsi
+      state: icon
+    - type: PresetIdCard
+      job: Passenger
+      name: АДМИРАЛ
+    - type: Clothing
+      sprite: Afgan/Clothing/Epaul/admiral.rsi

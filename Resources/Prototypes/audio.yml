@@ -2,7 +2,7 @@
   id: Holy
   sound:
     params:
-      volume: -9
+      volume: -5
     collection: AmbienceHoly
   rules: NearPrayable
   priority: 6
@@ -12,7 +12,7 @@
   id: General
   sound:
     params:
-      volume: -3
+      volume: -5
     collection: AmbienceGeneral
   rules: AlwaysTrue
 
