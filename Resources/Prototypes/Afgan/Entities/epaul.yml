@@ -40,6 +40,18 @@
     - type: Clothing
       sprite: Afgan/Clothing/Epaul/medik.rsi
 
+- type: entity
+  parent: EpaulBase
+  id: EpaulEng
+  name: погоны инженера
+  components:
+    - type: Sprite
+      sprite: Afgan/Clothing/Epaul/eng.rsi
+      state: icon
+    - type: PresetIdCard
+      name: Инженер
+    - type: Clothing
+      sprite: Afgan/Clothing/Epaul/eng.rsi
 
 - type: entity
   parent: EpaulBase

@@ -40,3 +40,18 @@
     - id: FoodGribHeal
     - id: Bible
     - id: Wrench
+
+- type: entity
+  id: ClothingBeltRopeFilledEng
+  parent: ClothingBeltRope
+  suffix: afgan14, Filled, ENG
+  components:
+  - type: StorageFill
+    contents:
+    - id: Welder
+    - id: Crowbar
+    - id: Wirecutter
+    - id: Screwdriver
+    - id: Wrench
+    - id: Multitool
+    - id: CableApcStack10

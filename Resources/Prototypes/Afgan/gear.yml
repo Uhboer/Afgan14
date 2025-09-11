@@ -15,6 +15,21 @@
     id: EpaulBase
 
 - type: startingGear
+  id: LightEnginer
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitPovstanKurtka
+    belt: ClothingBeltRopeFilledEng
+    shoes: ClothingShoesBootsSalvage
+    head: ClothingHeadHatWelding
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterVestBronik
+    neck: ClothingNeckLight
+    ears: RadioLight
+    pocket1: SyringeLariy
+    back: ClothingBackpackSatchelLeather
+    id: EpaulEng
+
+- type: startingGear
   id: LightMedic
   equipment:
     jumpsuit: ClothingUniformJumpsuitAgent
@@ -27,6 +42,7 @@
     neck: ClothingNeckLight
     ears: RadioLight
     pocket1: SyringeLariy
+    pocket2: SyringeLariy
     back: ClothingBackpackSatchelLeather
     id: EpaulMedik
 
