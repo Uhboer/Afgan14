@@ -1,6 +1,6 @@
 ## Species Names
 
-species-name-human = Человек
+species-name-human = Отродье
 species-name-dwarf = Дворф
 species-name-reptilian = Унатх
 species-name-slime = Слаймолюд

@@ -21,7 +21,6 @@
   files:
     - /Audio/Ambience/ritual.ogg
     - /Audio/Ambience/moans.ogg
-    - /Audio/Ambience/redsex.ogg
     - /Audio/Ambience/alien.ogg
     - /Audio/Ambience/titan.ogg
     - /Audio/Ambience/utopia.ogg
@@ -29,6 +28,7 @@
     - /Audio/Ambience/dreamthief.ogg
     - /Audio/Ambience/emptiness.ogg
     - /Audio/Ambience/sighting-desert.ogg
+    - /Audio/Ambience/UNATCO.ogg
 
 - type: soundCollection
   id: AmbienceHoly

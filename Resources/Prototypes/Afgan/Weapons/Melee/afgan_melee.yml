@@ -227,9 +227,6 @@
     - belt
     equipSound:
       path: /Audio/Items/unsheath.ogg
-  - type: PhysicalComposition
-    materialComposition:
-      Wood: 250
   - type: MeleeThrowOnHit
   - type: StaminaDamageOnHit
     damage: 15
