@@ -105,3 +105,27 @@
   - type: ClothingSpeedModifier
     walkModifier: 1.2
     sprintModifier: 1.2
+  - type: TemperatureProtection
+    coefficient: 0.1
+
+
+- type: entity
+  parent: ClothingOuterWinterCoat
+  id: ClothingOuterGreatcCoat
+  name: шинель ветерана
+  description: Сколько себя я отдал за этот кусок рваной, прошитой кровью и смертью ткани?
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Coats/coatgreat.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Coats/coatgreat.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.65
+        Piercing: 0.6
+        Heat: 0.6
+  - type: ExplosionResistance
+    damageCoefficient: 0.8
