@@ -215,7 +215,7 @@
     wideAnimationRotation: -135
     damage:
       types:
-        Blunt: 30
+        Blunt: 40
         Structural: 5
     soundHit:
       collection: MetalThud
