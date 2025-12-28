@@ -42,6 +42,7 @@ namespace Content.Server.Disposal.Unit.EntitySystems;
 
 public sealed class DisposalUnitSystem : SharedDisposalUnitSystem
 {
+    [Dependency] private readonly MapSystem _mapSystem = default!;
     [Dependency] private readonly IAdminLogManager _adminLogger = default!;
     [Dependency] private readonly ActionBlockerSystem _actionBlockerSystem = default!;
     [Dependency] private readonly AppearanceSystem _appearance = default!;
@@ -497,59 +498,61 @@ public sealed class DisposalUnitSystem : SharedDisposalUnitSystem
     }
 
 
-    public bool TryFlush(EntityUid uid, SharedDisposalUnitComponent component)
+public bool TryFlush(EntityUid uid, SharedDisposalUnitComponent component)
+{
+    if (!CanFlush(uid, component))
     {
-        if (!CanFlush(uid, component))
-        {
-            return false;
-        }
-
-        if (component.NextFlush != null)
-            component.NextFlush = component.NextFlush.Value + component.AutomaticEngageTime;
-
-        var beforeFlushArgs = new BeforeDisposalFlushEvent();
-        RaiseLocalEvent(uid, beforeFlushArgs);
-
-        if (beforeFlushArgs.Cancelled)
-        {
-            Disengage(uid, component);
-            return false;
-        }
-
-        var xform = Transform(uid);
-        if (!TryComp(xform.GridUid, out MapGridComponent? grid))
-            return false;
-
-        var coords = xform.Coordinates;
-        var entry = grid.GetLocal(coords)
-            .FirstOrDefault(HasComp<DisposalEntryComponent>);
-
-        if (entry == default || component is not DisposalUnitComponent sDisposals)
-        {
-            component.Engaged = false;
-            Dirty(uid, component);
-            return false;
-        }
-
-        HandleAir(uid, sDisposals, xform);
-
-        _disposalTubeSystem.TryInsert(entry, sDisposals, beforeFlushArgs.Tags);
-
-        component.NextPressurized = GameTiming.CurTime;
-        if (!component.DisablePressure)
-            component.NextPressurized += TimeSpan.FromSeconds(1f / PressurePerSecond);
-
-        component.Engaged = false;
-        // stop queuing NOW
-        component.NextFlush = null;
-
-        UpdateVisualState(uid, component, true);
-        UpdateInterface(uid, component, component.Powered);
-
-        Dirty(uid, component);
-
-        return true;
+        return false;
     }
+
+    if (component.NextFlush != null)
+        component.NextFlush = component.NextFlush.Value + component.AutomaticEngageTime;
+
+    var beforeFlushArgs = new BeforeDisposalFlushEvent();
+    RaiseLocalEvent(uid, beforeFlushArgs);
+
+    if (beforeFlushArgs.Cancelled)
+    {
+        Disengage(uid, component);
+        return false;
+    }
+
+    var xform = Transform(uid);
+    if (!TryComp(xform.GridUid, out MapGridComponent? grid) ||
+        !xform.MapUid.HasValue)
+    {
+        return false;
+    }
+
+    var coords = xform.Coordinates;
+    var entry = _mapSystem.GetLocal(xform.MapUid.Value, grid, coords)  // Используем .Value
+        .FirstOrDefault(HasComp<DisposalEntryComponent>);
+
+
+    if (entry == default || component is not DisposalUnitComponent sDisposals)
+    {
+        component.Engaged = false;
+        Dirty(uid, component);
+        return false;
+    }
+
+    HandleAir(uid, sDisposals, xform);
+
+    _disposalTubeSystem.TryInsert(entry, sDisposals, beforeFlushArgs.Tags);
+
+    component.NextPressurized = GameTiming.CurTime;
+    if (!component.DisablePressure)
+        component.NextPressurized += TimeSpan.FromSeconds(1f / PressurePerSecond);
+    component.Engaged = false;
+    component.NextFlush = null;
+
+    UpdateVisualState(uid, component, true);
+    UpdateInterface(uid, component, component.Powered);
+
+    Dirty(uid, component);
+
+    return true;
+}
 
     private void HandleAir(EntityUid uid, DisposalUnitComponent component, TransformComponent xform)
     {

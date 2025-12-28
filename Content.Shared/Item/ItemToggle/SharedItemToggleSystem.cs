@@ -238,21 +238,23 @@ public abstract class SharedItemToggleSystem : EntitySystem
     /// <summary>
     /// Used to update the looping active sound linked to the entity.
     /// </summary>
-    private void UpdateActiveSound(EntityUid uid, ItemToggleActiveSoundComponent activeSound, ref ItemToggledEvent args)
+    private void UpdateActiveSound(Entity<ItemToggleActiveSoundComponent> ent, ref ItemToggledEvent args)
     {
-        if (args.Activated)
+        var (uid, comp) = ent;
+        if (!args.Activated)
         {
-            if (activeSound.ActiveSound != null && activeSound.PlayingStream == null)
-            {
-                if (args.Predicted)
-                    activeSound.PlayingStream = _audio.PlayPredicted(activeSound.ActiveSound, uid, args.User, AudioParams.Default.WithLoop(true)).Value.Entity;
-                else
-                    activeSound.PlayingStream = _audio.PlayPvs(activeSound.ActiveSound, uid, AudioParams.Default.WithLoop(true)).Value.Entity;
-            }
+            comp.PlayingStream = _audio.Stop(comp.PlayingStream);
+            return;
         }
-        else
+
+        if (comp.ActiveSound != null && comp.PlayingStream == null)
         {
-            activeSound.PlayingStream = _audio.Stop(activeSound.PlayingStream);
+            var loop = comp.ActiveSound.Params.WithLoop(true);
+            var stream = args.Predicted
+                ? _audio.PlayPredicted(comp.ActiveSound, uid, args.User, loop)
+                : _audio.PlayPvs(comp.ActiveSound, uid, loop);
+            if (stream?.Entity is {} entity)
+                comp.PlayingStream = entity;
         }
     }
 }
