@@ -62,9 +62,9 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.8
-          Slash: 0.8
-          Piercing: 0.85
+          Blunt: 0.9
+          Slash: 0.9
+          Piercing: 0.95
           Heat: 0.85
 
 - type: entity
@@ -107,7 +107,7 @@
   id: ClothingHeadHatWarlock
   suffix: afgan14
   name: шлем варлока
-  description: Я здесь босс!
+  description: Власть.
   components:
     - type: Sprite
       sprite: Afgan/Clothing/Head/warlock.rsi
@@ -123,3 +123,22 @@
     - type: ClothingSpeedModifier
       walkModifier: 0.9
       sprintModifier: 0.9
+
+- type: entity
+  parent: ClothingHeadBaseButcherable
+  id: ClothingHeadHatVeteran
+  suffix: afgan14
+  name: шляпа
+  description: Сто лет пропердяйства.
+  components:
+    - type: Sprite
+      sprite: Afgan/Clothing/Head/veteran.rsi
+    - type: Clothing
+      sprite: Afgan/Clothing/Head/veteran.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.8
+          Slash: 0.8
+          Piercing: 0.85
+          Heat: 0.85
