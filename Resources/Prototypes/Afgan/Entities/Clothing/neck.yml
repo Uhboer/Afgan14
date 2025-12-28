@@ -57,3 +57,15 @@
   components:
   - type: Sprite
     sprite: Afgan/Clothing/Neck/light.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckSkin
+  name: накидка
+  description: Плотная накидка из шкуры. В ней тепло.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Neck/shkura.rsi
+  - type: TemperatureProtection
+    coefficient: 0.1

@@ -128,6 +128,8 @@
     sprintModifier: 0.65
   - type: Reflect
     reflectProb: 0.001
+  - type: TemperatureProtection
+    coefficient: 0.1
 
 - type: entity
   parent: ClothingOuterVestWeb
@@ -164,11 +166,13 @@
       collection: PunchPower
     animation: WeaponArcBite
     mustBeEquippedToUse: false
+  - type: TemperatureProtection
+    coefficient: 0.1
 
 - type: entity
   parent: ClothingOuterVestWeb
   id: ClothingOuterVestDirector
-  name: одеяния директора
+  name: дорогое пальто
   description: Ты - самый лучший.
   suffix: afgan14
   components:
@@ -186,11 +190,12 @@
   - type: ExplosionResistance
     damageCoefficient: 0.2
   - type: ClothingSpeedModifier
-    walkModifier: 1.2
-    sprintModifier: 1.2
+    walkModifier: 1.1
+    sprintModifier: 1.1
   - type: Reflect
     reflectProb: 0.001
-
+  - type: TemperatureProtection
+    coefficient: 0.1
 
 
 - type: entity

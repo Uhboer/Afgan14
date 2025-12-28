@@ -176,7 +176,7 @@
 - type: listing
   id: TorgomatClothingOuterVestKaratel
   name: Броня Дракона
-  description: Ты её, сука, не достоен.
+  description: Ты её, сука, не достоин.
   productEntity: ClothingOuterVestKaratel
   cost:
     Bib: 50
@@ -189,7 +189,7 @@
   description: Какого...
   productEntity: ClothingHeadHelmetKaratel
   cost:
-    Bib: 50
+    Bib: 30
   categories:
   - TorgomatLegendary
 

@@ -3,8 +3,8 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitHamas
-  name: Униформа Хамаса
-  description: Униформа когда то популярной Палестинской группировки.
+  name: черная униформа
+  description: Униформа когда-то популярной группировки.
   suffix: afgan14
   components:
   - type: Sprite
@@ -15,8 +15,8 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitRab
-  name: Ободранная рубашка
-  description: одежда рабов или же людей низшего сословия.
+  name: ободранная рубашка
+  description: Одеяние рабов или же людей низшего сословия.
   suffix: afgan14
   components:
   - type: Sprite
@@ -27,8 +27,8 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitTaliban
-  name: аристакратичный костюм
-  description: раньше его носили выжные персоны Талибана.
+  name: аристократичный костюм
+  description: раньше его носили выжные персоны...
   suffix: afgan14
   components:
   - type: Sprite
@@ -64,7 +64,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitPovstanKurtka
   name: кожанная куртка
-  description: в такой ходят только повстанцы, знали?
+  description: Стиль - наше всё.
   suffix: afgan14
   components:
   - type: Sprite
@@ -76,7 +76,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitAlchem
   name: майка и штаны
-  description: от них веет опиумом.
+  description: От них веет опиумом.
   suffix: afgan14
   components:
   - type: Sprite
@@ -88,7 +88,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitHauberk
   name: кольчуга
-  description: устаревшая броня, использовалась как защита от стрел и мечей.
+  description: Устаревшая броня, использовалась как защита от стрел и мечей.
   suffix: afgan14
   components:
   - type: Sprite
