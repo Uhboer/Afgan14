@@ -23,7 +23,6 @@ namespace Content.Server.Disposal.Tube
 {
     public sealed class DisposalTubeSystem : EntitySystem
     {
-        [Dependency] private readonly MapSystem _map = default!;
         [Dependency] private readonly IRobustRandom _random = default!;
         [Dependency] private readonly SharedAppearanceSystem _appearanceSystem = default!;
         [Dependency] private readonly PopupSystem _popups = default!;
@@ -346,7 +345,7 @@ namespace Content.Server.Disposal.Tube
                 return null;
 
             var position = xform.Coordinates;
-            foreach (var entity in _map.GetInDir(xform.GridUid.Value, grid, position, nextDirection))
+            foreach (var entity in grid.GetInDir(position, nextDirection))
             {
                 if (!TryComp(entity, out DisposalTubeComponent? tube))
                 {
