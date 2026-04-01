@@ -163,3 +163,138 @@
     head: ClothingHeadHelmetCherep
     pocket1: RadioHandheld
     back: ClothingBackpackMerc
+
+
+
+### ASHLANDS
+#coolmans
+- type: startingGear
+  id: AshHeadLastAlchem
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitAlchem
+    shoes: ClothingShoesBootsSandal
+    gloves: ClothingHandsGlovesFingerless
+    neck: ClothingNeckNaplechnikiCrimson
+    mask: ClothingMaskBalisticEvil
+    back: ClothingBackpackMerc
+
+- type: startingGear
+  id: AshHeadPawner
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitPawn
+    shoes: ClothingShoesBootsItobe
+    back: ClothingBackpackSatchelLeather
+    eyes: ClothingEyesGlassesSunglasses
+
+- type: startingGear
+  id: AshHeadDon
+  equipment:
+    head: ClothingHeadHatVeteran
+    jumpsuit: ClothingUniformJumpsuitPovstan
+    outerClothing: ClothingOuterGreatcCoat
+    shoes: ClothingShoesBootsMerc
+    gloves: ClothingHandsGlovesCombat
+
+- type: startingGear
+  id: AshHeadSheriff
+  equipment:
+    head: ClothingHeadHelmetITOBEMedium
+    neck: ClothingNeckNaplechniki
+    mask: ClothingMaskDirector
+    jumpsuit: ClothingUniformJumpsuitBrave
+    outerClothing: ClothingOuterVestPravitel
+    shoes: ClothingShoesBootsSteelUpgrade
+    gloves: ClothingHandsGlovesCombat
+    back: ClothingBackpackSatchelLeather
+    belt: WeaponRevolverBlade
+
+#not fucking cool mans
+
+- type: startingGear
+  id: AshDirtColdlander
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHamas
+    outerClothing: ClothingOuterAfganCoat
+    shoes: ClothingShoesBootsCombat
+    gloves: ClothingHandsGlovesFingerless
+
+- type: startingGear
+  id: AshDirtDancer
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitPovstanKurtka
+    outerClothing: ClothingOuterDiscoAssBlazer
+    shoes: ClothingShoesBootsItobe
+
+- type: startingGear
+  id: AshDirtHodok
+  equipment:
+    head: ClothingHeadHelmetHodok
+    jumpsuit: ClothingUniformJumpsuitBrave
+    outerClothing: ClothingOuterVestBronik
+    shoes: ClothingShoesBootsSalvage
+    gloves: ClothingHandsGlovesFingerless
+    back: ClothingBackpackMerc
+    belt: ClothingBeltRope
+
+- type: startingGear
+  id: AshDirtGanger
+  equipment:
+    mask: ClothingMaskHamas
+    jumpsuit: ClothingUniformJumpsuitGanger
+    shoes: ClothingShoesBootsCombat
+
+- type: startingGear
+  id: AshDirtMerc
+  equipment:
+    head: ClothingHeadHelmetCherep
+    mask: ClothingMaskBalistic
+    neck: ClothingNeckSkin
+    jumpsuit: ClothingUniformJumpsuitPovstanKurtka
+    outerClothing: ClothingOuterVestWebMerc
+    shoes: ClothingShoesBootsCombat
+    gloves: ClothingHandsMercGlovesCombat
+    belt: ClothingBeltRPC
+
+- type: startingGear
+  id: AshDirtBigman
+  equipment:
+    head: ClothingHeadHelmetBigman
+    neck: ClothingNeckNaplechniki
+    jumpsuit: ClothingUniformJumpsuitAlchem
+    outerClothing: ClothingOuterVestBronikHeavy
+    shoes: ClothingShoesBootsSteel
+    gloves: ClothingHandsGlovesClaws
+
+- type: startingGear
+  id: AshDirtLastInqusitor
+  equipment:
+    head: ClothingHeadHelmetLight
+    neck: ClothingNeckLight
+    jumpsuit: ClothingUniformJumpsuitPovstan
+    shoes: ClothingShoesBootsMercFilled
+    gloves: ClothingHandsMercGlovesCombat
+    outerClothing: ClothingOuterVestLight
+
+- type: startingGear
+  id: AshDirtLastProrok
+  equipment:
+    head: ClothingHeadHelmetHamas
+    mask: ClothingMaskHamas
+    jumpsuit: ClothingUniformJumpsuitHamas
+    shoes: ClothingShoesBootsItobe
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterMedik
+    back: ClothingBackpackSatchelMedical
+    belt: BibleKoran
+
+- type: startingGear
+  id: AshDirtKnight
+  equipment:
+    head: ClothingHeadHelmetAltin
+    mask: ClothingMaskBalistic
+    neck: ClothingNeckNaplechniki
+    jumpsuit: ClothingUniformJumpsuitHauberk
+    shoes: ClothingShoesBootsSteel
+    gloves: ClothingHandsGlovesStal
+    outerClothing: ClothingOuterVestStal
+    back: AfganThanded

@@ -114,7 +114,7 @@
 - type: entity
   parent: ClothingMaskBase
   id: ClothingMaskDirector
-  name: маска Директора
+  name: позолоченная маска
   description: Веет таинственностью.
   suffix: afgan14
   components:
