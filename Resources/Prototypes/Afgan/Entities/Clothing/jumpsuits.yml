@@ -158,7 +158,7 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitDirector
-  name: костюм директора
+  name: деловой костюм
   description: Я чуствую в нем силу.
   suffix: afgan14
   components:
@@ -166,3 +166,39 @@
     sprite: Afgan/Clothing/Jumpsuit/director.rsi
   - type: Clothing
     sprite: Afgan/Clothing/Jumpsuit/director.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitBrave
+  name: одежда
+  description: Стоило бы постирать.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Jumpsuit/brave.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Jumpsuit/brave.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitGanger
+  name: шмот
+  description: Чертовски стильно.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Jumpsuit/ganger.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Jumpsuit/ganger.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitPawn
+  name: рубаха
+  description: Пестрая гавайская рубашка. Все бабы на районе мои.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Jumpsuit/pawn.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Jumpsuit/pawn.rsi
