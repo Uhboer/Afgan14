@@ -227,35 +227,35 @@
 - type: latheRecipe
   id: MP9part1
   result: WearponComponentRukoiatMP9Evil
-  completetime: 5
+  completetime: 2
   materials:
     Steel: 600
 
 - type: latheRecipe
   id: MP9part2
   result: WearponComponentDetaliMP9Evil
-  completetime: 5
+  completetime: 3
   materials:
     Steel: 300
 
 - type: latheRecipe
   id: MP9part3
   result: WearponComponentKropusMP9Evil
-  completetime: 6
+  completetime: 4
   materials:
     Steel: 1200
 
 - type: latheRecipe
   id: Magaz1
   result: BaseMagazineMP9evil
-  completetime: 2
+  completetime: 1
   materials:
     Steel: 200
 
 - type: latheRecipe
   id: Magaz2
   result: BaseMagazineLuty20
-  completetime: 2
+  completetime: 1
   materials:
     Steel: 300
 
@@ -270,42 +270,42 @@
 - type: latheRecipe
   id: Lutypart1
   result: WearponComponentKropusLuty
-  completetime: 5
+  completetime: 4
   materials:
     Steel: 2000
 
 - type: latheRecipe
   id: Lutypart2
   result: WearponComponentRukoiatLuty
-  completetime: 5
+  completetime: 2
   materials:
     Steel: 700
 
 - type: latheRecipe
   id: Izolenta
   result: Trash5
-  completetime: 3
+  completetime: 1
   materials:
     Plastic: 100
 
 - type: latheRecipe
   id: Pipe
   result: Trash1
-  completetime: 5
+  completetime: 3
   materials:
     Steel: 1000
 
 - type: latheRecipe
   id: Gayki
   result: Trash3
-  completetime: 4
+  completetime: 2
   materials:
     Steel: 500
 
 - type: latheRecipe
   id: Jelezaka
   result: Trash4
-  completetime: 5
+  completetime: 3
   materials:
     Steel: 800
 
@@ -319,7 +319,7 @@
 - type: latheRecipe
   id: BlackHemelet
   result: ClothingHeadHelmetBlack
-  completetime: 8
+  completetime: 5
   materials:
     Steel: 1000
 
@@ -361,7 +361,7 @@
 - type: latheRecipe
   id: AKmagaz
   result: MagazineLightRifleAK
-  completetime: 4
+  completetime: 3
   materials:
     Steel: 1000
 
@@ -375,49 +375,49 @@
 - type: latheRecipe
   id: HatWelding
   result: ClothingHeadHatWelding
-  completetime: 8
+  completetime: 5
   materials:
     Steel: 1000
 
 - type: latheRecipe
   id: Gloves
   result: ClothingHandsGlovesStal
-  completetime: 6
+  completetime: 5
   materials:
     Steel: 1000
 
 - type: latheRecipe
   id: Boots
   result: ClothingShoesBootsSteel
-  completetime: 6
+  completetime: 5
   materials:
     Steel: 1000
 
 - type: latheRecipe
   id: Naplechniki
   result: ClothingNeckNaplechniki
-  completetime: 6
+  completetime: 3
   materials:
     Steel: 500
 
 - type: latheRecipe
   id: Gorjet
   result: ClothingNeckGorjet
-  completetime: 6
+  completetime: 5
   materials:
     Steel: 900
 
 - type: latheRecipe
   id: Plastina
   result: PlastinaKevlar
-  completetime: 8
+  completetime: 5
   materials:
     Steel: 2500
 
 - type: latheRecipe
   id: Pricel
   result: WearponComponentPricel
-  completetime: 10
+  completetime: 8
   materials:
     Steel: 1000
     Plastic: 500
@@ -425,7 +425,7 @@
 - type: latheRecipe
   id: .50BMG
   result: Cartridge50BMG
-  completetime: 5
+  completetime: 1
   materials:
     Steel: 800
     Plastic: 300
@@ -433,7 +433,7 @@
 - type: latheRecipe
   id: PNVpart
   result: WearponComponentCarcasPNV
-  completetime: 10
+  completetime: 8
   materials:
     Steel: 3000
     Plastic: 3000
@@ -441,35 +441,35 @@
 - type: latheRecipe
   id: Hauberk
   result: ClothingUniformJumpsuitHauberk
-  completetime: 10
+  completetime: 8
   materials:
     Steel: 3000
 
 - type: latheRecipe
   id: prikladSH
   result: WearponComponentSH
-  completetime: 10
+  completetime: 6
   materials:
     Plastic: 500
 
 - type: latheRecipe
   id: ShellShotgun
   result: ShellShotgun
-  completetime: 2
+  completetime: 1
   materials:
     Plastic: 500
 
 - type: latheRecipe
   id: Wrench1
   result: Wrench
-  completetime: 3
+  completetime: 2
   materials:
     Steel: 500
 
 - type: latheRecipe
   id: Pickaxe1
   result: Pickaxe
-  completetime: 3
+  completetime: 2
   materials:
     Steel: 500
 
@@ -490,7 +490,7 @@
 - type: latheRecipe
   id: Binocle
   result: AfganBinocle
-  completetime: 2
+  completetime: 1
   materials:
     Plastic: 100
     Steel: 500
