@@ -148,7 +148,7 @@
   completetime: 12
   materials:
     Steel: 1000
-    Plastic: 1000
+    Plastic: 500
 
 - type: latheRecipe
   id: FauxTileAstroGrass
@@ -328,14 +328,14 @@
   result: SheetPlastic1
   completetime: 1
   materials:
-    Steel: 300
+    Steel: 200
 
 - type: latheRecipe
   id: Plastic10
   result: SheetPlastic10
   completetime: 3
   materials:
-    Steel: 3000
+    Steel: 2000
 
 - type: latheRecipe
   id: AK1
@@ -448,9 +448,9 @@
 - type: latheRecipe
   id: prikladSH
   result: WearponComponentSH
-  completetime: 6
+  completetime: 5
   materials:
-    Plastic: 500
+    Plastic: 200
 
 - type: latheRecipe
   id: ShellShotgun

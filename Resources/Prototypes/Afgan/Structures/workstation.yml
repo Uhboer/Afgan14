@@ -46,8 +46,10 @@
     whitelist:
       tags:
         - Sheet
+        - Metal
         - RawMaterial
         - Ingot
+        - Wooden
   - type: Lathe
     staticRecipes: #здесь крафты компонентов
       - MP9part1
