@@ -63,6 +63,9 @@
               SheetPlasma:
                 min: 30
                 max: 30
+              Bib:
+                min: 5
+                max: 15
   - type: MovementSpeedModifier
     baseSprintSpeed: 12
     baseWalkSpeed: 8

@@ -63,6 +63,9 @@
               SheetSteel:
                 min: 5
                 max: 15
+              Bib:
+                min: 0
+                max: 1
   - type: MovementSpeedModifier
     baseSprintSpeed: 2
     baseWalkSpeed: 1

@@ -63,6 +63,9 @@
               ClothingHeadHatKKK:
                 min: 1
                 max: 1
+              Bib:
+                min: 30
+                max: 50
   - type: MovementSpeedModifier
     baseSprintSpeed: 2
     baseWalkSpeed: 1

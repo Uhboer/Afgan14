@@ -264,10 +264,10 @@
   - TorgomatAmmo
 
 - type: listing
-  id: TorgomatClothingOuterVestWeb
-  name: кевларовый броник
+  id: ClothingOuterVestBronik
+  name: бронежилет
   description: Надежно и стильно? Может быть.
-  productEntity: ClothingOuterVestWeb
+  productEntity: ClothingOuterVestBronik
   cost:
     Bib: 5
   categories:
@@ -275,7 +275,7 @@
 
 - type: listing
   id: TorgomatClothingOuterVestWebMerc
-  name: укреп. кевларовый броник
+  name: укреплённый броник
   description: Надежно и стильно? Скорее всего.
   productEntity: ClothingOuterVestWebMerc
   cost:
@@ -284,10 +284,10 @@
   - TorgomatArmor
 
 - type: listing
-  id: TorgomatClothingOuterVestGiga
-  name: сверх укреп. кевларовый броник
+  id: ClothingOuterVestBronikHeavy
+  name: тяжелый бронежилет
   description: Надежно и стильно? Конечно, блять!
-  productEntity: ClothingOuterVestGiga
+  productEntity: ClothingOuterVestBronikHeavy
   cost:
     Bib: 15
   categories:
