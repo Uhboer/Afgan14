@@ -1,0 +1,18 @@
+- type: soundCollection
+  id: Gorn
+  files:
+    - /Audio/Afgan/Gorn/gorn.ogg
+
+- type: soundCollection
+  id: GornOld
+  files:
+    - /Audio/Afgan/Gorn/allah_pidoras.ogg
+    - /Audio/Afgan/Gorn/allaha_pidorasa.ogg
+
+- type: soundCollection
+  id: Boombox
+  files:
+    - /Audio/Afgan/Music/fire.ogg
+    - /Audio/Afgan/Music/is.ogg
+    - /Audio/Afgan/Music/sad.ogg
+    - /Audio/Afgan/Music/sad2.ogg

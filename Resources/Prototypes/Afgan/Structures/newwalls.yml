@@ -1,0 +1,62 @@
+# stone_brick
+- type: entity
+  parent: BaseWall
+  id: AfganWallStoneBrick
+  name: таинственная стена
+  description: выглядит зловеще...
+  suffix: afgan14
+  components:
+  - type: Tag
+    tags:
+      - Wall
+  - type: Sprite
+    sprite: Afgan/Structures/Walls/stone_brick.rsi
+  - type: Icon
+    sprite: Afgan/Structures/Walls/stone_brick.rsi
+  - type: RCDDeconstructable
+    cost: 6
+    delay: 8
+    fx: EffectRCDDeconstruct8
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 450
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: IconSmooth
+    key: bricks
+    base: brick
+
+# stone_wall
+- type: entity
+  parent: BaseWall
+  id: AfganWallStone
+  name: каменная стена
+  description: выглядит зловеще...
+  suffix: afgan14
+  components:
+  - type: Tag
+    tags:
+      - Wall
+  - type: Sprite
+    sprite: Afgan/Structures/Walls/stone_wall.rsi
+  - type: Icon
+    sprite: Afgan/Structures/Walls/stone_wall.rsi
+  - type: RCDDeconstructable
+    cost: 6
+    delay: 8
+    fx: EffectRCDDeconstruct8
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: IconSmooth
+    key: bricks
+    base: brick
+

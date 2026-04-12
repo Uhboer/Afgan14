@@ -1,0 +1,105 @@
+- type: jukebox
+  id: Fight_or_Flight
+  name: M.C. - Fight or Flight
+  path:
+    path: /Audio/Afgan/Music/Fight-or-Flight.ogg
+
+- type: jukebox
+  id: Calliope
+  name: M.C. - Calliope
+  path:
+    path: /Audio/Afgan/Music/Calliope.ogg
+
+
+- type: jukebox
+  id: Pigs
+  name: D.i.J. - All pigs must die
+  path:
+    path: /Audio/Afgan/Music/newradio/all-pigs-must-die.ogg
+
+- type: jukebox
+  id: Break_the_Black_Ice
+  name: D.i.J. - Break the Black Ice
+  path:
+    path: /Audio/Afgan/Music/newradio/Break_the_Black_Ice.ogg
+
+- type: jukebox
+  id: But_What_Ends_When_the_Symbols_Shatter
+  name: D.i.J. - But What Ends When the Symbols Shatter
+  path:
+    path: /Audio/Afgan/Music/newradio/But_What_Ends_When_the_Symbols_Shatter.ogg
+
+
+- type: jukebox
+  id: Death-of-the-west
+  name: D.i.J. - Death of the West
+  path:
+    path: /Audio/Afgan/Music/newradio/death-of-the-west.ogg
+
+- type: jukebox
+  id: Fields_of_Rape
+  name: D.i.J. - Fields of Rape
+  path:
+    path: /Audio/Afgan/Music/newradio/Fields_of_Rape.ogg
+
+- type: jukebox
+  id: Heaven-street
+  name: D.i.J. - Heaven street
+  path:
+    path: /Audio/Afgan/Music/newradio/heaven-street.ogg
+
+- type: jukebox
+  id: Last-europa-kiss
+  name: D.i.J. - Last europa kiss
+  path:
+    path: /Audio/Afgan/Music/newradio/last-europa-kiss.ogg
+
+- type: jukebox
+  id: Leper_Lord
+  name: D.i.J. - Leper Lord
+  path:
+    path: /Audio/Afgan/Music/newradio/Leper_Lord.ogg
+
+- type: jukebox
+  id: Little-black-angel
+  name: D.i.J. - Little black angel
+  path:
+    path: /Audio/Afgan/Music/newradio/little-black-angel.ogg
+
+
+- type: jukebox
+  id: Murder-Made-History
+  name: D.i.J. - Murder Made History
+  path:
+    path: /Audio/Afgan/Music/newradio/Murder-Made-History.ogg
+
+- type: jukebox
+  id: Nation
+  name: D.i.J. - Nation
+  path:
+    path: /Audio/Afgan/Music/newradio/nation.ogg
+
+- type: jukebox
+  id: Nothing-changes
+  name: D.i.J. - Nothing Changes
+  path:
+    path: /Audio/Afgan/Music/newradio/nothing-changes.ogg
+
+- type: jukebox
+  id: Rose-clouds-of-holocaust
+  name: D.i.J. - Rose Clouds of Holocaust
+  path:
+    path: /Audio/Afgan/Music/newradio/rose-clouds-of-holocaust.ogg
+
+- type: jukebox
+  id: She-said-destroy
+  name: D.i.J. - She Said Destroy
+  path:
+    path: /Audio/Afgan/Music/newradio/she-said-destroy.ogg
+
+- type: jukebox
+  id: The-honour-of-silence
+  name: D.i.J. - The Honour of Silence
+  path:
+    path: /Audio/Afgan/Music/newradio/the-honour-of-silence.ogg
+

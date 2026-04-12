@@ -356,6 +356,11 @@
   - type: Tag
     tags:
       - Materia
+  - type: PointLight
+    radius: 1.5
+    energy: 2
+    color: "#AFEEEE"
+
 
 - type: entity
   parent: BaseItem
@@ -373,6 +378,10 @@
   - type: Tag
     tags:
       - MateriaB
+  - type: PointLight
+    radius: 1.5
+    energy: 2
+    color: "#4682B4"
 
 - type: entity
   parent: BaseItem
@@ -390,6 +399,10 @@
   - type: Tag
     tags:
       - MateriaG
+  - type: PointLight
+    radius: 1.5
+    energy: 2
+    color: "#FFA500"
 
 - type: entity
   parent: BaseItem
