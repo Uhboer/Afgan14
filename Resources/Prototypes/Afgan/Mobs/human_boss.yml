@@ -53,3 +53,18 @@
     - tasks:
         - !type:HTNCompoundTask
           task: IdleCompound
+
+- type: entity
+  name: FallenHero Spawner
+  suffix: afgan14
+  id: SpawnFallenHero
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: icon
+      sprite: Afgan/Clothing/Armor/hero.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - MobFallenHero
