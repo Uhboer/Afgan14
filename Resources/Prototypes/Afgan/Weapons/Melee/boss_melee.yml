@@ -1,0 +1,16 @@
+- type: entity
+  name: вшитый в руку меч
+  parent: AfganSwordGold
+  id: AfganSwordGoldHero
+  description: Этот золотой меч был вшит в его руку тысячилетиями...
+  suffix: afgan14
+  components:
+  - type: MeleeWeapon
+    attackRate: 1.5
+    animation: WeaponArcBite
+    damage:
+      types:
+        Slash: 20
+    soundHit:
+        path: /Audio/Weapons/bladeslice.ogg
+  - type: Unremoveable

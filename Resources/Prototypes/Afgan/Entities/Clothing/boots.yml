@@ -4,7 +4,7 @@
   parent: ClothingShoesMilitaryBase
   id: ClothingShoesBootsSteel
   name: стальные поножи
-  description: сделаны из стали. Прям как в средние века.
+  description: Сделаны из стали. Прям как в бывшей Афганской утопии.
   suffix: afgan14
   components:
   - type: Sprite
@@ -75,3 +75,26 @@
     sprite: Afgan/Clothing/Boots/itobe.rsi
   - type: Clothing
     sprite: Afgan/Clothing/Boots/itobe.rsi
+
+- type: entity
+  parent: ClothingShoesMilitaryBase
+  id: ClothingShoesBootsSubboots
+  name: сабатоны
+  description: Сабатоны павшего героя. Они такие одни.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Boots/subboots.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Boots/subboots.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.7
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.95
+  - type: Reflect
+    reflectProb: 0.05

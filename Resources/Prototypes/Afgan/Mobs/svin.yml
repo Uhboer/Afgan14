@@ -262,7 +262,7 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitSvin
-  name: шукра свинолюда
+  name: шкура свинолюда
   description: чистейший плотный жир.
   suffix: afgan14 НЕ СПАВНИТЬ!!11!1!
   components:
@@ -272,7 +272,7 @@
   - type: Armor
     modifiers:
       coefficients:
-        Piercing: 0.95
+        Piercing: 0.9
   - type: ClothingSpeedModifier
     walkModifier: 0.45
     sprintModifier: 0.45

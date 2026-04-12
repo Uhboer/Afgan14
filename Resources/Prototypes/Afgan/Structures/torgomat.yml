@@ -100,6 +100,15 @@
     price:
       Bib: 1
 
+- type: entity
+  parent: Bib
+  id: Bib10
+  suffix: Afgan14, 10
+  components:
+  - type: Stack
+    count: 10
+    stackType: Bib
+
 - type: stack
   id: Bib
   name: биб

@@ -2,7 +2,7 @@
   parent: ClothingHandsBase
   id: ClothingHandsGlovesStal
   name: стальные наручи
-  description: прям как в средние века.
+  description: Холодное железо.
   suffix: afgan14
   components:
   - type: Sprite
@@ -30,7 +30,7 @@
   parent: ClothingHandsBase
   id: ClothingHandsGlovesRing
   name: кольцо
-  description: что это за херня?!
+  description: Смогу ли я овладать с такой мощью?
   suffix: afgan14
   components:
   - type: Sprite
@@ -81,7 +81,7 @@
   parent: ClothingHandsBase
   id: ClothingHandsGlovesClaws
   name: когти
-  description: я всех убью нахуй!! АААА!!
+  description: Я всех убью нахуй!! АААА!!
   suffix: afgan14
   components:
   - type: Sprite
@@ -117,7 +117,7 @@
 - type: entity
   parent: ClothingHandsBase
   id: ABagOfTeethFromGrandomotherUhbek
-  name: Кастет из золотых зубов бабки ухбоера.
+  name: кастет из золотых зубов бабки ухбоера.
   suffix: afgan14, ShitPost
   description: Спизжено из стакана позавчера. Легендарное оружие из легенд. Масло масленное растительное.
   components:
@@ -136,3 +136,29 @@
       path: "/Audio/Weapons/smash.ogg"
     animation: WeaponArcBite
     mustBeEquippedToUse: true
+
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsGlovesHero
+  name: наручи
+  description: Носил их однажды герой павший.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Gloves/hero.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Gloves/hero.rsi
+  - type: Insulated
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.7
+  - type: FingerprintMask
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.95
+  - type: Reflect
+    reflectProb: 0.03

@@ -396,6 +396,34 @@
     walkModifier: 0.4
     sprintModifier: 0.4
   - type: Reflect
-    reflectProb: 0.05
+    reflectProb: 0.08
+  - type: TemperatureProtection
+    coefficient: 0.1
+
+- type: entity
+  parent: ClothingOuterVestWeb
+  id: ClothingOuterVestHero
+  name: доспех павшего Героя
+  description: Никто не знает кем был этот герой. Но после Великой Бури, его стали считать павшим, а имя его стерлость с страниц священнописаний.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Armor/hero.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Armor/hero.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.3
+        Heat: 0.5
+  - type: ExplosionResistance
+    damageCoefficient: 0.7
+  - type: ClothingSpeedModifier
+    walkModifier: 0.6
+    sprintModifier: 0.6
+  - type: Reflect
+    reflectProb: 0.1
   - type: TemperatureProtection
     coefficient: 0.1

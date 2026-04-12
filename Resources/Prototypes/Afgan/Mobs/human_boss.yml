@@ -1,0 +1,54 @@
+- type: entity
+  name: павший Герой
+  parent: BaseMobHuman
+  id: MobFallenHero
+  description: Когда-то давно, когда Афган был планетой-утопией, когда коорпорация ITOBE питала надежды на светлое будующие, жил герой Афгана. Совершал он множество подвигов и был известен всем. По неизвестным причинам, он никогда не старел и никто не видел его облик вне брони. После Великой Бури он окончательно свихнулся и его сочли павшим. С тех пор все летописи о нем были вырваны из страниц священнописаний.
+  components:
+  - type: NpcFactionMember
+    factions:
+      - SimpleHostile
+  - type: Loadout
+    prototypes:
+      - FallenHeroGear
+  - type: InputMover
+  - type: MobMover
+  - type: HTN
+    rootTask:
+      task: SpeechFallenHero
+    blackboard:
+      MinimumIdleTime: !type:Single
+        10
+      MaximumIdleTime: !type:Single
+        60
+
+- type: startingGear
+  id: FallenHeroGear
+  equipment:
+    head: ClothingHeadHelmetHundskull
+    neck: ClothingNeckGorjet
+    jumpsuit: ClothingUniformJumpsuitHauberk
+    outerClothing: ClothingOuterVestHero
+    gloves: ClothingHandsGlovesHero
+    shoes: ClothingShoesBootsSubboots
+    pocket1: Bib
+  inhand:
+    - AfganSwordGoldHero
+
+
+- type: htnCompound
+  id: SpeechFallenHero
+  branches:
+    - tasks:
+      - !type:HTNPrimitiveTask
+        operator: !type:SpeakOperator
+          speech: "Judge!"
+
+      - !type:HTNCompoundTask
+        task: MeleeCombatCompound
+
+      - !type:HTNPrimitiveTask
+        operator: !type:SpeakOperator
+          speech: "Heilige Tod!"
+    - tasks:
+        - !type:HTNCompoundTask
+          task: IdleCompound
