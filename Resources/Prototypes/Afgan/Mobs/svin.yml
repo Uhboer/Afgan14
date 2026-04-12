@@ -78,7 +78,11 @@
     color: "#808080"
     playSoundOn: false
   - type: Loadout
-    prototypes: [PuzoGear]
+    prototypes:
+    - PuzoGear
+    - BeremenGear
+    - SvinBibikGear
+    - SvinTwoBibikGear
   - type: FootprintVisualizer
   - type: LayingDown
 
@@ -284,3 +288,22 @@
   id: PuzoGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitSvin
+
+- type: startingGear
+  id: BeremenGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSvin
+    pocket1: AfganSvinoEgg
+
+- type: startingGear
+  id: SvinBibikGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSvin
+    pocket1: Bib
+
+- type: startingGear
+  id: SvinTwoBibikGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSvin
+    pocket1: Bib
+    pocket2: Bib

@@ -128,7 +128,6 @@
     mask: ClothingMaskHamas
     head: ClothingHeadHelmetHamas
     gloves: ClothingHandsGlovesCombat
-    id: SalvageIDCard
 
 - type: startingGear
   id: NedoBrodaga

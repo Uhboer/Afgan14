@@ -19,6 +19,8 @@
         - WearponComponentKropusMP9Evil
         - WearponComponentKropusLuty
         - WearponComponentCarcasPNV
+        - Bib
+        - AfganSvinoEgg
       rareChance: 0.01
       prototypes:
         - Trash1
@@ -32,6 +34,7 @@
         - Trash9
         - Trash10
         - Trash11
+        - AfganSvinoEggTrash
         - WearponComponentSH
         - OrganHumanStomach
         - OrganHumanHeart

@@ -109,6 +109,15 @@
     count: 10
     stackType: Bib
 
+- type: entity
+  parent: Bib
+  id: Bib30
+  suffix: Afgan14, 30
+  components:
+  - type: Stack
+    count: 30
+    stackType: Bib
+
 - type: stack
   id: Bib
   name: биб

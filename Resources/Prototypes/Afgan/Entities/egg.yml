@@ -1,0 +1,165 @@
+- type: entity
+  name: яйцо свинолюда
+  description: Свинолюди размножаются путем откладывания яиц, но иногда они хранят в них странную хуйню.
+  id: AfganSvinoEgg
+  parent: [PresentBase, BaseItem]
+  suffix: Afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/egg.rsi
+    layers:
+      - state: icon
+  - type: SpawnItemsOnUse
+    items:
+      - id: AfganSvinoEggTrash
+      # no rare
+      - id: Bib
+        orGroup: GiftPool
+      - id: FoodKakashka
+        orGroup: GiftPool
+      - id: FoodGribHeal
+        orGroup: GiftPool
+      - id: WoodenBuckler
+        orGroup: GiftPool
+      - id: BaseMagazinePP30
+        orGroup: GiftPool
+      - id: ClothingOuterMedik
+        orGroup: GiftPool
+      - id: AfganGorn
+        orGroup: GiftPool
+      - id: ClothingBeltRope
+        orGroup: GiftPool
+      - id: ClothingUniformJumpsuitPawn
+        orGroup: GiftPool
+      - id: AfganRadio
+        orGroup: GiftPool
+      - id: ClothingOuterGreatcCoat
+        orGroup: GiftPool
+      - id: ClothingUniformJumpsuitGanger
+        orGroup: GiftPool
+      - id: ClothingHeadHatVeteran
+        orGroup: GiftPool
+      - id: SyringeLariy
+        orGroup: GiftPool
+      - id: ClothingUniformJumpsuitBrave
+        orGroup: GiftPool
+      - id: ClothingNeckSkin
+        orGroup: GiftPool
+      - id: AfganBinocle
+        orGroup: GiftPool
+      - id: BucketAfgan
+        orGroup: GiftPool
+      - id: AfganPipegun
+        orGroup: GiftPool
+      - id: ClothingHeadHatDirector
+        orGroup: GiftPool
+      - id: Wrench
+        orGroup: GiftPool
+      - id: ClothingUniformJumpsuitTaliban
+        orGroup: GiftPool
+      - id: AfganBoombox
+        orGroup: GiftPool
+      # rary
+      - id: KukriKnife
+        prob: 8
+        orGroup: GiftPool
+      - id: ClothingHeadHelmetHundskull
+        prob: .7
+        orGroup: GiftPool
+      - id: ClothingHandsGlovesClaws
+        prob: .7
+        orGroup: GiftPool
+      - id: ClothingOuterVestDirector
+        prob: .7
+        orGroup: GiftPool
+      - id: Sralna
+        prob: .7
+        orGroup: GiftPool
+      - id: Mattress
+        prob: .7
+        orGroup: GiftPool
+      - id: KitchenReagentGrinder
+        prob: .5
+        orGroup: GiftPool
+      - id: AfganGrenade
+        prob: .7
+        orGroup: GiftPool
+      - id: WeaponRailgun
+        prob: .5
+        orGroup: GiftPool
+      - id: SyringeGun
+        prob: .5
+        orGroup: GiftPool
+      - id: ClothingHeadHelmetBigman
+        prob: .5
+        orGroup: GiftPool
+      - id: ChairTrone
+        prob: .4
+        orGroup: GiftPool
+      - id: ChemMaster
+        prob: .5
+        orGroup: GiftPool
+      - id: ClothingHeadHelmetKaratel
+        prob: .5
+        orGroup: GiftPool
+      - id: ClothingMaskDirector
+        prob: .7
+        orGroup: GiftPool
+      - id: WeaponSubMachineGunPmRak
+        prob: .7
+        orGroup: GiftPool
+      - id: Bib10
+        prob: .6
+        orGroup: GiftPool
+      - id: MobSvinAngry
+        prob: .5
+        orGroup: GiftPool
+      - id: ClothingEyesVisionEng
+        prob: .5
+        orGroup: GiftPool
+      # rare
+      - id: AfganThanded
+        prob: .3
+        orGroup: GiftPool
+      - id: AfganSwordGold
+        prob: .4
+        orGroup: GiftPool
+      - id: ClothingOuterVestKaratel
+        prob: .2
+        orGroup: GiftPool
+      - id: AfganChaosFragment
+        prob: .2
+        orGroup: GiftPool
+      - id: LandMineExplosiveAfgan
+        prob: .2
+        orGroup: GiftPool
+      - id: MobTvar
+        prob: .2
+        orGroup: GiftPool
+      - id: ABagOfTeethFromGrandomotherUhbek
+        prob: .01
+        orGroup: GiftPool
+      - id: ClothingOuterVestHrumka
+        prob: .01
+        orGroup: GiftPool
+      - id: ClothingHeadHatKKK
+        prob: .01
+        orGroup: GiftPool
+      - id: MobChungus
+        prob: .01
+        orGroup: GiftPool
+    sound:
+      path: /Audio/Afgan/Misc/eat.ogg
+
+- type: entity
+  id: AfganSvinoEggTrash
+  parent: BaseItem
+  name: скорлупа от яйца
+  description: мусор. Когда то было яйцом свинолюда.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/Trash/egg.rsi
+    state: icon
+  - type: Item
+    size: Tiny
