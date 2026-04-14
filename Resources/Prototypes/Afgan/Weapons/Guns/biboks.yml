@@ -1,0 +1,93 @@
+- type: entity
+  name: Бибокс
+  parent: BaseItem
+  id: AfganWeaponBiboks
+  description: Крайне брутальное оружие для скрытных и брутальных убийств.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Weapons/Guns/boboks.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Item
+    size: Small
+    sprite: Afgan/Weapons/Guns/boboks.rsi
+  - type: ItemSlots
+    slots:
+      gun_chamber:
+        name: Chamber
+        startingItem: AfganShellBiboks
+        priority: 1
+        whitelist:
+          tags:
+             - ShellBiboks
+  - type: ContainerContainer
+    containers:
+      gun_chamber: !type:ContainerSlot
+  - type: ChamberMagazineAmmoProvider
+    autoCycle: false
+    boltClosed: false
+    canRack: false
+    soundBoltClosed: /Audio/Afgan/Wearpons/Biboks/close.ogg
+    soundBoltOpened: /Audio/Afgan/Wearpons/Biboks/open.ogg
+    soundRack: /Audio/Afgan/Wearpons/Biboks/cock.ogg
+  - type: Clothing
+    sprite: Afgan/Weapons/Guns/boboks.rsi
+    quickEquip: false
+    slots:
+    - Belt
+    - suitStorage
+  - type: Appearance
+  - type: Gun
+    fireOnDropChance: 0.5
+    fireRate: 8
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Afgan/Wearpons/Biboks/shot.ogg
+
+
+- type: entity
+  id: AfganShellBiboks
+  name: двойной патрон 20g
+  parent: BaseShellShotgun
+  description: Двойной патрон для Бибокса.
+  components:
+  - type: Sprite
+    sprite: Afgan/Weapons/Guns/Ammunition/biboks_shell.rsi
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    soundEject:
+      path: /Audio/Afgan/Wearpons/Biboks/cock.ogg
+    proto: PelletBiboksSpread
+  - type: Tag
+    tags:
+    - ShellBiboks
+
+- type: entity
+  id: PelletBiboksSpread
+  categories: [ HideSpawnMenu ]
+  parent: PelletShotgunAfgan
+  components:
+  - type: CartridgeAmmo
+    proto: PelletShotgunAfgan
+    count: 20
+    spread: 25
+
+- type: entity
+  id: PelletShotgunAfgan
+  name: pellet (.50)
+  noSpawn: true
+  parent: BaseBullet
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    state: buckshot
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 20
