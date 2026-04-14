@@ -202,3 +202,15 @@
     sprite: Afgan/Clothing/Jumpsuit/pawn.rsi
   - type: Clothing
     sprite: Afgan/Clothing/Jumpsuit/pawn.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitGangerUhboer
+  name: стильный шмот
+  description: Ебать как стильно.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Jumpsuit/ganger_uhboer.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Jumpsuit/ganger_uhboer.rsi
