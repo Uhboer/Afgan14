@@ -143,7 +143,7 @@
 
 - type: listing
   id: Torgomat9mm
-  name: магазина 9мм
+  name: магазин 9мм
   description: качественный магазин, произведенный на заводе, вмещает 30 патрон, подходит для PM-63 RAK.
   productEntity: BaseMagazinePP30
   cost:
@@ -212,12 +212,33 @@
   - TorgomatLegendary
 
 - type: listing
+  id: TorgomatAfganWeaponBiboks
+  name: Бибокс
+  description: Оружие для быстрых убийств вблизи.
+  productEntity: AfganWeaponBiboks
+  cost:
+    Bib: 5
+  categories:
+  - TorgomatWearpons
+
+- type: listing
+  id: TorgomatAfganShellBiboks
+  name: двойной патрон для Бибокса
+  description: Объеденненый патрон для двойного выстрела с бибокса.
+  productEntity: AfganShellBiboks
+  cost:
+    Bib: 1
+  categories:
+  - TorgomatAmmo
+
+
+- type: listing
   id: TorgomatWeaponRevolverBlade
   name: Блейд
   description: Стандартное вооружение агентов.
   productEntity: WeaponRevolverBlade
   cost:
-    Bib: 4
+    Bib: 3
   categories:
   - TorgomatWearpons
 
@@ -247,7 +268,7 @@
   description: Активно используется вне комплекса для борьбы с надоедливой фауной.
   productEntity: KukriKnife
   cost:
-    Bib: 3
+    Bib: 2
   categories:
   - TorgomatWearpons
 
@@ -257,7 +278,7 @@
   description: What makes me a good demoman???
   productEntity: AfganGrenade
   cost:
-    Bib: 3
+    Bib: 5
   categories:
   - TorgomatBombs
 

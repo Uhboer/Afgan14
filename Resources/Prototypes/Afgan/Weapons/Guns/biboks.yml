@@ -63,24 +63,16 @@
   - type: CartridgeAmmo
     soundEject:
       path: /Audio/Afgan/Wearpons/Biboks/cock.ogg
-    proto: PelletBiboksSpread
+    proto: PelletShotgunAfgan
+    count: 10
+    spread: 33
   - type: Tag
     tags:
     - ShellBiboks
 
 - type: entity
-  id: PelletBiboksSpread
-  categories: [ HideSpawnMenu ]
-  parent: PelletShotgunAfgan
-  components:
-  - type: CartridgeAmmo
-    proto: PelletShotgunAfgan
-    count: 20
-    spread: 25
-
-- type: entity
   id: PelletShotgunAfgan
-  name: pellet (.50)
+  name: дробинка
   noSpawn: true
   parent: BaseBullet
   components:
@@ -90,4 +82,4 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 20
+        Piercing: 17
