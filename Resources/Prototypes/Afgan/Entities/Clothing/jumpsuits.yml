@@ -183,7 +183,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitGanger
   name: шмот
-  description: Чертовски стильно.
+  description: Задристанная майка и шаровары.Чертовски стильно.
   suffix: afgan14
   components:
   - type: Sprite
@@ -207,10 +207,22 @@
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitGangerUhboer
   name: стильный шмот
-  description: Ебать как стильно.
+  description: Свободная футболка и джинсы. Ебать как стильно.
   suffix: afgan14
   components:
   - type: Sprite
     sprite: Afgan/Clothing/Jumpsuit/ganger_uhboer.rsi
   - type: Clothing
     sprite: Afgan/Clothing/Jumpsuit/ganger_uhboer.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitGangerSport
+  name: спортивка
+  description: Поебанные спортивные брюки и длинорукавка. Готов бить ебальники.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Jumpsuit/sport.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Jumpsuit/sport.rsi
