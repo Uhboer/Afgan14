@@ -226,3 +226,36 @@
     sprite: Afgan/Clothing/Jumpsuit/sport.rsi
   - type: Clothing
     sprite: Afgan/Clothing/Jumpsuit/sport.rsi
+
+- type: entity
+  abstract: true
+  parent: ClothingUniformBase
+  id: ClothingUniformBaseOpened
+  suffix: opened
+  components:
+  - type: Foldable
+    folded: true
+  - type: Clothing
+    equippedPrefix: open
+  - type: Item
+    heldPrefix: open
+  - type: Sprite
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+      visible: false
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: true
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitGangerCrime
+  name: бандитка
+  description: Грязный плащ, брюки и бандана. Время делать грязные дела.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Jumpsuit/crime.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Jumpsuit/crime.rsi
