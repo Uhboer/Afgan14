@@ -60,3 +60,9 @@ reagent-name-bombin = бомбин
 reagent-desc-bombin = взрывоопасен.
 reagent-physical-desc-bombin = взрывуч
 bombin-explosion = ЕБАНУЛО-ТО КАК!!
+
+reagent-name-fent = фент
+reagent-desc-fent = сильные соли
+fent-effect-soli = моя кожа ссыхается
+fent-effect-soli2 = в горле пересохло
+fent-effect-soli3 = мои глаза засыхают

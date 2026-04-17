@@ -226,6 +226,7 @@
   name: двойной патрон для Бибокса
   description: Объеденненый патрон для двойного выстрела с бибокса.
   productEntity: AfganShellBiboks
+#  productAction: ActionFireball
   cost:
     Bib: 1
   categories:

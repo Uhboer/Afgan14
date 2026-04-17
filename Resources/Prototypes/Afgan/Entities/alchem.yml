@@ -99,3 +99,13 @@
     visualType: LargeCaution
   products:
     AfganMaterit: 5
+
+- type: reaction
+  id: AfganFent
+  reactants:
+    AfganBombin:
+      amount: 2
+    AfganLariy:
+      amount: 2
+  products:
+    AfganFent: 1

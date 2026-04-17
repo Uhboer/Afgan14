@@ -59,6 +59,7 @@ reagent-physical-desc-burning = горящее
 reagent-physical-desc-porous = пористое
 reagent-physical-desc-powdery = порошкообразное
 reagent-physical-desc-opium = ЕБАНУТОЕ
+eagent-physical-desc-fent = кристалическое
 reagent-physical-desc-creamy = сливочное
 reagent-physical-desc-sticky = липкое
 reagent-physical-desc-bubbly = пузыристое

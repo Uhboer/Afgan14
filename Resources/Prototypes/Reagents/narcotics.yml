@@ -598,7 +598,7 @@
       - !type:Emote
         emote: Salute
         showInChat: true
-        probability: 0.2
+        probability: 0.5
         conditions:
         - !type:ReagentThreshold
           max: 10
@@ -644,5 +644,57 @@
         damage:
           groups:
             Brute: -4
+          types:
+            Bloodloss: -2
+
+- type: reagent
+  id: AfganFent
+  name: reagent-name-fent
+  group: Narcotics
+  desc: reagent-desc-fent
+  physicalDesc: reagent-physical-desc-fent
+  flavor: salty
+  color: "#FFDAB9"
+  metabolismRate: 0.01
+  metabolisms:
+    Narcotic:
+      metabolismRate: 0.01
+      effects:
+      - !type:MovespeedModifier
+        walkSpeedModifier: 0.3
+        sprintSpeedModifier: 0.3
+      - !type:Jitter
+      - !type:PopupMessage
+        visualType: Medium
+        messages: ["fent-effect-soli", "fent-effect-soli2", "fent-effect-soli3"]
+        type: Local
+        probability: 0.2
+      - !type:GenericStatusEffect
+        key: SeeingRainbows
+        component: SeeingRainbows
+        type: Add
+        time: 5
+        refresh: false
+      - !type:Emote
+        emote: Slang
+        showInChat: true
+        probability: 0.1
+      - !type:Drunk
+        boozePower: 2
+      - !type:GenericStatusEffect
+        key: TemporaryBlindness
+        component: PermanentBlindness
+        conditions:
+        - !type:ReagentThreshold
+          min: 10.1
+    Medicine:
+      metabolismRate: 0.01
+      effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Burn: -1
+            Brute: -1
+            Airloss: -2
           types:
             Bloodloss: -2

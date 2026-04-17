@@ -56,7 +56,7 @@
 - type: soundCollection
   id: Slang
   files:
-    - /Audio/Afgan/Mobs/Charges/charge_nig.ogg
+    - /Audio/Afgan/Mobs/Charges/charge_nig1.ogg
     - /Audio/Afgan/Mobs/Charges/charge_nig2.ogg
     - /Audio/Afgan/Mobs/Charges/charge_nig3.ogg
     - /Audio/Afgan/Mobs/Charges/charge_nig4.ogg
@@ -64,7 +64,7 @@
     - /Audio/Afgan/Mobs/Charges/charge_nig6.ogg
     - /Audio/Afgan/Mobs/Charges/charge_nig7.ogg
     - /Audio/Afgan/Mobs/Charges/charge_nig8.ogg
-
+    - /Audio/Afgan/Mobs/Charges/charge_nig9.ogg
 
 - type: soundCollection
   id: Shiza
