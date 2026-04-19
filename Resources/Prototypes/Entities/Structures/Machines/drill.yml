@@ -91,3 +91,23 @@
     requiredRange: 5.0
   - type: Examiner
   - type: Appearance
+
+- type: entity
+  parent: DrillBase
+  id: DrillHandmade
+  name: handmade drill
+  description: A crude handmade drill cobbled together from scrap. Slow, but it works.
+  components:
+  - type: Sprite
+    sprite: Afgan/Structures/bur.rsi
+    state: shittydrill
+    drawdepth: Overdoors
+  - type: Drill
+    enabled: false
+    updateDelay: 15
+    resources:
+      SteelOre1: 2
+      SpaceQuartz1: 1
+      Coal1: 2
+  - type: Examiner
+  - type: Appearance
