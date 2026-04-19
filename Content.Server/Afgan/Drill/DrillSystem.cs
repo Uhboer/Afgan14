@@ -7,6 +7,7 @@ using Content.Shared.Storage.EntitySystems;
 using Content.Shared.Verbs;
 using Robust.Server.GameObjects;
 using Robust.Shared.Timing;
+using Robust.Shared.Player;
 
 namespace Content.Server.Afgan.Drill;
 
@@ -103,7 +104,7 @@ public sealed class DrillSystem : EntitySystem
         component.Enabled = true;
         component.NextUpdate = _timing.CurTime + component.UpdateDelay;
         _popup.PopupEntity(Loc.GetString("drill-turned-on"), uid, args.User);
-        
+
         args.Handled = true;
     }
 
@@ -133,7 +134,7 @@ public sealed class DrillSystem : EntitySystem
             if (TryComp<ProximityDrillComponent>(uid, out var proximityDrill))
             {
                 var playerInRange = CheckPlayerInRange(uid, xform, proximityDrill.RequiredRange);
-                
+
                 if (!playerInRange)
                 {
                     if (proximityDrill.PlayerInRange)
@@ -201,7 +202,7 @@ public sealed class DrillSystem : EntitySystem
             {
                 // Спавним предмет
                 var item = Spawn(prototype, coords);
-                
+
                 // Пытаемся вставить в хранилище
                 if (!_storage.Insert(uid, item, out _, storageComp: storage, playSound: false))
                 {
