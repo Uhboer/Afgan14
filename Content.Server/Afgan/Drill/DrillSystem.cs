@@ -11,6 +11,7 @@ using Robust.Server.GameObjects;
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Timing;
+using Robust.Shared.Player;
 
 namespace Content.Server.Afgan.Drill;
 
@@ -130,6 +131,7 @@ public sealed class DrillSystem : EntitySystem
         _jitter.AddJitter(uid, -10, 40);
 
         _popup.PopupEntity(Loc.GetString("drill-turned-on"), uid, args.User);
+
         args.Handled = true;
     }
 
@@ -266,6 +268,8 @@ public sealed class DrillSystem : EntitySystem
             for (int i = 0; i < count; i++)
             {
                 var item = Spawn(prototype, coords);
+
+                // Пытаемся вставить в хранилище
                 if (!_storage.Insert(uid, item, out _, storageComp: storage, playSound: false))
                     Del(item);
             }
