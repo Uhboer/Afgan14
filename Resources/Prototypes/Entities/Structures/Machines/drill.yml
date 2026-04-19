@@ -6,8 +6,8 @@
   description: A mining drill that extracts resources from the ground.
   components:
   - type: Sprite
-    sprite: error.rsi
-    state: error
+    sprite: Afgan/Structures/bur.rsi
+    state: drill
     drawdepth: Overdoors
   - type: Transform
     anchored: true
@@ -19,7 +19,7 @@
       fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.75,-0.5,0.75,0.5"
+          bounds: "-0.5,-0.5,0.5,0.5"
         density: 250
         mask:
         - MachineMask
