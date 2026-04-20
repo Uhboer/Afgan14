@@ -530,6 +530,19 @@
   objectType: Structure
 
 - type: construction
+  name: Светило
+  id: Fireholder
+  graph: FireholderGraph
+  startNode: start
+  targetNode: fireholder
+  category: construction-category-afgan
+  description: real fireholder.
+  icon:
+    sprite: Afgan/Structures/fireholder.rsi
+    state: bonfire
+  objectType: Structure
+
+- type: construction
   name: Рюкзак
   id: SamodelBackpack
   graph: BackpackGraph

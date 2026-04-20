@@ -43,3 +43,6 @@
         layer:
         - MidImpassable
         - LowImpassable
+  - type: Construction
+    graph: FireholderGraph
+    node: fireholder

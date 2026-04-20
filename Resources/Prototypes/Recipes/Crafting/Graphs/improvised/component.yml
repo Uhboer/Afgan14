@@ -161,7 +161,7 @@
         icon:
           sprite: Afgan/Clothing/Head/bhemelet.rsi
           state: icon
-        name: стальной шлем
+        name: любой обычный шлем
       - tag: WeldingMask
         icon:
           sprite: Clothing/Head/Welding/welding.rsi
@@ -550,6 +550,20 @@
               doAfter: 8
     - node: bonfire
       entity: Bonfire
+
+- type: constructionGraph
+  id: FireholderGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: fireholder
+          steps:
+            - material: WoodPlank
+              amount: 5
+              doAfter: 8
+    - node: fireholder
+      entity: AfganFireholder
 
 - type: constructionGraph
   id: BackpackGraph

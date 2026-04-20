@@ -1,8 +1,8 @@
 - type: entity
   parent: ClothingHeadHelmetBasic
   id: ClothingHeadHelmetHamas
-  name: шлем Хамаса
-  description: Чёрный шлем с повязкой Хамаса.
+  name: шлем
+  description: Чёрный шлем с повязкой Афгана.
   suffix: afgan14
   components:
   - type: Sprite
@@ -21,6 +21,9 @@
     sprintModifier: 0.98
   - type: Reflect
     reflectProb: 0.05
+  - type: Tag
+    tags:
+      - BlackHemelet
 
 - type: entity
   parent: ClothingHeadHelmetBasic
@@ -72,6 +75,9 @@
     sprintModifier: 0.98
   - type: Reflect
     reflectProb: 0.05
+  - type: Tag
+    tags:
+      - BlackHemelet
 
 - type: entity
   parent: ClothingHeadHelmetBasic
@@ -128,6 +134,9 @@
     sprintModifier: 0.98
   - type: Reflect
     reflectProb: 0.05
+  - type: Tag
+    tags:
+      - BlackHemelet
 
 - type: entity
   parent: ClothingHeadHelmetBasic
