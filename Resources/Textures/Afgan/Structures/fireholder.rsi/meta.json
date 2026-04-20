@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Afgan14",
+  "copyright": "Afgan by Uhboer",
   "size": {
     "x": 32,
     "y": 32
@@ -17,16 +17,7 @@
       "name": "burning",
       "delays": [
         [
-      0.3,
-      0.3,
-      0.3
-    ]
-      ]
-    },
-    {
-      "name": "legionnaire_bonfire",
-      "delays": [
-        [
+      0.2,
       0.2,
       0.2,
       0.2

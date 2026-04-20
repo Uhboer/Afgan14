@@ -27,7 +27,7 @@
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
   - type: AmbientSound
-    volume: -5
+    volume: -2
     range: 5
     sound:
       path: /Audio/Ambience/Objects/fireplace.ogg
@@ -56,6 +56,21 @@
   - type: Grelka
     heatingRate: 50.0
     maxTemperature: 373.15
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.15,-0.25,0.15,0.15"
+        mask:
+        - TabletopMachineMask
+        layer:
+        - Impassable
+        - MidImpassable
+        - LowImpassable
+        hard: false
+
+
 
 - type: entity
   id: LegionnaireBonfire
