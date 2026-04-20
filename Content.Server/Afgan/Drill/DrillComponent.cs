@@ -1,3 +1,4 @@
+using Robust.Shared.Audio;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 
@@ -37,4 +38,52 @@ public sealed partial class DrillComponent : Component
         { "SpaceQuartz1", 1 },
         { "Coal1", 2 }
     };
+
+    // ── Аудио ──────────────────────────────────────────────────────────────
+
+    /// <summary>
+    /// Звук при заводке (циклично). Папка намеренно "Structues" — опечатка в проекте.
+    /// </summary>
+    [DataField("startupSound")]
+    public SoundSpecifier StartupSound = new SoundPathSpecifier("/Audio/Afgan/Structues/buron.ogg");
+
+    /// <summary>
+    /// Звук при работе (циклично).
+    /// </summary>
+    [DataField("workingSound")]
+    public SoundSpecifier WorkingSound = new SoundPathSpecifier("/Audio/Afgan/Structues/bur.ogg");
+
+    /// <summary>
+    /// Длина одного цикла buron.mp3 в секундах — нужна для таймера джиттера
+    /// </summary>
+    [DataField("startupLoopDuration")]
+    public float StartupLoopDuration = 1.254f;
+
+    /// <summary>
+    /// Длительность джиттера в начале каждого цикла заводки (секунды)
+    /// </summary>
+    [DataField("startupJitterDuration")]
+    public float StartupJitterDuration = 0.5f;
+
+    // ── Runtime-поля (не сериализуются) ───────────────────────────────────
+
+    /// <summary>
+    /// Идёт ли сейчас заводка (DoAfter запущен)
+    /// </summary>
+    public bool IsStartingUp = false;
+
+    /// <summary>
+    /// Текущий аудиопоток (заводка или работа)
+    /// </summary>
+    public EntityUid? AudioStream;
+
+    /// <summary>
+    /// Время следующего цикла джиттера при заводке
+    /// </summary>
+    public TimeSpan NextJitterCycle = TimeSpan.Zero;
+
+    /// <summary>
+    /// Время окончания текущего джиттера
+    /// </summary>
+    public TimeSpan JitterEndTime = TimeSpan.Zero;
 }
