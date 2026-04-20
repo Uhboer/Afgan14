@@ -768,3 +768,72 @@
           steps:
             - tool: Anchoring
               doAfter: 5
+
+- type: constructionGraph
+  id: PechkaGraph
+  start: start
+  graph:
+    # ── Сборка ────────────────────────────────────────────────────────────
+    # Шаг 1: 30 стали → каркас печки
+    - node: start
+      edges:
+        - to: pechkaframe
+          steps:
+            - material: Steel
+              amount: 30
+              doAfter: 10
+
+    # Шаг 2: каркас + гаечный ключ + отвёртка + 15 дерева → печка
+    - node: pechkaframe
+      entity: PechkaFrame
+      edges:
+        - to: pechka
+          steps:
+            - tool: Anchoring
+              doAfter: 4
+            - tool: Screwing
+              doAfter: 4
+            - material: WoodPlank
+              amount: 15
+              doAfter: 6
+
+    # ── Готовая печка ─────────────────────────────────────────────────────
+    - node: pechka
+      entity: Pechka
+      edges:
+        # Отвёртка → каркас + 15 дерева
+        - to: pechka_dis1
+          completed:
+            - !type:SpawnPrototype
+              prototype: MaterialWoodPlank1
+              amount: 15
+          steps:
+            - tool: Screwing
+              doAfter: 5
+
+    # ── Разборка шаг 1: каркас, гаечный ключ → каркас без дерева ─────────
+    - node: pechka_dis1
+      entity: PechkaFrame
+      edges:
+        - to: pechka_dis2
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 15
+          steps:
+            - tool: Anchoring
+              doAfter: 5
+
+    # ── Разборка шаг 2: каркас, гаечный ключ → ещё 15 стали, удалить ─────
+    - node: pechka_dis2
+      entity: PechkaFrame
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 15
+            - !type:DeleteEntity {}
+          steps:
+            - tool: Anchoring
+              doAfter: 5
