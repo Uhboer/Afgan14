@@ -34,13 +34,13 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 500
       behaviors:
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 150
+        damage: 300
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -50,7 +50,7 @@
   - type: Storage
     maxItemSize: Normal
     grid:
-    - 0,0,11,11
+    - 0,0,7,7
   - type: UserInterface
     interfaces:
       enum.StorageUiKey.Key:
@@ -90,6 +90,24 @@
     requiredRange: 5.0
   - type: Examiner
   - type: Appearance
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 500000
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 100000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+
 
 - type: entity
   parent: DrillBase

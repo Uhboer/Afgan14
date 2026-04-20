@@ -2,21 +2,22 @@
   name: pickaxe
   parent: BaseItem
   id: Pickaxe
-  description: Notched to perfection, for jamming it into rocks
+  description: Notched to perfection, for jamming it into
+  suffix: afgan14
   components:
   - type: Tag
     tags:
     - Pickaxe
   - type: Sprite
-    sprite: Objects/Weapons/Melee/pickaxe.rsi
+    sprite: Afgan/Weapons/Melee/picaxe.rsi
     state: pickaxe
   - type: MeleeWeapon
     attackRate: 0.7
     wideAnimationRotation: -135
     soundHit:
-      path: "/Audio/Weapons/smash.ogg"
+      path: "/Audio/Afgan/Wearpons/Melee/hitwallpick.ogg"
       params:
-        volume: -3
+        volume: 2
     damage:
       groups:
         Brute: 5
@@ -32,7 +33,7 @@
     shape:
     - 0,0,2,0
     - 1,1,1,2
-    sprite: Objects/Weapons/Melee/pickaxe.rsi
+    sprite: Afgan/Weapons/Melee/picaxe.rsi
     storedRotation: -45
   - type: UseDelay
 

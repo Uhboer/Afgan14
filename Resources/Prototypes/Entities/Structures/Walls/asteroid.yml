@@ -323,11 +323,11 @@
   id: AsteroidRockMining
   parent: AsteroidRock
   name: asteroid rock
-  suffix: higher ore yield .33
+  suffix: higher ore yield .55
   description: An asteroid.
   components:
   - type: OreVein
-    oreChance: 0.33
+    oreChance: 0.55
     oreRarityPrototypeId: RandomOreDistributionStandard
 
 - type: entity
