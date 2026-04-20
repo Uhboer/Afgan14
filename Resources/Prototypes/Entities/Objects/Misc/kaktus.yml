@@ -1,12 +1,12 @@
 - type: entity
   parent: BaseTree
   id: Kaktus
-  name: Кактус
-  description: ебать, колится!
+  name: почка
+  description: набитая древесиной почка.
   suffix: afgan14
   components:
   - type: Sprite
-    sprite: Objects/kaktus.rsi
+    sprite: Afgan/Structures/kaktus.rsi
     state: kaktus
     offset: 0,0
   - type: MeleeSound
@@ -51,13 +51,13 @@
         - WallLayer
 
 - type: entity
-  parent: BaseTree
+  parent: Kaktus
   id: Kaktus2
-  name: Кактус
-  description: ебать, колится!
+  name: почка
+  description: набитая древесиной почка.
   suffix: afgan14
   components:
   - type: Sprite
-    sprite: Objects/kaktus.rsi
+    sprite: Afgan/Structures/kaktus.rsi
     state: kaktus2
     offset: 0,0
