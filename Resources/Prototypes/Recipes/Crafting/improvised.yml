@@ -643,5 +643,5 @@
   description: Самодельная печка для переработки руд. Работает без электричества.
   icon:
     sprite: Afgan/Structures/pechka.rsi
-    state: pechka
+    state: icon
   objectType: Structure

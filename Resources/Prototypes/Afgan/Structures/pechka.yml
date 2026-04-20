@@ -6,7 +6,7 @@
   suffix: afgan14
   components:
   - type: Sprite
-    sprite: Structures/Machines/ore_processor.rsi
+    sprite: Afgan/Structures/pechka.rsi
     layers:
     - state: icon
     color: "#808080"
@@ -45,12 +45,13 @@
   suffix: afgan14
   components:
   - type: Sprite
-    sprite: Structures/Machines/ore_processor.rsi
+    sprite: Afgan/Structures/pechka.rsi
     layers:
     - state: icon
       map: ["enum.LatheVisualLayers.IsRunning"]
     - state: inserting
       map: ["enum.MaterialStorageVisualLayers.Inserting"]
+      #shader: unshaded
   - type: Appearance
   - type: Transform
     anchored: true

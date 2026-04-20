@@ -4,6 +4,7 @@
   abstract: true
   name: drill
   description: A mining drill that extracts resources from the ground.
+  suffix: afgan14
   components:
   - type: Sprite
     sprite: Afgan/Structures/bur.rsi
@@ -66,10 +67,9 @@
   components:
   - type: Drill
     enabled: false
-    updateDelay: 10
+    updateDelay: 15
     resources:
       SteelOre1: 2
-      SpaceQuartz1: 1
       Coal1: 2
   - type: Examiner
   - type: Appearance
@@ -77,15 +77,14 @@
 - type: entity
   parent: DrillBase
   id: DrillNormal
-  name: mining drill
+  name: бур
   description: A mining drill that requires an operator nearby.
   components:
   - type: Drill
     enabled: false
-    updateDelay: 5
+    updateDelay: 3
     resources:
       SteelOre1: 2
-      SpaceQuartz1: 1
       Coal1: 2
   - type: ProximityDrill
     requiredRange: 5.0
@@ -104,11 +103,10 @@
     drawdepth: Overdoors
   - type: Drill
     enabled: false
-    updateDelay: 15
+    updateDelay: 25
     resources:
-      SteelOre1: 2
-      SpaceQuartz1: 1
-      Coal1: 2
+      SteelOre1: 1
+      Coal1: 1
   - type: Construction
     graph: DrillHandmadeGraph
     node: drillhandmade
@@ -117,8 +115,8 @@
 
 - type: entity
   id: DrillHandmadeFrame
-  name: handmade drill frame
-  description: A steel frame for a handmade drill. Needs more work.
+  name: основа самодельного бура
+  description: Стальная основа. Нуждается в доработке.
   suffix: afgan14
   components:
   - type: Sprite
