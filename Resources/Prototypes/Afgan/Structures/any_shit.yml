@@ -382,7 +382,7 @@
   - type: PointLight
     radius: 1.5
     energy: 2
-    color: "#4682B4"
+    color: "#FF0000"
 
 - type: entity
   parent: BaseItem

@@ -27,3 +27,6 @@ store-category-Tdrugs = Наркота
 store-category-Tarmor = Бронька
 store-category-Tbombs = Бомбы
 store-category-Tlegendary = Легендарное
+
+
+store-category-EssenceTransaction = Транзакция

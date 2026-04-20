@@ -1,0 +1,46 @@
+- type: entity
+  parent: BaseItem
+  id: AfganEssence
+  name: эссенция
+  description: чудо...
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/Ortodoxian/essence.rsi
+    layers:
+    - state: icon
+    - state: active
+      shader: unshaded
+    state: icon
+  - type: Item
+    sprite: Afgan/Objects/Ortodoxian/essence.rsi
+    size: Normal
+  - type: PointLight
+    radius: 1.5
+    energy: 2
+    color: "#FF0000"
+  - type: Stack
+    count: 1
+    stackType: Bib
+  - type: Currency
+    price:
+      Essence: 1
+  - type: AmbientSound
+    volume: -3
+    range: 3
+    sound:
+      path: /Audio/Afgan/Misc/essence-loop.ogg
+
+
+- type: stack
+  id: Essence
+  name: эссенция
+  icon: Objects/Specific/Syndicate/telecrystal.rsi
+  spawn: AfganEssence
+
+- type: currency
+  id: Essence
+  displayName: store-currency-display-essence
+  cash:
+    1: Essence
+  canWithdraw: true

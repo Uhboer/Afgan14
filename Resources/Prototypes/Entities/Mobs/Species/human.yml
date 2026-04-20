@@ -15,8 +15,20 @@
   - type: Butcherable
     butcheringType: Spike
     spawned:
-    - id: FoodMeatHuman
-      amount: 5
+    - id: OrganHumanHeart
+      amount: 1
+    - id: OrganHumanLungs
+      amount: 1
+    - id: OrganHumanEyes
+      amount: 1
+    - id: OrganHumanBrain
+      amount: 1
+    - id: OrganHumanStomach
+      amount: 1
+    - id: OrganHumanKidneys
+      amount: 1
+    - id: OrganHumanLiver
+      amount: 1
   - type: HumanoidAppearance
     species: Human
     hideLayersOnEquip:

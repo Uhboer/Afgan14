@@ -67,7 +67,10 @@
   - type: FlavorProfile
     flavors:
       - people
-  
+  - type: Currency
+    price:
+      Organic: 1
+
 - type: entity
   id: OrganHumanEyes
   parent: BaseHumanOrgan
@@ -78,6 +81,9 @@
     layers:
       - state: eyeball-l
       - state: eyeball-r
+  - type: Currency
+    price:
+      Organic: 1
 
 - type: entity
   id: OrganHumanTongue
@@ -87,6 +93,9 @@
   components:
   - type: Sprite
     state: tongue
+  - type: Currency
+    price:
+      Organic: 1
 
 - type: entity
   id: OrganHumanAppendix
@@ -141,6 +150,9 @@
         reagents:
         - ReagentId: UncookedAnimalProteins
           Quantity: 5
+  - type: Currency
+    price:
+      Organic: 1
 
 - type: entity
   id: OrganHumanHeart
@@ -160,6 +172,9 @@
     - id: Medicine
     - id: Poison
     - id: Narcotic
+  - type: Currency
+    price:
+      Organic: 1
 
 - type: entity
   id: OrganHumanStomach
@@ -189,6 +204,9 @@
     groups:
     - id: Food
     - id: Drink
+  - type: Currency
+    price:
+      Organic: 1
 
 - type: entity
   id: OrganHumanLiver
@@ -204,6 +222,9 @@
     groups:
     - id: Alcohol
       rateModifier: 0.1 # removes alcohol very slowly along with the stomach removing it as a drink
+  - type: Currency
+    price:
+      Organic: 1
 
 - type: entity
   id: OrganHumanKidneys
@@ -220,3 +241,6 @@
     maxReagents: 5
     metabolizerTypes: [Human]
     removeEmpty: true
+  - type: Currency
+    price:
+      Organic: 1

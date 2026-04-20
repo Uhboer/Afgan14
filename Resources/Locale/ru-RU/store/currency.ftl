@@ -13,3 +13,5 @@ store-currency-display-stolen-essence = Украденная эссенция
 store-currency-display-wizcoin = Маг₭øин™
 
 store-currency-display-bib = БИБ
+store-currency-display-essence = эссенция
+store-currency-display-organic = органика
