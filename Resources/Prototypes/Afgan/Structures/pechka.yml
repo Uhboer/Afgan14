@@ -1,0 +1,123 @@
+# ── Каркас печки ─────────────────────────────────────────────────────────────
+- type: entity
+  id: PechkaFrame
+  name: каркас печки
+  description: Стальной каркас для самодельной печки. Нужно добавить дерево и закрепить инструментами.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Structures/Machines/ore_processor.rsi
+    layers:
+    - state: icon
+    color: "#808080"
+  - type: Appearance
+  - type: Transform
+    anchored: true
+    noRot: false
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.4,-0.4,0.4,0.4"
+        density: 100
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: InteractionOutline
+  - type: Clickable
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Construction
+    graph: PechkaGraph
+    node: pechkaframe
+
+# ── Готовая печка ─────────────────────────────────────────────────────────────
+- type: entity
+  parent: BaseStructure
+  id: Pechka
+  name: печка
+  description: Самодельный переработчик руд. Работает без электричества.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Structures/Machines/ore_processor.rsi
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+  - type: Appearance
+  - type: Transform
+    anchored: true
+    noRot: false
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.4,-0.4,0.4,0.4"
+        density: 190
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: InteractionOutline
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:ChangeConstructionNodeBehavior
+        node: pechkaframe
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: ApcPowerReceiver
+    needsPower: false
+  - type: ActivatableUI
+    key: enum.LatheUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.LatheUiKey.Key:
+        type: LatheBoundUserInterface
+  - type: ContainerContainer
+    containers:
+      material-storage: !type:Container
+  - type: MaterialStorage
+    ignoreColor: true
+    whitelist:
+      tags:
+        - Ore
+  - type: Lathe
+    idleState: icon
+    runningState: building
+    staticRecipes:
+      - SheetSteel30
+      - SheetGlass30
+      - SheetRGlass30
+      - SheetPlasma30
+      - SheetPGlass30
+      - SheetRPGlass30
+      - SheetUranium30
+      - IngotGold30
+      - IngotSilver30
+      - MaterialBananium10
+  - type: Pullable
+  - type: StaticPrice
+    price: 200
+  - type: Construction
+    graph: PechkaGraph
+    node: pechka

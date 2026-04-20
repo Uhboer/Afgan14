@@ -619,3 +619,29 @@
     sprite: Afgan/Weapons/Guns/SyringeGuns/def.rsi
     state: icon
   objectType: Item
+
+- type: construction
+  name: Самодельный бур
+  id: DrillHandmade
+  graph: DrillHandmadeGraph
+  startNode: start
+  targetNode: drillhandmade
+  category: construction-category-afgan
+  description: Грубый самодельный бур, собранный из металлолома. Медленный, но работает.
+  icon:
+    sprite: Afgan/Structures/bur.rsi
+    state: shittydrill
+  objectType: Structure
+
+- type: construction
+  name: Печка
+  id: Pechka
+  graph: PechkaGraph
+  startNode: start
+  targetNode: pechka
+  category: construction-category-afgan
+  description: Самодельная печка для переработки руд. Работает без электричества.
+  icon:
+    sprite: Afgan/Structures/pechka.rsi
+    state: pechka
+  objectType: Structure
