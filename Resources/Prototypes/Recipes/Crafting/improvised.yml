@@ -606,3 +606,16 @@
     sprite: Afgan/Weapons/Guns/SyringeGuns/def.rsi
     state: icon
   objectType: Item
+
+- type: construction
+  name: Самодельный бур
+  id: DrillHandmade
+  graph: DrillHandmadeGraph
+  startNode: start
+  targetNode: drillhandmade
+  category: construction-category-afgan
+  description: Грубый самодельный бур, собранный из металлолома. Медленный, но работает.
+  icon:
+    sprite: Afgan/Structures/bur.rsi
+    state: shittydrill
+  objectType: Structure
