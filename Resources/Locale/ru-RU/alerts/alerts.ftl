@@ -25,11 +25,11 @@ alerts-handcuffed-desc = На вас [color=yellow]надели наручник
 alerts-ensnared-name = [color=yellow]Захваченный[/color]
 alerts-ensnared-desc = Вы [color=yellow]попали в ловушку[/color], и это мешает вам двигаться.
 alerts-buckled-name = [color=yellow]Сел[/color]
-alerts-buckled-desc = Ты сидишь. Надеюсь не за 134.
-alerts-crit-name = [color=red]ТЫ ПОУШИ В ДЕРЬМЕ[/color]
-alerts-crit-desc = [color=yellow]ALLAH AKBAR[/color]
+alerts-buckled-desc = Ты сидишь. Чтобы встать нажми по себе или кровати/стулу.
+alerts-crit-name = [color=red]БЕЗ СОЗНАНИЯ[/color]
+alerts-crit-desc = [color=yellow]Не смей помирать, ублюдок.[/color]
 alerts-dead-name = [color=red]КОНЧИНА[/color]
-alerts-dead-desc = ТЫ БЫЛ ЖАЛКИМ И НИКЧЕМНЫМ КУСКОМ ДЕРЬМА!
+alerts-dead-desc = Окончательно повержен. Мёртв.
 alerts-health-name = Твоё немытое ебало
 alerts-health-desc = ТЫ ПРОСТО [color=red]НИЧТОЖНОЕ ОТРОДЬЕ![/color]
 alerts-battery-name = Батарея
@@ -41,15 +41,15 @@ alerts-internals-desc = ...
 alerts-piloting-name = Пилотирование шаттла
 alerts-piloting-desc = Вы пилотируете шаттл. Щёлкните по иконке, чтобы прекратить пилотирование.
 alerts-hunger-name = [color=yellow]Голод[/color]
-alerts-hunger-desc = Было бы неплохо перекусить.
+alerts-hunger-desc = Я бы пожрал чего.
 alerts-stamina-name = [color=yellow]СТАМИНА[/color]
 alerts-stamina-desc = Прибереги её, спасая свой зад от [color=red]твари.[/color]
 alerts-starving-name = [color=red]Сильный голод[/color]
-alerts-starving-desc = Вы истощены. Голод вас замедляет.
+alerts-starving-desc = Я истощены. Голод меня замедляет.
 alerts-thirsty-name = [color=yellow]Жажда[/color]
-alerts-thirsty-desc = Было бы неплохо чего-нибудь попить.
+alerts-thirsty-desc = Я бы попил чего.
 alerts-parched-name = [color=red]Сильная жажда[/color]
-alerts-parched-desc = Вы ужасно хотите пить. Жажда вас замедляет.
+alerts-parched-desc = Я ебать как хочу пить. Жажда меня замедляет.
 alerts-muted-name = Заглушены
 alerts-muted-desc = Вы потеряли способность говорить.
 alerts-vow-silence-name = Обет молчания
