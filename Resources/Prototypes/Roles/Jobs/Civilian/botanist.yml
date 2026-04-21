@@ -6,7 +6,7 @@
   playTimeTracker: JobBotanist
   startingGear: BotanistGear
   icon: "JobIconBotanist"
-  supervisors: job-supervisors-hire
+  supervisors: job-supervisors-rabovladelec
   access:
   - Salvage
 

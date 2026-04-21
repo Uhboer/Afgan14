@@ -6,7 +6,7 @@
   playTimeTracker: JobJanitor
   startingGear: FractionerGear
   icon: "JobIconJanitor"
-  supervisors: job-supervisors-hop
+  supervisors: job-supervisors-factioner
   access:
   - Service
   - Janitor

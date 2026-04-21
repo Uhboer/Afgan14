@@ -9,7 +9,7 @@
       time: 1
   startingGear: StationEngineerGear
   icon: "JobIconStationEngineer"
-  supervisors: job-supervisors-centcom
+  supervisors: job-supervisors-director
   access:
   - AllAccess
 

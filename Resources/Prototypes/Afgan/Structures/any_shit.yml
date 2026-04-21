@@ -79,7 +79,7 @@
         acts: [ "Destruction" ]
       - !type:SpawnEntitiesBehavior
         spawn:
-          FoodMeatHuman:
+          FoodMeat:
             min: 1
             max: 4
         offset: 0

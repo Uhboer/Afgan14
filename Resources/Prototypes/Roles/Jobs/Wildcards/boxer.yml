@@ -6,7 +6,7 @@
   playTimeTracker: JobBoxer
   startingGear: BoxerGear
   icon: "JobIconBoxer"
-  supervisors: job-supervisors-hop
+  supervisors: job-supervisors-ortodox
   access:
   - Service
 

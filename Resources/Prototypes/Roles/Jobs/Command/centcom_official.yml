@@ -9,7 +9,7 @@
   setPreference: true
   startingGear: CentcomGear
   icon: "JobIconNanotrasen"
-  supervisors: job-supervisors-centcom
+  supervisors: job-supervisors-godofrape
   canBeAntag: false
   accessGroups:
   - AllAccess

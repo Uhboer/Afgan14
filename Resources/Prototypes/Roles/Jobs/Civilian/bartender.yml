@@ -10,7 +10,7 @@
       time: 0
   startingGear: BartenderGear
   icon: "JobIconBartender"
-  supervisors: job-supervisors-everyone
+  supervisors: job-supervisors-headafganec
   access:
   - Salvage
   - Command

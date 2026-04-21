@@ -1,8 +1,8 @@
 department-Cargo = Вы
-department-Civilian = Говно
-department-Command = ВОЙНА ФРАКЦИЙ
-department-Engineering = Комплекс
+department-Civilian = Уебки
+department-Command = [режим - ВОЙНА ФРАКЦИЙ]
+department-Engineering = Комплекс [режим - ESCAPE FROM AFGAN]
 department-Medical = Гильдия алхимиков
-department-Security = Афган
-department-Science = Повстанцы
+department-Security = АФГАН
+department-Science = Орден Ортодоксов
 department-Specific = wth

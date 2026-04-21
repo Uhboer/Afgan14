@@ -6,7 +6,7 @@
   canBeAntag: false
   startingGear: ReporterGear
   icon: "JobIconReporter"
-  supervisors: job-supervisors-everyone
+  supervisors: job-supervisors-headortodox
   access:
   - Service
   - Maintenance

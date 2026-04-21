@@ -9,7 +9,7 @@
       time: 0
   startingGear: TechnicalAssistantGear
   icon: "JobIconTechnicalAssistant"
-  supervisors: job-supervisors-everyone
+  supervisors: job-supervisors-alchem
   access:
   - Maintenance
 
