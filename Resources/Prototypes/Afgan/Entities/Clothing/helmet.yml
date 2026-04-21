@@ -194,7 +194,9 @@
     sprintModifier: 0.98
   - type: Reflect
     reflectProb: 0.05
-
+  - type: Tag
+    tags:
+      - BlackHemelet
 
 
 - type: entity
