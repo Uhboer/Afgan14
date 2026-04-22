@@ -21,11 +21,11 @@ public sealed class CombatAudioSystem : EntitySystem
         new("/Audio/Afgan/Misc/combatSoundOFF.ogg");
 
     private static readonly SoundPathSpecifier CombatMusicPath =
-        new("/Audio/Afgan/Music/Fight-or-Flight.ogg");
+        new("/Audio/Afgan/Misc/combat.ogg");
 
     private static readonly AudioParams CombatMusicParams = AudioParams.Default
         .WithLoop(true)
-        .WithVolume(-5f);
+        .WithVolume(-15f);
 
     /// <summary>
     /// Currently playing combat music stream. Null when not in combat mode.

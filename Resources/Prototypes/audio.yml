@@ -29,6 +29,18 @@
     - /Audio/Ambience/emptiness.ogg
     - /Audio/Ambience/UNATCO.ogg
     - /Audio/Ambience/caver.ogg
+    - /Audio/Ambience/italy.ogg
+    - /Audio/Ambience/italy2.ogg
+    - /Audio/Ambience/ladax.ogg
+    - /Audio/Ambience/kador.ogg
+    - /Audio/Ambience/popolz.ogg
+    - /Audio/Ambience/swing.ogg
+    - /Audio/Ambience/castle.ogg
+    - /Audio/Ambience/ourlife.ogg
+    - /Audio/Ambience/herribl.ogg
+    - /Audio/Ambience/cavero.ogg
+    - /Audio/Ambience/night.ogg
+
 
 - type: soundCollection
   id: AmbienceHoly
