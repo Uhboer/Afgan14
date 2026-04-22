@@ -1,38 +1,80 @@
 ﻿using Content.Client.CombatMode;
-using Linguini.Bundle.Errors;
 using Robust.Client.Audio;
 using Robust.Client.Player;
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Components;
+using Robust.Shared.Audio.Systems;
 using Robust.Shared.GameObjects;
 using Robust.Shared.IoC;
+using Robust.Shared.Player;
 
 public sealed class CombatAudioSystem : EntitySystem
 {
     [Dependency] private readonly IPlayerManager _player = default!;
     [Dependency] private readonly CombatModeSystem _combat = default!;
-    [Dependency] private readonly AudioSystem _audio = default!;
+    [Dependency] private readonly SharedAudioSystem _audio = default!;
+
+    private static readonly SoundPathSpecifier CombatModeOnSound =
+        new("/Audio/Afgan/Misc/combatSoundON.ogg");
+
+    private static readonly SoundPathSpecifier CombatModeOffSound =
+        new("/Audio/Afgan/Misc/combatSoundOFF.ogg");
+
+    private static readonly SoundPathSpecifier CombatMusicPath =
+        new("/Audio/Afgan/Music/Fight-or-Flight.ogg");
+
+    private static readonly AudioParams CombatMusicParams = AudioParams.Default
+        .WithLoop(true)
+        .WithVolume(-5f);
+
+    /// <summary>
+    /// Currently playing combat music stream. Null when not in combat mode.
+    /// </summary>
+    private EntityUid? _combatMusicStream;
+
     public override void Initialize()
     {
+        base.Initialize();
         _combat.LocalPlayerCombatModeUpdated += OnCombatUpdated;
+    }
+
+    public override void Shutdown()
+    {
+        base.Shutdown();
+        _combat.LocalPlayerCombatModeUpdated -= OnCombatUpdated;
+        StopCombatMusic();
     }
 
     private void OnCombatUpdated(bool isInCombatMode)
     {
         var player = _player.LocalEntity;
-        var combatModeON = new SoundPathSpecifier("/Audio/Afgan/Misc/combatSoundON.ogg");
-        var combatModeOFF = new SoundPathSpecifier("/Audio/Afgan/Misc/combatSoundOFF.ogg");
-
         if (player == null)
             return;
 
         if (isInCombatMode)
         {
-            _audio.PlayEntity(combatModeON, player.Value, player.Value, null);
+            _audio.PlayEntity(CombatModeOnSound, player.Value, player.Value, null);
+            StartCombatMusic();
         }
         else
         {
-            _audio.PlayGlobal(combatModeOFF, player.Value, null);
+            _audio.PlayGlobal(CombatModeOffSound, player.Value, null);
+            StopCombatMusic();
         }
+    }
+
+    private void StartCombatMusic()
+    {
+        // Don't start a second stream if one is already playing
+        if (_combatMusicStream != null && EntityManager.EntityExists(_combatMusicStream.Value))
+            return;
+
+        var stream = _audio.PlayGlobal(CombatMusicPath, Filter.Local(), false, CombatMusicParams);
+        _combatMusicStream = stream?.Entity;
+    }
+
+    private void StopCombatMusic()
+    {
+        _combatMusicStream = _audio.Stop(_combatMusicStream);
     }
 }
