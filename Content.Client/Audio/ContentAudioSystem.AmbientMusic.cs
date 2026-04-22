@@ -31,8 +31,8 @@ public sealed partial class ContentAudioSystem
     [Dependency] private readonly RulesSystem _rules = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
 
-    private readonly TimeSpan _minAmbienceTime = TimeSpan.FromSeconds(30);
-    private readonly TimeSpan _maxAmbienceTime = TimeSpan.FromSeconds(60);
+    private readonly TimeSpan _minAmbienceTime = TimeSpan.FromSeconds(5);
+    private readonly TimeSpan _maxAmbienceTime = TimeSpan.FromSeconds(6);
 
     private const float AmbientMusicFadeTime = 10f;
     private static float _volumeSlider;
@@ -261,5 +261,13 @@ public sealed partial class ContentAudioSystem
     {
         FadeOut(_ambientMusicStream);
         _ambientMusicStream = null;
+    }
+
+    /// <summary>
+    /// Delays the next ambient music track by the given duration.
+    /// </summary>
+    public void DelayAmbientMusic(TimeSpan delay)
+    {
+        _nextAudio = _timing.CurTime + delay;
     }
 }
