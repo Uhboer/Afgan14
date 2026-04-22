@@ -14,17 +14,19 @@ public sealed class NightVisionSystem : EntitySystem
     [Dependency] private readonly SharedAudioSystem _audioSystem = default!;
     [Dependency] private readonly INetManager _net = default!;
 
+    [ValidatePrototypeId<EntityPrototype>]
+    private const string SwitchNightVisionAction = "SwitchNightVision";
+
     public override void Initialize()
     {
         base.Initialize();
 
-        if(_net.IsServer)
+        if (_net.IsServer)
+        {
             SubscribeLocalEvent<NightVisionComponent, ComponentStartup>(OnComponentStartup);
-        SubscribeLocalEvent<NightVisionComponent, NVInstantActionEvent>(OnActionToggle);
+            SubscribeLocalEvent<NightVisionComponent, NVInstantActionEvent>(OnActionToggle);
+        }
     }
-
-    [ValidatePrototypeId<EntityPrototype>]
-    private const string SwitchNightVisionAction = "SwitchNightVision";
 
     private void OnComponentStartup(EntityUid uid, NightVisionComponent component, ComponentStartup args)
     {
@@ -38,12 +40,10 @@ public sealed class NightVisionSystem : EntitySystem
         var changeEv = new NightVisionnessChangedEvent(component.IsNightVision);
         RaiseLocalEvent(uid, ref changeEv);
         Dirty(uid, component);
-        _actionsSystem.SetCooldown(component.ActionContainer, TimeSpan.FromSeconds(1));
+        _actionsSystem.SetCooldown(args.Action, TimeSpan.FromSeconds(2.5));
+
         if (component is { IsNightVision: true, PlaySoundOn: true })
-        {
-            if(_net.IsServer)
-                _audioSystem.PlayPvs(component.OnOffSound, uid);
-        }
+            _audioSystem.PlayPvs(component.OnOffSound, uid);
     }
 
     [PublicAPI]
@@ -53,7 +53,6 @@ public sealed class NightVisionSystem : EntitySystem
             return;
 
         var old = component.IsNightVision;
-
 
         var ev = new CanVisionAttemptEvent();
         RaiseLocalEvent(uid, ev);
@@ -70,7 +69,6 @@ public sealed class NightVisionSystem : EntitySystem
 
 [ByRefEvent]
 public record struct NightVisionnessChangedEvent(bool NightVision);
-
 
 public sealed class CanVisionAttemptEvent : CancellableEntityEventArgs, IInventoryRelayEvent
 {

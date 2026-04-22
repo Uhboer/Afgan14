@@ -1,46 +1,76 @@
-using Content.Client.Overlays;
-using Content.Shared.GameTicking;
 using Content.Shared.Backmen.Eye.NightVision.Components;
-using Content.Shared.Inventory.Events;
 using Robust.Client.Graphics;
 using Robust.Client.Player;
 using Robust.Shared.Player;
 
 namespace Content.Client.GG.Eye.NightVision;
 
-public sealed class NightVisionSystem : EquipmentHudSystem<NightVisionComponent>
+public sealed class NightVisionSystem : EntitySystem
 {
     [Dependency] private readonly IOverlayManager _overlayMan = default!;
     [Dependency] private readonly ILightManager _lightManager = default!;
-
+    [Dependency] private readonly IPlayerManager _player = default!;
 
     private NightVisionOverlay _overlay = default!;
 
     public override void Initialize()
     {
         base.Initialize();
-
         _overlay = new(Color.Green);
+
+        SubscribeLocalEvent<NightVisionComponent, ComponentStartup>(OnStartup);
+        SubscribeLocalEvent<NightVisionComponent, ComponentShutdown>(OnShutdown);
+        SubscribeLocalEvent<NightVisionComponent, AfterAutoHandleStateEvent>(OnStateChanged);
+        SubscribeLocalEvent<LocalPlayerAttachedEvent>(OnPlayerAttached);
+        SubscribeLocalEvent<LocalPlayerDetachedEvent>(OnPlayerDetached);
     }
 
-    protected override void UpdateInternal(RefreshEquipmentHudEvent<NightVisionComponent> component)
-    {
-        base.UpdateInternal(component);
+    private bool IsLocalPlayer(EntityUid uid) =>
+        uid == _player.LocalSession?.AttachedEntity;
 
-        foreach (var comp in component.Components)
+    private void OnPlayerAttached(LocalPlayerAttachedEvent args)
+    {
+        if (TryComp<NightVisionComponent>(args.Entity, out var comp))
+            Apply(comp);
+    }
+
+    private void OnPlayerDetached(LocalPlayerDetachedEvent args) => Disable();
+
+    private void OnStartup(EntityUid uid, NightVisionComponent comp, ComponentStartup args)
+    {
+        if (IsLocalPlayer(uid))
+            Apply(comp);
+    }
+
+    private void OnShutdown(EntityUid uid, NightVisionComponent comp, ComponentShutdown args)
+    {
+        if (IsLocalPlayer(uid))
+            Disable();
+    }
+
+    private void OnStateChanged(EntityUid uid, NightVisionComponent comp, ref AfterAutoHandleStateEvent args)
+    {
+        if (IsLocalPlayer(uid))
+            Apply(comp);
+    }
+
+    private void Apply(NightVisionComponent comp)
+    {
+        if (comp.IsNightVision)
         {
             _overlay.NightvisionColor = comp.NightVisionColor;
+            if (!_overlayMan.HasOverlay<NightVisionOverlay>())
+                _overlayMan.AddOverlay(_overlay);
+            _lightManager.DrawLighting = false;
         }
-        if (!_overlayMan.HasOverlay<NightVisionOverlay>())
+        else
         {
-            _overlayMan.AddOverlay(_overlay);
+            Disable();
         }
-        _lightManager.DrawLighting = false;
     }
 
-    protected override void DeactivateInternal()
+    private void Disable()
     {
-        base.DeactivateInternal();
         _overlayMan.RemoveOverlay(_overlay);
         _lightManager.DrawLighting = true;
     }

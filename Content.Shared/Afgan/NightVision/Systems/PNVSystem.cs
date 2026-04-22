@@ -18,6 +18,9 @@ public sealed class PNVSystem : EntitySystem
     {
         base.Initialize();
 
+        if (!_net.IsServer)
+            return;
+
         SubscribeLocalEvent<PNVComponent, GotEquippedEvent>(OnEquipped);
         SubscribeLocalEvent<PNVComponent, GotUnequippedEvent>(OnUnequipped);
         SubscribeLocalEvent<PNVComponent, InventoryRelayedEvent<CanVisionAttemptEvent>>(OnPNVTrySee);
@@ -39,16 +42,14 @@ public sealed class PNVSystem : EntitySystem
         var nvcomp = EnsureComp<NightVisionComponent>(args.Equipee);
 
         _nightvisionableSystem.UpdateIsNightVision(args.Equipee, nvcomp);
-        if(component.ActionContainer == null)
+
+        if (component.ActionContainer == null)
             _actionsSystem.AddAction(args.Equipee, ref component.ActionContainer, component.ActionProto);
-        _actionsSystem.SetCooldown(component.ActionContainer, TimeSpan.FromSeconds(1)); // GCD?
+
+        _actionsSystem.SetCooldown(component.ActionContainer, TimeSpan.FromSeconds(1));
 
         if (nvcomp.PlaySoundOn)
-        {
-            if(_net.IsServer)
-                _audioSystem.PlayPvs(nvcomp.OnOffSound, uid);
-        }
-
+            _audioSystem.PlayPvs(nvcomp.OnOffSound, uid);
     }
 
     private void OnUnequipped(EntityUid uid, PNVComponent component, GotUnequippedEvent args)
