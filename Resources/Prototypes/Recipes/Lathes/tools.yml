@@ -8,7 +8,6 @@
   completetime: 2
   materials:
     Steel: 200
-    Plastic: 50
 
 - type: latheRecipe
   id: Screwdriver
@@ -20,7 +19,6 @@
   completetime: 2
   materials:
     Steel: 200
-    Plastic: 50
 
 - type: latheRecipe
   id: Welder
@@ -76,8 +74,8 @@
   category: Tools
   completetime: 4
   materials:
-    Steel: 1000
-    Wood: 500
+    Steel: 500
+    Wood: 200
 
 - type: latheRecipe
   id: Shovel

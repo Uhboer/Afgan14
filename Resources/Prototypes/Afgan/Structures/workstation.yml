@@ -57,7 +57,6 @@
       - MP9part3
       - Magaz1
       - Magaz2
-      - Cartride9mm
       - Lutypart1
       - Lutypart2
       - Izolenta
@@ -86,9 +85,13 @@
       - Hauberk
       - prikladSH
       - ShellShotgun
-      - Wrench1
-      - Pickaxe1
+      - Wrench
+      - Pickaxe
       - SKSmagaz
       - SyringeWS
       - Binocle
       - BucketAfgan
+      - Wirecutter
+      - Screwdriver
+      - Welder
+      - Crowbar

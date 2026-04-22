@@ -6,7 +6,7 @@
   suffix: afgan14
   components:
   - type: Sprite
-    sprite: Objects/Trash/trash1.rsi
+    sprite: Afgan/Objects/Trash/trash1.rsi
     state: icon
   - type: Item
     size: Normal
@@ -30,7 +30,7 @@
   suffix: afgan14
   components:
   - type: Sprite
-    sprite: Objects/Trash/trash2.rsi
+    sprite: Afgan/Objects/Trash/trash2.rsi
     state: icon
   - type: Item
     size: Normal
@@ -43,7 +43,7 @@
   suffix: afgan14
   components:
   - type: Sprite
-    sprite: Objects/Trash/trash3.rsi
+    sprite: Afgan/Objects/Trash/trash3.rsi
     state: icon
   - type: Item
     size: Tiny
@@ -59,7 +59,7 @@
   suffix: afgan14
   components:
   - type: Sprite
-    sprite: Objects/Trash/trash4.rsi
+    sprite: Afgan/Objects/Trash/trash4.rsi
     state: icon
   - type: Item
     size: Small
@@ -75,7 +75,7 @@
   suffix: afgan14
   components:
   - type: Sprite
-    sprite: Objects/Trash/trash5.rsi
+    sprite: Afgan/Objects/Trash/trash5.rsi
     state: icon
   - type: Item
     size: Tiny

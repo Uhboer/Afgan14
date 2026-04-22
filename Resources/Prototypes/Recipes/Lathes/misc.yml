@@ -226,6 +226,7 @@
 
 - type: latheRecipe
   id: MP9part1
+  category: Parts
   result: WearponComponentRukoiatMP9Evil
   completetime: 2
   materials:
@@ -233,6 +234,7 @@
 
 - type: latheRecipe
   id: MP9part2
+  category: Parts
   result: WearponComponentDetaliMP9Evil
   completetime: 3
   materials:
@@ -240,6 +242,7 @@
 
 - type: latheRecipe
   id: MP9part3
+  category: Parts
   result: WearponComponentKropusMP9Evil
   completetime: 4
   materials:
@@ -247,6 +250,7 @@
 
 - type: latheRecipe
   id: Magaz1
+  category: Ammo
   result: BaseMagazineMP9evil
   completetime: 1
   materials:
@@ -254,21 +258,15 @@
 
 - type: latheRecipe
   id: Magaz2
+  category: Ammo
   result: BaseMagazineLuty20
   completetime: 1
   materials:
     Steel: 300
 
 - type: latheRecipe
-  id: Cartride9mm
-  result: BaseCartridge9mm
-  completetime: 1
-  materials:
-    Steel: 10
-    Plastic: 10
-
-- type: latheRecipe
   id: Lutypart1
+  category: Parts
   result: WearponComponentKropusLuty
   completetime: 4
   materials:
@@ -276,6 +274,7 @@
 
 - type: latheRecipe
   id: Lutypart2
+  category: Parts
   result: WearponComponentRukoiatLuty
   completetime: 2
   materials:
@@ -283,6 +282,7 @@
 
 - type: latheRecipe
   id: Izolenta
+  category: Parts
   result: Trash5
   completetime: 1
   materials:
@@ -290,6 +290,7 @@
 
 - type: latheRecipe
   id: Pipe
+  category: Parts
   result: Trash1
   completetime: 3
   materials:
@@ -297,6 +298,7 @@
 
 - type: latheRecipe
   id: Gayki
+  category: Parts
   result: Trash3
   completetime: 2
   materials:
@@ -304,6 +306,7 @@
 
 - type: latheRecipe
   id: Jelezaka
+  category: Parts
   result: Trash4
   completetime: 3
   materials:
@@ -311,6 +314,7 @@
 
 - type: latheRecipe
   id: ShallImproved
+  category: Ammo
   result: ShellShotgunImprovised
   completetime: 1
   materials:
@@ -318,6 +322,7 @@
 
 - type: latheRecipe
   id: BlackHemelet
+  category: Armor
   result: ClothingHeadHelmetBlack
   completetime: 5
   materials:
@@ -325,6 +330,7 @@
 
 - type: latheRecipe
   id: Plastic
+  category: Parts
   result: SheetPlastic1
   completetime: 1
   materials:
@@ -332,6 +338,7 @@
 
 - type: latheRecipe
   id: Plastic10
+  category: Parts
   result: SheetPlastic10
   completetime: 3
   materials:
@@ -339,6 +346,7 @@
 
 - type: latheRecipe
   id: AK1
+  category: Parts
   result: WearponComponentAK1
   completetime: 10
   materials:
@@ -346,6 +354,7 @@
 
 - type: latheRecipe
   id: AK2
+  category: Parts
   result: WearponComponentAK2
   completetime: 10
   materials:
@@ -353,6 +362,7 @@
 
 - type: latheRecipe
   id: AK3
+  category: Parts
   result: WearponComponentAK3
   completetime: 10
   materials:
@@ -360,6 +370,7 @@
 
 - type: latheRecipe
   id: AKmagaz
+  category: Ammo
   result: MagazineLightRifleAK
   completetime: 3
   materials:
@@ -367,6 +378,7 @@
 
 - type: latheRecipe
   id: AKmagaz60
+  category: Ammo
   result: MagazineLightRifleAK60
   completetime: 5
   materials:
@@ -374,6 +386,7 @@
 
 - type: latheRecipe
   id: HatWelding
+  category: Armor
   result: ClothingHeadHatWelding
   completetime: 5
   materials:
@@ -381,6 +394,7 @@
 
 - type: latheRecipe
   id: Gloves
+  category: Armor
   result: ClothingHandsGlovesStal
   completetime: 5
   materials:
@@ -388,6 +402,7 @@
 
 - type: latheRecipe
   id: Boots
+  category: Armor
   result: ClothingShoesBootsSteel
   completetime: 5
   materials:
@@ -395,6 +410,7 @@
 
 - type: latheRecipe
   id: Naplechniki
+  category: Armor
   result: ClothingNeckNaplechniki
   completetime: 3
   materials:
@@ -402,6 +418,7 @@
 
 - type: latheRecipe
   id: Gorjet
+  category: Armor
   result: ClothingNeckGorjet
   completetime: 5
   materials:
@@ -409,6 +426,7 @@
 
 - type: latheRecipe
   id: Plastina
+  category: Armor
   result: PlastinaKevlar
   completetime: 5
   materials:
@@ -416,6 +434,7 @@
 
 - type: latheRecipe
   id: Pricel
+  category: Parts
   result: WearponComponentPricel
   completetime: 8
   materials:
@@ -424,6 +443,7 @@
 
 - type: latheRecipe
   id: .50BMG
+  category: Ammo
   result: Cartridge50BMG
   completetime: 1
   materials:
@@ -432,6 +452,7 @@
 
 - type: latheRecipe
   id: PNVpart
+  category: Parts
   result: WearponComponentCarcasPNV
   completetime: 8
   materials:
@@ -440,6 +461,7 @@
 
 - type: latheRecipe
   id: Hauberk
+  category: Armor
   result: ClothingUniformJumpsuitHauberk
   completetime: 8
   materials:
@@ -447,6 +469,7 @@
 
 - type: latheRecipe
   id: prikladSH
+  category: Parts
   result: WearponComponentSH
   completetime: 5
   materials:
@@ -454,27 +477,15 @@
 
 - type: latheRecipe
   id: ShellShotgun
+  category: Ammo
   result: ShellShotgun
   completetime: 1
   materials:
     Plastic: 500
 
 - type: latheRecipe
-  id: Wrench1
-  result: Wrench
-  completetime: 2
-  materials:
-    Steel: 500
-
-- type: latheRecipe
-  id: Pickaxe1
-  result: Pickaxe
-  completetime: 2
-  materials:
-    Steel: 500
-
-- type: latheRecipe
   id: SKSmagaz
+  category: Ammo
   result: MagazineSKS
   completetime: 3
   materials:
@@ -482,6 +493,7 @@
 
 - type: latheRecipe
   id: SyringeWS
+  category: Tools
   result: Syringe
   completetime: 1
   materials:
@@ -490,6 +502,7 @@
 - type: latheRecipe
   id: Binocle
   result: AfganBinocle
+  category: Tools
   completetime: 1
   materials:
     Plastic: 100
@@ -499,5 +512,6 @@
   id: BucketAfgan
   result: BucketAfgan
   completetime: 2
+  category: Tools
   materials:
     Wood: 1000

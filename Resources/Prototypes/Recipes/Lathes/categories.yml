@@ -29,3 +29,7 @@
 - type: latheCategory
   id: Weapons
   name: lathe-category-weapons
+
+- type: latheCategory
+  id: Armor
+  name: lathe-category-armor
