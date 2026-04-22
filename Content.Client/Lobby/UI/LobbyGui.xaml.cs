@@ -25,27 +25,20 @@ namespace Content.Client.Lobby.UI
             LeaveButton.OnPressed += _ => _consoleHost.ExecuteCommand("disconnect");
             OptionsButton.OnPressed += _ => UserInterfaceManager.GetUIController<OptionsUIController>().ToggleWindow();
 
-            RightSide.Visible = false;
-            LeftBottom.Visible = false;
         }
 
         public void SwitchState(LobbyGuiState state)
         {
             DefaultState.Visible = false;
             CharacterSetupState.Visible = true;
-            RightSide.Visible = false;
             switch (state)
             {
                 case LobbyGuiState.Default:
                     DefaultState.Visible = true;
                     CharacterSetupState.Visible = false;
-                    RightSide.Visible = false;
                     break;
                 case LobbyGuiState.CharacterSetup:
                     CharacterSetupState.Visible = true;
-
-                    var actualWidth = (float) UserInterfaceManager.RootControl.PixelWidth;
-                    var setupWidth = (float) LeftSide.PixelWidth;
 
                     UserInterfaceManager.GetUIController<LobbyUIController>().ReloadCharacterSetup();
 
