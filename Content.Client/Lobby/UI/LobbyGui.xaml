@@ -80,8 +80,8 @@
                                 Text="{Loc 'ui-lobby-options-button'}" Margin="0 0 0 4"/>
                         <Button Name="AHelpButton" Access="Public" StyleClasses="ButtonBig"
                                 Text="{Loc 'ui-lobby-ahelp-button'}" Margin="0 0 0 4"/>
-                        <Button Name="LeaveButton" Access="Public" StyleClasses="ButtonBig"
-                                Text="{Loc 'ui-lobby-leave-button'}" Margin="0 0 0 0"/>
+                        <Button Name="DiscordButton" Access="Public" StyleClasses="ButtonBig"
+                                Text="{Loc 'ui-lobby-discord-button'}" Margin="0 0 0 0"/>
                     </BoxContainer>
                 </BoxContainer>
             </PanelContainer>
@@ -105,14 +105,8 @@
             <widgets:ChatBox Name="Chat" Access="Public" />
         </PanelContainer>
 
-        <!-- LobbySong: bottom-right -->
-        <PanelContainer StyleClasses="AngleRect"
-                        LayoutContainer.AnchorLeft="1" LayoutContainer.AnchorRight="1"
-                        LayoutContainer.AnchorTop="1" LayoutContainer.AnchorBottom="1"
-                        LayoutContainer.MarginLeft="-310" LayoutContainer.MarginRight="-10"
-                        LayoutContainer.MarginTop="-36" LayoutContainer.MarginBottom="-10">
-            <RichTextLabel Name="LobbySong" Access="Public" HorizontalAlignment="Center" />
-        </PanelContainer>
+        <!-- LobbySong: hidden, kept for code compatibility -->
+        <RichTextLabel Name="LobbySong" Access="Public" Visible="False" />
 
         <!-- Hidden/legacy elements kept for code compatibility -->
         <Button Access="Public" Visible="False" Name="ToggleMenu" Text="{Loc 'ui-lobby-toggle-menu'}" />
