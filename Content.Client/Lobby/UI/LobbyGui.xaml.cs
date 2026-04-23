@@ -44,9 +44,11 @@ namespace Content.Client.Lobby.UI
                 case LobbyGuiState.Default:
                     DefaultState.Visible = true;
                     CharacterSetupState.Visible = false;
+                    ChatPanel.Visible = true;
                     break;
                 case LobbyGuiState.CharacterSetup:
                     CharacterSetupState.Visible = true;
+                    ChatPanel.Visible = false;
                     UserInterfaceManager.GetUIController<LobbyUIController>().ReloadCharacterSetup();
                     break;
             }

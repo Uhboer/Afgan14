@@ -89,21 +89,22 @@
 
         </BoxContainer>
 
-        <!-- Character setup state (injected on startup) -->
-        <Control Access="Public" Visible="False" Name="CharacterSetupState"
-                 LayoutContainer.AnchorLeft="0" LayoutContainer.AnchorRight="1"
-                 LayoutContainer.AnchorTop="0" LayoutContainer.AnchorBottom="1" />
-
-        <!-- Chat box: bottom-left -->
+        <!-- Chat box: bottom-left, inside DefaultState so it hides with it -->
         <PanelContainer LayoutContainer.AnchorLeft="0" LayoutContainer.AnchorRight="0"
                         LayoutContainer.AnchorTop="1" LayoutContainer.AnchorBottom="1"
                         LayoutContainer.MarginLeft="10" LayoutContainer.MarginRight="470"
-                        LayoutContainer.MarginTop="-280" LayoutContainer.MarginBottom="-10">
+                        LayoutContainer.MarginTop="-420" LayoutContainer.MarginBottom="-10"
+                        Name="ChatPanel" Access="Public">
             <PanelContainer.PanelOverride>
                 <graphics:StyleBoxFlat BackgroundColor="#1A1A1ACC" />
             </PanelContainer.PanelOverride>
             <widgets:ChatBox Name="Chat" Access="Public" />
         </PanelContainer>
+
+        <!-- Character setup state (injected on startup) -->
+        <Control Access="Public" Visible="False" Name="CharacterSetupState"
+                 LayoutContainer.AnchorLeft="0" LayoutContainer.AnchorRight="1"
+                 LayoutContainer.AnchorTop="0" LayoutContainer.AnchorBottom="1" />
 
         <!-- LobbySong: hidden, kept for code compatibility -->
         <RichTextLabel Name="LobbySong" Access="Public" Visible="False" />
