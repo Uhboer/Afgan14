@@ -1,0 +1,174 @@
+# Спавн-поинты для лейтджойна с фильтрацией по джобам.
+# При лейтджойне игрок с подходящим джобом спавнится на случайном из всех
+# подходящих поинтов этого типа на станции.
+# Если jobs пустой — поинт доступен всем джобам (универсальный).
+#
+# Маппинг лор-названий на джоб-ID:
+#   Каратель        → Captain
+#   Директор ITOBE  → HeadOfPersonnel
+#   Директор        → StationEngineer
+#   Гор             → CentralCommandOfficial
+#   Повстанцы       → Reporter, Boxer
+#   Алхимики        → TechnicalAssistant
+#   Рабы            → AtmosphericTechnician
+#   Гражданские     → Bartender, Botanist, Chaplain, Passenger
+#   Фракционеры     → Janitor
+
+# ============================================================
+# БАЗОВЫЙ (абстрактный) — не ставь на карту напрямую
+# ============================================================
+
+- type: entity
+  parent: MarkerBase
+  id: JobSpawnPointBase
+  name: job latejoin spawn point
+  abstract: true
+  suffix: Job LateJoin Spawn
+  components:
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    layers:
+      - state: green
+  - type: JobSpawnPoint
+    jobs: []
+
+# ============================================================
+# УНИВЕРСАЛЬНЫЙ — спавнит любой джоб при лейтджойне
+# ============================================================
+
+- type: entity
+  parent: JobSpawnPointBase
+  id: JobSpawnPointAny
+  name: universal latejoin spawn point
+  suffix: Any Job LateJoin Spawn
+  # jobs пустой — подходит всем
+
+# ============================================================
+# КАРАТЕЛЬ (Captain)
+# ============================================================
+
+- type: entity
+  parent: JobSpawnPointBase
+  id: JobSpawnPointKaratel
+  name: karatel latejoin spawn point
+  suffix: Каратель LateJoin Spawn
+  components:
+  - type: JobSpawnPoint
+    jobs:
+      - Captain
+
+# ============================================================
+# ITOBE (HeadOfPersonnel)
+# ============================================================
+
+- type: entity
+  parent: JobSpawnPointBase
+  id: JobSpawnPointITOBE
+  name: ITOBE latejoin spawn point
+  suffix: ITOBE LateJoin Spawn
+  components:
+  - type: JobSpawnPoint
+    jobs:
+      - HeadOfPersonnel
+
+# ============================================================
+# ДИРЕКТОР (StationEngineer)
+# ============================================================
+
+- type: entity
+  parent: JobSpawnPointBase
+  id: JobSpawnPointDirector
+  name: director latejoin spawn point
+  suffix: Директор LateJoin Spawn
+  components:
+  - type: JobSpawnPoint
+    jobs:
+      - StationEngineer
+
+# ============================================================
+# ГОР (CentralCommandOfficial)
+# ============================================================
+
+- type: entity
+  parent: JobSpawnPointBase
+  id: JobSpawnPointGor
+  name: gor latejoin spawn point
+  suffix: Гор LateJoin Spawn
+  components:
+  - type: JobSpawnPoint
+    jobs:
+      - CentralCommandOfficial
+
+# ============================================================
+# ПОВСТАНЦЫ (Reporter, Boxer)
+# ============================================================
+
+- type: entity
+  parent: JobSpawnPointBase
+  id: JobSpawnPointPovstan
+  name: povstan latejoin spawn point
+  suffix: Повстанцы LateJoin Spawn
+  components:
+  - type: JobSpawnPoint
+    jobs:
+      - Reporter
+      - Boxer
+
+# ============================================================
+# АЛХИМИКИ (TechnicalAssistant)
+# ============================================================
+
+- type: entity
+  parent: JobSpawnPointBase
+  id: JobSpawnPointAlchemist
+  name: alchemist latejoin spawn point
+  suffix: Алхимики LateJoin Spawn
+  components:
+  - type: JobSpawnPoint
+    jobs:
+      - TechnicalAssistant
+
+# ============================================================
+# РАБЫ (AtmosphericTechnician)
+# ============================================================
+
+- type: entity
+  parent: JobSpawnPointBase
+  id: JobSpawnPointRab
+  name: rab latejoin spawn point
+  suffix: Рабы LateJoin Spawn
+  components:
+  - type: JobSpawnPoint
+    jobs:
+      - AtmosphericTechnician
+
+# ============================================================
+# ГРАЖДАНСКИЕ (Bartender, Botanist, Chaplain, Passenger)
+# ============================================================
+
+- type: entity
+  parent: JobSpawnPointBase
+  id: JobSpawnPointAfgan
+  name: afgan latejoin spawn point
+  suffix: Афганцы LateJoin Spawn
+  components:
+  - type: JobSpawnPoint
+    jobs:
+      - Bartender
+      - Botanist
+      - Chaplain
+      - Passenger
+
+# ============================================================
+# ФРАКЦИОНЕРЫ (Janitor)
+# ============================================================
+
+- type: entity
+  parent: JobSpawnPointBase
+  id: JobSpawnPointFaction
+  name: faction latejoin spawn point
+  suffix: Фракционеры LateJoin Spawn
+  components:
+  - type: JobSpawnPoint
+    jobs:
+      - Janitor
