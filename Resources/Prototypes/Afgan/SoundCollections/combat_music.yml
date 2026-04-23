@@ -1,6 +1,10 @@
 - type: soundCollection
   id: AfganCombatMusic
   files:
-    - /Audio/Afgan/Misc/CombatMode/track1.ogg
-    - /Audio/Afgan/Misc/CombatMode/track2.ogg
-    - /Audio/Afgan/Misc/CombatMode/track3.ogg
+    - /Audio/Afgan/Misc/CombatMode/combat.ogg
+    - /Audio/Afgan/Misc/CombatMode/cross.ogg
+    - /Audio/Afgan/Misc/CombatMode/Dunkelheit.ogg
+    - /Audio/Afgan/Misc/CombatMode/hotplates.ogg
+    - /Audio/Afgan/Misc/CombatMode/Jesus_Tod.ogg
+    - /Audio/Afgan/Misc/CombatMode/Jesus_Wept.ogg
+    - /Audio/Afgan/Misc/CombatMode/siege-tower.ogg
