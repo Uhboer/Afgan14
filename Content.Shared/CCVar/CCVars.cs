@@ -2178,5 +2178,12 @@ namespace Content.Shared.CCVar
             CVarDef.Create("rest.hold_look_up", true, CVar.CLIENT | CVar.ARCHIVE);
 
         #endregion
+
+        #region Lobby
+
+        public static readonly CVarDef<string> LobbyDiscordLink =
+            CVarDef.Create("lobby.discord_link", "https://discord.gg/ZfFr3VaA8A", CVar.CLIENT | CVar.ARCHIVE);
+
+        #endregion
     }
 }

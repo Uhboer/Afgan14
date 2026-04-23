@@ -20,12 +20,14 @@ public sealed class CombatAudioSystem : EntitySystem
     private static readonly SoundPathSpecifier CombatModeOffSound =
         new("/Audio/Afgan/Misc/combatSoundOFF.ogg");
 
-    private static readonly SoundPathSpecifier CombatMusicPath =
-        new("/Audio/Afgan/Misc/combat.ogg");
-
-    private static readonly AudioParams CombatMusicParams = AudioParams.Default
-        .WithLoop(true)
-        .WithVolume(-15f);
+    /// <summary>
+    /// Sound collection with combat music tracks.
+    /// Each time combat mode is enabled, a random track from the collection is picked.
+    /// Add .ogg files to Resources/Audio/Afgan/Misc/CombatMode/ and register them
+    /// in Resources/Prototypes/Afgan/SoundCollections/combat_music.yml.
+    /// </summary>
+    private static readonly SoundCollectionSpecifier CombatMusicCollection =
+        new("AfganCombatMusic", AudioParams.Default.WithLoop(true).WithVolume(-5f));
 
     /// <summary>
     /// Currently playing combat music stream. Null when not in combat mode.
@@ -80,11 +82,10 @@ public sealed class CombatAudioSystem : EntitySystem
 
     private void StartCombatMusic()
     {
-        // Don't start a second stream if one is already playing
-        if (_combatMusicStream != null && EntityManager.EntityExists(_combatMusicStream.Value))
-            return;
+        // Stop any currently playing track before starting a new random one
+        StopCombatMusic();
 
-        var stream = _audio.PlayGlobal(CombatMusicPath, Filter.Local(), false, CombatMusicParams);
+        var stream = _audio.PlayGlobal(CombatMusicCollection, Filter.Local(), false);
         _combatMusicStream = stream?.Entity;
     }
 

@@ -1,0 +1,6 @@
+- type: soundCollection
+  id: AfganCombatMusic
+  files:
+    - /Audio/Afgan/Misc/CombatMode/track1.ogg
+    - /Audio/Afgan/Misc/CombatMode/track2.ogg
+    - /Audio/Afgan/Misc/CombatMode/track3.ogg
