@@ -1,0 +1,122 @@
+- type: entity
+  name: монумент
+  description: Ортодоксальный монумент. Молись, ублюдок.
+  id: AfganMonument
+  parent: BaseStructure
+  suffix: afgan14
+  components:
+  - type: Transform
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-1,-1,1,0.2"
+        density: 190
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Sprite
+    sprite: Afgan/Structures/monument.rsi
+    layers:
+    - state: mon
+    snapCardinals: true
+  - type: Icon
+    sprite: Afgan/Structures/monument.rsi
+    state: mon
+  - type: Clickable
+  - type: Appearance
+  - type: UserInterface
+    interfaces:
+      enum.StoreUiKey.Key:
+        type: StoreBoundUserInterface
+  - type: ActivatableUI
+    key: enum.StoreUiKey.Key
+  - type: Store
+    buySuccessSound: /Audio/Afgan/Misc/essence.ogg
+    name: store-preset-name-Monument
+    categories:
+    - MonumentZaklinania
+    currencyWhitelist:
+    - Faith
+    balance:
+      Faith: 0
+  - type: PointLight
+    radius: 3
+    energy: 8
+    color: "#B0E0E6"
+
+
+- type: storeCategory
+  id: MonumentZaklinania
+  name: store-category-Zaklinania
+  priority: 0
+
+
+- type: stack
+  id: Faith
+  name: Вера
+  icon: Objects/Specific/Syndicate/telecrystal.rsi
+  spawn: Bib1
+
+- type: currency
+  id: Faith
+  displayName: store-currency-display-faith
+  cash:
+    1: Faith
+  canWithdraw: false
+
+
+- type: listing
+  id: FaithFireball
+  name: изучить заклинание
+  description: Древние знание Ортодоксов.
+  productAction: ActionFireball
+  cost:
+    Faith: 25
+  categories:
+  - MonumentZaklinania
+
+- type: listing
+  id: FaithBlink
+  name: изучить заклинание
+  description: Древние знание Ортодоксов.
+  productAction: ActionBlink
+  cost:
+    Faith: 15
+  categories:
+  - MonumentZaklinania
+
+- type: listing
+  id: FaithWall
+  name: изучить заклинание
+  description: Древние знание Ортодоксов.
+  productAction: ActionForceWall
+  cost:
+    Faith: 15
+  categories:
+  - MonumentZaklinania
+
+- type: listing
+  id: FaithKnock
+  name: изучить заклинание
+  description: Древние знание Ортодоксов.
+  productAction: ActionKnock
+  cost:
+    Faith: 10
+  categories:
+  - MonumentZaklinania
+
+- type: listing
+  id: FaithOblez
+  name: изучить заклинание
+  description: Древние знание Ортодоксов.
+  productAction: ActionSpawnOblezliy
+  cost:
+    Faith: 10
+  categories:
+  - MonumentZaklinania

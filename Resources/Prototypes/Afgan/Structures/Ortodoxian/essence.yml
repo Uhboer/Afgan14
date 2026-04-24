@@ -24,13 +24,12 @@
     stackType: Bib
   - type: Currency
     price:
-      Essence: 1
+      Faith: 1
   - type: AmbientSound
     volume: -3
     range: 3
     sound:
       path: /Audio/Afgan/Misc/essence-loop.ogg
-
 
 - type: stack
   id: Essence

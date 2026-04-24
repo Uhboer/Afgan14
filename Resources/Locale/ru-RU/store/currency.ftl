@@ -15,3 +15,4 @@ store-currency-display-wizcoin = Маг₭øин™
 store-currency-display-bib = БИБ
 store-currency-display-essence = эссенция
 store-currency-display-organic = органика
+store-currency-display-faith = вера

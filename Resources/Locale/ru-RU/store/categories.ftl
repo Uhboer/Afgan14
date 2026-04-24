@@ -30,3 +30,6 @@ store-category-Tlegendary = Легендарное
 
 
 store-category-EssenceTransaction = Транзакция
+
+
+store-category-Zaklinania = Заклинания

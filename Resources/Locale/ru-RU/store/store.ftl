@@ -12,3 +12,4 @@ store-preset-name-spellbook = Книга заклинаний
 
 store-preset-name-Tuplink = Торгомат
 store-preset-name-EssenceGenerator = Генератор Эссенции
+store-preset-name-Monument = Монумент

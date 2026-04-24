@@ -30,8 +30,8 @@ alerts-crit-name = [color=red]БЕЗ СОЗНАНИЯ[/color]
 alerts-crit-desc = [color=yellow]Не смей помирать, ублюдок.[/color]
 alerts-dead-name = [color=red]КОНЧИНА[/color]
 alerts-dead-desc = Окончательно повержен. Мёртв.
-alerts-health-name = Твоё немытое ебало
-alerts-health-desc = ТЫ ПРОСТО [color=red]НИЧТОЖНОЕ ОТРОДЬЕ![/color]
+alerts-health-name = [color=yellow]Мой еблет[/color]
+alerts-health-desc = Отражает моё [color=red]состояние[/color]
 alerts-battery-name = Батарея
 alerts-battery-desc = Если батарея разрядится, вы не сможете использовать свои способности.
 alerts-no-battery-name = Нет батареи
