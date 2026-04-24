@@ -41,6 +41,7 @@
     name: store-preset-name-Monument
     categories:
     - MonumentZaklinania
+    - MonumentDress
     currencyWhitelist:
     - Faith
     balance:
@@ -60,6 +61,10 @@
   name: store-category-Zaklinania
   priority: 0
 
+- type: storeCategory
+  id: MonumentDress
+  name: store-category-Dress
+  priority: 1
 
 - type: stack
   id: Faith
@@ -74,6 +79,15 @@
     1: Faith
   canWithdraw: false
 
+- type: listing
+  id: FaithDress
+  name: святое одеяние
+  description: Освещенное лично Иисусом.
+  productEntity: ClothingOuterOrtodoxian
+  cost:
+    Faith: 10
+  categories:
+  - MonumentDress
 
 - type: listing
   id: FaithFireball

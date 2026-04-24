@@ -39,8 +39,8 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitPovstan
-  name: повстанческий камиз
-  description: удобный и символичный.
+  name: Христианский камиз
+  description: Удобный и символичный.
   suffix: afgan14
   components:
   - type: Sprite
@@ -259,3 +259,16 @@
     sprite: Afgan/Clothing/Jumpsuit/crime.rsi
   - type: Clothing
     sprite: Afgan/Clothing/Jumpsuit/crime.rsi
+
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitOrtodox
+  name: порваное шмотье
+  description: Дырявая, грязная и изношенная до ниточки одежка.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Jumpsuit/ortodox.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Jumpsuit/ortodox.rsi

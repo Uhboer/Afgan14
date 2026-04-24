@@ -33,3 +33,4 @@ store-category-EssenceTransaction = Транзакция
 
 
 store-category-Zaklinania = Заклинания
+store-category-Dress = Святое одеяние

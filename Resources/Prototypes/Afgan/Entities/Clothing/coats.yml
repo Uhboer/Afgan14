@@ -177,3 +177,25 @@
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterAfganBomber]
   id: ClothingOuterAfganBomberOpened
   name: бомбер
+
+
+- type: entity
+  parent: ClothingOuterWinterCoat
+  id: ClothingOuterOrtodoxian
+  name: тряпье
+  description: Освященная Иисусом связка из тряпок. Воистину прекрасна.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Coats/rags.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Coats/rags.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.5
+        Heat: 0.3
+  - type: ExplosionResistance
+    damageCoefficient: 0.5

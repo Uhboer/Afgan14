@@ -29,7 +29,7 @@
 - type: startingGear
   id: Povstanec
   equipment:
-    jumpsuit: ClothingUniformJumpsuitPovstanKurtka
+    jumpsuit: ClothingUniformJumpsuitOrtodox
     belt: ClothingBeltRPC
     shoes: ClothingShoesBootsSalvage
     head: ClothingHeadHelmetPovstanec
