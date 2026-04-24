@@ -73,12 +73,12 @@
     state: icon
 
 - type: construction
-  name: gauze
+  name: Бинт
   id: gauze
   graph: Gauze
   startNode: start
   targetNode: gauze
-  category: construction-category-tools
+  category: construction-category-afgan
   objectType: Item
   description: When you've really got nothing left.
   icon:

@@ -65,7 +65,7 @@
   - type: Armor
     modifiers:
       coefficients:
-        Piercing: 0.45
+        Piercing: 0.3
   - type: ExplosionResistance
     damageCoefficient: 0.9
   - type: ClothingSpeedModifier
