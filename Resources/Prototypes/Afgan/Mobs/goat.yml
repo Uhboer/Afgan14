@@ -1,0 +1,22 @@
+- type: entity
+  parent: BaseItem
+  id: AfganBabyGoat
+  name: baby G.O.A.T.
+  description: Greatest Of All Time.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Mobs/baby_goat.rsi
+    state: icon
+  - type: Item
+    sprite: Afgan/Mobs/baby_goat.rsi
+    size: Ginormous
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Afgan/Mobs/god_voice.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Afgan/Mobs/god_voice.ogg
+  - type: UseDelay
+    delay: 100.0
+  - type: MultiHandedItem
