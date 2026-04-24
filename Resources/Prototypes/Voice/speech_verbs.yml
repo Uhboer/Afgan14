@@ -176,3 +176,9 @@
   name: chat-speech-verb-name-oblezliy
   speechVerbStrings:
   - chat-speech-verb-oblezliy-strong
+
+- type: speechVerb
+  id: Halber
+  name: chat-speech-verb-name-halber
+  speechVerbStrings:
+  - chat-speech-verb-halber

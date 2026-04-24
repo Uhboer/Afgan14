@@ -1,0 +1,106 @@
+- type: entity
+  name: ХальберМенш
+  parent: MobSvin
+  id: MobHalbermensh
+  suffix: afgan14
+  description: Гуманоид, похожий на исхудалую живую кишку или вывернутый пролапс.
+  components:
+  - type: AnnounceOnSpawn
+    message: Ублюдки, вы породили зло - вам с ним и справляться. Хальберменш был призван.
+    sender: АЛЛАХ
+    sound:
+      path: /Audio/Afgan/Misc/new_halbermensch.ogg
+    color: "#f1110e"
+  - type: Speech
+    speechSounds: Halber
+    speechVerb: Halber
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: bob
+      sprite: Afgan/Mobs/halbermensh.rsi
+  - type: MeleeWeapon
+    soundHit:
+      collection: PunchPower
+    angle: 30
+    animation: WeaponArcBite
+    attackRate: 2
+    damage:
+      types:
+        Blunt: 25
+  - type: Inventory
+    templateId: halbermensh
+    speciesId: halbermensh
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 35
+    baseSprintSpeed : 40
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      1000: Dead
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 1000
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:PlaySoundBehavior
+            sound:
+              path: /Audio/Afgan/fataldeath.ogg
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              Bib:
+                min: 100
+                max: 1000
+  - type: NightVision
+    isToggle: true
+    color: "#f1110e"
+    playSoundOn: false
+  - type: Loadout
+    prototypes:
+    - NothingGear
+  - type: FootprintVisualizer
+
+- type: entity
+  parent: BaseItem
+  id: AfganHalyabGutsFull
+  name: кишка Халиаба
+  description: Забитая кишка Халиаба. С минуты на минуту из нее может выползти Хальберменш...
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/egg.rsi
+    layers:
+      - state: icon
+  - type: GhostRole
+    name: ХальберМенш
+    description: ОНИ ТЕБЯ ПОРОДИЛИ. ОНИ ДОЛЖНЫ ПОПЛАТИТЬСЯ ЗА ЭТО.
+    rules: ОНИ ТЕБЯ ПОРОДИЛИ. ОНИ ДОЛЖНЫ ПОПЛАТИТЬСЯ ЗА ЭТО.
+    raffle:
+      settings: default
+  - type: GhostRoleMobSpawner
+    prototype: ХальберМенш
+  - type: EmitSoundOnUse
+    sound: /Audio/Afgan/Mobs/Halbermensh/halber.ogg
+  - type: UseDelay
+    delay: 300
+
+- type: startingGear
+  id: NothingGear
+
+- type: inventoryTemplate
+  id: halbermensh
+  slots:
+  - name: back
+    slotTexture: back
+    slotFlags: BACK
+    slotGroup: SecondHotbar
+    stripTime: 10
+    uiWindowPos: 0,1
+    strippingWindowPos: 0,0
+    displayName: Back

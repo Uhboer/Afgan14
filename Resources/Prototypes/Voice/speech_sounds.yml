@@ -179,6 +179,15 @@
     path: /Audio/Afgan/Mobs/Oblezliy/scream.ogg
 
 - type: speechSounds
+  id: Halber
+  saySound:
+    path: /Audio/Afgan/Mobs/Halbermensh/halber.ogg
+  askSound:
+    path: /Audio/Afgan/Mobs/Halbermensh/ask.ogg
+  exclaimSound:
+    path: /Audio/Afgan/Mobs/Halbermensh/scream.ogg
+
+- type: speechSounds
   id: Radio
   saySound:
     path: /Audio/Afgan/Radio/radio3.ogg
