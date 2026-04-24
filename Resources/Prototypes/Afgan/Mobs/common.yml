@@ -1,0 +1,20 @@
+- type: entity
+  name: Goat Timed Spawner
+  id: GoatTimedSpawner
+  parent: MarkerBase
+  suffix: afgan14
+  components:
+    - type: Sprite
+      layers:
+      - state: blue
+      - sprite: Mobs/Animals/goat.rsi
+        state: goat
+      - state: ai
+    - type: Timer
+    - type: TimedSpawner
+      prototypes:
+      - MobGoat
+      chance: 0.15
+      intervalSeconds: 150
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 2

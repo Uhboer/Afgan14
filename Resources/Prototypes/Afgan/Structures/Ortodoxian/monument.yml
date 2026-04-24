@@ -37,7 +37,7 @@
   - type: ActivatableUI
     key: enum.StoreUiKey.Key
   - type: Store
-    buySuccessSound: /Audio/Afgan/Misc/essence.ogg
+    buySuccessSound: /Audio/Afgan/Misc/explore.ogg
     name: store-preset-name-Monument
     categories:
     - MonumentZaklinania
@@ -49,7 +49,11 @@
     radius: 3
     energy: 8
     color: "#B0E0E6"
-
+  - type: AmbientSound
+    volume: -2
+    range: 5
+    sound:
+      path: /Audio/Afgan/Misc/monument.ogg
 
 - type: storeCategory
   id: MonumentZaklinania

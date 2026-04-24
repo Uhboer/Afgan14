@@ -5,7 +5,7 @@
   components:
   - type: Magic
   - type: WorldTargetAction
-    useDelay: 15
+    useDelay: 20
     itemIconStyle: BigAction
     checkCanAccess: false
     raiseOnUser: true

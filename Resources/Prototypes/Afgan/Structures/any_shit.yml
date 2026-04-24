@@ -361,7 +361,9 @@
     radius: 1.5
     energy: 2
     color: "#AFEEEE"
-
+  - type: Currency
+    price:
+      Faith: 1
 
 - type: entity
   parent: BaseItem
@@ -383,6 +385,9 @@
     radius: 1.5
     energy: 2
     color: "#FF0000"
+  - type: Currency
+    price:
+      Faith: 1
 
 - type: entity
   parent: BaseItem
@@ -404,6 +409,9 @@
     radius: 1.5
     energy: 2
     color: "#FFA500"
+  - type: Currency
+    price:
+      Faith: 1
 
 - type: entity
   parent: BaseItem

@@ -667,6 +667,7 @@
     prototypes:
     - MobGoat
 
+
 - type: entity
   name: Frog Spawner
   id: SpawnMobFrog
