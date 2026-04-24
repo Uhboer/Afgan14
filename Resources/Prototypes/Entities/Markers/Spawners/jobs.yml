@@ -83,8 +83,9 @@
   suffix: afgan14
   name: passenger
   components:
-  - type: SpawnPoint
-    job_id: Passenger
+  - type: JobSpawnPoint
+    jobs:
+      - Passenger
   - type: Sprite
     layers:
       - state: green
@@ -95,8 +96,9 @@
   parent: SpawnPointJobBase
   name: technical assistant
   components:
-  - type: SpawnPoint
-    job_id: TechnicalAssistant
+  - type: JobSpawnPoint
+    jobs:
+      - TechnicalAssistant
   - type: Sprite
     layers:
       - state: green
@@ -156,8 +158,9 @@
   suffix: afgan14
   name: bartender
   components:
-  - type: SpawnPoint
-    job_id: Bartender
+  - type: JobSpawnPoint
+    jobs:
+      - Bartender
   - type: Sprite
     layers:
       - state: green
@@ -181,8 +184,9 @@
   suffix: afgan14
   name: botanist
   components:
-  - type: SpawnPoint
-    job_id: Botanist
+  - type: JobSpawnPoint
+    jobs:
+      - Botanist
   - type: Sprite
     layers:
       - state: green
@@ -218,8 +222,9 @@
   name: chaplain
   suffix: afgan14
   components:
-  - type: SpawnPoint
-    job_id: Chaplain
+  - type: JobSpawnPoint
+    jobs:
+      - Chaplain
   - type: Sprite
     layers:
       - state: green
@@ -279,8 +284,9 @@
   suffix: afgan14
   name: boxer
   components:
-  - type: SpawnPoint
-    job_id: Boxer
+  - type: JobSpawnPoint
+    jobs:
+      - Boxer
   - type: Sprite
     layers:
       - state: green
@@ -309,8 +315,9 @@
   name: captain
   suffix: afgan14
   components:
-  - type: SpawnPoint
-    job_id: Captain
+  - type: JobSpawnPoint
+    jobs:
+      - Captain
   - type: Sprite
     layers:
       - state: green
@@ -348,8 +355,9 @@
   parent: SpawnPointJobBase
   name: stationengineer
   components:
-  - type: SpawnPoint
-    job_id: StationEngineer
+  - type: JobSpawnPoint
+    jobs:
+      - StationEngineer
   - type: Sprite
     layers:
       - state: green
@@ -361,8 +369,9 @@
   name: atmospherics
   suffix: afgan14
   components:
-  - type: SpawnPoint
-    job_id: AtmosphericTechnician
+  - type: JobSpawnPoint
+    jobs:
+      - AtmosphericTechnician
   - type: Sprite
     layers:
       - state: green
@@ -586,8 +595,9 @@
   suffix: afgan14
   name: reporter
   components:
-  - type: SpawnPoint
-    job_id: Reporter
+  - type: JobSpawnPoint
+    jobs:
+      - Reporter
   - type: Sprite
     layers:
       - state: green
@@ -623,8 +633,9 @@
   suffix: afgan14
   name: бог рейпа
   components:
-  - type: SpawnPoint
-    job_id: CentralCommandOfficial
+  - type: JobSpawnPoint
+    jobs:
+      - CentralCommandOfficial
   - type: Sprite
     layers:
       - state: green

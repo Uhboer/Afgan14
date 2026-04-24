@@ -7,6 +7,9 @@
   - type: NpcFactionMember
     factions:
       - SimpleHostile
+  - type: MovementSpeedModifier
+    baseSprintSpeed: 12
+    baseWalkSpeed: 8
   - type: Loadout
     prototypes:
       - FallenHeroGear
@@ -42,15 +45,18 @@
     - tasks:
       - !type:HTNPrimitiveTask
         operator: !type:SpeakOperator
-          speech: "Judge!"
+          speech: "Правосудие!"
 
       - !type:HTNCompoundTask
         task: MeleeCombatCompound
 
       - !type:HTNPrimitiveTask
         operator: !type:SpeakOperator
-          speech: "Heilige Tod!!!"
+          speech: "СВЯТАЯ СМЕРТЬ!!!"
     - tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:SpeakOperator
+            speech: "Все вы чёртовы ублюдки..."
         - !type:HTNCompoundTask
           task: IdleCompound
 

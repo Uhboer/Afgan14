@@ -7,7 +7,11 @@
   components:
   - type: Sprite
     sprite: Afgan/Mobs/baby_goat.rsi
-    state: icon
+    layers:
+    - state: icon
+    - state: eyes
+      shader: unshaded
+    scale: 0.8, 0.8
   - type: Item
     sprite: Afgan/Mobs/baby_goat.rsi
     size: Ginormous

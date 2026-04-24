@@ -1,6 +1,6 @@
 - type: entity
   name: монумент
-  description: Ортодоксальный монумент. Молись, ублюдок.
+  description: Ортодоксальный монумент. Как подань принимает эссенцию и материю.
   id: AfganMonument
   parent: BaseStructure
   suffix: afgan14
