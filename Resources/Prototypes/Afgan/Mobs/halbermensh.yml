@@ -1,9 +1,9 @@
 - type: entity
   name: ХальберМенш
-  parent: MobSvin
   id: MobHalbermensh
-  suffix: afgan14
+  parent: MobJuk
   description: Гуманоид, похожий на исхудалую живую кишку или вывернутый пролапс.
+  suffix: afgan14
   components:
   - type: AnnounceOnSpawn
     message: Ублюдки, вы породили зло - вам с ним и справляться. Хальберменш был призван.
@@ -11,9 +11,6 @@
     sound:
       path: /Audio/Afgan/Misc/new_halbermensch.ogg
     color: "#f1110e"
-  - type: Speech
-    speechSounds: Halber
-    speechVerb: Halber
   - type: NpcFactionMember
     factions:
     - SimpleHostile
@@ -23,6 +20,16 @@
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: bob
       sprite: Afgan/Mobs/halbermensh.rsi
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      1000: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      900: 0.5
+  - type: Bloodstream
+    bloodReagent: Blood
+    bloodMaxVolume: 800
   - type: MeleeWeapon
     soundHit:
       collection: PunchPower
@@ -32,16 +39,6 @@
     damage:
       types:
         Blunt: 25
-  - type: Inventory
-    templateId: halbermensh
-    speciesId: halbermensh
-  - type: MovementSpeedModifier
-    baseWalkSpeed : 35
-    baseSprintSpeed : 40
-  - type: MobThresholds
-    thresholds:
-      0: Alive
-      1000: Dead
   - type: Destructible
     thresholds:
       - trigger:
@@ -58,14 +55,33 @@
               Bib:
                 min: 100
                 max: 1000
+  - type: MovementSpeedModifier
+    baseSprintSpeed: 12
+    baseWalkSpeed: 8
+  - type: Speech
+    speechSounds: Halber
+    speechVerb: Halber
+  - type: GhostRole
+    prob: 1
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: ХАЛЬБЕРМЕНШ
+    description: СУКИ ПОПЛАТЯТСЯ СУКИ ПОПЛАТЯТСЯ СУКИ ПОПЛАТЯТСЯ СУКИ ПОПЛАТЯТСЯ СУКИ ПОПЛАТЯТСЯ СУКИ ПОПЛАТЯТСЯ СУКИ ПОПЛАТЯТСЯ
+    rules: МОЖЕШЬ ХУЯРИТЬ ВСЕХ
+  - type: GhostTakeoverAvailable
   - type: NightVision
     isToggle: true
     color: "#f1110e"
     playSoundOn: false
-  - type: Loadout
-    prototypes:
-    - NothingGear
   - type: FootprintVisualizer
+  - type: Inventory
+    templateId: halbermensh
+    speciesId: halbermensh
+  - type: Hands
+  - type: ComplexInteraction
+  - type: LayingDown
+
 
 - type: entity
   parent: BaseItem
@@ -84,14 +100,13 @@
     raffle:
       settings: default
   - type: GhostRoleMobSpawner
-    prototype: ХальберМенш
+    prototype: MobHalbermensh
   - type: EmitSoundOnUse
     sound: /Audio/Afgan/Mobs/Halbermensh/halber.ogg
   - type: UseDelay
     delay: 300
 
-- type: startingGear
-  id: NothingGear
+
 
 - type: inventoryTemplate
   id: halbermensh
