@@ -42,6 +42,7 @@
     categories:
     - MonumentZaklinania
     - MonumentDress
+    - MonumentWeapons
     currencyWhitelist:
     - Faith
     balance:
@@ -66,6 +67,11 @@
   name: store-category-Dress
   priority: 1
 
+- type: storeCategory
+  id: MonumentWeapons
+  name: Святое оружие
+  priority: 2
+
 - type: stack
   id: Faith
   name: Вера
@@ -88,6 +94,17 @@
     Faith: 10
   categories:
   - MonumentDress
+
+- type: listing
+  id: FaithZwaihender
+  name: Цвайхендер
+  description: Священный двуручный меч.
+  productEntity: AfganZweihender
+  cost:
+    Faith: 15
+  categories:
+  - MonumentWeapons
+
 
 - type: listing
   id: FaithFireball

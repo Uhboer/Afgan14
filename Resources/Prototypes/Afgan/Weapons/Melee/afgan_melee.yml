@@ -175,7 +175,7 @@
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Slash: 30
+        Slash: 40
         Structural: 15
   - type: UseDelay
   - type: Reflect
@@ -230,3 +230,43 @@
   - type: MeleeThrowOnHit
   - type: StaminaDamageOnHit
     damage: 15
+
+- type: entity
+  name: цвайхендер
+  parent: BaseSword
+  id: AfganZweihender
+  description: Двуручный меч, освященный эссенцией Ортодоксии.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Weapons/Melee/cvaihander_icon.rsi
+    scale: 0.8, 0.8
+  - type: MeleeWeapon
+    attackRate: 0.9
+    animation: WeaponArcBite
+    damage:
+      types:
+        Slash: 5
+    soundHit:
+        collection: Thanded
+  - type: Item
+    sprite: Afgan/Weapons/Melee/cvaihander.rsi
+    size: Ginormous
+  - type: Clothing
+    sprite: Afgan/Weapons/Melee/cvaihander.rsi
+    quickEquip: false
+    slots:
+    - back
+    equipSound:
+      path: /Audio/Items/unsheath.ogg
+  - type: Wieldable
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 30
+        Structural: 5
+  - type: UseDelay
+  - type: Reflect
+    enabled: true
+    reflectProb: .3
+    spread: 90
