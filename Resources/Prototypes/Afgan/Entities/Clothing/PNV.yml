@@ -14,7 +14,6 @@
     layers:
       - state: equipped-EYES
       - state: equipped-EYES-Power
-        map: ["equipped-EYES-Power"]
         shader: unshaded
     quickEquip: true
     slots: [ Eyes ]
@@ -24,12 +23,6 @@
   - type: Construction
     graph: PnvGraph
     node: pnv
-  - type: ToggleableLightVisuals
-  spriteLayer: equipped-EYES-Power
-  inhandVisuals:
-  clothingVisuals:
-    eyes:
-    - state: equipped-EYES-Power
 
 - type: entity
   name: инженерный монокль
