@@ -88,7 +88,19 @@
       Male: Halbermensh
       Female: Halbermensh
       Unsexed: Halbermensh
-
+  - type: Devourer
+    foodPreference: Humanoid
+    shouldStoreDevoured: true
+    chemical: AfganLariy
+    healRate: 20.0
+    whitelist:
+      components:
+      - MobState
+      - Door
+      tags:
+      - Wall
+  - type: Stamina
+    critThreshold: 400
 
 - type: entity
   parent: BaseItem
@@ -138,18 +150,3 @@
     uiWindowPos: 1,1
     strippingWindowPos: 0,1
     displayName: Belt
-
-- type: entity
-  parent: ClothingBeltStorageBase
-  id: ClothingBeltHalber
-  name: пояс-кишка
-  description: Пояс из кишки Хальберменша.
-  suffix: afgan14
-  components:
-  - type: Sprite
-    sprite: Afgan/Clothing/Belts/halber.rsi
-  - type: Clothing
-    sprite: Afgan/Clothing/Belts/halber.rsi
-  - type: ClothingSpeedModifier
-    walkModifier: 1.5
-    sprintModifier: 1.5

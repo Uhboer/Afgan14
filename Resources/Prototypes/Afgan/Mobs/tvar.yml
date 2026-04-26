@@ -86,6 +86,8 @@
     color: "#f1110e"
     playSoundOn: false
   - type: FootprintVisualizer
+  - type: Stamina
+    critThreshold: 300
 
 - type: entity
   name: Tvar Spawner

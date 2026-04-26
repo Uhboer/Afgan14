@@ -55,3 +55,27 @@
     - id: Wrench
     - id: Multitool
     - id: CableApcStack10
+
+- type: entity
+  parent: ClothingBeltStorageBase
+  id: ClothingBeltHalber
+  name: пояс-кишка
+  description: Пояс из кишки Хальберменша.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Belts/halber.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Belts/halber.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 1.8
+    sprintModifier: 1.8
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.55
+        Slash: 0.55
+        Piercing: 0.55
+        Heat: 0.65
+  - type: ExplosionResistance
+    damageCoefficient: 0.2
