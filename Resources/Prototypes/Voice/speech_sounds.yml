@@ -188,6 +188,17 @@
     path: /Audio/Afgan/Mobs/Halbermensh/scream.ogg
 
 - type: speechSounds
+  id: GoatGOD
+  saySound:
+    path: /Audio/Afgan/Mobs/god_voice.ogg
+  askSound:
+    path: /Audio/Afgan/Mobs/Halbermensh/ask.ogg
+  exclaimSound:
+    path: /Audio/Afgan/Mobs/paingoat.ogg
+
+
+
+- type: speechSounds
   id: Radio
   saySound:
     path: /Audio/Afgan/Radio/radio3.ogg

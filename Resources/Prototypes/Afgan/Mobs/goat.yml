@@ -24,3 +24,18 @@
   - type: UseDelay
     delay: 100.0
   - type: MultiHandedItem
+  - type: Speech
+    speechSounds: GoatGOD
+    speechVerb: Halber
+  - type: Advertise
+    pack: GoatShitpool
+    minimumWait: 60 # taimer naxuy
+    maximumWait: 120
+
+
+
+- type: localizedDataset
+  id: GoatShitpool
+  values:
+    prefix: advertisement-goat-
+    count: 30
