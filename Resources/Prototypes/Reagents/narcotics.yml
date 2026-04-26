@@ -686,7 +686,7 @@
         component: PermanentBlindness
         conditions:
         - !type:ReagentThreshold
-          min: 10.1
+          min: 20.1
     Medicine:
       metabolismRate: 0.01
       effects:
@@ -697,4 +697,4 @@
             Brute: -1
             Airloss: -2
           types:
-            Bloodloss: -2
+            Bloodloss: -3
