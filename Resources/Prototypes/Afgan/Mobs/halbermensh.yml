@@ -19,10 +19,13 @@
     - SimpleHostile
   - type: Sprite
     drawdepth: Mobs
+    sprite: Afgan/Mobs/halbermensh.rsi
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: bob
-      sprite: Afgan/Mobs/halbermensh.rsi
+    - map: [ "enum.DamageStateVisualLayers.BaseUnshaded"]
+      state: eyes
+      shader: unshaded
   - type: MeleeWeapon
     soundHit:
       collection: PunchPower
@@ -31,22 +34,22 @@
     attackRate: 2
     damage:
       types:
-        Blunt: 25
+        Blunt: 30
   - type: Inventory
     templateId: halbermensh
     speciesId: halbermensh
   - type: MovementSpeedModifier
-    baseWalkSpeed : 35
-    baseSprintSpeed : 40
+    baseWalkSpeed : 8
+    baseSprintSpeed : 10
   - type: MobThresholds
     thresholds:
       0: Alive
-      1000: Dead
+      1500: Dead
   - type: Destructible
     thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 1000
+          damage: 1500
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
@@ -58,14 +61,34 @@
               Bib:
                 min: 100
                 max: 1000
+              ClothingBeltHalber:
+                min: 1
+                max: 1
   - type: NightVision
     isToggle: true
     color: "#f1110e"
     playSoundOn: false
   - type: Loadout
     prototypes:
-    - NothingGear
+    - HalberGear
   - type: FootprintVisualizer
+  - type: NameIdentifier
+    group: Halber
+  - type: NoSlip
+  - type: GhostRole
+    prob: 1
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: ХальберМенш
+    description: ОНИ ВАС СОЗДАЛИ, ЧТОБЫ УМЕРЕТЬ
+    rules: УБЕЙ СУК УБЕЙ СУК УБЕЙ СУК УБЕЙ СУК УБЕЙ СУК УБЕЙ СУК УБЕЙ СУК УБЕЙ СУК УБЕЙ СУК УБЕЙ СУК УБЕЙ СУК УБЕЙ СУК
+  - type: Vocal
+    sounds:
+      Male: Halbermensh
+      Female: Halbermensh
+      Unsexed: Halbermensh
+
 
 - type: entity
   parent: BaseItem
@@ -74,24 +97,26 @@
   description: Забитая кишка Халиаба. С минуты на минуту из нее может выползти Хальберменш...
   components:
   - type: Sprite
-    sprite: Afgan/Objects/egg.rsi
+    sprite: Afgan/Objects/guts.rsi
     layers:
       - state: icon
   - type: GhostRole
     name: ХальберМенш
     description: ОНИ ТЕБЯ ПОРОДИЛИ. ОНИ ДОЛЖНЫ ПОПЛАТИТЬСЯ ЗА ЭТО.
     rules: ОНИ ТЕБЯ ПОРОДИЛИ. ОНИ ДОЛЖНЫ ПОПЛАТИТЬСЯ ЗА ЭТО.
-    raffle:
-      settings: default
+    #raffle:
+      #settings: default
   - type: GhostRoleMobSpawner
-    prototype: ХальберМенш
+    prototype: MobHalbermensh
   - type: EmitSoundOnUse
     sound: /Audio/Afgan/Mobs/Halbermensh/halber.ogg
   - type: UseDelay
     delay: 300
 
 - type: startingGear
-  id: NothingGear
+  id: HalberGear
+  equipment:
+    belt: ClothingBeltHalber
 
 - type: inventoryTemplate
   id: halbermensh
@@ -104,3 +129,27 @@
     uiWindowPos: 0,1
     strippingWindowPos: 0,0
     displayName: Back
+  - name: belt
+    slotTexture: belt
+    fullTextureName: template_small
+    slotFlags: BELT
+    slotGroup: SecondHotbar
+    stripTime: 6
+    uiWindowPos: 1,1
+    strippingWindowPos: 0,1
+    displayName: Belt
+
+- type: entity
+  parent: ClothingBeltStorageBase
+  id: ClothingBeltHalber
+  name: пояс-кишка
+  description: Пояс из кишки Хальберменша.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Belts/halber.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Belts/halber.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 1.5
+    sprintModifier: 1.5

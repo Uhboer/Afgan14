@@ -1,7 +1,7 @@
-accent-pirate-prefix-1 = Арргх
-accent-pirate-prefix-2 = Гарр
-accent-pirate-prefix-3 = Йарр
-accent-pirate-prefix-4 = Йарргх
+accent-pirate-prefix-1 = Мхххахх
+accent-pirate-prefix-2 = ХЕыыхах
+accent-pirate-prefix-3 = ЫАххх
+accent-pirate-prefix-4 = Иааахх
 accent-pirate-replaced-1 = my
 accent-pirate-replacement-1 = me
 accent-pirate-replaced-2 = you

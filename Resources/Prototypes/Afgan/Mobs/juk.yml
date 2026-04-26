@@ -25,6 +25,7 @@
     factions:
     - Passive
   - type: Hands
+    needsHands: false
   - type: ComplexInteraction
   - type: Sprite
     drawdepth: Mobs

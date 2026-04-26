@@ -51,3 +51,7 @@
 - type: nameIdentifierGroup
   id: Oblezliy
   prefix: еблан
+
+- type: nameIdentifierGroup
+  id: Halber
+  prefix: ХАЛБ

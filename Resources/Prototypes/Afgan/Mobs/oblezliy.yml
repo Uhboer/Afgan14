@@ -56,6 +56,11 @@
     prototypes:
     - NonPuzoGear
   - type: FootprintVisualizer
+  - type: Vocal
+    sounds:
+      Male: Oblezliy
+      Female: Oblezliy
+      Unsexed: Oblezliy
 
 - type: entity
   name: Oblezliy Spawner

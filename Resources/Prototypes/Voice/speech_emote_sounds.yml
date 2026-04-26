@@ -34,8 +34,6 @@
       collection: MaleCry
     Whistle:
       collection: Whistles
-    Weh:
-      collection: Weh
     Gasp:
       collection: MaleGasp
     DefaultDeathgasp:
@@ -96,6 +94,34 @@
       collection: Slang
 
 - type: emoteSounds
+  id: Oblezliy
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      path:  /Audio/Afgan/Mobs/Oblezliy/scream.ogg
+    Laugh:
+      path: /Audio/Animals/lizard_happy.ogg
+    Whistle:
+      collection: Whistles
+    Crying:
+      collection: MaleCry
+    Gasp:
+      collection: MaleGasp
+    DefaultDeathgasp:
+      collection: DeathGasp
+    Moan:
+      collection: MaleMoan
+    Sigh:
+      collection: MaleSigh
+    Shiza:
+      collection: Shiza
+    Salute:
+      collection: Salutes
+    Slang:
+      collection: Slang
+
+- type: emoteSounds
   id: MaleReptilian
   params:
     variation: 0.125
@@ -104,18 +130,25 @@
       path: /Audio/Voice/Reptilian/reptilian_scream.ogg
     Laugh:
       path: /Audio/Animals/lizard_happy.ogg
-    Honk:
-      collection: BikeHorn
     Whistle:
       collection: Whistles
     Crying:
       collection: MaleCry
     Weh:
-      collection: Weh
     Gasp:
       collection: MaleGasp
     DefaultDeathgasp:
       collection: DeathGasp
+    Moan:
+      collection: MaleMoan
+    Sigh:
+      collection: MaleSigh
+    Shiza:
+      collection: Shiza
+    Salute:
+      collection: Salutes
+    Slang:
+      collection: Slang
 
 - type: emoteSounds
   id: FemaleReptilian
@@ -138,6 +171,33 @@
       collection: FemaleGasp
     DefaultDeathgasp:
       collection: FemaleDeathGasp
+
+- type: emoteSounds
+  id: Halbermensh
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      path: /Audio/Afgan/Mobs/Halbermensh/scream.ogg
+    Laugh:
+      path: /Audio/Animals/lizard_happy.ogg
+    Whistle:
+      collection: Whistles
+    Crying:
+      collection: MaleCry
+    Weh:
+      collection: Weh
+    Gasp:
+      collection: MaleGasp
+    DefaultDeathgasp:
+      collection: DeathGasp
+    Moan:
+      collection: MaleMoan
+    Sigh:
+      collection: MaleSigh
+    Shiza:
+      collection: Shiza
+
 
 - type: emoteSounds
   id: MaleSlime
