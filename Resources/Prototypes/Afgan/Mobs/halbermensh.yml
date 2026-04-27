@@ -91,7 +91,7 @@
   - type: Devourer
     foodPreference: Humanoid
     shouldStoreDevoured: true
-    chemical: AfganLariy
+    chemical: Ichor
     healRate: 20.0
     whitelist:
       components:
@@ -103,27 +103,21 @@
     critThreshold: 400
 
 - type: entity
-  parent: BaseItem
-  id: AfganHalyabGutsFull
   name: кишка Халиаба
   description: Забитая кишка Халиаба. С минуты на минуту из нее может выползти Хальберменш...
+  id: AfganHalyabGutsFull
+  parent: [PresentBase, BaseItem]
+  suffix: Afgan14
   components:
   - type: Sprite
     sprite: Afgan/Objects/guts.rsi
     layers:
       - state: icon
-  - type: GhostRole
-    name: ХальберМенш
-    description: ОНИ ТЕБЯ ПОРОДИЛИ. ОНИ ДОЛЖНЫ ПОПЛАТИТЬСЯ ЗА ЭТО.
-    rules: ОНИ ТЕБЯ ПОРОДИЛИ. ОНИ ДОЛЖНЫ ПОПЛАТИТЬСЯ ЗА ЭТО.
-    #raffle:
-      #settings: default
-  - type: GhostRoleMobSpawner
-    prototype: MobHalbermensh
-  - type: EmitSoundOnUse
-    sound: /Audio/Afgan/Mobs/Halbermensh/halber.ogg
-  - type: UseDelay
-    delay: 300
+  - type: SpawnItemsOnUse
+    items:
+      - id: MobHalbermensh
+    sound:
+      path: /Audio/Afgan/Mobs/Halbermensh/scream.ogg
 
 - type: startingGear
   id: HalberGear
