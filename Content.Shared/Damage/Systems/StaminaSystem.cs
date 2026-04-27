@@ -254,15 +254,6 @@ public sealed partial class StaminaSystem : EntitySystem
                 component.NextUpdate = nextUpdate;
         }
 
-        var slowdownThreshold = component.CritThreshold / 2f;
-
-        // If we go above n% then apply slowdown
-        if (oldDamage < slowdownThreshold &&
-            component.StaminaDamage > slowdownThreshold)
-        {
-            _stunSystem.TrySlowdown(uid, TimeSpan.FromSeconds(3), true, 0.8f, 0.8f);
-        }
-
         SetStaminaAlert(uid, component);
 
         if (!component.Critical)
@@ -329,15 +320,6 @@ public sealed partial class StaminaSystem : EntitySystem
 
             if (component.NextUpdate < nextUpdate)
                 component.NextUpdate = nextUpdate;
-        }
-
-        var slowdownThreshold = component.CritThreshold / 2f;
-
-        // If we go above n% then apply slowdown
-        if (oldDamage < slowdownThreshold &&
-            component.StaminaDamage > slowdownThreshold)
-        {
-            _stunSystem.TrySlowdown(uid, TimeSpan.FromSeconds(6), true, 0.8f, 0.8f);
         }
 
         SetStaminaAlert(uid, component);
