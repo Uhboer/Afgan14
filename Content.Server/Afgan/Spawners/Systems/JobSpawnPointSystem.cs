@@ -1,5 +1,4 @@
 using Content.Server.Afgan.Spawners.Components;
-using Content.Server.GameTicking;
 using Content.Server.Spawners.EntitySystems;
 using Content.Server.Station.Systems;
 using Content.Server.Spawners.Components;
@@ -15,7 +14,6 @@ namespace Content.Server.Afgan.Spawners.Systems;
 /// </summary>
 public sealed class JobSpawnPointSystem : EntitySystem
 {
-    [Dependency] private readonly GameTicker _gameTicker = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly StationSystem _stationSystem = default!;
     [Dependency] private readonly StationSpawningSystem _stationSpawning = default!;
@@ -31,11 +29,6 @@ public sealed class JobSpawnPointSystem : EntitySystem
         // Уже кто-то обработал спавн — не вмешиваемся
         if (args.SpawnResult != null)
             return;
-
-        // Работаем только при лейтджойне (раунд идёт)
-        if (_gameTicker.RunLevel != GameRunLevel.InRound)
-            return;
-
         // Нет джоба — нечего фильтровать
         if (args.Job?.Prototype == null)
             return;
