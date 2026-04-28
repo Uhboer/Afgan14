@@ -1,7 +1,7 @@
 - type: job
   id: HeadOfPersonnel
   name: job-name-hop
-  description: job-supervisors-agent
+  description: job-description-hop
   setPreference: true
   playTimeTracker: JobHeadOfPersonnel
   requirements:
@@ -10,7 +10,7 @@
   startingGear: HoPGear
   icon: "JobIconHeadOfPersonnel"
   requireAdminNotify: false
-  supervisors: job-supervisors-captain
+  supervisors: job-supervisors-agent
   canBeAntag: true
   access:
   - Salvage
