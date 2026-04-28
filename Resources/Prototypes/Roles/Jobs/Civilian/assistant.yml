@@ -39,7 +39,7 @@
     shoes: ClothingShoesBootsCombatFilled
     mask: ClothingMaskHamas
     head: ClothingHeadHelmetHamas
-    gloves: ClothingHandsGlovesCombat
+    gloves: ClothingHandsGlovesFingerless
     outerClothing: ClothingOuterVestWeb
     suitstorage: WeaponSubMachineGunPM9
     id: SalvageIDCard

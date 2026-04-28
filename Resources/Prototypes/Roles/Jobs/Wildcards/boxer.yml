@@ -30,10 +30,10 @@
   id: Povstanec
   equipment:
     jumpsuit: ClothingUniformJumpsuitOrtodox
-    belt: ClothingBeltRPC
+    belt: ClothingBeltRope
     shoes: ClothingShoesBootsSalvage
     head: ClothingHeadHelmetPovstanec
-    gloves: ClothingHandsGlovesFingerless
+    gloves: ClothingHandsGlovesCombat
     pocket1: RadioHandheldSecurity
     pocket2: CombatKnife
   storage:

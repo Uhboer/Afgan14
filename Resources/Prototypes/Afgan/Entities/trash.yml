@@ -147,13 +147,11 @@
     state: icon
   - type: Item
     size: Tiny
-  - type: EmbeddableProjectile
-    sound: /Audio/Weapons/star_hit.ogg
   - type: LandAtCursor
   - type: DamageOtherOnHit
     damage:
       types:
-        Blunt: 8
+        Blunt: 9
 
 - type: entity
   id: Trash11

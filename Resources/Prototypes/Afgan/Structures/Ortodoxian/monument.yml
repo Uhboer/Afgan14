@@ -117,6 +117,16 @@
   - MonumentZaklinania
 
 - type: listing
+  id: FaithEnergyBall
+  name: изучить заклинание
+  description: Шаровая эссенция
+  productAction: ActionEnergyBall
+  cost:
+    Faith: 15
+  categories:
+  - MonumentZaklinania
+
+- type: listing
   id: FaithBlink
   name: изучить заклинание
   description: Рывок
