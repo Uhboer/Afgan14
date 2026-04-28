@@ -5,13 +5,13 @@
   components:
   - type: Magic
   - type: WorldTargetAction
-    useDelay: 20
+    useDelay: 80
     itemIconStyle: BigAction
     checkCanAccess: false
     raiseOnUser: true
     range: 60
     sound: !type:SoundPathSpecifier
-      path: /Audio/Magic/fireball.ogg
+      path: /Audio/Afgan/Misc/explore.ogg
     icon:
       sprite: Objects/Magic/magicactions.rsi
       state: fireball

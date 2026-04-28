@@ -7,7 +7,7 @@
     useDelay: 10
     itemIconStyle: BigAction
     sound: !type:SoundPathSpecifier
-      path: /Audio/Magic/forcewall.ogg
+      path: /Audio/Afgan/Misc/cathedral.ogg
     icon:
       sprite: Objects/Magic/magicactions.rsi
       state: shield

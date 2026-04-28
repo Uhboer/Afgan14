@@ -37,7 +37,7 @@
   - type: ActivatableUI
     key: enum.StoreUiKey.Key
   - type: Store
-    buySuccessSound: /Audio/Afgan/Misc/explore.ogg
+    buySuccessSound: /Audio/Afgan/Misc/cathedral.ogg
     name: store-preset-name-Monument
     categories:
     - MonumentZaklinania
@@ -91,7 +91,7 @@
   description: Освещенное лично Иисусом.
   productEntity: ClothingOuterOrtodoxian
   cost:
-    Faith: 10
+    Faith: 3
   categories:
   - MonumentDress
 
@@ -101,7 +101,7 @@
   description: Священный двуручный меч.
   productEntity: AfganZweihender
   cost:
-    Faith: 15
+    Faith: 5
   categories:
   - MonumentWeapons
 
@@ -109,37 +109,37 @@
 - type: listing
   id: FaithFireball
   name: изучить заклинание
-  description: Древние знание Ортодоксов.
+  description: Фаерболл
   productAction: ActionFireball
   cost:
-    Faith: 25
+    Faith: 20
   categories:
   - MonumentZaklinania
 
 - type: listing
   id: FaithBlink
   name: изучить заклинание
-  description: Древние знание Ортодоксов.
+  description: Рывок
   productAction: ActionBlink
   cost:
-    Faith: 15
+    Faith: 9
   categories:
   - MonumentZaklinania
 
 - type: listing
   id: FaithWall
   name: изучить заклинание
-  description: Древние знание Ортодоксов.
+  description: Стена
   productAction: ActionForceWall
   cost:
-    Faith: 15
+    Faith: 12
   categories:
   - MonumentZaklinania
 
 - type: listing
   id: FaithKnock
   name: изучить заклинание
-  description: Древние знание Ортодоксов.
+  description: Стук
   productAction: ActionKnock
   cost:
     Faith: 10
@@ -149,9 +149,19 @@
 - type: listing
   id: FaithOblez
   name: изучить заклинание
-  description: Древние знание Ортодоксов.
+  description: Призыв Облезлого
   productAction: ActionSpawnOblezliy
   cost:
-    Faith: 10
+    Faith: 5
+  categories:
+  - MonumentZaklinania
+
+- type: listing
+  id: FaithTrap
+  name: изучить заклинание
+  description: Ловушка
+  productAction: ActionAfganTrap
+  cost:
+    Faith: 8
   categories:
   - MonumentZaklinania

@@ -79,6 +79,6 @@
   description: Выжать эссенцию из органики.
   productEntity: AfganEssence
   cost:
-    Organic: 7
+    Organic: 5
   categories:
   - EssenceTransaction

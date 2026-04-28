@@ -80,6 +80,8 @@
   name: бур
   description: A mining drill that requires an operator nearby.
   components:
+  - type: Anchorable
+    flags: None
   - type: Drill
     enabled: false
     updateDelay: 3
