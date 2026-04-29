@@ -67,6 +67,23 @@
     - /Audio/Afgan/Mobs/Charges/charge_nig9.ogg
 
 - type: soundCollection
+  id: MaleAgony
+  files:
+    - /Audio/Afgan/Misc/nscream/death_scream_male1.ogg
+    - /Audio/Afgan/Misc/nscream/death_scream_male2.ogg
+    - /Audio/Afgan/Misc/nscream/death_scream_male3.ogg
+    - /Audio/Afgan/Misc/nscream/death_scream_male4.ogg
+
+- type: soundCollection
+  id: FemaleAgony
+  files:
+    - /Audio/Afgan/Misc/nscream/death_scream_female1.ogg
+    - /Audio/Afgan/Misc/nscream/death_scream_female2.ogg
+    - /Audio/Afgan/Misc/nscream/death_scream_female3.ogg
+    - /Audio/Afgan/Misc/nscream/death_scream_female4.ogg
+
+
+- type: soundCollection
   id: Shiza
   files:
     - /Audio/Afgan/Shiza/death.ogg

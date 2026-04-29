@@ -44,6 +44,8 @@
       collection: Salutes
     Slang:
       collection: Slang
+    Agony:
+      collection: MaleAgony
 
 - type: emoteSounds
   id: FemaleHuman
@@ -92,6 +94,8 @@
       collection: Salutes
     Slang:
       collection: Slang
+    Agony:
+      collection: FemaleAgony
 
 - type: emoteSounds
   id: Oblezliy
@@ -120,6 +124,8 @@
       collection: Salutes
     Slang:
       collection: Slang
+    Agony:
+      collection: MaleAgony
 
 - type: emoteSounds
   id: MaleReptilian
@@ -149,6 +155,8 @@
       collection: Salutes
     Slang:
       collection: Slang
+    Agony:
+      collection: MaleAgony
 
 - type: emoteSounds
   id: FemaleReptilian
@@ -185,8 +193,6 @@
       collection: Whistles
     Crying:
       collection: MaleCry
-    Weh:
-      collection: Weh
     Gasp:
       collection: MaleGasp
     DefaultDeathgasp:
@@ -197,7 +203,8 @@
       collection: MaleSigh
     Shiza:
       collection: Shiza
-
+    Agony:
+      collection: MaleAgony
 
 - type: emoteSounds
   id: MaleSlime

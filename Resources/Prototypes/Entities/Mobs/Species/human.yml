@@ -35,6 +35,7 @@
     - Hair
     - Snout
   - type: FootprintVisualizer
+  - type: DamageFlash
   - type: SolutionContainerManager
     solutions:
       udder:

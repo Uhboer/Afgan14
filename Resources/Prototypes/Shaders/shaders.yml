@@ -99,3 +99,11 @@
   id: Cataracts
   kind: source
   path: "/Textures/Shaders/cataracts.swsl"
+
+# Красная вспышка при получении урона
+- type: shader
+  id: DamageFlash
+  kind: source
+  path: "/Textures/Shaders/damage_flash.swsl"
+  params:
+    intensity: 0.0

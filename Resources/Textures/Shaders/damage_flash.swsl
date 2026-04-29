@@ -1,0 +1,11 @@
+// Красная вспышка при получении урона
+// intensity: 0.0 - нет эффекта, 1.0 - максимальная вспышка
+
+uniform sampler2D SCREEN_TEXTURE;
+uniform highp float intensity;
+
+void fragment() {
+    highp vec4 screen = texture(SCREEN_TEXTURE, UV);
+    // Смешиваем экран с красным цветом пропорционально интенсивности
+    COLOR = mix(screen, vec4(0.8, 0.0, 0.0, 1.0), intensity * 0.6);
+}

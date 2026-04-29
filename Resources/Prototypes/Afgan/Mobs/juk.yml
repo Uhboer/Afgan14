@@ -117,6 +117,7 @@
     baseSprintSpeed: 15
     baseWalkSpeed: 10
   - type: FootprintVisualizer
+  - type: DamageFlash
 
 - type: entity
   name: Juk Spawner

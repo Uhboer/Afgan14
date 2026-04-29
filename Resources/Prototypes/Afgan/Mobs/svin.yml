@@ -85,6 +85,7 @@
     - SvinTwoBibikGear
   - type: FootprintVisualizer
   - type: LayingDown
+  - type: DamageFlash
 
 - type: entity
   name: Svin Angry Timed Spawner

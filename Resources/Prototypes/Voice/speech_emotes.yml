@@ -467,6 +467,20 @@
     - сленгует.
 
 - type: emote
+  id: Agony
+  name: chat-emote-name-agony
+  category: Vocal
+  icon: Interface/Actions/scream.png
+  whitelist:
+    components:
+    - Vocal
+  chatMessages: ["chat-emote-msg-agony"]
+  chatTriggers:
+    - кричит в агонии
+    - кричит в агонии!
+    - кричит в агонии.
+
+- type: emote
   id: Gasp
   name: chat-emote-name-gasp
   whitelist:
