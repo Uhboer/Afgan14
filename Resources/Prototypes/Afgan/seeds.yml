@@ -1,0 +1,65 @@
+- type: seed
+  id: mushroomnarcoAFGAN
+  name: Семена наркотических грибов
+  noun: Семена
+  displayName: Семена наркотических грибов грибов
+  plantRsi: Afgan/Objects/mushrooms.rsi
+  packetPrototype: SeedsnarcoMushroom
+  productPrototypes:
+    - FoodGribNarco
+  lifespan: 30
+  maturation: 5
+  production: 3
+  yield: 3
+  potency: 10
+  growthStages: 2
+  waterConsumption: 0.1
+  chemicals:
+    AfganOpium:
+      Min: 1
+      Max: 10
+      PotencyDivisor: 10
+
+- type: seed
+  id: mushroomhilAFGAN
+  name: Семена лечащих грибов
+  noun: Семена
+  displayName: Семена лечаших грибов
+  plantRsi: Afgan/Objects/mushrooms.rsi
+  packetPrototype: SeedshilMushroom
+  productPrototypes:
+    - FoodGribHeal
+  lifespan: 30
+  maturation: 5
+  production: 3
+  yield: 3
+  potency: 10
+  growthStages: 2
+  waterConsumption: 0.1
+  chemicals:
+    AfganLariy:
+      Min: 1
+      Max: 15
+      PotencyDivisor: 15
+
+- type: seed
+  id: mushroomgovnoAFGAN
+  name: Семена говняных грибов
+  noun: Семена
+  displayName: Семена говняных грибов
+  plantRsi: Afgan/Objects/mushrooms.rsi
+  packetPrototype: SeedsgovnoMushroom
+  productPrototypes:
+    - FoodGribBlevun
+  lifespan: 30
+  maturation: 5
+  production: 3
+  yield: 3
+  potency: 10
+  growthStages: 2
+  waterConsumption: 0.1
+  chemicals:
+    AfganGovnoToxin:
+      Min: 1
+      Max: 5
+      PotencyDivisor: 10
