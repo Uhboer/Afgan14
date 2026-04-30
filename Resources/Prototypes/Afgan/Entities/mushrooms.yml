@@ -50,6 +50,9 @@
   description: попробуешь на вкус?
   suffix: afgan14
   components:
+  - type: Seed
+    seedId: mushroomgovnoAFGAN
+    selfSeed: true  
   - type: Produce
   - type: Sprite
     sprite: Afgan/Structures/Mushrooms/blevun.rsi
@@ -126,6 +129,9 @@
   description: попробуешь на вкус?
   suffix: afgan14
   components:
+  - type: Seed
+    seedId: mushroomhilAFGAN
+    selfSeed: true  
   - type: Produce
   - type: Sprite
     sprite: Afgan/Structures/Mushrooms/heal.rsi
@@ -202,6 +208,9 @@
   description: попробуешь на вкус?
   suffix: afgan14
   components:
+  - type: Seed
+    seedId: mushroomnarcoAFGAN
+    selfSeed: true             
   - type: Produce
   - type: Sprite
     sprite: Afgan/Structures/Mushrooms/narco.rsi
