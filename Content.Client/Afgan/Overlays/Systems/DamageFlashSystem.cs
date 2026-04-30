@@ -1,6 +1,8 @@
 using Content.Shared._Afgan.DamageFlash;
 using Content.Shared.Damage;
+using Content.Shared.FixedPoint;
 using Content.Shared.GameTicking;
+using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs.Systems;
 using Robust.Client.Graphics;
@@ -12,9 +14,13 @@ namespace Content.Client._Afgan.Overlays.Systems;
 
 /// <summary>
 /// Управляет полноэкранной красной вспышкой при получении урона.
-/// Режимы:
-///   1. Одиночная вспышка — при каждом получении урона.
-///   2. Непрерывное мигание — когда здоровье ниже PreCritThreshold от порога крита.
+/// Шейдер работает ПОСТОЯННО при наличии урона, мигает с частотой и интенсивностью,
+/// зависящей от процента урона, разбитого на 5 диапазонов:
+/// 1. 0-25% - легкая медленная вспышка
+/// 2. 25-50% - средняя вспышка
+/// 3. 50-75% - сильная быстрая вспышка
+/// 4. 75-100% - очень сильная очень быстрая вспышка
+/// 5. 100%+ - весь экран красный постоянно
 /// </summary>
 public sealed class DamageFlashSystem : EntitySystem
 {
@@ -24,12 +30,7 @@ public sealed class DamageFlashSystem : EntitySystem
     [Dependency] private readonly MobThresholdSystem _thresholds = default!;
 
     private DamageFlashOverlay _overlay = default!;
-
-    /// <summary>
-    /// Флаг: игнорировать следующий DamageChangedEvent после прикрепления игрока.
-    /// Нужен чтобы не срабатывать на первую синхронизацию состояния с сервера.
-    /// </summary>
-    private bool _ignoreNextDamageEvent = false;
+    private TimeSpan _lastPulseTime = TimeSpan.Zero;
 
     public override void Initialize()
     {
@@ -40,7 +41,6 @@ public sealed class DamageFlashSystem : EntitySystem
         SubscribeLocalEvent<DamageFlashComponent, PlayerAttachedEvent>(OnPlayerAttached);
         SubscribeLocalEvent<DamageFlashComponent, PlayerDetachedEvent>(OnPlayerDetached);
         SubscribeLocalEvent<DamageFlashComponent, ComponentShutdown>(OnShutdown);
-        SubscribeLocalEvent<DamageFlashComponent, DamageChangedEvent>(OnDamageChanged);
 
         SubscribeNetworkEvent<RoundRestartCleanupEvent>(OnRoundRestart);
     }
@@ -48,24 +48,22 @@ public sealed class DamageFlashSystem : EntitySystem
     private void OnRoundRestart(RoundRestartCleanupEvent ev)
     {
         _overlayMan.RemoveOverlay(_overlay);
+        _overlay.Intensity = 0f;
+        _lastPulseTime = TimeSpan.Zero;
     }
 
     private void OnPlayerAttached(EntityUid uid, DamageFlashComponent component, PlayerAttachedEvent args)
     {
         _overlayMan.AddOverlay(_overlay);
-        // Сбрасываем состояние вспышки при подключении к новому персонажу
-        component.IsFlashing = false;
-        component.FlashStartTime = TimeSpan.Zero;
-        // Первый DamageChangedEvent после прикрепления — это синхронизация начального
-        // состояния с сервера, а не реальный урон. Игнорируем его.
-        _ignoreNextDamageEvent = true;
+        _overlay.Intensity = 0f;
+        _lastPulseTime = _timing.RealTime;
     }
 
     private void OnPlayerDetached(EntityUid uid, DamageFlashComponent component, PlayerDetachedEvent args)
     {
         _overlayMan.RemoveOverlay(_overlay);
         _overlay.Intensity = 0f;
-        _ignoreNextDamageEvent = false;
+        _lastPulseTime = TimeSpan.Zero;
     }
 
     private void OnShutdown(EntityUid uid, DamageFlashComponent component, ComponentShutdown args)
@@ -75,36 +73,7 @@ public sealed class DamageFlashSystem : EntitySystem
 
         _overlayMan.RemoveOverlay(_overlay);
         _overlay.Intensity = 0f;
-        component.IsFlashing = false;
-        component.FlashStartTime = TimeSpan.Zero;
-    }
-
-    private void OnDamageChanged(EntityUid uid, DamageFlashComponent component, DamageChangedEvent args)
-    {
-        // Реагируем только на локального игрока
-        if (_playerMan.LocalEntity is not { Valid: true } localEntity || uid != localEntity)
-            return;
-
-        // Пропускаем первое событие после прикрепления — это начальная синхронизация
-        // состояния с сервера, а не реальный урон в игре.
-        if (_ignoreNextDamageEvent)
-        {
-            _ignoreNextDamageEvent = false;
-            return;
-        }
-
-        // Только реальное увеличение урона (не инициализация)
-        if (!args.DamageIncreased || args.DamageDelta == null)
-            return;
-
-        // Игнорируем системные изменения урона (синхронизация, инициализация)
-        // Origin == null означает что урон изменен системой, а не другим существом/оружием
-        if (args.Origin == null)
-            return;
-
-        // Запускаем одиночную вспышку
-        component.FlashStartTime = _timing.RealTime;
-        component.IsFlashing = true;
+        _lastPulseTime = TimeSpan.Zero;
     }
 
     public override void FrameUpdate(float frameTime)
@@ -123,53 +92,122 @@ public sealed class DamageFlashSystem : EntitySystem
             return;
         }
 
-        // Проверяем предкритическое состояние
-        if (IsPreCrit(localEntity, component))
-        {
-            // Непрерывное синусоидальное мигание
-            var time = (float)_timing.RealTime.TotalSeconds;
-            var pulse = (MathF.Sin(time * MathF.PI * 2f * component.PreCritPulseRate) + 1f) * 0.5f;
-            _overlay.Intensity = pulse * component.PreCritMaxIntensity;
-
-            // Сбрасываем одиночную вспышку — предкрит имеет приоритет
-            component.IsFlashing = false;
-            return;
-        }
-
-        // Одиночная вспышка при получении урона
-        if (!component.IsFlashing)
+        // Получаем процент урона
+        float damagePercentage = GetDamagePercentage(localEntity);
+        
+        // Если урон 0%, выключаем вспышку
+        if (damagePercentage <= 0f)
         {
             _overlay.Intensity = 0f;
             return;
         }
 
-        var elapsed = (float)(_timing.RealTime - component.FlashStartTime).TotalSeconds;
-        var progress = elapsed / component.FlashDuration;
-
-        if (progress >= 1f)
+        // Если урон 100%+ (>= 1.0), используем максимальную интенсивность постоянно
+        if (damagePercentage >= 1.0f)
         {
-            component.IsFlashing = false;
-            _overlay.Intensity = 0f;
+            _overlay.Intensity = component.Intensity100Plus;
             return;
         }
 
-        // Синусоидальное мигание с затуханием
-        var singlePulse = MathF.Sin(progress * MathF.PI * component.PulseCount * 2f);
-        var fade = 1f - progress;
-        _overlay.Intensity = MathF.Max(0f, singlePulse * fade);
+        // Не показываем вспышку если игрок мертв или в критическом состоянии
+        // (только для урона меньше 100%)
+        if (TryComp<MobStateComponent>(localEntity, out var mobState))
+        {
+            var mobStateSystem = EntityManager.System<MobStateSystem>();
+            if (mobStateSystem.IsDead(localEntity, mobState) || mobStateSystem.IsCritical(localEntity, mobState))
+            {
+                _overlay.Intensity = 0f;
+                return;
+            }
+        }
+
+        // Получаем базовую интенсивность для диапазона урона
+        float baseIntensity = GetIntensityForDamagePercentage(damagePercentage, component);
+        
+        // Получаем частоту пульсации для диапазона урона
+        float pulseFrequency = GetPulseFrequencyForDamagePercentage(damagePercentage, component);
+        
+        // Рассчитываем пульсирующую интенсивность
+        float pulseIntensity = CalculatePulsingIntensity(baseIntensity, pulseFrequency);
+        
+        _overlay.Intensity = pulseIntensity;
     }
 
     /// <summary>
-    /// Возвращает true, если текущий урон игрока превышает PreCritThreshold от порога крита.
+    /// Возвращает интенсивность вспышки в зависимости от процента урона.
     /// </summary>
-    private bool IsPreCrit(EntityUid uid, DamageFlashComponent component)
+    private float GetIntensityForDamagePercentage(float damagePercentage, DamageFlashComponent component)
+    {
+        if (damagePercentage < 0.25f) // 0-25%
+            return component.Intensity0To25;
+        else if (damagePercentage < 0.5f) // 25-50%
+            return component.Intensity25To50;
+        else if (damagePercentage < 0.75f) // 50-75%
+            return component.Intensity50To75;
+        else // 75-100%
+            return component.Intensity75To100;
+    }
+
+    /// <summary>
+    /// Возвращает частоту пульсации (в Гц) в зависимости от процента урона.
+    /// Чем больше урон - тем быстрее мигает экран.
+    /// </summary>
+    private float GetPulseFrequencyForDamagePercentage(float damagePercentage, DamageFlashComponent component)
+    {
+        if (damagePercentage < 0.25f) // 0-25% - медленное мигание
+            return component.PulseFrequency0To25;
+        else if (damagePercentage < 0.5f) // 25-50% - среднее мигание
+            return component.PulseFrequency25To50;
+        else if (damagePercentage < 0.75f) // 50-75% - быстрое мигание
+            return component.PulseFrequency50To75;
+        else // 75-100% - очень быстрое мигание
+            return component.PulseFrequency75To100;
+    }
+
+    /// <summary>
+    /// Рассчитывает пульсирующую интенсивность на основе базовой интенсивности и частоты.
+    /// Использует синусоидальную функцию для плавного мигания.
+    /// </summary>
+    private float CalculatePulsingIntensity(float baseIntensity, float frequency)
+    {
+        // Время с начала игры в секундах
+        float time = (float)_timing.RealTime.TotalSeconds;
+        
+        // Синусоидальная пульсация: от 0 до 1 и обратно
+        float pulse = (MathF.Sin(time * 2f * MathF.PI * frequency) + 1f) * 0.5f;
+        
+        // Применяем базовую интенсивность к пульсации
+        // Минимальная интенсивность = 20% от базовой, максимальная = базовая
+        float minIntensity = baseIntensity * 0.2f;
+        float intensityRange = baseIntensity - minIntensity;
+        
+        return minIntensity + pulse * intensityRange;
+    }
+
+    /// <summary>
+    /// Возвращает процент нанесенного урона от максимального здоровья (0.0 - 1.0+).
+    /// Может быть больше 1.0 если урон превышает порог крита.
+    /// </summary>
+    private float GetDamagePercentage(EntityUid uid)
     {
         if (!TryComp<DamageableComponent>(uid, out var damageable))
-            return false;
+            return 0f;
 
-        if (!_thresholds.TryGetIncapPercentage(uid, damageable.TotalDamage, out var percentage))
-            return false;
+        // Получаем порог крита (урон, при котором персонаж становится критическим)
+        if (!_thresholds.TryGetThresholdForState(uid, MobState.Critical, out var critThreshold))
+        {
+            // Если не можем получить порог крита, используем фиксированное значение 25
+            // для отладки (предполагаем, что порог крита для человека = 25)
+            float fixedCritThreshold = 25f;
+            return damageable.TotalDamage.Float() / fixedCritThreshold;
+        }
 
-        return (float) percentage.Value >= component.PreCritThreshold;
+        // Если порог крита не найден или равен 0, возвращаем 0
+        if (critThreshold == null || critThreshold.Value <= 0)
+            return 0f;
+
+        // Рассчитываем процент урона от порога крита
+        // Может быть больше 1.0 (100%) если урон превышает порог крита
+        return damageable.TotalDamage.Float() / critThreshold.Value.Float();
     }
 }

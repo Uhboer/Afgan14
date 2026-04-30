@@ -86,6 +86,15 @@
   - type: FootprintVisualizer
   - type: LayingDown
   - type: DamageFlash
+    intensity0To25: 0.1
+    intensity25To50: 0.2
+    intensity50To75: 0.4
+    intensity75To100: 0.8
+    intensity100Plus: 1.0
+    pulseFrequency0To25: 0.2
+    pulseFrequency25To50: 0.6
+    pulseFrequency50To75: 1.0
+    pulseFrequency75To100: 1.5
 
 - type: entity
   name: Svin Angry Timed Spawner
