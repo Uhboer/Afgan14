@@ -1,0 +1,29 @@
+- type: entity
+  parent: SeedBase
+  name: Семена наркотических грибов
+  id: SeedsnarcoMushroom
+  components:
+    - type: Seed
+      seedId: mushroomnarcoAFGAN
+    - type: Sprite
+      sprite: Objects/Specific/Hydroponics/banana.rsi
+
+- type: entity
+  parent: SeedBase
+  name: Семена лечащих грибов
+  id: SeedshilMushroom
+  components:
+    - type: Seed
+      seedId: mushroomhilAFGAN
+    - type: Sprite
+      sprite: Objects/Specific/Hydroponics/banana.rsi
+
+- type: entity
+  parent: SeedBase
+  name: Семена говняных грибов
+  id: SeedsgovnoMushroom
+  components:
+    - type: Seed
+      seedId: mushroomgovnoAFGAN
+    - type: Sprite
+      sprite: Objects/Specific/Hydroponics/banana.rsi
