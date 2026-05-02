@@ -49,11 +49,9 @@
   id: FoodGribBlevun
   description: попробуешь на вкус?
   suffix: afgan14
-  components:
-  - type: Seed
-    seedId: mushroomgovnoAFGAN
-    selfSeed: true  
+  components: 
   - type: Produce
+    seedId: mushroomgovnoAFGAN
   - type: Sprite
     sprite: Afgan/Structures/Mushrooms/blevun.rsi
     state: object
@@ -128,11 +126,9 @@
   id: FoodGribHeal
   description: попробуешь на вкус?
   suffix: afgan14
-  components:
-  - type: Seed
-    seedId: mushroomhilAFGAN
-    selfSeed: true  
+  components:  
   - type: Produce
+    seedId: mushroomhilAFGAN
   - type: Sprite
     sprite: Afgan/Structures/Mushrooms/heal.rsi
     state: object
@@ -207,11 +203,9 @@
   id: FoodGribNarco
   description: попробуешь на вкус?
   suffix: afgan14
-  components:
-  - type: Seed
-    seedId: mushroomnarcoAFGAN
-    selfSeed: true             
+  components:             
   - type: Produce
+    seedId: mushroomnarcoAFGAN
   - type: Sprite
     sprite: Afgan/Structures/Mushrooms/narco.rsi
     state: object

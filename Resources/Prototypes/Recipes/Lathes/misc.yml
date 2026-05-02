@@ -515,3 +515,22 @@
   category: Tools
   materials:
     Wood: 1000
+
+- type: latheRecipe
+  id: hipocomponentAFGAN 
+  result: hipocomponentAFGAN 
+  completetime: 3
+  category: Parts
+  materials:
+    Steel: 1000
+    Plastic: 1000
+
+    
+- type: latheRecipe
+  id: hipocomponent2AFGAN 
+  result: hipocomponent2AFGAN 
+  completetime: 3
+  category: Parts
+  materials:
+    Steel: 500
+    Plastic: 1000

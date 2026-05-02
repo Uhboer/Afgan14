@@ -20,6 +20,9 @@
       "name": "hypo"
     },
     {
+      "name": "hypoalc"
+    },
+    {
       "name": "inhand-left",
       "directions": 4
     },
