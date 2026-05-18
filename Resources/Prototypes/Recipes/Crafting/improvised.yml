@@ -452,58 +452,6 @@
   objectType: Item
 
 - type: construction
-  name: Золтой Меч (алхимия)
-  id: AlchemGSword
-  graph: GSwordGraph
-  startNode: start
-  targetNode: gsword
-  category: construction-category-afgan
-  description: real golden sword.
-  icon:
-    sprite: Afgan/Weapons/Melee/swordgold.rsi
-    state: icon
-  objectType: Item
-
-- type: construction
-  name: Дьявольская Маска (алхимия)
-  id: AlchemDMask
-  graph: DMaskGraph
-  startNode: start
-  targetNode: dmask
-  category: construction-category-afgan
-  description: real demon.
-  icon:
-    sprite: Afgan/Clothing/Mask/balmaskevil.rsi
-    state: icon
-  objectType: Item
-
-- type: construction
-  name: Кольцо (алхимия)
-  id: AlchemRing
-  graph: RingGraph
-  startNode: start
-  targetNode: ring
-  category: construction-category-afgan
-  description: real ring.
-  icon:
-    sprite: Afgan/Clothing/Gloves/ring.rsi
-    state: icon
-  objectType: Item
-
-- type: construction
-  name: Наплечники (алхимия)
-  id: AlchemNaplech
-  graph: NaplechGraph
-  startNode: start
-  targetNode: naplech
-  category: construction-category-afgan
-  description: real crimson.
-  icon:
-    sprite: Afgan/Clothing/Neck/crimson.rsi
-    state: icon
-  objectType: Item
-
-- type: construction
   name: Стрела
   id: SamodelArrow
   graph: ArrowGraph
@@ -659,15 +607,3 @@
     state: hypo
   objectType: Item
 
-- type: construction
-  name: Модифицированый гипоспрей (алхимия)
-  id: HyposprayalccraftAFGAN
-  graph: hypoalcGraph
-  startNode: start
-  targetNode: hypoalc
-  category: construction-category-afgan
-  description: Модифицированый гипоспрей использует материю.
-  icon:
-    sprite: Objects/Specific/Medical/hypospray.rsi
-    state: hypoalc
-  objectType: Item
