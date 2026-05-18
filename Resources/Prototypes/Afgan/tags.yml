@@ -92,6 +92,13 @@
   id: MateriaB
 
 - type: Tag
+  id: HalyabGuts
+
+
+- type: Tag
+  id: MateriaM
+
+- type: Tag
   id: BalMask
 
 - type: Tag

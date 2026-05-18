@@ -367,6 +367,30 @@
 
 - type: entity
   parent: BaseItem
+  id: AfganMateriaMadness
+  name: материя безумия
+  description: Неизвестная хрень.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/materiamadness.rsi
+    state: icon
+  - type: Item
+    sprite: Afgan/Objects/materiamadness.rsi
+    size: Normal
+  - type: PointLight
+    radius: 1.5
+    energy: 2
+    color: "#FFF0F5"
+  - type: Currency
+    price:
+      Faith: 1
+  - type: Tag
+    tags:
+      - MateriaM
+
+- type: entity
+  parent: BaseItem
   id: AfganMateriaBlood
   name: материя крови
   description: Неизвестная хрень.

@@ -104,6 +104,21 @@
 
 - type: entity
   name: кишка Халиаба
+  description: Пустая кишка Халиаба. Её стоит забить парочкой материей крови...
+  id: AfganHalyabGuts
+  parent: BaseItem
+  suffix: Afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/guts.rsi
+    layers:
+      - state: icon
+  - type: Tag
+    tags:
+      - HalyabGuts
+
+- type: entity
+  name: кишка Халиаба
   description: Забитая кишка Халиаба. С минуты на минуту из нее может выползти Хальберменш...
   id: AfganHalyabGutsFull
   parent: [PresentBase, BaseItem]
@@ -118,6 +133,10 @@
       - id: MobHalbermensh
     sound:
       path: /Audio/Afgan/Mobs/Halbermensh/scream.ogg
+  - type: Currency
+    price:
+      Faith: 500
+
 
 - type: startingGear
   id: HalberGear

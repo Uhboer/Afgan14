@@ -10,6 +10,7 @@
   id: ClothingClothingHandsGlovesRing
   result: ClothingHandsGlovesRing
   materials:
+    MateriaM: 1
     MateriaB: 1
     MateriaG: 1
     Materia: 1
@@ -35,3 +36,15 @@
     Materia: 1
     Naplechniki: 1
 
+- type: transmutationRecipeSimple
+  id: AfganHalyabGuts
+  result: AfganHalyabGuts
+  materials:
+    Meat: 7
+
+- type: transmutationRecipeSimple
+  id: AfganHalyabGutsFull
+  result: AfganHalyabGutsFull
+  materials:
+    HalyabGuts: 1
+    MateriaB: 5
