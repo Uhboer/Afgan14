@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "AFGAN14",
+  "size": {
+    "x": 64,
+    "y": 64
+  },
+  "states": [
+    {
+      "name": "shaman_tree",
+      "delays": [[0.2, 0.2, 0.2, 0.2, 0.2, 0.2]]
+    }
+  ]
+}
