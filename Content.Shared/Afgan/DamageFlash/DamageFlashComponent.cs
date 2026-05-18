@@ -6,50 +6,70 @@ namespace Content.Shared._Afgan.DamageFlash;
 /// Добавьте этот компонент к существу, чтобы при получении урона:
 /// - на экране игрока появлялась мигающая красная вспышка;
 /// - персонаж издавал эмоцию "кричит в агонии".
-/// В предкритическом состоянии шейдер работает непрерывно.
+/// Шейдер работает всегда при получении урона, интенсивность зависит от процента урона.
 /// </summary>
 [RegisterComponent, AutoGenerateComponentPause]
 public sealed partial class DamageFlashComponent : Component
 {
     // ── Визуальная вспышка (клиент) ──────────────────────────────────────────
 
-    /// <summary>
-    /// Продолжительность одиночной вспышки при получении урона (секунды реального времени).
-    /// </summary>
-    [DataField]
-    public float FlashDuration = 0.8f;
+
 
     /// <summary>
-    /// Количество пульсаций за время одиночной вспышки.
+    /// Интенсивность вспышки для 0-25% урона (0.0–1.0).
     /// </summary>
     [DataField]
-    public float PulseCount = 2.5f;
+    public float Intensity0To25 = 0.2f;
 
     /// <summary>
-    /// Порог здоровья (0.0–1.0 от порога крита), при котором включается непрерывное мигание.
-    /// Например, 0.9 = шейдер постоянно мигает когда урон >= 90% от порога крита (осталось 10% здоровья до крита).
+    /// Интенсивность вспышки для 25-50% урона (0.0–1.0).
     /// </summary>
     [DataField]
-    public float PreCritThreshold = 0.75f;
+    public float Intensity25To50 = 0.4f;
 
     /// <summary>
-    /// Скорость пульсации в предкритическом режиме (пульсаций в секунду).
+    /// Интенсивность вспышки для 50-75% урона (0.0–1.0).
     /// </summary>
     [DataField]
-    public float PreCritPulseRate = 1.2f;
+    public float Intensity50To75 = 0.6f;
 
     /// <summary>
-    /// Максимальная интенсивность в предкритическом режиме (0.0–1.0).
+    /// Интенсивность вспышки для 75-100% урона (0.0–1.0).
     /// </summary>
     [DataField]
-    public float PreCritMaxIntensity = 0.55f;
+    public float Intensity75To100 = 0.8f;
 
-    // Состояние вспышки — управляется только клиентской системой, не сериализуется в сохранения.
-    [NonSerialized]
-    public TimeSpan FlashStartTime = TimeSpan.Zero;
+    /// <summary>
+    /// Интенсивность вспышки при 100%+ урона (0.0–1.0).
+    /// При 1.0 весь экран становится красным постоянно.
+    /// </summary>
+    [DataField]
+    public float Intensity100Plus = 1.0f;
 
-    [NonSerialized]
-    public bool IsFlashing = false;
+    // Параметры пульсации (клиент)
+    /// <summary>
+    /// Базовая частота пульсации (Гц) для 0-25% урона.
+    /// </summary>
+    [DataField]
+    public float PulseFrequency0To25 = 0.5f;
+
+    /// <summary>
+    /// Базовая частота пульсации (Гц) для 25-50% урона.
+    /// </summary>
+    [DataField]
+    public float PulseFrequency25To50 = 1.0f;
+
+    /// <summary>
+    /// Базовая частота пульсации (Гц) для 50-75% урона.
+    /// </summary>
+    [DataField]
+    public float PulseFrequency50To75 = 2.0f;
+
+    /// <summary>
+    /// Базовая частота пульсации (Гц) для 75-100% урона.
+    /// </summary>
+    [DataField]
+    public float PulseFrequency75To100 = 3.0f;
 
     // ── Эмоция крика (сервер) ────────────────────────────────────────────────
 
@@ -67,7 +87,7 @@ public sealed partial class DamageFlashComponent : Component
     public TimeSpan ScreamCooldown = TimeSpan.FromSeconds(3);
 
     /// <summary>
-    /// Время последнего крика (симуляционное время, с поддержкой паузы).
+    /// ��ремя последнего крика (симуляционное время, с поддержкой паузы).
     /// </summary>
     [DataField(customTypeSerializer: typeof(TimeOffsetSerializer))]
     [AutoPausedField]
