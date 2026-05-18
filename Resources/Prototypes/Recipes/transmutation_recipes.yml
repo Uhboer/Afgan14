@@ -1,0 +1,37 @@
+
+- type: transmutationRecipeSimple
+  id: ClothingMaskBalisticEvilRecipe
+  result: ClothingMaskBalisticEvil
+  materials:
+    MateriaB: 1
+    BalMask: 1
+
+- type: transmutationRecipeSimple
+  id: ClothingClothingHandsGlovesRing
+  result: ClothingHandsGlovesRing
+  materials:
+    MateriaB: 1
+    MateriaG: 1
+    Materia: 1
+
+- type: transmutationRecipeSimple
+  id: ClothingAfganSwordGold
+  result: AfganSwordGold
+  materials:
+    Sword: 1
+    MateriaG: 1
+
+- type: transmutationRecipeSimple
+  id: ClothingHyposprayalcAFGAN
+  result: HyposprayalcAFGAN
+  materials:
+    Materia: 1
+    HyposprayA: 1
+
+- type: transmutationRecipeSimple
+  id: ClothingClothingNeckNaplechnikiCrimson
+  result: ClothingNeckNaplechnikiCrimson
+  materials:
+    Materia: 1
+    Naplechniki: 1
+

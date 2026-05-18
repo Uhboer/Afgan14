@@ -1,0 +1,16 @@
+- type: entity
+  parent: BaseStructure
+  id: SimpleTransmutationCircle
+  name: круг трансмутации
+  description: Древний алхимический круг, выложенный из потрескавшегося камня. В его центре до сих пор тлеют отблески забытых ритуалов.
+  components:
+  - type: Sprite
+    sprite: Afgan/Structures/transmutation_circle.rsi
+    state: icon
+    scale: 1, 1
+  - type: SimpleTransmutationCircle
+  - type: Physics
+    bodyType: Static
+    canCollide: false
+  - type: Fixtures
+    fixtures: {}
