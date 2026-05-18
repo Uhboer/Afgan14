@@ -21,6 +21,8 @@
         - WearponComponentCarcasPNV
         - Bib
         - AfganSvinoEgg
+        - hipocomponentAFGAN
+        - hipocomponent2AFGAN
       rareChance: 0.01
       prototypes:
         - Trash1

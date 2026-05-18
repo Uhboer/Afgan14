@@ -1,5 +1,6 @@
 - type: entity
-  name: Кустарный гипоспрей
+  name: кустарный гипоспрей
+  suffix: afgan14
   parent: BaseItem
   description: Модифицированый шприц, использует для впрыска реагентов сжатый воздух.
   id: HyposprayAFGAN
@@ -33,8 +34,9 @@
     stealGroup: Hypospray
 
 - type: entity
-  name: Алхимический гипоспрей
+  name: алхимический гипоспрей
   parent: BaseItem
+  suffix: afgan14
   description: В этом гипоспрее сжатый воздух береться из материи.
   id: HyposprayalcAFGAN
   components:
@@ -65,14 +67,15 @@
 
 - type: entity
   parent: BaseItem
-  id: hipocomponentAFGAN   
-  name: Каркас кустарного гипоспрея             
-  description: Каркас гипоспрея используеться что бы создать гипоспрей. 
+  id: hipocomponentAFGAN
+  name: Каркас кустарного гипоспрея
+  suffix: afgan14
+  description: Каркас гипоспрея используеться что бы создать гипоспрей.
   components:
-    - type: Tag                 
+    - type: Tag
       tags:
         - hypocomponenttag
-    - type: Sprite              
+    - type: Sprite
       sprite: Afgan/Objects/hipoAFGAN.rsi
       state: icon
     - type: Item
@@ -80,14 +83,15 @@
 
 - type: entity
   parent: BaseItem
-  id: hipocomponent2AFGAN   
-  name: Балон сжатого воздуха.           
+  id: hipocomponent2AFGAN
+  suffix: afgan14
+  name: Балон сжатого воздуха.
   description: Сжатый воздух используеться в создании расних штук.
   components:
-    - type: Tag                 
+    - type: Tag
       tags:
         - hypocomponenttag2
-    - type: Sprite              
+    - type: Sprite
       sprite: Afgan/Objects/hipoAFGAN.rsi
       state: icon2
     - type: Item
