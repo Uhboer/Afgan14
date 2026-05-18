@@ -645,3 +645,29 @@
     sprite: Afgan/Structures/pechka.rsi
     state: icon
   objectType: Structure
+
+- type: construction
+  name: Кустарный гипоспрей.
+  id: HypospraycraftAFGAN
+  graph: hypoGraph
+  startNode: start
+  targetNode: hypo
+  category: construction-category-afgan
+  description: Самодельный гипоспрей.
+  icon:
+    sprite: Objects/Specific/Medical/hypospray.rsi
+    state: hypo
+  objectType: Item
+
+- type: construction
+  name: Модифицированый гипоспрей (алхимия)
+  id: HyposprayalccraftAFGAN
+  graph: hypoalcGraph
+  startNode: start
+  targetNode: hypoalc
+  category: construction-category-afgan
+  description: Модифицированый гипоспрей использует материю.
+  icon:
+    sprite: Objects/Specific/Medical/hypospray.rsi
+    state: hypoalc
+  objectType: Item

@@ -1,0 +1,94 @@
+- type: entity
+  name: Кустарный гипоспрей
+  parent: BaseItem
+  description: Модифицированый шприц, использует для впрыска реагентов сжатый воздух.
+  id: HyposprayAFGAN
+  components:
+  - type: Tag
+    tags:
+      - HyposprayA
+  - type: Construction
+    graph: hypoGraph
+    node: hypo
+  - type: Sprite
+    sprite: Objects/Specific/Medical/hypospray.rsi
+    state: hypo
+  - type: Item
+    sprite: Objects/Specific/Medical/hypospray.rsi
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 10
+  - type: RefillableSolution
+    solution: hypospray
+  - type: ExaminableSolution
+    solution: hypospray
+  - type: Hypospray
+    onlyAffectsMobs: false
+  - type: UseDelay
+    delay: 8
+  - type: StaticPrice
+    price: 750
+  - type: StealTarget
+    stealGroup: Hypospray
+
+- type: entity
+  name: Алхимический гипоспрей
+  parent: BaseItem
+  description: В этом гипоспрее сжатый воздух береться из материи.
+  id: HyposprayalcAFGAN
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/hypospray.rsi
+    state: hypoalc
+  - type: Item
+    sprite: Objects/Specific/Medical/hypospray.rsi
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 15
+  - type: RefillableSolution
+    solution: hypospray
+  - type: ExaminableSolution
+    solution: hypospray
+  - type: Hypospray
+    onlyAffectsMobs: false
+  - type: UseDelay
+    delay: 4
+  - type: StaticPrice
+    price: 750
+  - type: StealTarget
+    stealGroup: Hypospray
+  - type: Construction
+    graph: hypoalcGraph
+    node: hypoalc
+
+- type: entity
+  parent: BaseItem
+  id: hipocomponentAFGAN   
+  name: Каркас кустарного гипоспрея             
+  description: Каркас гипоспрея используеться что бы создать гипоспрей. 
+  components:
+    - type: Tag                 
+      tags:
+        - hypocomponenttag
+    - type: Sprite              
+      sprite: Afgan/Objects/hipoAFGAN.rsi
+      state: icon
+    - type: Item
+      size: Tiny
+
+- type: entity
+  parent: BaseItem
+  id: hipocomponent2AFGAN   
+  name: Балон сжатого воздуха.           
+  description: Сжатый воздух используеться в создании расних штук.
+  components:
+    - type: Tag                 
+      tags:
+        - hypocomponenttag2
+    - type: Sprite              
+      sprite: Afgan/Objects/hipoAFGAN.rsi
+      state: icon2
+    - type: Item
+      size: Tiny

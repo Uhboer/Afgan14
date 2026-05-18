@@ -851,3 +851,60 @@
           steps:
             - tool: Anchoring
               doAfter: 5
+
+- type: constructionGraph
+  id: hypoGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: hypo
+          steps:
+            - tag: hypocomponenttag
+              icon: 
+                sprite: Afgan/Objects/hipoAFGAN.rsi
+                state: icon
+              name: Каркас гипоспрея
+            - tag: hypocomponenttag2
+              icon: 
+                sprite: Afgan/Objects/hipoAFGAN.rsi
+                state: icon2
+              name: Балон сжатого воздуха
+            - tag: Syringe
+              icon:
+                sprite: Objects/Specific/Chemistry/syringe.rsi
+                state: syringe_base0
+              name: шприц
+            - tag: Izolenta
+              icon:
+                sprite: Objects/Trash/trash5.rsi
+                state: icon
+              name: изолента
+              doAfter: 10
+
+    - node: hypo
+      entity: HyposprayAFGAN
+
+- type: constructionGraph
+  id: hypoalcGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: hypoalc
+          steps:
+            - tag: Materia
+              icon:
+                sprite: Afgan/Objects/materia.rsi
+                state: icon
+              name: материя
+
+            - tag: HyposprayA
+              icon:
+                sprite: Objects/Specific/Medical/hypospray.rsi
+                state: hypo
+              name: гипоспрей
+              doAfter: 10
+
+    - node: hypoalc
+      entity: HyposprayalcAFGAN
