@@ -62,17 +62,17 @@
       steps:
       - tag: Izolenta
         icon:
-          sprite: Objects/Trash/trash5.rsi
+          sprite: Afgan/Objects/Trash/trash5.rsi
           state: icon
         name: изолента
       - tag: Gayki
         icon:
-          sprite: Objects/Trash/trash3.rsi
+          sprite: Afgan/Objects/Trash/trash3.rsi
           state: icon
         name: гайки
       - tag: PipeV
         icon:
-          sprite: Objects/Trash/trash1.rsi
+          sprite: Afgan/Objects/Trash/trash1.rsi
           state: icon
         name: водонапорная труба
         doAfter: 5
@@ -89,12 +89,12 @@
       steps:
       - tag: Izolenta
         icon:
-          sprite: Objects/Trash/trash5.rsi
+          sprite: Afgan/Objects/Trash/trash5.rsi
           state: icon
         name: изолента
       - tag: Jelezaka
         icon:
-          sprite: Objects/Trash/trash4.rsi
+          sprite: Afgan/Objects/Trash/trash4.rsi
           state: icon
         name: Кусок металла
         doAfter: 5
@@ -111,7 +111,7 @@
           steps:
             - tag: Izolenta
               icon:
-                sprite: Objects/Trash/trash5.rsi
+                sprite: Afgan/Objects/Trash/trash5.rsi
                 state: icon
               name: изолента
             - material: Steel
@@ -272,12 +272,12 @@
           steps:
             - tag: PipeV
               icon:
-                sprite: Objects/Trash/trash1.rsi
+                sprite: Afgan/Objects/Trash/trash1.rsi
                 state: icon
               name: Водонапорная труба
             - tag: PipeV
               icon:
-                sprite: Objects/Trash/trash1.rsi
+                sprite: Afgan/Objects/Trash/trash1.rsi
                 state: icon
               name: Водонапорная труба
             - tag: Pricel
@@ -311,7 +311,7 @@
               name: Каркас ПНВ
             - tag: Gayki
               icon:
-                sprite: Objects/Trash/trash3.rsi
+                sprite: Afgan/Objects/Trash/trash3.rsi
                 state: icon
               name: Гайки
             - material: Glass
@@ -385,12 +385,12 @@
               name: модульный ресивер
             - tag: PipeV
               icon:
-                sprite: Objects/Trash/trash1.rsi
+                sprite: Afgan/Objects/Trash/trash1.rsi
                 state: icon
               name: водонапорная труба
             - tag: Gayki
               icon:
-                sprite: Objects/Trash/trash3.rsi
+                sprite: Afgan/Objects/Trash/trash3.rsi
                 state: icon
               name: гайки
             - tag: PrikladSH
@@ -612,17 +612,17 @@
               name: модульный ресивер
             - tag: PipeV
               icon:
-                sprite: Objects/Trash/trash1.rsi
+                sprite: Afgan/Objects/Trash/trash1.rsi
                 state: icon
               name: водонапорная труба
             - tag: Gayki
               icon:
-                sprite: Objects/Trash/trash3.rsi
+                sprite: Afgan/Objects/Trash/trash3.rsi
                 state: icon
               name: гайки
             - tag: Izolenta
               icon:
-                sprite: Objects/Trash/trash5.rsi
+                sprite: Afgan/Objects/Trash/trash5.rsi
                 state: icon
               name: изолента
             - material: WoodPlank
@@ -669,7 +669,7 @@
           steps:
             - tag: Gayki
               icon:
-                sprite: Objects/Trash/trash3.rsi
+                sprite: Afgan/Objects/Trash/trash3.rsi
                 state: icon
               name: гайки
             - tag: ModularReceiver
@@ -684,7 +684,7 @@
               name: детали ПП
             - tag: Izolenta
               icon:
-                sprite: Objects/Trash/trash5.rsi
+                sprite: Afgan/Objects/Trash/trash5.rsi
                 state: icon
               name: изолента
             - material: Steel
@@ -861,12 +861,12 @@
         - to: hypo
           steps:
             - tag: hypocomponenttag
-              icon: 
+              icon:
                 sprite: Afgan/Objects/hipoAFGAN.rsi
                 state: icon
               name: Каркас гипоспрея
             - tag: hypocomponenttag2
-              icon: 
+              icon:
                 sprite: Afgan/Objects/hipoAFGAN.rsi
                 state: icon2
               name: Балон сжатого воздуха
@@ -877,7 +877,7 @@
               name: шприц
             - tag: Izolenta
               icon:
-                sprite: Objects/Trash/trash5.rsi
+                sprite: Afgan/Objects/Trash/trash5.rsi
                 state: icon
               name: изолента
               doAfter: 10
