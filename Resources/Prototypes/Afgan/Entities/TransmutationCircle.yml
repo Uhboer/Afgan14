@@ -2,6 +2,7 @@
   parent: BaseStructure
   id: SimpleTransmutationCircle
   name: круг трансмутации
+  suffix: afgan14
   description: Древний алхимический круг, выложенный из потрескавшегося камня. В его центре до сих пор тлеют отблески забытых ритуалов.
   components:
   - type: Sprite

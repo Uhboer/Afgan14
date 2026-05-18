@@ -595,13 +595,13 @@
   objectType: Structure
 
 - type: construction
-  name: Кустарный гипоспрей.
+  name: Кустарный впрыскиватель
   id: HypospraycraftAFGAN
   graph: hypoGraph
   startNode: start
   targetNode: hypo
   category: construction-category-afgan
-  description: Самодельный гипоспрей.
+  description: Самодельный впрыскиватель
   icon:
     sprite: Objects/Specific/Medical/hypospray.rsi
     state: hypo

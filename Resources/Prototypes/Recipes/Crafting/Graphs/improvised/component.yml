@@ -811,7 +811,7 @@
               icon:
                 sprite: Objects/Specific/Medical/hypospray.rsi
                 state: hypo
-              name: гипоспрей
+              name: впрыскиватель
               doAfter: 10
 
     - node: hypoalc
