@@ -30,6 +30,9 @@
     range: 3
     sound:
       path: /Audio/Afgan/Misc/essence-loop.ogg
+  - type: Tag
+    tags:
+      - Essence
 
 - type: stack
   id: Essence

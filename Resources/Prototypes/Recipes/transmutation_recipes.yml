@@ -40,7 +40,7 @@
   id: AfganHalyabGuts
   result: AfganHalyabGuts
   materials:
-    Meat: 7
+    Essence: 3
 
 - type: transmutationRecipeSimple
   id: AfganHalyabGutsFull

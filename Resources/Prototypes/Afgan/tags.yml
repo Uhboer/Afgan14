@@ -99,6 +99,10 @@
   id: MateriaM
 
 - type: Tag
+  id: Essence
+
+
+- type: Tag
   id: BalMask
 
 - type: Tag
