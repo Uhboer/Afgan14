@@ -816,3 +816,27 @@
 
     - node: hypoalc
       entity: HyposprayalcAFGAN
+
+- type: constructionGraph
+  id: ShitShurikenGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: shuriken
+          steps:
+            - tag: Raw
+              icon:
+                sprite: Afgan/Objects/shit.rsi
+                state: icon
+              name: какашка
+
+            - tag: Raw
+              icon:
+                sprite: Afgan/Objects/shit.rsi
+                state: icon
+              name: какашка
+              doAfter: 5
+
+    - node: shuriken
+      entity: ShitShuriken
