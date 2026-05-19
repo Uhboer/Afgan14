@@ -607,3 +607,16 @@
     state: hypo
   objectType: Item
 
+- type: construction
+  name: сюрикен из говна
+  id: ShitShurikenCraft
+  graph: ShitShurikenGraph
+  startNode: start
+  targetNode: shuriken
+  category: construction-category-afgan
+  description: Вонючие. Можно метать.
+  icon:
+    sprite: Afgan/Objects/govnosuriken.rsi
+    state: icon
+  objectType: Item
+

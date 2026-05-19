@@ -1,0 +1,23 @@
+- type: entity
+  parent: BaseItem
+  id: ShitShuriken
+  name: Сюрикен из говна
+  suffix: afgan14
+  description: Оно воняет.
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/govnosuriken.rsi
+    state: icon
+  - type: Item
+    size: Tiny
+  - type: CreamPie
+  - type: Tag
+    tags:
+    - Kakashka
+  - type: Construction
+    graph: ShitShurikenGraph
+    node: shuriken
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 1
