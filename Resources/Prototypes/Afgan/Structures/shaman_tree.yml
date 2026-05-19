@@ -1,0 +1,38 @@
+- type: entity
+  parent: BaseStructure
+  id: AfganShamanTree
+  name: дерево-шаман
+  description: Старое дерево с мудрым взглядом. Шепчет тем, кто готов слушать.
+  suffix: afgan14
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Transform
+    anchored: true
+  - type: Sprite
+    sprite: Afgan/Structures/shaman_tree.rsi
+    state: shaman_tree
+  - type: Icon
+    sprite: Afgan/Structures/shaman_tree.rsi
+    state: shaman_tree
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        density: 80
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+  - type: ShamanTree
+    announceInterval: 15
+    cooldown: 300
+    rewardPrototype: Bib
+    objectivePrototype: ShamanDynamicObjective

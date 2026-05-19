@@ -1,0 +1,18 @@
+# Универсальный «динамический» objective дерева-шамана.
+# Конкретный тип/цели/прогресс хранятся на ShamanTaskCondition,
+# которая навешивается кодом при выдаче.
+
+- type: entity
+  parent: BaseObjective
+  id: ShamanDynamicObjective
+  name: задание шамана
+  description: ...
+  components:
+  - type: Objective
+    difficulty: 1.5
+    issuer: shaman
+    unique: false
+    icon:
+      sprite: Afgan/Structures/shaman_tree.rsi
+      state: shaman_tree
+  - type: ShamanTaskCondition
