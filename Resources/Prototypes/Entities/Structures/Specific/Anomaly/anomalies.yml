@@ -823,7 +823,7 @@
     range: 5
     volume: -5
     sound:
-      path: /Audio/Ambience/anomaly_scary.ogg
+      path: /Audio/Afgan/Misc/essence-loop.ogg
   - type: Anomaly
     corePrototype: AnomalyCoreShadow
     coreInertPrototype: AnomalyCoreShadowInert

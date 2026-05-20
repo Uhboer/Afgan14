@@ -7,7 +7,7 @@ shaman-tree-announce-offer = ...жажду подношения. Кто прин
 shaman-tree-task-given = Ступай. И вернись, когда дело будет сделано.
 shaman-tree-task-complete = Корни довольны. Возьми же свою плату.
 shaman-tree-task-incomplete = Ты не сделал того, о чём я просил. Уходи.
-shaman-tree-resting = Тише... я молчу. Дай мне отдохнуть.
+shaman-tree-resting = Не сейчас, странник... я в раздумье. Дай мне отдохнуть.
 shaman-tree-refuses = Не сейчас. Кора отвергает тебя.
 
 # Заголовки и описания заданий

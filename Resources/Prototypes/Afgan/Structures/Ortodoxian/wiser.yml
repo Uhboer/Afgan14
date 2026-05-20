@@ -1,0 +1,36 @@
+- type: entity
+  id: Wiser
+  name: ???
+  parent: BaseAnomaly
+  description: Ожившая окаменелость старого безумца.
+  suffix: afgan14
+  components:
+  - type: Anomaly
+    corePrototype: AnomalyCoreGravity
+    coreInertPrototype: AnomalyCoreGravityInert
+  - type: Sprite
+    sprite: Afgan/Structures/wiser.rsi
+    layers:
+    - state: wiser
+      map: ["enum.AnomalyVisualLayers.Base"]
+    - state: wiser-pulse
+      map: ["enum.AnomalyVisualLayers.Animated"]
+      visible: false
+  - type: PointLight
+    radius: 5.0
+    energy: 20
+    color: "#1e070e"
+    castShadows: false
+  - type: GravityAnomaly
+  - type: GravityWell
+  - type: RadiationSource
+  - type: Physics
+    bodyType: Dynamic
+    bodyStatus: InAir
+  - type: CanMoveInAir
+  - type: RandomWalk
+  - type: AmbientSound
+    volume: 1
+    range: 5
+    sound:
+      path: /Audio/Afgan/Misc/surface.ogg
