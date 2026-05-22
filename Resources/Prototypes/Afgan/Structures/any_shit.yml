@@ -221,7 +221,7 @@
   suffix: afgan14
   components:
   - type: Sprite
-    sprite: Afgan/Structures/flag.rsi
+    sprite: Afgan/Structures/Decoration/flag.rsi
     state: afgan
 
 - type: entity
@@ -232,7 +232,7 @@
   suffix: afgan14
   components:
   - type: Sprite
-    sprite: Afgan/Structures/flagpov.rsi
+    sprite: Afgan/Structures/Decoration/flagpov.rsi
     state: base
 
 - type: entity

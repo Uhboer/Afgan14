@@ -1,0 +1,54 @@
+- type: entity
+  name: статуя
+  description: Возведена древним народом свинолюдей, которые еще не потеряли рассудок после Великой Бури.
+  id: AfganStatue
+  parent: BaseStructure
+  suffix: afgan14
+  components:
+  - type: Transform
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-1,-1,1,0.2"
+        density: 190
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Sprite
+    sprite: Afgan/Structures/Decoration/statue1.rsi
+    layers:
+    - state: mon
+    snapCardinals: true
+  - type: Icon
+    sprite: Afgan/Structures/Decoration/statue1.rsi
+    state: mon
+  - type: Clickable
+  - type: Appearance
+
+- type: entity
+  parent: PosterBase
+  id: AfganSaintFace
+  name: лико
+  description: Лицо таинственной личности, довольно известной в былые времена. Не уж то это тот самый Войд Серотый..?
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Structures/Decoration/face.rsi
+    state: decor
+
+- type: entity
+  parent: PosterBase
+  id: AfganPicture
+  name: картина
+  description: Впечатляющая своей красотой картина.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Structures/Decoration/face.rsi
+    state: decor
