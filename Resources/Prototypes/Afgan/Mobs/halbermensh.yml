@@ -118,14 +118,14 @@
       - HalyabGuts
 
 - type: entity
-  name: кишка Халиаба
-  description: Забитая кишка Халиаба. С минуты на минуту из нее может выползти Хальберменш...
-  id: AfganHalyabGutsFull
+  name: яйцо Хальберменша
+  description: Мерзкое яйцо, свёрнутое в процессе трансмутации кишки Халиаба и материи крови. С минуты на минуту из нее может выползти Хальберменш...
+  id: AfganHalbermenshEgg
   parent: [PresentBase, BaseItem]
   suffix: Afgan14
   components:
   - type: Sprite
-    sprite: Afgan/Objects/guts.rsi
+    sprite: Afgan/Objects/egg_halber.rsi
     layers:
       - state: icon
   - type: SpawnItemsOnUse

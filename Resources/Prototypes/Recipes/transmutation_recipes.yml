@@ -45,8 +45,8 @@
     MateriaL: 1
 
 - type: transmutationRecipeSimple
-  id: AfganHalyabGutsFull
-  result: AfganHalyabGutsFull
+  id: AfganHalbermenshEgg
+  result: AfganHalbermenshEgg
   materials:
     HalyabGuts: 1
     MateriaB: 3

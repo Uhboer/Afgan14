@@ -49,7 +49,7 @@
   id: FoodGribBlevun
   description: попробуешь на вкус?
   suffix: afgan14
-  components: 
+  components:
   - type: Produce
     seedId: mushroomgovnoAFGAN
   - type: Sprite
@@ -126,7 +126,7 @@
   id: FoodGribHeal
   description: попробуешь на вкус?
   suffix: afgan14
-  components:  
+  components:
   - type: Produce
     seedId: mushroomhilAFGAN
   - type: Sprite
@@ -203,7 +203,7 @@
   id: FoodGribNarco
   description: попробуешь на вкус?
   suffix: afgan14
-  components:             
+  components:
   - type: Produce
     seedId: mushroomnarcoAFGAN
   - type: Sprite
@@ -226,3 +226,75 @@
           Quantity: 15
   - type: StaticPrice
     price: 20
+
+
+
+
+
+- type: entity
+  name: гранат
+  parent: BaseStructure
+  id: AfganGranat
+  suffix: afgan14
+  description: Ростущий из земли плод фрукта.
+  components:
+    - type: Sprite
+      sprite: Afgan/Structures/Mushrooms/granat.rsi
+      state: structure
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+      loot:
+        All: AfganGranatGather
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+
+- type: entityLootTable
+  id: AfganGranatGather
+  entries:
+  - id: FoodAfganGranat
+    amount: 1
+    maxAmount: 1
+
+- type: entity
+  name: гранат
+  parent: FoodProduceBase
+  id: FoodAfganGranat
+  description: Вкусный, но не очень сытный фрукт.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Structures/Mushrooms/granat.rsi
+    state: object
+  - type: FlavorProfile
+    flavors:
+      - sour
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 2
+        - ReagentId: Vitamin
+          Quantity: 3
