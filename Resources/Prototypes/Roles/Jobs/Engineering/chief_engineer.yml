@@ -45,7 +45,7 @@
     shoes: ClothingShoesBootsSandal
     gloves: ClothingHandsGlovesFingerless
     pocket1: Torch
-    pocket2: CombatKnife
+    pocket2: RadioHandheldAlchem
     outerClothing: ClothingOuterMantia
     back: ClothingBackpackSatchelLeather
 
@@ -56,6 +56,6 @@
     shoes: ClothingShoesBootsSandal
     gloves: ClothingHandsGlovesFingerless
     pocket1: Torch
-    pocket2: CombatKnife
+    pocket2: RadioHandheldAlchem
     outerClothing: ClothingOuterMantia
     back: ClothingBackpackSatchelLeather

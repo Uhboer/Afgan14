@@ -50,5 +50,5 @@
   suffix: afgan14
   components:
   - type: Sprite
-    sprite: Afgan/Structures/Decoration/face.rsi
+    sprite: Afgan/Structures/Decoration/picture.rsi
     state: decor
