@@ -1,0 +1,43 @@
+# AFGAN14
+- type: entity
+  id: ClosetRottenAfgan
+  name: ржавый стальной шкаф
+  parent: ClosetSteelBase
+  description: старый ржавый шкаф.
+  suffix: afgan14
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: rotten
+    stateDoorOpen: rotten_open
+    stateDoorClosed: rotten_door
+
+- type: entity
+  id: ClosetWoodenAfgan
+  name: деревянный шкаф
+  parent: ClosetSteelBase
+  description: старый деревянный шкаф.
+  suffix: afgan14
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: wooden
+    stateDoorOpen: wooden_open
+    stateDoorClosed: wooden_door
+
+
+- type: entity
+  id: ClosetHolodosAfgan
+  name: холодильник
+  parent: ClosetSteelBase
+  description: Этому холодосу удалось повидать в себе многое. От него несёт тухлятиной.
+  suffix: afgan14
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: holodos
+    stateDoorOpen: holodos_open
+    stateDoorClosed: holodos_door
+  - type: ExplosionResistance
+    damageCoefficient: 0.50
+  - type: AntiRottingContainer
