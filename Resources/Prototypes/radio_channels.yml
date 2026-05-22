@@ -44,7 +44,7 @@
 - type: radioChannel
   id: Security
   name: chat-radio-security
-  keycode: 's'' # Corvax-Localization
+  keycode: 'з' # Corvax-Localization
   frequency: 1359
   color: "#dd3535"
 

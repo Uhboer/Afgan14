@@ -7,10 +7,25 @@
   components:
   - type: TelecomExempt
   - type: RadioMicrophone
-    broadcastChannel: Handheld
+    powerRequired: false
+    toggleOnInteract: false
+    listenRange: 1
   - type: RadioSpeaker
-    channels:
-    - Handheld
+    toggleOnInteract: false
+  - type: Intercom
+    requiresPower: false
+    supportedChannels:
+    - Common
+    - CentCom
+    - Command
+    - Engineering
+    - Medical
+    - Science
+    - Security
+    - Service
+    - Supply
+    - OrtodoxChat
+    - AfganChat
   - type: Speech
     speechVerb: Robotic
     speechSounds: Radio
@@ -26,6 +41,21 @@
   - type: Tag
     tags:
     - Radio
+  - type: EncryptionKeyHolder
+    keySlots: 3
+    keysExtractionMethod: Prying
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyAfgan
+      - EncryptionKeyCommon
+  - type: ActivatableUI
+    key: enum.IntercomUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.IntercomUiKey.Key:
+        type: IntercomBoundUserInterface
+
 
 - type: entity
   name: security radio
@@ -33,13 +63,47 @@
   parent: RadioHandheld
   id: RadioHandheldSecurity
   components:
-  - type: RadioMicrophone
-    broadcastChannel: Security
-  - type: RadioSpeaker
-    channels:
-    - Security
   - type: Sprite
     sprite: Objects/Devices/securityhandy.rsi
   - type: Item
     sprite: Objects/Devices/securityhandy.rsi
     heldPrefix: walkietalkie
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyOrtodox
+      - EncryptionKeyCommon
+
+- type: entity
+  name: рация
+  description: Обычная рация без излишков.
+  parent: RadioHandheld
+  id: RadioHandheldCommon
+  components:
+  - type: Sprite
+    sprite: Objects/Devices/communication.rsi
+  - type: Item
+    sprite: Objects/Devices/communication.rsi
+    heldPrefix: walkietalkie
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyCommon
+
+- type: entity
+  name: рация алхимика
+  description: Рация для торговых переговоров по всем каналам.
+  parent: RadioHandheld
+  id: RadioHandheldAlchem
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/alchemhandy.rsi
+  - type: Item
+    sprite: Afgan/Objects/alchemhandy.rsi
+    heldPrefix: walkietalkie
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyCommon
+      - EncryptionKeyOrtodox
+      - EncryptionKeyAfgan
