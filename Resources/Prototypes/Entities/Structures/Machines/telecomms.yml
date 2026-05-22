@@ -160,3 +160,25 @@
     containers:
       key_slots:
       - EncryptionKeyCommand
+
+- type: entity
+  parent: TelecomServer
+  id: TelecomServerFilledAfgan
+  name: сервер Афгана
+  suffix: afgan14
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyAfgan
+
+- type: entity
+  parent: TelecomServer
+  id: TelecomServerFilledOrtodox
+  name: сервер Ортодоксов
+  suffix: afgan14
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyOrtodox
