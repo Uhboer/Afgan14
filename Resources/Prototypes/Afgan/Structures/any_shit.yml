@@ -221,7 +221,7 @@
   suffix: afgan14
   components:
   - type: Sprite
-    sprite: Afgan/Structures/flag.rsi
+    sprite: Afgan/Structures/Decoration/flag.rsi
     state: afgan
 
 - type: entity
@@ -232,7 +232,7 @@
   suffix: afgan14
   components:
   - type: Sprite
-    sprite: Afgan/Structures/flagpov.rsi
+    sprite: Afgan/Structures/Decoration/flagpov.rsi
     state: base
 
 - type: entity
@@ -349,10 +349,10 @@
   suffix: afgan14
   components:
   - type: Sprite
-    sprite: Afgan/Objects/materia.rsi
+    sprite: Afgan/Objects/Alchemestry/materia.rsi
     state: icon
   - type: Item
-    sprite: Afgan/Objects/materia.rsi
+    sprite: Afgan/Objects/Alchemestry/materia.rsi
     size: Normal
   - type: Tag
     tags:
@@ -373,10 +373,10 @@
   suffix: afgan14
   components:
   - type: Sprite
-    sprite: Afgan/Objects/materiamadness.rsi
+    sprite: Afgan/Objects/Alchemestry/materiamadness.rsi
     state: icon
   - type: Item
-    sprite: Afgan/Objects/materiamadness.rsi
+    sprite: Afgan/Objects/Alchemestry/materiamadness.rsi
     size: Normal
   - type: PointLight
     radius: 1.5
@@ -391,16 +391,41 @@
 
 - type: entity
   parent: BaseItem
+  id: AfganMateriaLife
+  name: материя жизни
+  description: Неизвестная хрень.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/Alchemestry/materialife.rsi
+    state: icon
+  - type: Item
+    sprite: Afgan/Objects/Alchemestry/materialife.rsi
+    size: Normal
+  - type: PointLight
+    radius: 1.5
+    energy: 2
+    color: "#DCDCDC"
+  - type: Currency
+    price:
+      Faith: 1
+  - type: Tag
+    tags:
+      - MateriaL
+
+
+- type: entity
+  parent: BaseItem
   id: AfganMateriaBlood
   name: материя крови
   description: Неизвестная хрень.
   suffix: afgan14
   components:
   - type: Sprite
-    sprite: Afgan/Objects/materiablood.rsi
+    sprite: Afgan/Objects/Alchemestry/materiablood.rsi
     state: icon
   - type: Item
-    sprite: Afgan/Objects/materiablood.rsi
+    sprite: Afgan/Objects/Alchemestry/materiablood.rsi
     size: Normal
   - type: Tag
     tags:
@@ -421,10 +446,10 @@
   suffix: afgan14
   components:
   - type: Sprite
-    sprite: Afgan/Objects/materiagold.rsi
+    sprite: Afgan/Objects/Alchemestry/materiagold.rsi
     state: icon
   - type: Item
-    sprite: Afgan/Objects/materiagold.rsi
+    sprite: Afgan/Objects/Alchemestry/materiagold.rsi
     size: Normal
   - type: Tag
     tags:

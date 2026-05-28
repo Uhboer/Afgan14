@@ -243,3 +243,33 @@
       layers:
         - state: crypt_rusted
         - state: pirate_label
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyAfgan
+  name: афганская ключ
+  description: Для прослушки афганской частоты.
+  components:
+    - type: EncryptionKey
+      channels:
+        - AfganChat
+      defaultChannel: AfganChat
+    - type: Sprite
+      layers:
+        - state: crypt_rusted
+        - state: pirate_label
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyOrtodox
+  name: ортодоксальный ключ
+  description: Для прослушки ортодоксальной частоты.
+  components:
+    - type: EncryptionKey
+      channels:
+        - OrtodoxChat
+      defaultChannel: OrtodoxChat
+    - type: Sprite
+      layers:
+        - state: crypt_rusted
+        - state: pirate_label

@@ -57,6 +57,25 @@
         path: /Audio/Effects/smoke.ogg
 
 - type: reaction
+  id: CreateMateriaLife
+  impact: Low
+  quantized: true
+  conserveEnergy: false
+  reactants:
+    AfganMaterit:
+      amount: 10
+    AfganLariy:
+      amount: 10
+  effects:
+    - !type:CreateEntityReactionEffect
+      entity: AfganMateriaLife
+    - !type:AreaReactionEffect
+      duration: 1
+      prototypeId: Smoke
+      sound:
+        path: /Audio/Effects/smoke.ogg
+
+- type: reaction
   id: CreateMateriaBlood
   impact: Low
   quantized: true

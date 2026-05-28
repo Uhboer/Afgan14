@@ -101,6 +101,7 @@
   name: chair
   id: Chair
   parent: ChairBase
+  suffix: afgan14, resprite
   components:
   - type: Sprite
     state: chair
@@ -122,6 +123,7 @@
   id: Stool
   parent: UnanchoredChairBase
   description: Apply butt.
+  suffix: afgan14
   components:
   - type: Sprite
     state: stool
@@ -132,6 +134,7 @@
 - type: entity
   name: bar stool
   id: StoolBar
+  suffix: afgan14
   parent: StoolBase
   components:
   - type: Sprite
@@ -143,6 +146,7 @@
 - type: entity
   name: brass chair
   id: ChairBrass
+  suffix: afgan14, resprite
   parent: StoolBase
   components:
   - type: Sprite
@@ -201,6 +205,7 @@
   name: wooden chair
   id: ChairWood
   parent: UnanchoredChairBase
+  suffix: afgan14, resprite
   components:
   - type: Sprite
     state: wooden
@@ -235,6 +240,7 @@
   name: ritual chair
   id: ChairRitual
   parent: ChairWood
+  suffix: govno
   description: Looks uncomfortable.
   components:
   - type: Sprite
@@ -259,6 +265,7 @@
   name: cursed chair
   id: ChairCursed
   parent: ChairWood
+  suffix: govno
   description: It's staring back.
   components:
   - type: Sprite

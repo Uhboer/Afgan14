@@ -67,7 +67,7 @@ public sealed class ShamanTreeSystem : EntitySystem
         new("самодельный АК", "WeaponRifleAKSamodel", null, 30),
         new("сверхукреплённый бронежилет", "ClothingOuterVestGiga", null, 20),
         new("золотой меч", "AfganSwordGold", null, 15),
-        new("материя", null, new[] { "Materia", "MateriaM", "MateriaB", "MateriaG" }, 15),
+        new("материя", null, new[] { "Materia", "MateriaM", "MateriaB", "MateriaG", "MateriaL" }, 15),
         new("дерьмо", "FoodKakashka", null, 5),
     };
 

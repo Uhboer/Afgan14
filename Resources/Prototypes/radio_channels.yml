@@ -44,7 +44,7 @@
 - type: radioChannel
   id: Security
   name: chat-radio-security
-  keycode: 'о' # Corvax-Localization
+  keycode: 'з' # Corvax-Localization
   frequency: 1359
   color: "#dd3535"
 
@@ -54,6 +54,21 @@
   keycode: 'с' # свет
   frequency: 1349
   color: "#ffe500"
+
+- type: radioChannel
+  id: AfganChat
+  name: Афган
+  keycode: 'а' # афган
+  frequency: 1488
+  color: "#A52A2A"
+
+- type: radioChannel
+  id: OrtodoxChat
+  name: Орден Ортодоксов
+  keycode: 'о' # афган
+  frequency: 5252
+  color: "#DAA520"
+
 
 - type: radioChannel
   id: Supply
