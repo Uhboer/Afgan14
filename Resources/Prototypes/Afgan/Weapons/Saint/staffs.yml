@@ -16,7 +16,7 @@
     size: Huge
     sprite: Afgan/Weapons/Ortodoxian/staves.rsi
   - type: Gun
-    fireRate: 0.5
+    fireRate: 0.25
     soundGunshot:
       path: /Audio/Afgan/Wearpons/magic.ogg
   - type: HitscanBatteryAmmoProvider
@@ -30,14 +30,39 @@
     autoRechargeRate: 10
 
 
-#ProjectileDragonsBreath
+- type: entity
+  name: посох Пламени
+  parent: WeaponWandBase
+  id: WeaponStaffFlame
+  description: Изжигает всё на своем пути.
+  components:
+  - type: Sprite
+    sprite: Afgan/Weapons/Ortodoxian/staves.rsi
+    layers:
+    - state: staff
+    - state: fire-effect
+      shader: unshaded
+      map: ["effect"]
+  - type: Item
+    heldPrefix: staff
+    size: Huge
+    sprite: Afgan/Weapons/Ortodoxian/staves.rsi
+  - type: Gun
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    fireRate: 2
+    soundGunshot:
+      path: /Audio/Magic/fireball.ogg
+  - type: BasicEntityAmmoProvider
+    proto: ProjectileDragonsBreath
+    capacity: 20
+    count: 20
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 10
 
 
 
-
-
- # - type: RechargeBasicEntityAmmo
- #   rechargeCooldown: 30
 
 
 

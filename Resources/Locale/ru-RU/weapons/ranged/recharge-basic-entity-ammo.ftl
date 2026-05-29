@@ -1,7 +1,7 @@
 recharge-basic-entity-ammo-can-recharge =
-    Боезапас перезарядится через [color=yellow]{ $seconds } { $seconds ->
+    Энергия восстановится через [color=yellow]{ $seconds } { $seconds ->
         [one] секунду
         [few] секунды
        *[other] секунд
     }[/color].
-recharge-basic-entity-ammo-full = Перезарядка боезапаса пока не требуется.
+recharge-basic-entity-ammo-full = Восстановка энергии пока не требуется.
