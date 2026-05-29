@@ -30,6 +30,17 @@
       ]
     },
     {
+      "name": "essence-effect",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
       "name": "staff"
     },
     {
