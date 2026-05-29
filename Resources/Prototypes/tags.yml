@@ -1350,4 +1350,7 @@
 - type: Tag
   id: WriteIgnoreStamps
 
+- type: Tag
+  id: BiomassFuel
+
 # ALPHABETICAL

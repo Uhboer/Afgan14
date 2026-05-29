@@ -1,0 +1,67 @@
+- type: entity
+  id: BiomassGenerator
+  name: биогенератор
+  description: Перерабатывает биомассу в електричество. 
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Sprite
+    sprite: Afgan/Structures/Power.rsi
+    state: icon
+  - type: Transform
+    anchored: true
+    noRot: true
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape: !type:PhysShapeAabb
+          bounds: "-1.5,-1.5,1.5,1.5"
+        density: 100
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: NodeContainer
+    examinable: true
+    nodes:
+      output:
+        !type:CableDeviceNode
+        nodeGroupID: HVPower
+  - type: PowerSupplier
+    supplyRate: 0
+    enabled: false
+  - type: BiomassGenerator
+    maxBiomass: 2000
+    consumptionRate: 1
+    powerOutput: 50000
+    biomassStackType: Biomass
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,2,2
+    whitelist:
+      tags:
+      - BiomassFuel
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+  - type: ActivatableUI
+    key: enum.StorageUiKey.Key
+  - type: Destructible
+    thresholds:
+    - trigger: !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound: /Audio/Effects/metalbreak.ogg
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 2
+            max: 4
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
