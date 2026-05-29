@@ -41,6 +41,7 @@
     name: store-preset-name-Monument
     categories:
     - MonumentZaklinania
+    - MonumentStaves
     - MonumentDress
     - MonumentWeapons
     currencyWhitelist:
@@ -63,14 +64,20 @@
   priority: 0
 
 - type: storeCategory
+  id: MonumentStaves
+  name: Посохи
+  priority: 1
+
+- type: storeCategory
   id: MonumentDress
   name: store-category-Dress
-  priority: 1
+  priority: 2
 
 - type: storeCategory
   id: MonumentWeapons
   name: Святое оружие
-  priority: 2
+  priority: 3
+
 
 - type: stack
   id: Faith
@@ -105,6 +112,35 @@
   categories:
   - MonumentWeapons
 
+- type: listing
+  id: FaithWeaponStaffSaint
+  name: Посох Света
+  description: Излучает мощнейшие лучи света, разрывая пространство.
+  productEntity: WeaponStaffSaint
+  cost:
+    Faith: 10
+  categories:
+  - MonumentStaves
+
+- type: listing
+  id: FaithWeaponStaffEssence
+  name: Посох Эссенции
+  description: Извергает сгустки эссенции.
+  productEntity: WeaponStaffEssence
+  cost:
+    Faith: 12
+  categories:
+  - MonumentStaves
+
+- type: listing
+  id: FaithWeaponStaffFlame
+  name: Посох Пламени
+  description: Изжигает всё на своем пути.
+  productEntity: WeaponStaffFlame
+  cost:
+    Faith: 20
+  categories:
+  - MonumentStaves
 
 - type: listing
   id: FaithFireball
@@ -122,7 +158,7 @@
   description: Шаровая эссенция
   productAction: ActionEnergyBall
   cost:
-    Faith: 15
+    Faith: 12
   categories:
   - MonumentZaklinania
 

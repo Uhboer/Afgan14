@@ -128,7 +128,7 @@
   id: Bib
   name: биб
   icon: Objects/Specific/Syndicate/telecrystal.rsi
-  spawn: Bib1
+  spawn: Bib
 
 - type: currency
   id: Bib

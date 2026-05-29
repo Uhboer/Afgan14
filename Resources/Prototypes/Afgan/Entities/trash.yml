@@ -121,6 +121,9 @@
     state: icon
   - type: Item
     size: Normal
+  - type: Currency
+    price:
+      Organic: 1
 
 - type: entity
   id: Trash9
@@ -134,6 +137,9 @@
     state: icon
   - type: Item
     size: Tiny
+  - type: Currency
+    price:
+      Organic: 1
 
 - type: entity
   id: Trash10

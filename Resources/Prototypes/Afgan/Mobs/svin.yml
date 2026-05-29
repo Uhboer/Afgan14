@@ -95,6 +95,11 @@
     pulseFrequency25To50: 0.6
     pulseFrequency50To75: 1.0
     pulseFrequency75To100: 1.5
+  - type: EmitSoundOnSpawn
+    sound:
+      path: /Audio/Afgan/Misc/spawn.ogg
+
+
 
 - type: entity
   name: Svin Angry Timed Spawner

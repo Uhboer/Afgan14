@@ -88,6 +88,9 @@
   - type: FootprintVisualizer
   - type: Stamina
     critThreshold: 300
+  - type: EmitSoundOnSpawn
+    sound:
+      path: /Audio/Afgan/Misc/spawn.ogg
 
 - type: entity
   name: Tvar Spawner

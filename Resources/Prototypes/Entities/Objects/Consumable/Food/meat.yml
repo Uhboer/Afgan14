@@ -109,6 +109,9 @@
   - type: Tag
     tags:
     - Meat
+  - type: Currency
+    price:
+      Organic: 1
 
 - type: entity
   name: raw human meat

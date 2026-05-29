@@ -16,7 +16,7 @@
     size: Huge
     sprite: Afgan/Weapons/Ortodoxian/staves.rsi
   - type: Gun
-    fireRate: 0.25
+    fireRate: 0.35
     soundGunshot:
       path: /Audio/Afgan/Wearpons/magic.ogg
   - type: HitscanBatteryAmmoProvider
@@ -28,7 +28,6 @@
   - type: BatterySelfRecharger
     autoRecharge: true
     autoRechargeRate: 10
-
 
 - type: entity
   name: посох Пламени
@@ -60,7 +59,8 @@
     count: 20
   - type: RechargeBasicEntityAmmo
     rechargeCooldown: 10
-
+    rechargeSound:
+      path: /Audio/Afgan/Misc/essence.ogg
 
 - type: entity
   name: посох Эссенции
@@ -90,11 +90,6 @@
     proto: BaseBulletEssence
     capacity: 100
     count: 100
-  - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 5
-    rechargeSound:
-      path: /Audio/Afgan/Misc/essence.ogg
-
 
 
 
