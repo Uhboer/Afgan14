@@ -12,6 +12,7 @@
       shader: unshaded
       map: ["effect"]
   - type: Item
+    heldPrefix: staff
     size: Huge
     sprite: Afgan/Weapons/Ortodoxian/staves.rsi
   - type: Gun

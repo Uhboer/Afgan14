@@ -33,11 +33,11 @@
       "name": "staff"
     },
     {
-      "name": "inhand-left",
+      "name": "staff-inhand-left",
       "directions": 4
     },
     {
-      "name": "inhand-right",
+      "name": "staff-inhand-right",
       "directions": 4
     }
   ]
