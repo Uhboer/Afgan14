@@ -2,16 +2,19 @@ using Content.Server.UserInterface;
 using Content.Shared.Afgan.ChemPatch;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.EntitySystems;
+using Content.Shared.Chemistry.Reagent;
 using Content.Shared.Containers.ItemSlots;
 using Content.Shared.FixedPoint;
 using Robust.Server.GameObjects;
 using Robust.Shared.Containers;
+using Robust.Shared.Prototypes;
 
 namespace Content.Server.Afgan.ChemPatch;
 
 public sealed class ChemPatchStationSystem : EntitySystem
 {
     [Dependency] private readonly ItemSlotsSystem _slots = default!;
+    [Dependency] private readonly IPrototypeManager _prototype = default!;
     [Dependency] private readonly SharedSolutionContainerSystem _solution = default!;
     [Dependency] private readonly UserInterfaceSystem _ui = default!;
 
@@ -131,14 +134,20 @@ public sealed class ChemPatchStationSystem : EntitySystem
                 canTransfer));
     }
 
-    private static string FormatSolution(Solution solution)
+    private string FormatSolution(Solution solution)
     {
         if (solution.Volume <= FixedPoint2.Zero)
             return $"Пусто / {solution.MaxVolume}u";
 
         var lines = new List<string> { $"{solution.Volume}/{solution.MaxVolume}u" };
         foreach (var reagent in solution.Contents)
-            lines.Add($"{reagent.Reagent.Prototype}: {reagent.Quantity}u");
+        {
+            var name = _prototype.TryIndex<ReagentPrototype>(reagent.Reagent.Prototype, out var reagentPrototype)
+                ? reagentPrototype.LocalizedName
+                : reagent.Reagent.Prototype;
+
+            lines.Add($"{name}: {reagent.Quantity}u");
+        }
 
         return string.Join("\n", lines);
     }

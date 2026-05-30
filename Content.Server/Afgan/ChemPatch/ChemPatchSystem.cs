@@ -4,6 +4,8 @@ using Content.Shared.Afgan.ChemPatch;
 using Content.Shared.Chemistry;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.EntitySystems;
+using Content.Shared.Chemistry.Reagent;
+using Content.Shared.Examine;
 using Content.Shared.FixedPoint;
 using Content.Shared.Interaction;
 using Robust.Shared.Prototypes;
@@ -22,7 +24,20 @@ public sealed class ChemPatchSystem : EntitySystem
     public override void Initialize()
     {
         base.Initialize();
+        SubscribeLocalEvent<ChemPatchComponent, ExaminedEvent>(OnExamined);
         SubscribeLocalEvent<ChemPatchComponent, AfterInteractEvent>(OnAfterInteract);
+    }
+
+    private void OnExamined(Entity<ChemPatchComponent> ent, ref ExaminedEvent args)
+    {
+        if (!_solution.TryGetSolution(ent.Owner, ent.Comp.SolutionName, out _, out var solution) ||
+            solution.Volume <= FixedPoint2.Zero)
+        {
+            args.PushText("Пластырь пуст.");
+            return;
+        }
+
+        args.PushText($"В пластыре: {FormatSolution(solution)}");
     }
 
     private void OnAfterInteract(Entity<ChemPatchComponent> ent, ref AfterInteractEvent args)
@@ -72,5 +87,20 @@ public sealed class ChemPatchSystem : EntitySystem
             if (patch.Solution.Volume <= FixedPoint2.Zero)
                 RemCompDeferred<ActiveChemPatchComponent>(uid);
         }
+    }
+
+    private string FormatSolution(Solution solution)
+    {
+        var contents = new List<string>();
+        foreach (var reagent in solution.Contents)
+        {
+            var name = _prototype.TryIndex<ReagentPrototype>(reagent.Reagent.Prototype, out var reagentPrototype)
+                ? reagentPrototype.LocalizedName
+                : reagent.Reagent.Prototype;
+
+            contents.Add($"{name} ({reagent.Quantity}u)");
+        }
+
+        return string.Join(", ", contents);
     }
 }
