@@ -1,0 +1,66 @@
+- type: entity
+  parent: BaseItem
+  id: ChemPatch
+  name: химический пластырь
+  suffix: afgan14
+  description: Пластырь, который медленно вводит залитые в него реагенты.
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/ChemPatch.rsi
+    state: icon
+  - type: Item
+    size: Small
+    sprite: Objects/Specific/Medical/medical.rsi
+    heldPrefix: brutepack
+  - type: ChemPatch
+    solutionName: patch
+    transferAmount: 0.5
+    transferDelay: 2
+  - type: SolutionContainerManager
+    solutions:
+      patch:
+        maxVol: 20
+  - type: Construction
+    graph: ChemPatchCraftGraph
+    node: final
+
+- type: entity
+  parent: BaseMachine
+  id: ChemPatchStation
+  name: станок химических пластырей
+  suffix: afgan14
+  description: Заправляет химические пластыри реагентами из колб.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: Structures/Machines/mixer.rsi
+    snapCardinals: true
+    layers:
+    - state: mixer_empty
+    - state: mixer_screens
+      shader: unshaded
+  - type: ChemPatchStation
+    transferAmount: 5
+  - type: ActivatableUI
+    key: enum.ChemPatchStationUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.ChemPatchStationUiKey.Key:
+        type: ChemPatchStationBoundUserInterface
+  - type: ContainerContainer
+    containers:
+      patchSlot: !type:ContainerSlot
+      beakerSlot: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      patchSlot:
+        name: пластырь
+        whitelist:
+          components:
+          - ChemPatch
+      beakerSlot:
+        name: колба
+        whitelist:
+          components:
+          - FitsInDispenser
