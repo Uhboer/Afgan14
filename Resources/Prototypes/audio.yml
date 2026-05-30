@@ -68,3 +68,8 @@
       components:
         - type: Prayable
       range: 10
+
+- type: soundCollection
+  id: ReagentMusic
+  files:
+    - /Audio/Afgan/Trip/nimfeach.ogg
