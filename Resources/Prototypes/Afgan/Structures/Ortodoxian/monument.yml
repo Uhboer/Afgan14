@@ -128,7 +128,7 @@
   description: Извергает сгустки эссенции.
   productEntity: WeaponStaffEssence
   cost:
-    Faith: 12
+    Faith: 10
   categories:
   - MonumentStaves
 
@@ -161,6 +161,17 @@
     Faith: 12
   categories:
   - MonumentZaklinania
+
+- type: listing
+  id: FaithCharge
+  name: изучить заклинание
+  description: Перезарядка (Для посоха эссенции)
+  productAction: ActionChargeSpell
+  cost:
+    Faith: 4
+  categories:
+  - MonumentZaklinania
+
 
 - type: listing
   id: FaithBlink
