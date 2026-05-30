@@ -65,7 +65,7 @@ public sealed class ChemPatchStationWindow : DefaultWindow
 
     public ChemPatchStationWindow(ChemPatchStationBoundUserInterface bui)
     {
-        Title = "Станок химических пластырей";
+        Title = "Станок алхимических пластырей";
         MinSize = new Vector2(420, 320);
 
         var root = new BoxContainer

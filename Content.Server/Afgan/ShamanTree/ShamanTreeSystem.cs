@@ -54,9 +54,9 @@ public sealed class ShamanTreeSystem : EntitySystem
 
     private static int RewardFor(ShamanTaskType t) => t switch
     {
-        ShamanTaskType.Kill => 8,
-        ShamanTaskType.Offer => 6,
-        ShamanTaskType.MassKill => 18,
+        ShamanTaskType.Kill => 15,
+        ShamanTaskType.Offer => 20,
+        ShamanTaskType.MassKill => 50,
         _ => 0,
     };
 
