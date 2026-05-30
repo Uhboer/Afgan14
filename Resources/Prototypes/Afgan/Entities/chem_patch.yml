@@ -1,7 +1,7 @@
 - type: entity
   parent: BaseItem
   id: ChemPatch
-  name: химический пластырь
+  name: пластырь
   suffix: afgan14
   description: Пластырь, который медленно вводит залитые в него реагенты.
   components:
@@ -27,19 +27,17 @@
 - type: entity
   parent: BaseMachine
   id: ChemPatchStation
-  name: станок химических пластырей
+  name: станок для переливки
   suffix: afgan14
-  description: Заправляет химические пластыри реагентами из колб.
+  description: Заправляет алхимические пластыри реагентами из колб.
   placement:
     mode: SnapgridCenter
   components:
   - type: Sprite
-    sprite: Structures/Machines/mixer.rsi
+    sprite: Afgan/Structures/alchemat.rsi
     snapCardinals: true
     layers:
-    - state: mixer_empty
-    - state: mixer_screens
-      shader: unshaded
+    - state: mat
   - type: ChemPatchStation
     transferAmount: 5
   - type: ActivatableUI
