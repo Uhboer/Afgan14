@@ -66,3 +66,6 @@ reagent-desc-fent = сильные соли
 fent-effect-soli = моя кожа ссыхается
 fent-effect-soli2 = в горле пересохло
 fent-effect-soli3 = мои глаза засыхают
+fent-effect-soli4 = какой же разъеб...
+fent-effect-soli5 = ммффф... читый кайф
+fent-effect-soli6 = это дерьмо пиздатое, чувак

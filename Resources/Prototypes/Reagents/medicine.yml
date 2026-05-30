@@ -1333,7 +1333,7 @@
           collection: LariyMusic
         soundParams:
           volume: -3
-          loop: false
+          loop: true
         requiredAmount: 0.1
         durationPerUnit: 3.0
         probability: 1.0

@@ -566,10 +566,10 @@
   physicalDesc: reagent-physical-desc-opium
   flavor: bitter
   color: "#7B68EE"
-  metabolismRate: 0.1
+  metabolismRate: 0.25
   metabolisms:
     Narcotic:
-      metabolismRate: 0.1
+      metabolismRate: 0.25
       effects:
       - !type:MovespeedModifier
         walkSpeedModifier: 3.25
@@ -581,16 +581,7 @@
         damage:
           types:
             Poison: 1
-            Heat: 5
-      - !type:ReagentMusicEffect
-        sound:
-          collection: MorfiyMusic
-        soundParams:
-          volume: -3
-          loop: false
-        requiredAmount: 0.1
-        durationPerUnit: 3.0
-        probability: 1.0
+            Heat: 5 
       - !type:Jitter
       - !type:GenericStatusEffect
         key: Stun
@@ -657,6 +648,15 @@
         conditions:
         - !type:ReagentThreshold
           min: 10.5
+      - !type:ReagentMusicEffect
+        sound:
+          collection: MorfiyMusic
+        soundParams:
+          volume: -2
+          loop: true
+        requiredAmount: 0.1
+        durationPerUnit: 6.0
+        probability: 1.0
     Medicine:
       effects:
       - !type:HealthChange
@@ -685,9 +685,18 @@
       - !type:Jitter
       - !type:PopupMessage
         visualType: Medium
-        messages: ["fent-effect-soli", "fent-effect-soli2", "fent-effect-soli3"]
+        messages: ["fent-effect-soli", "fent-effect-soli2", "fent-effect-soli3", "fent-effect-soli4", "fent-effect-soli5", "fent-effect-soli6"]
         type: Local
-        probability: 0.2
+        probability: 0.4
+      - !type:ReagentMusicEffect
+        sound:
+          collection: FentMusic
+        soundParams:
+          volume: -2
+          loop: true
+        requiredAmount: 0.01
+        durationPerUnit: 192.0
+        probability: 1.0
       - !type:GenericStatusEffect
         key: SeeingRainbows
         component: SeeingRainbows
@@ -700,12 +709,6 @@
         probability: 0.1
       - !type:Drunk
         boozePower: 2
-      #- !type:GenericStatusEffect
-      #  key: TemporaryBlindness
-      #  component: PermanentBlindness
-      #  conditions:
-      #  - !type:ReagentThreshold
-      #    min: 21
     Medicine:
       metabolismRate: 0.01
       effects:

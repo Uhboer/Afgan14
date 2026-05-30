@@ -83,3 +83,8 @@
   id: MorfiyMusic
   files:
     - /Audio/Afgan/Trip/spire.ogg
+
+- type: soundCollection
+  id: FentMusic
+  files:
+    - /Audio/Afgan/Trip/sboys.ogg
