@@ -4,7 +4,7 @@
   canBeAntag: false
   description: job-description-botanist
   playTimeTracker: JobBotanist
-  startingGear: BotanistGear
+  startingGear: RabovladAfganec
   icon: "JobIconBotanist"
   supervisors: job-supervisors-rabovladelec
   access:
@@ -21,8 +21,6 @@
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterVestWebMerc
     suitstorage: WeaponSubMachineGunLuty
-    id: SalvageIDCard
-    pocket1: RadioHandheld
     pocket2: Torch
   storage:
     back:

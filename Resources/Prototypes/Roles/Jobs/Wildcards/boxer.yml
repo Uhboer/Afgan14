@@ -4,7 +4,7 @@
   description: job-description-boxer
   canBeAntag: false
   playTimeTracker: JobBoxer
-  startingGear: BoxerGear
+  startingGear: Povstanec
   icon: "JobIconBoxer"
   supervisors: job-supervisors-ortodox
   access:
@@ -18,7 +18,6 @@
     shoes: ClothingShoesBootsSalvage
     head: ClothingHeadHelmetPovstanec
     gloves: ClothingHandsGlovesFingerless
-    pocket1: RadioHandheldSecurity
     pocket2: CombatKnife
   storage:
     belt:

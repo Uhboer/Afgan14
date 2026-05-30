@@ -4,7 +4,7 @@
   description: job-description-passenger
   canBeAntag: false
   playTimeTracker: JobPassenger
-  startingGear: PassengerGear
+  startingGear: Afganec
   icon: "JobIconPassenger"
   supervisors: job-supervisors-afganec
   access:
@@ -21,8 +21,6 @@
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterVestWeb
     suitstorage: WeaponSubMachineGunPM9
-    id: SalvageIDCard
-    pocket1: RadioHandheld
     pocket2: Torch
   storage:
     belt:

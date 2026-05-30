@@ -4,7 +4,7 @@
   description: job-description-reporter
   playTimeTracker: JobReporter
   canBeAntag: false
-  startingGear: ReporterGear
+  startingGear: HeadPovstanec
   icon: "JobIconReporter"
   supervisors: job-supervisors-headortodox
   access:
@@ -23,7 +23,6 @@
     gloves: ClothingHandsMercGlovesCombat
     outerClothing: ClothingOuterVestWebMerc
     suitstorage: WeaponSubMachineGunPmRak
-    pocket1: RadioHandheldSecurity
     pocket2: Torch
   storage:
     back:

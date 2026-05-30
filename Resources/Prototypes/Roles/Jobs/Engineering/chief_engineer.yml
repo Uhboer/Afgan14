@@ -17,7 +17,7 @@
     - !type:AgeRequirement
       requiredAge: 20
   weight: 10
-  startingGear: ChiefEngineerGear
+  startingGear: Alchemest
   icon: "JobIconChiefEngineer"
   requireAdminNotify: true
   supervisors: job-supervisors-captain
@@ -45,7 +45,6 @@
     shoes: ClothingShoesBootsSandal
     gloves: ClothingHandsGlovesFingerless
     pocket1: Torch
-    pocket2: RadioHandheldAlchem
     outerClothing: ClothingOuterMantia
     back: ClothingBackpackSatchelLeather
 
