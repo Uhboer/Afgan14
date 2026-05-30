@@ -620,3 +620,15 @@
     state: icon
   objectType: Item
 
+- type: construction
+  name: Пластырь
+  id: ChemPatchCraft
+  graph: ChemPatchCraftGraph
+  startNode: start
+  targetNode: final
+  category: construction-category-afgan
+  objectType: Item
+  description: Пластырь.
+  icon:
+    sprite: Afgan/Objects/ChemPatch.rsi
+    state: icon

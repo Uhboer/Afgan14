@@ -840,3 +840,17 @@
 
     - node: shuriken
       entity: ShitShuriken
+
+- type: constructionGraph
+  id: ChemPatchCraftGraph
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: final
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 10
+  - node: final
+    entity: ChemPatch
