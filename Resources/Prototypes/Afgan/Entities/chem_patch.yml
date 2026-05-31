@@ -20,6 +20,7 @@
     solutions:
       patch:
         maxVol: 20
+  - type: Appearance
   - type: Construction
     graph: ChemPatchCraftGraph
     node: final
