@@ -446,7 +446,7 @@
   physicalDesc: reagent-physical-desc-opium
   flavor: bitter
   color: "#FFF8D2"
-  metabolismRate: 0.25
+  metabolismRate: 0.5
   metabolisms:
     Narcotic:
       effects:
@@ -478,15 +478,6 @@
         conditions:
         - !type:ReagentThreshold
           max: 10
-      - !type:ReagentMusicEffect
-        sound:
-          collection: ReagentMusic
-        soundParams:
-          volume: -2
-          loop: true
-        requiredAmount: 0.1
-        durationPerUnit: 3.0
-        probability: 1.0
       - !type:GenericStatusEffect
         key: SeeingRainbows
         component: SeeingRainbows
@@ -581,7 +572,7 @@
         damage:
           types:
             Poison: 1
-            Heat: 5 
+            Heat: 5
       - !type:Jitter
       - !type:GenericStatusEffect
         key: Stun
@@ -648,15 +639,6 @@
         conditions:
         - !type:ReagentThreshold
           min: 10.5
-      - !type:ReagentMusicEffect
-        sound:
-          collection: MorfiyMusic
-        soundParams:
-          volume: -2
-          loop: true
-        requiredAmount: 0.1
-        durationPerUnit: 6.0
-        probability: 1.0
     Medicine:
       effects:
       - !type:HealthChange
@@ -688,15 +670,6 @@
         messages: ["fent-effect-soli", "fent-effect-soli2", "fent-effect-soli3", "fent-effect-soli4", "fent-effect-soli5", "fent-effect-soli6"]
         type: Local
         probability: 0.4
-      - !type:ReagentMusicEffect
-        sound:
-          collection: FentMusic
-        soundParams:
-          volume: -2
-          loop: true
-        requiredAmount: 0.01
-        durationPerUnit: 192.0
-        probability: 1.0
       - !type:GenericStatusEffect
         key: SeeingRainbows
         component: SeeingRainbows
