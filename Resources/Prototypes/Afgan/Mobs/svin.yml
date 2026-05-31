@@ -262,6 +262,11 @@
   - type: NpcFactionMember
     factions:
     - Svin
+  - type: EggLayer
+    eggSpawn:
+    - id: AfganSvinoEgg
+
+
 
 - type: entity
   name: Svin Angry Spawner
@@ -308,17 +313,17 @@
   id: BeremenGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitSvin
-    pocket1: AfganSvinoEgg
+    belt: AfganSvinoEgg
 
 - type: startingGear
   id: SvinBibikGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitSvin
-    pocket1: Bib
+    belt: Bib
 
 - type: startingGear
   id: SvinTwoBibikGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitSvin
-    pocket1: Bib
-    pocket2: Bib
+    belt: Bib
+    back: Bib
