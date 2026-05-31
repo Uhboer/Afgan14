@@ -50,3 +50,11 @@
   materials:
     HalyabGuts: 1
     MateriaB: 3
+
+- type: transmutationRecipeSimple
+  id: ClothingAfganChaosFragment
+  result: AfganChaosFragment
+  materials:
+    MateriaM: 1
+    Materia: 1
+    MateriaL: 1
