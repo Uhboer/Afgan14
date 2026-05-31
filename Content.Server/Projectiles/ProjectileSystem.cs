@@ -1,6 +1,7 @@
 using Content.Server.Administration.Logs;
 using Content.Server.Effects;
 using Content.Server.Weapons.Ranged.Systems;
+using Content.Server.Body.Components;
 using Content.Shared.Camera;
 using Content.Shared.Damage;
 using Content.Shared.Database;
@@ -74,7 +75,14 @@ public sealed class ProjectileSystem : SharedProjectileSystem
 
         if (component.ImpactEffect != null && TryComp(uid, out TransformComponent? xform))
         {
-            RaiseNetworkEvent(new ImpactEffectEvent(component.ImpactEffect, GetNetCoordinates(xform.Coordinates)), Filter.Pvs(xform.Coordinates, entityMan: EntityManager));
+            if (HasComp<BloodstreamComponent>(target))
+            {
+                RaiseNetworkEvent(new ImpactEffectEvent("MeatBulletImpactEffect", GetNetCoordinates(xform.Coordinates)), Filter.Pvs(xform.Coordinates, entityMan: EntityManager));
+            }
+            else
+            {
+                RaiseNetworkEvent(new ImpactEffectEvent(component.ImpactEffect, GetNetCoordinates(xform.Coordinates)), Filter.Pvs(xform.Coordinates, entityMan: EntityManager));
+            }
         }
     }
 }
