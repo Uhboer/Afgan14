@@ -23,6 +23,14 @@
       amount: 1
     - id: OrganHumanEyes
       amount: 1
+    - id: OrganHumanBrain
+      amount: 1
+    - id: OrganHumanStomach
+      amount: 1
+    - id: OrganHumanKidneys
+      amount: 1
+    - id: OrganHumanLiver
+      amount: 1
   - type: Tag
     tags:
     - CannotSuicide
