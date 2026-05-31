@@ -1,0 +1,14 @@
+- type: entity
+  name: Священная печать
+  description: Священная печать, дарованная ортодоксам, усиливает оружие ближнего боя.
+  id: AfganHolyStamp
+  parent: BaseItem
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/bureaucracy.rsi
+    state: paper_talisman
+  - type: Item
+    sprite: Objects/Misc/bureaucracy.rsi
+    size: Small
+  - type: HolyStamp

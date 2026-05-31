@@ -222,3 +222,13 @@
     Faith: 8
   categories:
   - MonumentZaklinania
+
+- type: listing
+  id: FaithHolyStamp
+  name: священная печать
+  description: Усиливает оружие ближнего боя.
+  productEntity: AfganHolyStamp
+  cost:
+    Faith: 20
+  categories:
+  - MonumentZaklinania
