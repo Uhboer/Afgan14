@@ -1,8 +1,15 @@
 using Content.Shared.Chemistry.Components;
 using Content.Shared.FixedPoint;
+using Robust.Shared.Serialization;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 
 namespace Content.Shared.Afgan.ChemPatch;
+
+[Serializable, NetSerializable]
+public enum ChemPatchVisuals : byte
+{
+    Color
+}
 
 [RegisterComponent]
 public sealed partial class ChemPatchComponent : Component

@@ -8,6 +8,7 @@ using Content.Shared.Chemistry.Reagent;
 using Content.Shared.Examine;
 using Content.Shared.FixedPoint;
 using Content.Shared.Interaction;
+using Robust.Server.GameObjects;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 
@@ -21,11 +22,29 @@ public sealed class ChemPatchSystem : EntitySystem
     [Dependency] private readonly ReactiveSystem _reactive = default!;
     [Dependency] private readonly SharedSolutionContainerSystem _solution = default!;
 
+    [Dependency] private readonly AppearanceSystem _appearance = default!;
+
     public override void Initialize()
     {
         base.Initialize();
         SubscribeLocalEvent<ChemPatchComponent, ExaminedEvent>(OnExamined);
         SubscribeLocalEvent<ChemPatchComponent, AfterInteractEvent>(OnAfterInteract);
+        SubscribeLocalEvent<ChemPatchComponent, SolutionContainerChangedEvent>(OnSolutionChanged);
+    }
+
+    private void OnSolutionChanged(Entity<ChemPatchComponent> ent, ref SolutionContainerChangedEvent args)
+    {
+        if (args.SolutionId != ent.Comp.SolutionName)
+            return;
+        UpdateVisuals(ent);
+    }
+
+    private void UpdateVisuals(EntityUid uid)
+    {
+        if (!_solution.TryGetSolution(uid, "patch", out _, out var solution))
+            return;
+        var color = solution.GetColor(_prototype);
+        _appearance.SetData(uid, ChemPatchVisuals.Color, color);
     }
 
     private void OnExamined(Entity<ChemPatchComponent> ent, ref ExaminedEvent args)
