@@ -1669,7 +1669,7 @@ namespace Content.Shared.CCVar
         /// Please do not use this CVar as a bandaid for effects that could otherwise be made accessible without issue.
         /// </summary>
         public static readonly CVarDef<bool> ReducedMotion =
-            CVarDef.Create("accessibility.reduced_motion", false, CVar.CLIENTONLY | CVar.ARCHIVE);
+            CVarDef.Create("accessibility.reduced_motion", false, CVar.CLIENTONLY);
 
         public static readonly CVarDef<bool> ChatEnableColorName =
             CVarDef.Create("accessibility.enable_color_name", true, CVar.CLIENTONLY | CVar.ARCHIVE, "Toggles displaying names with individual colors.");
@@ -1679,7 +1679,7 @@ namespace Content.Shared.CCVar
         /// Goes from 0 (no recoil at all) to 1 (regular amounts of recoil)
         /// </summary>
         public static readonly CVarDef<float> ScreenShakeIntensity =
-            CVarDef.Create("accessibility.screen_shake_intensity", 1f, CVar.CLIENTONLY | CVar.ARCHIVE);
+            CVarDef.Create("accessibility.screen_shake_intensity", 0.35f, CVar.CLIENTONLY);
 
         /// <summary>
         /// A generic toggle for various visual effects that are color sensitive.

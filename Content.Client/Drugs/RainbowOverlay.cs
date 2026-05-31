@@ -79,8 +79,6 @@ public sealed class RainbowOverlay : Overlay
     protected override void Draw(in OverlayDrawArgs args)
     {
         // TODO disable only the motion part or ike's idea (single static frame of the overlay)
-        if (_config.GetCVar(CCVars.ReducedMotion))
-            return;
 
         if (ScreenTexture == null)
             return;
