@@ -10,6 +10,12 @@
     state: icon
     scale: 1, 1
   - type: SimpleTransmutationCircle
+  - type: ActivatableUI
+    key: enum.TransmutationCircleUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.TransmutationCircleUiKey.Key:
+        type: TransmutationCircleBoundUserInterface
   - type: Physics
     bodyType: Static
     canCollide: false
