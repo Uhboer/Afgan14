@@ -103,6 +103,16 @@
   - MonumentDress
 
 - type: listing
+  id: FaithDressOrtodox
+  name: святая роба
+  description: Освещенное лично Иисусом.
+  productEntity: ClothingOuterMantiaOrtodox
+  cost:
+    Faith: 8
+  categories:
+  - MonumentDress
+
+- type: listing
   id: FaithZwaihender
   name: Цвайхендер
   description: Священный двуручный меч.
@@ -128,7 +138,7 @@
   description: Извергает сгустки эссенции.
   productEntity: WeaponStaffEssence
   cost:
-    Faith: 10
+    Faith: 9
   categories:
   - MonumentStaves
 
@@ -138,7 +148,7 @@
   description: Изжигает всё на своем пути.
   productEntity: WeaponStaffFlame
   cost:
-    Faith: 20
+    Faith: 15
   categories:
   - MonumentStaves
 
@@ -168,7 +178,7 @@
   description: Перезарядка (Для посоха эссенции)
   productAction: ActionChargeSpell
   cost:
-    Faith: 4
+    Faith: 2
   categories:
   - MonumentZaklinania
 

@@ -199,3 +199,51 @@
         Heat: 0.3
   - type: ExplosionResistance
     damageCoefficient: 0.5
+
+
+- type: entity
+  parent: ClothingOuterWinterCoatToggleable
+  id: ClothingOuterMantiaOrtodox
+  name: святая роба
+  description: Роба, освященная лично Адамом Святым нахуй.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Coats/ortodox.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Coats/ortodox.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodMantiaOrtodox
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.75
+        Slash: 0.65
+        Piercing: 0.65
+        Heat: 0.3
+  - type: ExplosionResistance
+    damageCoefficient: 0.3
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatHoodMantiaOrtodox
+  name: капюшон робы
+  description: Капюшон наисвятейшей робы.
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Head/ortodoxhood.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Head/ortodoxhood.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+  - type: IdentityBlocker
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.65
+  - type: ExplosionResistance
+    damageCoefficient: 0.6

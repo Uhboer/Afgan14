@@ -29,14 +29,15 @@
   id: Povstanec
   equipment:
     jumpsuit: ClothingUniformJumpsuitOrtodox
-    belt: ClothingBeltRope
+    back: ClothingBackpackSatchelLeather
+    outerClothing: ClothingOuterOrtodoxian
     shoes: ClothingShoesBootsSalvage
     head: ClothingHeadHelmetPovstanec
     gloves: ClothingHandsGlovesCombat
     pocket1: RadioHandheldSecurity
     pocket2: CombatKnife
   storage:
-    belt:
+    back:
     - CheapLighter
     - Torch
     - SyringeOpium
