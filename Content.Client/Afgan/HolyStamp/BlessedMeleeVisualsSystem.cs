@@ -1,13 +1,11 @@
 using Content.Shared.Afgan.HolyStamp;
+using Content.Shared.Hands;
+using Content.Shared.Item;
 using Robust.Client.GameObjects;
 using Robust.Shared.Utility;
 
 namespace Content.Client.Afgan.HolyStamp;
 
-/// <summary>
-/// Добавляет визуальный эффект зачарования на благословлённое оружие.
-/// Дублирует базовый слой спрайта с unshaded + золотой цвет — эффект ложится точно по силуэту меча.
-/// </summary>
 public sealed class BlessedMeleeVisualsSystem : EntitySystem
 {
     public override void Initialize()
@@ -15,6 +13,7 @@ public sealed class BlessedMeleeVisualsSystem : EntitySystem
         base.Initialize();
         SubscribeLocalEvent<BlessedMeleeComponent, ComponentStartup>(OnStartup);
         SubscribeLocalEvent<BlessedMeleeComponent, ComponentShutdown>(OnShutdown);
+        SubscribeLocalEvent<BlessedMeleeComponent, GetInhandVisualsEvent>(OnGetInhandVisuals);
     }
 
     private void OnStartup(Entity<BlessedMeleeComponent> ent, ref ComponentStartup args)
@@ -22,7 +21,6 @@ public sealed class BlessedMeleeVisualsSystem : EntitySystem
         if (!TryComp<SpriteComponent>(ent.Owner, out var sprite))
             return;
 
-        // Берём RSI и state первого слоя оружия
         if (!sprite.TryGetLayer(0, out var baseLayer))
             return;
 
@@ -34,8 +32,6 @@ public sealed class BlessedMeleeVisualsSystem : EntitySystem
         if (string.IsNullOrEmpty(state))
             return;
 
-        // Добавляем дублирующий слой с тем же спрайтом, но unshaded + золотой цвет
-        // Это даёт эффект зачарования точно по контуру оружия
         var layerIdx = sprite.AddLayer(
             new SpriteSpecifier.Rsi(new ResPath(rsi.Path.ToString()), state));
 
@@ -51,5 +47,32 @@ public sealed class BlessedMeleeVisualsSystem : EntitySystem
 
         if (sprite.LayerMapTryGet("blessed_glow", out var layerIdx))
             sprite.RemoveLayer(layerIdx);
+    }
+
+    private void OnGetInhandVisuals(Entity<BlessedMeleeComponent> ent, ref GetInhandVisualsEvent args)
+    {
+        if (!TryComp<ItemComponent>(ent.Owner, out var item))
+            return;
+
+        var locationStr = args.Location.ToString().ToLowerInvariant();
+        var baseState = item.HeldPrefix == null
+            ? $"inhand-{locationStr}"
+            : $"{item.HeldPrefix}-inhand-{locationStr}";
+
+        string? rsiPath = item.RsiPath;
+        if (rsiPath == null && TryComp<SpriteComponent>(ent.Owner, out var sprite))
+            rsiPath = sprite.BaseRSI?.Path.ToString();
+
+        if (rsiPath == null)
+            return;
+
+        args.Layers.Add(("blessed_glow_inhand", new PrototypeLayerData
+        {
+            RsiPath = rsiPath,
+            State = baseState,
+            Shader = "unshaded",
+            Color = new Color(1.0f, 0.84f, 0.0f, 0.6f),
+            MapKeys = new HashSet<string> { "blessed_glow_inhand" },
+        }));
     }
 }
