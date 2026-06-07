@@ -128,7 +128,7 @@
   description: Излучает мощнейшие лучи света, разрывая пространство.
   productEntity: WeaponStaffSaint
   cost:
-    Faith: 10
+    Faith: 8
   categories:
   - MonumentStaves
 
@@ -189,7 +189,7 @@
   description: Рывок
   productAction: ActionBlink
   cost:
-    Faith: 9
+    Faith: 8
   categories:
   - MonumentZaklinania
 
@@ -199,7 +199,7 @@
   description: Стена
   productAction: ActionForceWall
   cost:
-    Faith: 12
+    Faith: 10
   categories:
   - MonumentZaklinania
 
@@ -209,7 +209,7 @@
   description: Стук
   productAction: ActionKnock
   cost:
-    Faith: 10
+    Faith: 6
   categories:
   - MonumentZaklinania
 
@@ -229,7 +229,7 @@
   description: Ловушка
   productAction: ActionAfganTrap
   cost:
-    Faith: 8
+    Faith: 7
   categories:
   - MonumentZaklinania
 
@@ -239,6 +239,6 @@
   description: Усиливает оружие ближнего боя.
   productEntity: AfganHolyStamp
   cost:
-    Faith: 20
+    Faith: 18
   categories:
   - MonumentZaklinania

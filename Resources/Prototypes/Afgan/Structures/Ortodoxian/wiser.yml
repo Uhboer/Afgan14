@@ -6,8 +6,8 @@
   suffix: afgan14
   components:
   - type: Anomaly
-    corePrototype: AnomalyCoreGravity
-    coreInertPrototype: AnomalyCoreGravityInert
+    corePrototype: AfganHolyStamp
+    coreInertPrototype: ABagOfTeethFromGrandomotherUhbek
   - type: Sprite
     sprite: Afgan/Structures/wiser.rsi
     layers:

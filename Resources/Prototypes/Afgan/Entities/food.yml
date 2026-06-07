@@ -1,0 +1,23 @@
+- type: entity
+  parent: FoodTinBase
+  id: FoodTinStew
+  name: тушенка
+  description: Производится в каком то секторе, где засели ITOBE. Оттуда её перепродают нам, зачастую уже слегка просроченную.
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/stew.rsi
+  - type: FlavorProfile
+    flavors:
+    - salty
+    - cheap
+    - meaty
+  - type: Food
+    trash: FoodTinStewTrash
+
+- type: entity
+  parent: FoodTinBaseTrash
+  id: FoodTinStewTrash
+  name: банка из-под тушенки
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/stew.rsi

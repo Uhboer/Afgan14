@@ -25,6 +25,7 @@
         - hipocomponent2AFGAN
       rareChance: 0.01
       prototypes:
+        - Bib
         - Trash1
         - Trash2
         - Trash3
@@ -36,13 +37,13 @@
         - Trash9
         - Trash10
         - Trash11
+        - FoodTinStewTrash
         - AfganSvinoEggTrash
         - WearponComponentSH
         - OrganHumanStomach
         - OrganHumanHeart
-        - MaterialBones1
         - FoodKakashka
-      chance: 0.1
+      chance: 0.2
       offset: 0.2
   placement:
     mode: AlignTileAny

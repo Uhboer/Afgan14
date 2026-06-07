@@ -43,6 +43,7 @@
     - TorgomatDrugs
     - TorgomatArmor
     - TorgomatBombs
+    - TorgomatFood
     - TorgomatLegendary
     currencyWhitelist:
     - Bib
@@ -81,9 +82,14 @@
   priority: 4
 
 - type: storeCategory
+  id: TorgomatFood
+  name: Жратва
+  priority: 5
+
+- type: storeCategory
   id: TorgomatLegendary
   name: store-category-Tlegendary
-  priority: 5
+  priority: 6
 
 - type: entity
   name: биб
@@ -136,6 +142,17 @@
   cash:
     1: Bib
   canWithdraw: true
+
+- type: listing
+  id: TorgomatStew
+  name: тушёнка
+  description: Производится в каком то секторе, где засели ITOBE. Оттуда её перепродают нам, зачастую уже слегка просроченную.
+  productEntity: FoodTinStew
+  cost:
+    Bib: 8
+  categories:
+  - TorgomatFood
+
 
 - type: listing
   id: TorgomatRak

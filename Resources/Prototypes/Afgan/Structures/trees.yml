@@ -1,6 +1,9 @@
 - type: entity
   parent: BaseTree
   id: AfganTree1
+  name: древо
+  description: Высохшое на жаре стоит тут целые века.
+  suffix: afgan14
   components:
   - type: Sprite
     sprite: Afgan/Structures/trees.rsi
