@@ -153,3 +153,62 @@
   heatCapacity: 10000
   weather: false
   indestructible: true
+
+
+# dvkish
+
+- type: tile
+  id: FloorAfganMud
+  name: грязь
+  sprite: /Textures/Tiles/Planet/Afgan/mud.png
+  variants: 1
+  placementVariants:
+  - 0.75
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepAfganSand
+  heatCapacity: 10000
+  weather: true
+  indestructible: true
+
+- type: tile
+  id: FloorAfganDirt
+  name: грязище
+  sprite: /Textures/Tiles/Planet/Afgan/dirt.png
+  variants: 1
+  placementVariants:
+  - 0.75
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepAfganSand
+  heatCapacity: 10000
+  weather: true
+  indestructible: true
+
+- type: tile
+  id: FloorAfganGrass
+  name: травка
+  sprite: /Textures/Tiles/Planet/Afgan/grass.png
+  variants: 1
+  placementVariants:
+  - 0.75
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepAfganSand
+  heatCapacity: 10000
+  weather: true
+  indestructible: true
+
+- type: tile
+  id: FloorAfganStoner
+  name: каменный пол
+  sprite: /Textures/Tiles/Planet/Afgan/stoner.png
+  variants: 1
+  placementVariants:
+  - 0.75
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepFloor
+  heatCapacity: 10000
+  weather: false
+  indestructible: true

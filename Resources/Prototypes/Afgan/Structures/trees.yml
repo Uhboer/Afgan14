@@ -1,0 +1,53 @@
+- type: entity
+  parent: BaseTree
+  id: AfganTree1
+  components:
+  - type: Sprite
+    sprite: Afgan/Structures/trees.rsi
+    state: treelarge01
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.4,-0.5,0.2,0.3"
+        density: 2000
+        layer:
+        - WallLayer
+
+- type: entity
+  parent: AfganTree1
+  id: AfganTree2
+  components:
+  - type: Sprite
+    state: treelarge02
+
+- type: entity
+  parent: AfganTree1
+  id: AfganTree3
+  components:
+  - type: Sprite
+    state: treelarge03
+
+- type: entity
+  parent: AfganTree1
+  id: AfganTree4
+  components:
+  - type: Sprite
+    state: treelarge04
+
+
+- type: entity
+  parent: AfganTree1
+  id: AfganTree5
+  components:
+  - type: Sprite
+    state: treelarge05
+
+
+- type: entity
+  parent: AfganTree1
+  id: AfganTree6
+  components:
+  - type: Sprite
+    state: treelarge06

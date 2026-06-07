@@ -88,7 +88,7 @@
       - !type:SpawnEntitiesBehavior
         spawn:
           Log:
-            min: 2
+            min: 4
             max: 8
 
 - type: entity
