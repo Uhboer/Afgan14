@@ -1,0 +1,46 @@
+# Чан брожения — загружаешь ингредиенты, получаешь реагент, собираешь мензуркой.
+# Рецепты настраиваются в Resources/Prototypes/Recipes/Fermentation/fermentation_recipes.yml
+
+- type: entity
+  id: FermentationVat
+  name: чан брожения
+  description: Деревянный чан с кранами и трубками.
+  parent: BaseStructure
+  components:
+  - type: Sprite
+    sprite: Structures/Machines/mixer.rsi
+    state: mixer_empty
+  - type: Appearance
+  - type: InteractionOutline
+  - type: Physics
+    bodyType: Static
+  - type: Transform
+    noRot: true
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        density: 190
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: SolutionContainerManager
+    solutions:
+      vat:
+        maxVol: 300
+  - type: DrainableSolution
+    solution: vat
+  - type: ExaminableSolution
+    solution: vat
+  - type: FermentationVat
+    solutionName: vat
+    recipes:
+      - MushroomEthanol  
+      - Sahar 
+     

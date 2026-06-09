@@ -72,6 +72,9 @@
           Quantity: 10
   - type: StaticPrice
     price: 20
+  - type: Tag
+    tags:
+    - Mushroom
 
 ##2
 
@@ -149,6 +152,9 @@
           Quantity: 15
   - type: StaticPrice
     price: 20
+  - type: Tag
+    tags:
+    - Mushroom
 
 ##3
 
@@ -226,6 +232,9 @@
           Quantity: 15
   - type: StaticPrice
     price: 20
+  - type: Tag
+    tags:
+    - Mushroom
 
 
 
@@ -298,3 +307,6 @@
           Quantity: 2
         - ReagentId: Vitamin
           Quantity: 3
+  - type: Tag
+    tags:
+    - GranatTag

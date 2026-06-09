@@ -1,0 +1,18 @@
+
+- type: fermentationRecipe
+  id: MushroomEthanol
+  name: Грибной спирт
+  ingredientTag: Mushroom    
+  outputReagent: Ethanol
+  outputPerIngredient: 10    
+  fermentationTime: 20        
+  maxIngredients: 10
+
+- type: fermentationRecipe
+  id: Sahar
+  name: Сахар
+  ingredientTag: GranatTag
+  outputReagent: Sugar
+  outputPerIngredient: 10
+  fermentationTime: 20
+  maxIngredients: 10
