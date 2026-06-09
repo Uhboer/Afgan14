@@ -146,3 +146,13 @@
       amount: 2
   products:
     AfganFent: 1
+  
+- type: reaction
+  id: Braga
+  reactants:
+    Ethanol:
+      amount: 1
+    Sugar:
+      amount: 1
+  products:
+     Braga: 2

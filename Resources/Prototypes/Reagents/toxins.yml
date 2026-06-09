@@ -826,3 +826,35 @@
       effects:
       - !type:Electrocute
         probability: 0.7
+
+- type: reagent
+  id: Braga
+  name: Брага
+  group: Toxins
+  desc: Мутная жидкость с резким запахом. Явно сделана в подвале из всего что нашлось. Пить можно, но лучше не надо.
+  physicalDesc: мутная
+  flavor: alcohol
+  color: "#d1d1d177"
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 3
+      - !type:SatiateHunger
+        factor: 4
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.35
+    Alcohol:
+      effects:
+      - !type:Drunk
+        boozePower: 2
+      - !type:ChemVomit
+        probability: 0.08
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Ethanol
+          min: 8
+        - !type:OrganType
+          type: Dwarf
+          shouldHave: false
