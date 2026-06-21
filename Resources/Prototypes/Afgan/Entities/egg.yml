@@ -61,7 +61,7 @@
         orGroup: GiftPool
       # rary
       - id: KukriKnife
-        prob: 8
+        prob: 7
         orGroup: GiftPool
       - id: ClothingHeadHelmetHundskull
         prob: .7
@@ -127,6 +127,9 @@
       - id: ClothingOuterVestKaratel
         prob: .2
         orGroup: GiftPool
+      - id: AfganHolyStamp
+        prob: .15
+        orGroup: GiftPool
       - id: AfganChaosFragment
         prob: .2
         orGroup: GiftPool
@@ -146,6 +149,9 @@
         prob: .01
         orGroup: GiftPool
       - id: MobChungus
+        prob: .01
+        orGroup: GiftPool
+      - id: AfganHalbermenshEgg
         prob: .01
         orGroup: GiftPool
     sound:
