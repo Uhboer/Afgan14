@@ -1,0 +1,7 @@
+- type: soundCollection
+  id: PlantCross
+  files:
+    - /Audio/Afgan/Structues/plantcross1.ogg
+    - /Audio/Afgan/Structues/plantcross2.ogg
+    - /Audio/Afgan/Structues/plantcross3.ogg
+    - /Audio/Afgan/Structues/plantcross4.ogg

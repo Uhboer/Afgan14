@@ -38,8 +38,8 @@
       - !type:SpawnEntitiesBehavior
         spawn:
           Log:
-            min: 2
-            max: 5
+            min: 4
+            max: 6
   - type: Fixtures
     fixtures:
       fix1:
@@ -61,3 +61,58 @@
     sprite: Afgan/Structures/kaktus.rsi
     state: kaktus2
     offset: 0,0
+
+- type: entity
+  parent: BaseTree
+  id: AfganBush
+  name: куст
+  description: Небольшой непримечательный кустик.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Structures/bush.rsi
+    state: bush
+    offset: 0,0
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        collection: PlantCross
+        params:
+          variation: 0.05
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 400
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: PlantCross
+          params:
+            volume: 5
+            variation: 0.05
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialCloth:
+            min: 5
+            max: 10
+          Log:
+            min: 0
+            max: 1
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "0.3,0.15,-0.3,-0.45"
+        density: 2000
+        layer:
+        - WallLayer

@@ -144,7 +144,7 @@
   - type: Produce
     seedId: towercap
   - type: Log
-
+    spawnCount: 3
 - type: entity
   name: steel-cap log
   description: Steel doesn't grow on trees! It grows on mushrooms, of course.

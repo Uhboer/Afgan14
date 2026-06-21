@@ -88,8 +88,8 @@
       - !type:SpawnEntitiesBehavior
         spawn:
           Log:
-            min: 4
-            max: 8
+            min: 10
+            max: 15
 
 - type: entity
   parent: BaseTree
