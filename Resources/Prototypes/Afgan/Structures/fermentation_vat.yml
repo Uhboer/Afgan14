@@ -8,8 +8,8 @@
   parent: BaseStructure
   components:
   - type: Sprite
-    sprite: Structures/Machines/mixer.rsi
-    state: mixer_empty
+    sprite: Afgan/Structures/alchechan.rsi
+    state: mat
   - type: Appearance
   - type: InteractionOutline
   - type: Physics
@@ -41,6 +41,5 @@
   - type: FermentationVat
     solutionName: vat
     recipes:
-      - MushroomEthanol  
-      - Sahar 
-     
+      - MushroomEthanol
+      - Sahar
