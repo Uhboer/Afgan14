@@ -7,7 +7,7 @@
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 0
-  startingGear: TechnicalAssistantGear
+  startingGear: Alchemest
   icon: "JobIconTechnicalAssistant"
   supervisors: job-supervisors-alchem
   access:
@@ -24,3 +24,14 @@
     outerClothing: ClothingOuterMantia
     back: ClothingBackpackSatchelLeather
     eyes: ClothingEyesGlassesChemical
+
+- type: startingGear
+  id: Alchemest
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitAlchem
+    shoes: ClothingShoesBootsSandal
+    gloves: ClothingHandsGlovesFingerless
+    pocket1: Torch
+    pocket2: RadioHandheldAlchem
+    outerClothing: ClothingOuterMantia
+    back: ClothingBackpackSatchelLeather

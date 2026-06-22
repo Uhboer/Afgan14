@@ -15,7 +15,8 @@
   - AllAccess
   access:
   - CentralCommand
-
+  - NuclearOperative
+  - SyndicateAgent
 - type: startingGear
   id: CentcomGear
   equipment:

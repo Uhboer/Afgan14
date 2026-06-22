@@ -10,7 +10,7 @@
     - !type:OverallPlaytimeRequirement
       time: 0
   weight: 20
-  startingGear: CaptainGear
+  startingGear: Karatel
   icon: "JobIconCaptain"
   requireAdminNotify: true
   joinNotifyCrew: true
@@ -18,6 +18,10 @@
   canBeAntag: false
   accessGroups:
   - AllAccess
+  access:
+  - CentralCommand
+  - NuclearOperative
+  - SyndicateAgent
   special:
 
   - !type:AddComponentSpecial
@@ -36,15 +40,10 @@
     shoes: ClothingShoesBootsSteelUpgrade
     head: ClothingHeadHelmetKaratel
     gloves: ClothingHandsMercGlovesCombat
-    outerClothing: ClothingOuterVestKaratel
-    back: AfganThanded
     pocket1: CombatKnife
     pocket2: KukriKnife
   storage:
     belt:
-    - AfganGrenade
-    - AfganGrenade
-    - AfganGrenade
     - AfganGrenade
 
 - type: startingGear

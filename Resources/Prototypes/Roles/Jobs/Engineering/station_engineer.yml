@@ -7,11 +7,15 @@
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 1
-  startingGear: StationEngineerGear
+  startingGear: Director
   icon: "JobIconStationEngineer"
   supervisors: job-supervisors-director
-  access:
+  accessGroups:
   - AllAccess
+  access:
+  - CentralCommand
+  - NuclearOperative
+  - SyndicateAgent
 
 - type: startingGear
   id: StationEngineerGear
@@ -19,12 +23,10 @@
     jumpsuit: ClothingUniformJumpsuitDirector
     shoes: ClothingShoesBootsItobe
     gloves: ClothingHandsGlovesClaws
-    pocket1: WeaponForceGunAdmin
     outerClothing: ClothingOuterVestDirector
     mask: ClothingMaskDirector
     ears: ClothingHeadsetCommand
     head: ClothingHeadHatDirector
-    id: UniversalIDCard
     eyes: ClothingEyesVisionEng
 
 - type: startingGear

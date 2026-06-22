@@ -47,14 +47,3 @@
     pocket1: Torch
     outerClothing: ClothingOuterMantia
     back: ClothingBackpackSatchelLeather
-
-- type: startingGear
-  id: Alchemest
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitAlchem
-    shoes: ClothingShoesBootsSandal
-    gloves: ClothingHandsGlovesFingerless
-    pocket1: Torch
-    pocket2: RadioHandheldAlchem
-    outerClothing: ClothingOuterMantia
-    back: ClothingBackpackSatchelLeather
