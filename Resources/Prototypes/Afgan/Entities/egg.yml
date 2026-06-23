@@ -59,8 +59,13 @@
         orGroup: GiftPool
       - id: AfganBoombox
         orGroup: GiftPool
+      - id: ClothingHeadHatWildboy
+        orGroup: GiftPool
       # rary
       - id: KukriKnife
+        prob: 7
+        orGroup: GiftPool
+      - id: ClothingHeadHatKKKfake
         prob: 7
         orGroup: GiftPool
       - id: ClothingHeadHelmetHundskull
@@ -76,6 +81,9 @@
         prob: .7
         orGroup: GiftPool
       - id: Mattress
+        prob: .7
+        orGroup: GiftPool
+      - id: Bib10
         prob: .7
         orGroup: GiftPool
       - id: KitchenReagentGrinder
@@ -117,7 +125,13 @@
       - id: ClothingEyesVisionEng
         prob: .5
         orGroup: GiftPool
+      - id: Bib10
+        prob: .5
+        orGroup: GiftPool
       # rare
+      - id: Bib30
+        prob: .3
+        orGroup: GiftPool
       - id: AfganThanded
         prob: .3
         orGroup: GiftPool
@@ -143,6 +157,9 @@
         prob: .01
         orGroup: GiftPool
       - id: ClothingOuterVestHrumka
+        prob: .01
+        orGroup: GiftPool
+      - id: ClothingHeadHelmetCrown
         prob: .01
         orGroup: GiftPool
       - id: ClothingHeadHatKKK
