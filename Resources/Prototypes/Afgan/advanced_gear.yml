@@ -18,6 +18,8 @@
   - AdventurerHeadVeteran
   - AdventurerHeadFuraj
   - AdventurerHeadWeld
+  - AdventurerHeadWild
+
 #
 - type: loadout
   id: AdventurerHeadVeteran
@@ -45,6 +47,17 @@
   id: AdventurerHeadWeld
   equipment:
     head: ClothingHeadHatWelding
+
+#
+- type: loadout
+  id: AdventurerHeadWild
+  equipment: AdventurerHeadWild
+
+- type: startingGear
+  id: AdventurerHeadWild
+  equipment:
+    head: ClothingHeadHatWildboy
+
 
 
 

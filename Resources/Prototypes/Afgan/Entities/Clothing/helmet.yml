@@ -316,3 +316,31 @@
     sprintModifier: 0.85
   - type: Reflect
     reflectProb: 0.07
+
+
+- type: entity
+  parent: ClothingHeadHelmetBasic
+  id: ClothingHeadHelmetCrown
+  name: корона
+  description: Её достоин далеко не каждый. Выкована в глубоких лесах Темнолесья не одну сотню лет назад.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Head/crown.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Head/crown.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.5
+        Slash: 0.5
+        Piercing: 0.5
+        Heat: 0.6
+  - type: Reflect
+    reflectProb: 0.09
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
