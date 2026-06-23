@@ -36,6 +36,7 @@
   color: "#EFB341"
   roles:
   - AtmosphericTechnician
+  - Adventurer
 
 - type: department
   id: Command

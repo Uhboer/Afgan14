@@ -7,7 +7,7 @@
     - !type:OverallPlaytimeRequirement
       time: 0
   setPreference: true
-  startingGear: CentcomGear
+  startingGear: GodOfRape
   icon: "JobIconNanotrasen"
   supervisors: job-supervisors-godofrape
   canBeAntag: false
@@ -17,6 +17,7 @@
   - CentralCommand
   - NuclearOperative
   - SyndicateAgent
+
 - type: startingGear
   id: CentcomGear
   equipment:

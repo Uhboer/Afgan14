@@ -1,0 +1,407 @@
+- type: roleLoadout
+  id: JobAdventurer
+  groups:
+  - AdventurerHead
+  - AdventurerNeck
+  - AdventurerJumpsuit
+  - AdventurerShoes
+  - AdventurerBackpack
+  - AdventurerBelt
+  - AdventurerOuterClothing
+  - AdventurerGloves
+
+- type: loadoutGroup
+  id: AdventurerHead
+  name: бошка
+  minLimit: 0
+  loadouts:
+  - AdventurerHeadVeteran
+  - AdventurerHeadFuraj
+  - AdventurerHeadWeld
+#
+- type: loadout
+  id: AdventurerHeadVeteran
+  equipment: AdventurerHeadVeteran
+
+- type: startingGear
+  id: AdventurerHeadVeteran
+  equipment:
+    head: ClothingHeadHatVeteran
+#
+- type: loadout
+  id: AdventurerHeadFuraj
+  equipment: AdventurerHeadFuraj
+
+- type: startingGear
+  id: AdventurerHeadFuraj
+  equipment:
+    head: ClothingHeadHatDirector
+#
+- type: loadout
+  id: AdventurerHeadWeld
+  equipment: AdventurerHeadWeld
+
+- type: startingGear
+  id: AdventurerHeadWeld
+  equipment:
+    head: ClothingHeadHatWelding
+
+
+
+
+
+- type: loadoutGroup
+  id: AdventurerJumpsuit
+  name: одежда
+  loadouts:
+  - AdventurerJumpsuitLeather
+  - AdventurerJumpsuitSimple
+  - AdventurerJumpsuitDirt
+  - AdventurerJumpsuitBandit
+  - AdventurerJumpsuitSport
+  - AdventurerJumpsuitShmot
+  - AdventurerJumpsuitShtany
+
+#
+- type: loadout
+  id: AdventurerJumpsuitLeather
+  equipment: AdventurerJumpsuitLeather
+
+- type: startingGear
+  id: AdventurerJumpsuitLeather
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitPovstanKurtka
+
+#
+- type: loadout
+  id: AdventurerJumpsuitSimple
+  equipment: AdventurerJumpsuitSimple
+
+- type: startingGear
+  id: AdventurerJumpsuitSimple
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitBrave
+
+#
+- type: loadout
+  id: AdventurerJumpsuitDirt
+  equipment: AdventurerJumpsuitDirt
+
+- type: startingGear
+  id: AdventurerJumpsuitDirt
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitOrtodox
+#
+- type: loadout
+  id: AdventurerJumpsuitBandit
+  equipment: AdventurerJumpsuitBandit
+
+- type: startingGear
+  id: AdventurerJumpsuitBandit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitGangerCrime
+
+#
+- type: loadout
+  id: AdventurerJumpsuitSport
+  equipment: AdventurerJumpsuitSport
+
+- type: startingGear
+  id: AdventurerJumpsuitSport
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitGangerSport
+
+#
+- type: loadout
+  id: AdventurerJumpsuitShmot
+  equipment: AdventurerJumpsuitShmot
+
+- type: startingGear
+  id: AdventurerJumpsuitShmot
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitGanger
+
+#
+- type: loadout
+  id: AdventurerJumpsuitShtany
+  equipment: AdventurerJumpsuitShtany
+
+- type: startingGear
+  id: AdventurerJumpsuitShtany
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitShtany
+
+
+
+
+
+
+- type: loadoutGroup
+  id: AdventurerNeck
+  name: шея
+  minLimit: 0
+  loadouts:
+  - AdventurerCloakShura
+#
+- type: loadout
+  id: AdventurerCloakShura
+  equipment: AdventurerCloakShura
+
+- type: startingGear
+  id: AdventurerCloakShura
+  equipment:
+    neck: ClothingNeckSkin
+
+
+
+
+- type: loadoutGroup
+  id: AdventurerShoes
+  name: ботинки
+  minLimit: 0
+  loadouts:
+  - AdventurerShoesGovno
+  - AdventurerShoesCombat
+  - AdventurerShoesRich
+  - AdventurerShoesSimple
+  - AdventurerShoesCowboyBlack
+  - AdventurerShoesCowboyBrown
+
+#
+- type: loadout
+  id: AdventurerShoesGovno
+  equipment: AdventurerShoesGovno
+
+- type: startingGear
+  id: AdventurerShoesGovno
+  equipment:
+    shoes: ClothingShoesBootsSalvage
+
+#
+- type: loadout
+  id: AdventurerShoesCombat
+  equipment: AdventurerShoesCombat
+
+- type: startingGear
+  id: AdventurerShoesCombat
+  equipment:
+    shoes: ClothingShoesBootsCombat
+
+#
+- type: loadout
+  id: AdventurerShoesRich
+  equipment: AdventurerShoesRich
+
+- type: startingGear
+  id: AdventurerShoesRich
+  equipment:
+    shoes: ClothingShoesBootsMerc
+
+#
+- type: loadout
+  id: AdventurerShoesSimple
+  equipment: AdventurerShoesSimple
+
+- type: startingGear
+  id: AdventurerShoesSimple
+  equipment:
+    shoes: ClothingShoesBootsItobe
+
+#
+- type: loadout
+  id: AdventurerShoesCowboyBlack
+  equipment: AdventurerShoesCowboyBlack
+
+- type: startingGear
+  id: AdventurerShoesCowboyBlack
+  equipment:
+    shoes: ClothingShoesBootsCowboyBlack
+
+#
+- type: loadout
+  id: AdventurerShoesCowboyBrown
+  equipment: AdventurerShoesCowboyBrown
+
+- type: startingGear
+  id: AdventurerShoesCowboyBrown
+  equipment:
+    shoes: ClothingShoesBootsCowboyBrown
+
+
+
+
+- type: loadoutGroup
+  id: AdventurerBackpack
+  name: спина
+  minLimit: 0
+  loadouts:
+  - AdventurerSatchel
+  - AdventurerBuckler
+  - AdventurerAlebard
+  - AdventurerAfganPipegun
+  - AdventurerAfganWeaponPipeSniper
+
+
+#
+- type: loadout
+  id: AdventurerSatchel
+  equipment: AdventurerSatchel
+
+- type: startingGear
+  id: AdventurerSatchel
+  equipment:
+    back: ClothingBackpackSatchelLeather
+
+#
+- type: loadout
+  id: AdventurerBuckler
+  equipment: AdventurerBuckler
+
+- type: startingGear
+  id: AdventurerBuckler
+  equipment:
+    back: WoodenBuckler
+
+#
+- type: loadout
+  id: AdventurerAlebard
+  equipment: AdventurerAlebard
+
+- type: startingGear
+  id: AdventurerAlebard
+  equipment:
+    back: AfganAlebard
+
+#
+- type: loadout
+  id: AdventurerAfganPipegun
+  equipment: AdventurerAfganPipegun
+
+- type: startingGear
+  id: AdventurerAfganPipegun
+  equipment:
+    back: AfganPipegun
+
+#
+- type: loadout
+  id: AdventurerAfganWeaponPipeSniper
+  equipment: AdventurerAfganWeaponPipeSniper
+
+- type: startingGear
+  id: AdventurerAfganWeaponPipeSniper
+  equipment:
+    back: AfganWeaponPipeSniper
+
+
+
+
+
+- type: loadoutGroup
+  id: AdventurerBelt
+  name: пояс
+  minLimit: 0
+  loadouts:
+  - AdventurerRope
+  - AdventurerSword
+  - AdventurerMace
+  - AdventurerRevolver
+
+#
+- type: loadout
+  id: AdventurerRope
+  equipment: AdventurerRope
+
+- type: startingGear
+  id: AdventurerRope
+  equipment:
+    belt: ClothingBeltRope
+
+#
+- type: loadout
+  id: AdventurerSword
+  equipment: AdventurerSword
+
+- type: startingGear
+  id: AdventurerSword
+  equipment:
+    belt: AfganSword
+
+#
+- type: loadout
+  id: AdventurerMace
+  equipment: AdventurerMace
+
+- type: startingGear
+  id: AdventurerMace
+  equipment:
+    belt: AfganMace
+
+#
+- type: loadout
+  id: AdventurerRevolver
+  equipment: AdventurerRevolver
+
+- type: startingGear
+  id: AdventurerRevolver
+  equipment:
+    belt: WeaponRevolverBlade
+
+
+
+
+
+- type: loadoutGroup
+  id: AdventurerOuterClothing
+  name: верхняя одежда
+  minLimit: 0
+  loadouts:
+  - AdventurerOuterClothing
+  - AdventurerOuterClothing2
+  - AdventurerOuterClothing3
+
+#
+- type: loadout
+  id: AdventurerOuterClothing
+  equipment: AdventurerOuterClothing
+
+- type: startingGear
+  id: AdventurerOuterClothing
+  equipment:
+    outerClothing: ClothingOuterAfganBomberOpened
+
+#
+- type: loadout
+  id: AdventurerOuterClothing2
+  equipment: AdventurerOuterClothing2
+
+- type: startingGear
+  id: AdventurerOuterClothing2
+  equipment:
+    outerClothing: ClothingOuterPawnJacketOpened
+#
+- type: loadout
+  id: AdventurerOuterClothing3
+  equipment: AdventurerOuterClothing3
+
+- type: startingGear
+  id: AdventurerOuterClothing3
+  equipment:
+    outerClothing: ClothingOuterVestStal
+
+
+- type: loadoutGroup
+  id: AdventurerGloves
+  name: перчатки
+  minLimit: 0
+  loadouts:
+  - AdventurerClothingHandsGlovesFingerless
+
+#
+- type: loadout
+  id: AdventurerClothingHandsGlovesFingerless
+  equipment: AdventurerClothingHandsGlovesFingerless
+
+- type: startingGear
+  id: AdventurerClothingHandsGlovesFingerless
+  equipment:
+    outerClothing: ClothingHandsGlovesFingerless

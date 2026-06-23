@@ -19,3 +19,25 @@
         Piercing: -0.2
         Slash: -0.3
         Bloodloss: -0.1
+
+- type: entity
+  name: трон
+  id: ChairTroneForest
+  parent: ChairBase
+  description: Великий трон лорда Темнолесья.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Structures/troncool.rsi
+    state: tron
+    scale: 1, 1
+  - type: HealOnBuckle
+    damage:
+      types:
+        Poison: -0.2
+        Cold: -0.3
+        Blunt: -0.3
+        Heat: -0.3
+        Piercing: -0.2
+        Slash: -0.3
+        Bloodloss: -0.1

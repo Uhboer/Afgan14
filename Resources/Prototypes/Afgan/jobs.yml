@@ -1,0 +1,25 @@
+- type: job
+  id: Adventurer
+  name: Авантюрист
+  description: job-description-captain
+  setPreference: true
+  playTimeTracker: JobAdventurer
+  requirements:
+    - !type:AgeRequirement
+      requiredAge: 18
+    - !type:OverallPlaytimeRequirement
+      time: 0
+  startingGear: AdventurerGear
+  icon: "JobIconCaptain"
+  requireAdminNotify: false
+  joinNotifyCrew: false
+  supervisors: job-supervisors-caratel
+  canBeAntag: false
+  access:
+  - SyndicateAgent
+
+- type: startingGear
+  id: AdventurerGear
+  equipment:
+    pocket1: CombatKnife
+    pocket2: RadioHandheldCommon

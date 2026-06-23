@@ -36,6 +36,7 @@
         - Trash8
         - Trash9
         - Trash10
+        - Trash10
         - Trash11
         - FoodTinStewTrash
         - AfganSvinoEggTrash
@@ -43,7 +44,7 @@
         - OrganHumanStomach
         - OrganHumanHeart
         - FoodKakashka
-      chance: 0.2
+      chance: 0.1
       offset: 0.2
   placement:
     mode: AlignTileAny

@@ -1,8 +1,8 @@
 - type: entity
   parent: ClothingMaskBase
   id: ClothingMaskHamas
-  name: Балаклава
-  description: Маска бывшей террористической группировки Хамас.
+  name: балаклава
+  description: Скрывает твою личность.
   suffix: afgan14
   components:
   - type: Sprite

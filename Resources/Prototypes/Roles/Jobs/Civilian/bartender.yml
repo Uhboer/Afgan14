@@ -11,6 +11,7 @@
   startingGear: BartenderGear
   icon: "JobIconBartender"
   supervisors: job-supervisors-headafganec
+  joinNotifyCrew: true
   access:
   - Salvage
   - Command

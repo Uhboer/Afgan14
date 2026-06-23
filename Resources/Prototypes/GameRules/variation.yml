@@ -50,44 +50,17 @@
 - type: weightedRandomFillSolution
   id: RandomFillTrashPuddle
   fills:
-  - quantity: 80
+  - quantity: 15
     weight: 5
     reagents:
     - Vomit
-    - InsectBlood
-    - WeldingFuel
-    - Mold
-  - quantity: 55
+    - Semen
+    - Blood
+  - quantity: 5
     weight: 4
     reagents:
-    - PlantBGone
-    - Potassium # :trollface:
-    - VentCrud
-    - Carbon
-    - Hydrogen
-    - Fat
-    - SpaceLube
-    - SpaceGlue
-    - Sulfur
-    - Acetone
-    - Bleach
-  - quantity: 40
-    weight: 3
-    reagents:
-    - Blood
-    - CopperBlood
-    - Slime
-  - quantity: 25
-    weight: 1
-    reagents:
-    - Omnizine
-    - Desoxyephedrine
-    - Napalm
-    - Radium
-    - Gold
-    - Silver
-    - Sodium
-    - JuiceThatMakesYouWeh
+    - AfganOpium
+
 
 - type: weightedRandomFillSolution
   id: RandomFillTrashPuddleBloodbath

@@ -10,6 +10,7 @@
   startingGear: Director
   icon: "JobIconStationEngineer"
   supervisors: job-supervisors-director
+  joinNotifyCrew: true
   accessGroups:
   - AllAccess
   access:
