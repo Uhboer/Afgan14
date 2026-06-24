@@ -1,0 +1,41 @@
+- type: entity
+  id: SpawnPointAdventurer
+  parent: SpawnPointJobBase
+  name: Adventurer
+  suffix: afgan14
+  components:
+  - type: JobSpawnPoint
+    jobs:
+      - Adventurer
+  - type: Sprite
+    layers:
+      - state: green
+      - state: captain
+
+- type: entity
+  id: SpawnPointLordBodyguard
+  parent: SpawnPointJobBase
+  name: LordBodyguard
+  suffix: afgan14
+  components:
+  - type: JobSpawnPoint
+    jobs:
+      - LordBodyguard
+  - type: Sprite
+    layers:
+      - state: green
+      - state: captain
+
+- type: entity
+  id: SpawnPointLordOfDarkwood
+  parent: SpawnPointJobBase
+  name: LordOfDarkwood
+  suffix: afgan14
+  components:
+  - type: JobSpawnPoint
+    jobs:
+      - LordOfDarkwood
+  - type: Sprite
+    layers:
+      - state: green
+      - state: captain
