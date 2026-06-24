@@ -59,14 +59,16 @@
         orGroup: GiftPool
       - id: AfganBoombox
         orGroup: GiftPool
+      - id: ClothingMaskHamas
+        orGroup: GiftPool
       - id: ClothingHeadHatWildboy
         orGroup: GiftPool
       # rary
       - id: KukriKnife
-        prob: 7
+        prob: .7
         orGroup: GiftPool
       - id: ClothingHeadHatKKKfake
-        prob: 7
+        prob: .7
         orGroup: GiftPool
       - id: ClothingHeadHelmetHundskull
         prob: .7
