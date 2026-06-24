@@ -45,11 +45,11 @@ alerts-hunger-desc = Я бы пожрал чего.
 alerts-stamina-name = [color=yellow]СТАМИНА[/color]
 alerts-stamina-desc = Прибереги её, спасая свой зад от [color=red]твари.[/color]
 alerts-starving-name = [color=red]Сильный голод[/color]
-alerts-starving-desc = Я истощены. Голод меня замедляет.
+alerts-starving-desc = Я истощен. Готов убить ради еды.
 alerts-thirsty-name = [color=yellow]Жажда[/color]
 alerts-thirsty-desc = Я бы попил чего.
 alerts-parched-name = [color=red]Сильная жажда[/color]
-alerts-parched-desc = Я ебать как хочу пить. Жажда меня замедляет.
+alerts-parched-desc = Я ебать как хочу пить. Жажда меня мучает.
 alerts-muted-name = Заглушены
 alerts-muted-desc = Вы потеряли способность говорить.
 alerts-vow-silence-name = Обет молчания

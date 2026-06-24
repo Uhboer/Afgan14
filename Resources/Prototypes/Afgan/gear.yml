@@ -298,3 +298,57 @@
     gloves: ClothingHandsGlovesStal
     outerClothing: ClothingOuterVestStal
     back: AfganThanded
+
+
+### DARKWOOD
+
+- type: startingGear
+  id: LordOfDarkwood
+  equipment:
+    head: ClothingHeadHelmetCrown
+    jumpsuit: ClothingUniformJumpsuitTaliban
+    shoes: ClothingShoesBootsMercFilled
+    gloves: ClothingHandsMercGlovesCombat
+    outerClothing: ClothingOuterGreatcCoat
+    back: ClothingBackpackSatchelLeather
+    belt: AfganChaosFragment
+    pocket1: RadioHandheldCommon
+  storage:
+    back:
+    - Bib30
+    - Bib30
+    - Bib30
+    - Bib30
+    - Bib30
+    - Bib30
+    - Bib30
+    - Bib30
+    - Bib30
+    - Bib30
+    - Bib30
+    - Bib30
+    - Bib30
+    - Bib30
+    - Bib30
+    - Bib30
+    - FlippoEngravedLighter
+    - CigarGoldCase
+
+
+- type: startingGear
+  id: BodyGuardOfLordOfDarkwood
+  equipment:
+    head: ClothingHeadHelmetBigman
+    mask: ClothingMaskBalistic
+    neck: ClothingNeckNaplechnikiCrimson
+    jumpsuit: ClothingUniformJumpsuitHauberk
+    shoes: ClothingShoesBootsSteelUpgrade
+    gloves: ClothingHandsGlovesStal
+    outerClothing: ClothingOuterVestGiga
+    back: AfganThanded
+    belt: ClothingBeltRope
+    pocket1: RadioHandheldCommon
+  storage:
+    belt:
+    - Bib30
+    - Bib30

@@ -1,7 +1,7 @@
 - type: job
   id: Adventurer
   name: Авантюрист
-  description: job-description-captain
+  description: "Ты волен делать что хочешь: работай на Лорда или выполняй заказы кузнеца. Исследуй Темнолесье, стань бандитом или героем. А может ты возведешь свою собственную крепость?"
   setPreference: true
   playTimeTracker: JobAdventurer
   requirements:
@@ -10,7 +10,7 @@
     - !type:OverallPlaytimeRequirement
       time: 0
   startingGear: AdventurerGear
-  icon: "JobIconCaptain"
+  icon: "JobIconLibrarian"
   requireAdminNotify: false
   joinNotifyCrew: false
   supervisors: job-supervisors-caratel
@@ -23,3 +23,47 @@
   equipment:
     pocket1: CombatKnife
     pocket2: RadioHandheldCommon
+
+- type: job
+  id: LordBodyguard
+  name: Громила
+  description: Следуй приказам Лорда. Будь ему верен.
+  setPreference: true
+  playTimeTracker: JobLordBodyguard
+  requirements:
+    - !type:AgeRequirement
+      requiredAge: 35
+    - !type:OverallPlaytimeRequirement
+      time: 0
+  startingGear: BodyGuardOfLordOfDarkwood
+  icon: "JobIconMedicalIntern"
+  requireAdminNotify: false
+  joinNotifyCrew: false
+  supervisors: job-supervisors-caratel
+  canBeAntag: false
+  access:
+  - SyndicateAgent
+
+- type: job
+  id: LordOfDarkwood
+  name: Лорд Темнолесья
+  description: Под твоим крылом целая крепость отважных людей, которых ты должен защитить. Прийми эту ответственность.
+  setPreference: true
+  playTimeTracker: JobLordOfDarkwood
+  requirements:
+    - !type:AgeRequirement
+      requiredAge: 60
+    - !type:OverallPlaytimeRequirement
+      time: 0
+  startingGear: LordOfDarkwood
+  icon: "JobIconMedicalDoctor"
+  requireAdminNotify: true
+  joinNotifyCrew: true
+  supervisors: job-supervisors-caratel
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  access:
+  - CentralCommand
+  - NuclearOperative
+  - SyndicateAgent

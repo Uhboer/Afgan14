@@ -35,8 +35,10 @@
   description: department-Security-description
   color: "#EFB341"
   roles:
-  - AtmosphericTechnician
+  - LordOfDarkwood
+  - LordBodyguard
   - Adventurer
+
 
 - type: department
   id: Command

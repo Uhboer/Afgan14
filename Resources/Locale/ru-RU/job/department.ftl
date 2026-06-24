@@ -1,5 +1,5 @@
-department-Cargo = Вы
-department-Civilian = Уебки
+department-Cargo = Отродья
+department-Civilian = Крепость Темнолесья
 department-Command = [режим - ВОЙНА ФРАКЦИЙ]
 department-Engineering = Комплекс [режим - ESCAPE FROM AFGAN]
 department-Medical = Гильдия алхимиков

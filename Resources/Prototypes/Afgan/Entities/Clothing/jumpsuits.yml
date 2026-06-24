@@ -100,7 +100,7 @@
       coefficients:
         Blunt: 0.75
         Slash: 0.75
-        Piercing: 0.95
+        Piercing: 0.9
   - type: ClothingSpeedModifier
     walkModifier: 0.85
     sprintModifier: 0.85
