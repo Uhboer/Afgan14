@@ -71,6 +71,9 @@
   - type: HideLayerClothing
     slots:
     - Snout
+    - Hair
+    - HeadTop
+    - HeadSide
     hideOnToggle: true
   - type: IdentityBlocker
   - type: Armor

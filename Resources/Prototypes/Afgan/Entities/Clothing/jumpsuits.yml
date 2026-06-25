@@ -259,7 +259,7 @@
     sprite: Afgan/Clothing/Jumpsuit/crime.rsi
   - type: Clothing
     sprite: Afgan/Clothing/Jumpsuit/crime.rsi
-
+  - type: IdentityBlocker
 
 - type: entity
   parent: ClothingUniformBase

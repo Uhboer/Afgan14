@@ -249,6 +249,7 @@
   minLimit: 0
   loadouts:
   - AdventurerSatchel
+  - AdventurerSatchelMedic
   - AdventurerBuckler
   - AdventurerAlebard
   - AdventurerAfganPipegun
@@ -264,6 +265,17 @@
   id: AdventurerSatchel
   equipment:
     back: ClothingBackpackSatchelLeather
+
+#
+- type: loadout
+  id: AdventurerSatchelMedic
+  equipment: AdventurerSatchelMedic
+
+- type: startingGear
+  id: AdventurerSatchelMedic
+  equipment:
+    back: ClothingBackpackSatchelMedical
+
 
 #
 - type: loadout
@@ -371,6 +383,7 @@
   - AdventurerOuterClothing
   - AdventurerOuterClothing2
   - AdventurerOuterClothing3
+  - AdventurerOuterClothing4
 
 #
 - type: loadout
@@ -400,6 +413,18 @@
   id: AdventurerOuterClothing3
   equipment:
     outerClothing: ClothingOuterVestStal
+
+#
+- type: loadout
+  id: AdventurerOuterClothing4
+  equipment: AdventurerOuterClothing4
+
+- type: startingGear
+  id: AdventurerOuterClothing4
+  equipment:
+    outerClothing: ClothingOuterMedik
+
+
 
 
 - type: loadoutGroup

@@ -67,3 +67,43 @@
   - CentralCommand
   - NuclearOperative
   - SyndicateAgent
+
+- type: job
+  id: KuznecDarkwood
+  name: Кузнец
+  description: Куй снаряжение и отправляй авантюристов за ресурсами.
+  setPreference: true
+  playTimeTracker: JobKuznecDarkwood
+  requirements:
+    - !type:AgeRequirement
+      requiredAge: 20
+    - !type:OverallPlaytimeRequirement
+      time: 0
+  startingGear: KuznecDarkwood
+  icon: "JobIconParamedic"
+  requireAdminNotify: false
+  joinNotifyCrew: false
+  supervisors: job-supervisors-caratel
+  canBeAntag: false
+  access:
+  - SyndicateAgent
+
+- type: job
+  id: BartenderDarkwood
+  name: Владелец Кабака
+  description: Владей своим заведением, делай брагу, готовь еду и обыгрывай авантюристов в кости и шашки.
+  setPreference: true
+  playTimeTracker: JobBartenderDarkwood
+  requirements:
+    - !type:AgeRequirement
+      requiredAge: 20
+    - !type:OverallPlaytimeRequirement
+      time: 0
+  startingGear: BartenderDarkwood
+  icon: "JobIconSecurityCadet"
+  requireAdminNotify: false
+  joinNotifyCrew: false
+  supervisors: job-supervisors-caratel
+  canBeAntag: false
+  access:
+  - SyndicateAgent

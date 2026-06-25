@@ -352,3 +352,44 @@
     belt:
     - Bib30
     - Bib30
+
+- type: startingGear
+  id: KuznecDarkwood
+  equipment:
+    eyes: ClothingEyesVisionEng
+    head: ClothingHeadHatWelding
+    mask: ClothingMaskBalisticEvil
+    neck: ClothingNeckSkin
+    jumpsuit: ClothingUniformJumpsuitAlchem
+    shoes: ClothingShoesBootsSubboots
+    gloves: ClothingHandsGlovesHero
+    outerClothing: ClothingOuterVestStal
+    suitstorage: AfganWeaponSKS
+    back: ClothingBackpackMerc
+    belt: ClothingBeltRope
+    pocket1: RadioHandheldCommon
+  storage:
+    back:
+    - Bib10
+    - SheetSteel
+    - Wrench
+    belt:
+    - MagazineSKS
+    - MagazineSKS
+    - MagazineSKS
+    - MagazineSKS
+    - MagazineSKS
+    - MagazineSKS
+
+
+- type: startingGear
+  id: BartenderDarkwood
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitPawn
+    shoes: ClothingShoesBootsItobe
+    back: ClothingBackpackSatchelLeather
+    belt: AfganSwordGold
+    eyes: ClothingEyesGlassesSunglasses
+  storage:
+    back:
+    - Bib10

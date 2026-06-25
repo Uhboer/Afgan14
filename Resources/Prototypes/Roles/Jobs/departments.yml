@@ -35,8 +35,10 @@
   description: department-Security-description
   color: "#EFB341"
   roles:
-  - LordOfDarkwood
   - LordBodyguard
+  - KuznecDarkwood
+  - BartenderDarkwood
+  - LordOfDarkwood
   - Adventurer
 
 
