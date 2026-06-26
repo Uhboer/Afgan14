@@ -13,7 +13,7 @@
   icon: "JobIconLibrarian"
   requireAdminNotify: false
   joinNotifyCrew: false
-  supervisors: job-supervisors-caratel
+  supervisors: Я человек свободный, ничто мне не закон. Но я благодарен Лорду за то что он приютил меня в своей крепости. Моё прошлое не так важно, а вот у будующего есть множество различных путей. Из очевидного я могу выполнять поручения Лорда, кузнеца, владельца кабака, исследовать Темнолесье с другими авантюристами, отгрохать свою личную хижину подальше от всех. А может стоит наведать алхимика или ограбить парочку мигрантов? Собрать людей и устроить бунт? Бля, да всё что в голову взбредет.
   canBeAntag: false
   access:
   - SyndicateAgent
@@ -39,7 +39,7 @@
   icon: "JobIconMedicalIntern"
   requireAdminNotify: false
   joinNotifyCrew: false
-  supervisors: job-supervisors-caratel
+  supervisors: Мой господин, Лорд - хороший человек. Прикормил себе тут дюжину бродяг, которые бы сдохли там в лесу, если бы не мы... Моя задача состоит в том, чтобы их всех охранять. Кто, если не я?
   canBeAntag: false
   access:
   - SyndicateAgent
@@ -59,7 +59,7 @@
   icon: "JobIconMedicalDoctor"
   requireAdminNotify: true
   joinNotifyCrew: true
-  supervisors: job-supervisors-caratel
+  supervisors: Ноша Лорда этой крепости не легка. Стал я Лордом по наследству от отца и хочу продолжать его дело, развивая нашу отважную общину. Есть много дел, на которые я могу послать авантюристов, стоит их только попросить и поманить бибами перед носом. Кажется, где то на юге от нашей крепости обитает варлок. Стоило бы его проведать.
   canBeAntag: false
   accessGroups:
   - AllAccess
@@ -76,14 +76,14 @@
   playTimeTracker: JobKuznecDarkwood
   requirements:
     - !type:AgeRequirement
-      requiredAge: 20
+      requiredAge: 18
     - !type:OverallPlaytimeRequirement
       time: 0
   startingGear: KuznecDarkwood
   icon: "JobIconParamedic"
   requireAdminNotify: false
   joinNotifyCrew: false
-  supervisors: job-supervisors-caratel
+  supervisors: Кузнечным делом я заинтересовался еще с детства. Когда крепость нуждалась в амуниции за её изготовление давали дохуя бибов, а для меня, сироты, это было выходом из положения. Вот тогда я этим всем и увлекся. Решил открыть в крепости кузню по разрешению Лорда и теперь посылаю авантюристов за ресурсами и беру с них бибы за экипировку.
   canBeAntag: false
   access:
   - SyndicateAgent
@@ -96,14 +96,14 @@
   playTimeTracker: JobBartenderDarkwood
   requirements:
     - !type:AgeRequirement
-      requiredAge: 20
+      requiredAge: 45
     - !type:OverallPlaytimeRequirement
       time: 0
   startingGear: BartenderDarkwood
   icon: "JobIconSecurityCadet"
   requireAdminNotify: false
   joinNotifyCrew: false
-  supervisors: job-supervisors-caratel
+  supervisors: "Эта чертова дыра так бы и подохла в собственных миазамах, если бы не мой кабак. Это заведение тут считай почти что с самого начала. Раньше я и сам был авантюристом, но, разбогатев, смог выкупить кабак у его прошлого владельца, который уже доживает свои последние дни. Этот старик поведал мне его фирменный рецепт браги: засунуть в чан для брожения гранат, чтобы получить сахар и гриб, чтобы получить этанол. После чего замешать как следует."
   canBeAntag: false
   access:
   - SyndicateAgent
