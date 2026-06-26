@@ -39,3 +39,31 @@
     layers:
       - state: green
       - state: captain
+
+- type: entity
+  id: SpawnPointKuznecDarkwood
+  parent: SpawnPointJobBase
+  name: KuznecDarkwood
+  suffix: afgan14
+  components:
+  - type: JobSpawnPoint
+    jobs:
+      - KuznecDarkwood
+  - type: Sprite
+    layers:
+      - state: green
+      - state: captain
+
+- type: entity
+  id: SpawnPointBartenderDarkwood
+  parent: SpawnPointJobBase
+  name: BartenderDarkwood
+  suffix: afgan14
+  components:
+  - type: JobSpawnPoint
+    jobs:
+      - BartenderDarkwood
+  - type: Sprite
+    layers:
+      - state: green
+      - state: captain

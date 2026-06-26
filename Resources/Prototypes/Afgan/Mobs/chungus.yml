@@ -7,7 +7,7 @@
   components:
   - type: NpcFactionMember
     factions:
-    - SimpleHostile
+    - Syndicate
   - type: Sprite
     scale: 1.5, 1.5
     drawdepth: Mobs

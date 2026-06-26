@@ -74,3 +74,82 @@
   - type: ConditionalSpawner
     prototypes:
     - MobFallenHero
+
+
+
+
+
+
+- type: entity
+  name: Варлок
+  parent: BaseMobHuman
+  id: MobWarlock
+  description: Один из немногих алхимиков, который достиг мастерства в своем деле. Возможно он шел по ступам Серотого... Но сейчас его окончательно поглотила тёмная сила.
+  components:
+  - type: NpcFactionMember
+    factions:
+      - SimpleHostile
+  - type: MovementSpeedModifier
+    baseSprintSpeed: 12
+    baseWalkSpeed: 8
+  - type: Loadout
+    prototypes:
+      - WarlockGear
+  - type: InputMover
+  - type: MobMover
+  - type: HTN
+    rootTask:
+      task: SpeechWarlock
+    blackboard:
+      MinimumIdleTime: !type:Single
+        10
+      MaximumIdleTime: !type:Single
+        60
+
+- type: startingGear
+  id: WarlockGear
+  equipment:
+    head: ClothingHeadHatWarlock
+    mask: ClothingMaskBalisticEvil
+    jumpsuit: ClothingUniformJumpsuitAlchem
+    outerClothing: ClothingOuterVestWarlock
+    gloves: ClothingHandsGlovesStal
+    shoes: ClothingShoesBootsSteelUpgrade
+    pocket1: Bib30
+    pocket2: Bib30
+  inhand:
+    - AfganChaosFragmentHand
+    - WoodenBuckler
+
+- type: htnCompound
+  id: SpeechWarlock
+  branches:
+    - tasks:
+      - !type:HTNPrimitiveTask
+        operator: !type:SpeakOperator
+          speech: "Сразись!"
+
+      - !type:HTNCompoundTask
+        task: MeleeCombatCompound
+    - tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:SpeakOperator
+            speech: "Серотый... Я знаю ты здесь..."
+        - !type:HTNCompoundTask
+          task: IdleCompound
+
+
+- type: entity
+  name: Warlock Spawner
+  suffix: afgan14
+  id: SpawnMobWarlock
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: icon
+      sprite: Afgan/Clothing/Armor/warlock.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - MobWarlock

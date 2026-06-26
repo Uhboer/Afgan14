@@ -14,3 +14,25 @@
     soundHit:
         path: /Audio/Weapons/bladeslice.ogg
   - type: Unremoveable
+
+
+- type: entity
+  name: рука хаоса
+  parent: AfganChaosFragment
+  id: AfganChaosFragmentHand
+  description: рука ебучего варлока
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Weapons/Melee/chaos_fragment.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Blunt: 80
+        Structural: 20
+    soundHit:
+      collection: MetalThud
+  - type: StaminaDamageOnHit
+    damage: 25
