@@ -107,7 +107,7 @@
   maxPlayers: 100
   fallback: true
   stations:
-    Afgan_winter:
+    Afgan_castle:
       stationProto: StandardStationArena
       components:
         - type: StationNameSetup

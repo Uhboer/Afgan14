@@ -93,15 +93,31 @@
     - type: Clothing
       sprite: Afgan/Clothing/Epaul/admiral.rsi
 
+
+
 - type: entity
-  parent: EpaulBase
+  parent: Clothing
   id: EpaulLord
   name: знамя Лорда
+  description: Ношу с честью!
+  abstract: false
+  suffix: afgan14
   components:
-    - type: Sprite
-      sprite: Afgan/Clothing/Epaul/lord.rsi
-      state: icon
-    - type: PresetIdCard
-      name: Лорд
-    - type: Clothing
-      sprite: Afgan/Clothing/Epaul/lord.rsi
+  - type: Sprite
+    sprite: Afgan/Clothing/Epaul/lord.rsi
+    state: icon
+  - type: Icon
+    sprite: Afgan/Clothing/Epaul/lord.rsi
+    state: icon
+  - type: Clothing
+    slots:
+    - idcard
+    sprite: Afgan/Clothing/Epaul/lord.rsi
+  - type: Item
+    size: Small
+    heldPrefix: default
+    storedRotation: -90
+  - type: Access
+  - type: IdCard
+  - type: PresetIdCard
+    job: LordOfDarkwood

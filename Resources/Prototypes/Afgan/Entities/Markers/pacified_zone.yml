@@ -15,14 +15,6 @@
     immuneRoles:
       - Bailiff
       - Brigmedic
-      - Cadet
-      - Deputy
-      - DetectiveNF
-      - SeniorOfficer
-      - Sheriff
-      - SecurityGuard
-      - StationRepresentative
-      - StationTrafficController
 
 - type: entity
   parent: BasePacifiedZone
