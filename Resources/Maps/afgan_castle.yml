@@ -22,7 +22,7 @@ entities:
   - uid: 1
     components:
     - type: MetaData
-      name: Map Entity
+      name: Map Afgan Castle
     - type: Transform
     - type: Map
       mapPaused: True
@@ -32,6 +32,27 @@ entities:
     - type: Broadphase
     - type: OccluderTree
     - type: LoadedMap
+    - type: MapAtmosphere
+      space: False
+      mixture:
+        volume: 2500
+        immutable: True
+        temperature: 288.15
+        moles:
+        - 21.824879
+        - 82.10312
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+    - type: MapLight
+      ambientLightColor: '#0F3817FF'
   - uid: 2
     components:
     - type: MetaData
@@ -974,6 +995,8 @@ entities:
       bodyType: Dynamic
     - type: Fixtures
       fixtures: {}
+    - type: BecomesStation
+      id: Afgan_castle
     - type: OccluderTree
     - type: SpreaderGrid
     - type: Shuttle
@@ -1270,19 +1293,23 @@ entities:
           9,4:
             0: 65535
           10,2:
-            0: 61440
+            0: 45056
           10,3:
             0: 65535
           10,4:
             0: 65535
-          11,2:
-            0: 4096
           11,3:
-            0: 65535
+            0: 65533
           11,4:
             0: 65535
+          11,1:
+            0: 52224
+          11,2:
+            0: 35980
+          12,1:
+            0: 65280
           12,2:
-            0: 65056
+            0: 45855
           12,3:
             0: 65535
           9,8:
@@ -1399,18 +1426,26 @@ entities:
             0: 65535
           12,7:
             0: 65535
+          13,1:
+            0: 65518
           13,2:
-            0: 65472
+            0: 61711
           13,3:
             0: 65535
           13,4:
             0: 65535
+          14,1:
+            0: 13299
+          14,2:
+            0: 3
           14,3:
             0: 62385
           14,4:
             0: 65531
+          15,1:
+            0: 1911
           15,2:
-            0: 65248
+            0: 64000
           15,3:
             0: 65535
           15,4:
@@ -3612,12 +3647,9 @@ entities:
           66,46:
             0: 65535
           66,47:
-            0: 41743
-            1: 4096
-            2: 2048
+            0: 47887
           66,48:
-            1: 1
-            0: 35762
+            0: 35763
           67,44:
             0: 30576
           67,45:
@@ -3625,9 +3657,7 @@ entities:
           67,46:
             0: 65535
           67,47:
-            0: 39567
-            3: 256
-            2: 8192
+            0: 48015
           68,44:
             0: 65520
           68,45:
@@ -4756,6 +4786,8 @@ entities:
             0: 65535
           76,27:
             0: 65535
+          71,20:
+            0: 127
           72,21:
             0: 51392
           72,22:
@@ -4780,6 +4812,28 @@ entities:
             0: 65535
           76,23:
             0: 65535
+          72,18:
+            0: 29457
+          71,17:
+            0: 63232
+          71,18:
+            0: 65535
+          72,19:
+            0: 275
+          71,19:
+            0: 65535
+          73,18:
+            0: 65280
+          73,19:
+            0: 15
+          74,18:
+            0: 65480
+          74,19:
+            0: 3
+          75,18:
+            0: 16369
+          76,18:
+            0: 1023
           68,29:
             0: 65280
           67,29:
@@ -4800,6 +4854,26 @@ entities:
             0: 49152
           71,27:
             0: 16384
+          69,19:
+            0: 61183
+          69,20:
+            0: 140
+          70,20:
+            0: 255
+          70,19:
+            0: 65535
+          68,18:
+            0: 32768
+          68,19:
+            0: 8
+          69,18:
+            0: 65518
+          69,17:
+            0: 51200
+          70,17:
+            0: 65280
+          70,18:
+            0: 65535
           65,30:
             0: 65512
           65,29:
@@ -4864,8 +4938,16 @@ entities:
             0: 2184
           59,22:
             0: 13056
+          88,28:
+            0: 273
+          88,27:
+            0: 4096
+          87,28:
+            0: 65535
           87,25:
             0: 65457
+          87,27:
+            0: 65344
           84,28:
             0: 65535
           84,27:
@@ -4891,19 +4973,15 @@ entities:
           86,28:
             0: 65535
           86,29:
-            0: 65399
+            0: 65407
           86,30:
             0: 32767
           86,27:
             0: 65535
-          87,28:
-            0: 4371
           87,29:
-            0: 17
+            0: 1
           87,30:
             0: 4113
-          87,27:
-            0: 30528
           84,24:
             0: 65535
           84,23:
@@ -5033,9 +5111,11 @@ entities:
           82,23:
             0: 65535
           80,20:
-            0: 59648
+            0: 65535
+          80,19:
+            0: 65535
           79,20:
-            0: 32704
+            0: 65518
           80,21:
             0: 65535
           79,21:
@@ -5047,11 +5127,13 @@ entities:
           79,23:
             0: 65535
           81,20:
-            0: 14176
+            0: 14193
           81,21:
             0: 65535
           81,22:
             0: 65535
+          81,19:
+            0: 4096
           82,20:
             0: 47360
           82,21:
@@ -5060,6 +5142,14 @@ entities:
             0: 65535
           83,20:
             0: 12288
+          80,18:
+            0: 26419
+          79,17:
+            0: 61440
+          79,18:
+            0: 35999
+          79,19:
+            0: 60616
           77,28:
             0: 65535
           77,29:
@@ -5102,57 +5192,22 @@ entities:
             0: 65230
           78,22:
             0: 65535
+          76,17:
+            0: 24576
+          77,18:
+            0: 191
+          77,17:
+            0: 57344
+          78,17:
+            0: 62208
+          78,18:
+            0: 141
         uniqueMixes:
         - volume: 2500
           temperature: 293.15
           moles:
           - 21.824879
           - 82.10312
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 293.14975
-          moles:
-          - 20.078888
-          - 75.53487
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 293.1495
-          moles:
-          - 20.078888
-          - 75.53487
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 293.14975
-          moles:
-          - 21.6852
-          - 81.57766
           - 0
           - 0
           - 0
@@ -17656,6 +17711,11 @@ entities:
       parent: 2
 - proto: AirlockHatchSyndicate
   entities:
+  - uid: 7206
+    components:
+    - type: Transform
+      pos: 267.5,228.5
+      parent: 2
   - uid: 15745
     components:
     - type: Transform
@@ -17682,13 +17742,6 @@ entities:
     components:
     - type: Transform
       pos: 48.5,9.5
-      parent: 2
-- proto: AirlockSyndicateLocked
-  entities:
-  - uid: 18438
-    components:
-    - type: Transform
-      pos: 267.5,228.5
       parent: 2
 - proto: AlwaysPoweredlightOrange
   entities:
@@ -147461,9 +147514,9 @@ entities:
       rot: 3.141592653589793 rad
       pos: 54.5,7.5
       parent: 2
-- proto: ChairTrone
+- proto: ChairTroneForest
   entities:
-  - uid: 7206
+  - uid: 14424
     components:
     - type: Transform
       pos: 281.5,230.5
@@ -165107,28 +165160,6 @@ entities:
     - type: Transform
       pos: 135.5,152.5
       parent: 2
-- proto: JobSpawnPointRab
-  entities:
-  - uid: 14422
-    components:
-    - type: Transform
-      pos: 12.5,14.5
-      parent: 2
-  - uid: 14423
-    components:
-    - type: Transform
-      pos: 16.5,13.5
-      parent: 2
-  - uid: 14424
-    components:
-    - type: Transform
-      pos: 14.5,17.5
-      parent: 2
-  - uid: 14425
-    components:
-    - type: Transform
-      pos: 18.5,15.5
-      parent: 2
 - proto: JukTimedSpawner
   entities:
   - uid: 14445
@@ -168148,6 +168179,18 @@ entities:
     components:
     - type: Transform
       pos: 292.5,202.5
+      parent: 2
+- proto: SpawnPointLatejoin
+  entities:
+  - uid: 14422
+    components:
+    - type: Transform
+      pos: 15.5,12.5
+      parent: 2
+  - uid: 14423
+    components:
+    - type: Transform
+      pos: 12.5,14.5
       parent: 2
 - proto: SpawnPointLordBodyguard
   entities:

@@ -97,3 +97,36 @@
           availableJobs:
             #factioner
             Janitor: [ -1, -1 ]
+
+
+- type: gameMap
+  id: Afgan_castle
+  mapName: "Период: Темнолесье"
+  mapPath: /Maps/afgan_castle.yml
+  minPlayers: 0
+  maxPlayers: 100
+  fallback: true
+  stations:
+    Afgan_winter:
+      stationProto: StandardStationArena
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Темнолесье'
+        - type: StationJobs
+          availableJobs:
+            Bartender: [ 1, 1 ]
+            Botanist: [ 1, 1 ]
+            Chaplain: [ 1, 1 ]
+            #rab
+            AtmosphericTechnician: [ -1, -1 ]
+            #povstans
+            Reporter: [ 1, 1 ]
+            Boxer: [ 1, 1 ]
+            #alchemiks
+            TechnicalAssistant: [1, 1]
+            #castle
+            LordOfDarkwood: [1, 1]
+            LordBodyguard: [2, 3]
+            Adventurer: [-1, -1]
+            BartenderDarkwood: [1, 1]
+            KuznecDarkwood: [1, 1]

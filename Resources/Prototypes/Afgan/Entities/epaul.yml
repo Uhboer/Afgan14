@@ -92,3 +92,16 @@
       name: АДМИРАЛ
     - type: Clothing
       sprite: Afgan/Clothing/Epaul/admiral.rsi
+
+- type: entity
+  parent: EpaulBase
+  id: EpaulLord
+  name: знамя Лорда
+  components:
+    - type: Sprite
+      sprite: Afgan/Clothing/Epaul/lord.rsi
+      state: icon
+    - type: PresetIdCard
+      name: Лорд
+    - type: Clothing
+      sprite: Afgan/Clothing/Epaul/lord.rsi

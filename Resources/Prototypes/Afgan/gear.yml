@@ -313,6 +313,7 @@
     back: ClothingBackpackSatchelLeather
     belt: AfganChaosFragment
     pocket1: RadioHandheldCommon
+    id: EpaulLord
   storage:
     back:
     - Bib30
