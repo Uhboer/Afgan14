@@ -1,6 +1,6 @@
 nuke-component-cant-anchor-floor = Крепёжным болтам не удаётся закрепиться в полу!
-nuke-component-announcement-sender = НЮКАЛЯРМ
-nuke-component-announcement-armed = ВАШ СЕКТОР БУДЕТ ЗАЧИЩЕН ДЛЯ ДАЛЬНЕЙШЕГО ПЕРЕНАСЕЛЕНИЯ. ЛОКАЦИЯ ВЗРЫВА - { $location }. ВРЕМЯ ДЕТОНАЦИИ - { $time } СЕКУНД.
+nuke-component-announcement-sender = ITOBE
+nuke-component-announcement-armed = ВАШ СЕКТОР БУДЕТ ЗАЧИЩЕН ДЛЯ ДАЛЬНЕЙШЕГО ИССЛЕДОВАНИЯ. ЛОКАЦИЯ ВЗРЫВА - { $location }. ВРЕМЯ ДЕТОНАЦИИ - { $time } СЕКУНД.
 nuke-component-announcement-unarmed = ДЕАКТИВАЦИЯ МЕХАНИЗМА ОЧИСТКИ СЕКТОРА.
 nuke-component-announcement-send-codes = Внимание! Запрошенные коды самоуничтожения были отправлены на факс капитана.
 nuke-component-doafter-warning = Вы начинаете перебирать провода и кнопки, в попытке обезвредить ядерную бомбу. Это может занять некоторое время.

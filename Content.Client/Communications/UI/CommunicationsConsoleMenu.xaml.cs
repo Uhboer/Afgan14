@@ -59,8 +59,6 @@ namespace Content.Client.Communications.UI
             };
             AlertLevelButton.Disabled = !owner.AlertLevelSelectable;
 
-            EmergencyShuttleButton.OnPressed += (_) => Owner.EmergencyShuttleButtonPressed();
-            EmergencyShuttleButton.Disabled = !owner.CanCall;
 
             UpdateCountdown();
             Timer.SpawnRepeating(1000, UpdateCountdown, _timerCancelTokenSource.Token);
@@ -108,11 +106,11 @@ namespace Content.Client.Communications.UI
             if (!Owner.CountdownStarted)
             {
                 CountdownLabel.SetMessage("");
-                EmergencyShuttleButton.Text = Loc.GetString("comms-console-menu-call-shuttle");
+
                 return;
             }
 
-            EmergencyShuttleButton.Text = Loc.GetString("comms-console-menu-recall-shuttle");
+
             var infoText = Loc.GetString($"comms-console-menu-time-remaining",
             ("time", Owner.Countdown.ToString()));
             CountdownLabel.SetMessage(infoText);
