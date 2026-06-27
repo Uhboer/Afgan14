@@ -4,6 +4,7 @@
   levels:
     green:
       announcement: alert-level-green-announcement
+      sound: /Audio/Afgan/Misc/chill.ogg
       color: Green
       emergencyLightColor: LawnGreen
       shuttleTime: 600
@@ -16,7 +17,7 @@
       shuttleTime: 600
     violet:
       announcement: alert-level-violet-announcement
-      sound: /Audio/Misc/notice1.ogg
+      sound: /Audio/Afgan/Misc/OBSHIY-SBOR.ogg
       color: Violet
       emergencyLightColor: Violet
       forceEnableEmergencyLights: true

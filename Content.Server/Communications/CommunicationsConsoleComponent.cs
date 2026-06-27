@@ -40,32 +40,32 @@ namespace Content.Server.Communications
         /// </summary>
         [ViewVariables]
         [DataField]
-        public int Delay = 90;
+        public int Delay = 30;
 
         /// <summary>
         /// Time in seconds of announcement cooldown when a new console is created on a per-console basis
         /// </summary>
         [ViewVariables]
         [DataField]
-        public int InitialDelay = 30;
+        public int InitialDelay = 10;
 
         /// <summary>
         /// Can call or recall the shuttle
         /// </summary>
         [ViewVariables]
         [DataField]
-        public bool CanShuttle = true;
+        public bool CanShuttle = false;
 
         /// <summary>
         /// Announce on all grids (for nukies)
         /// </summary>
         [DataField]
-        public bool Global = false;
+        public bool Global = true;
 
         /// <summary>
         /// Announce sound file path
         /// </summary>
         [DataField]
-        public SoundSpecifier Sound = new SoundPathSpecifier("/Audio/Announcements/announce.ogg");
+        public SoundSpecifier Sound = new SoundPathSpecifier("/Audio/Misc/mayor.ogg");
     }
 }
