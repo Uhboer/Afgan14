@@ -1,3 +1,7 @@
+#- type: lobbyBackground
+#  id: Find_your_way
+#  background: /Textures/LobbyScreens/find_your_way.png
+
 - type: lobbyBackground
-  id: Find_your_way
-  background: /Textures/LobbyScreens/find_your_way.png
+  id: Darkwood
+  background: /Textures/LobbyScreens/darkwood.png
