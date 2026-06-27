@@ -442,4 +442,4 @@
 - type: startingGear
   id: AdventurerClothingHandsGlovesFingerless
   equipment:
-    outerClothing: ClothingHandsGlovesFingerless
+    gloves: ClothingHandsGlovesFingerless

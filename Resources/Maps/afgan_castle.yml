@@ -52,7 +52,7 @@ entities:
         - 0
         - 0
     - type: MapLight
-      ambientLightColor: '#0F3817FF'
+      ambientLightColor: '#06190a'
   - uid: 2
     components:
     - type: MetaData
@@ -7766,6 +7766,11 @@ entities:
     - type: Transform
       pos: 198.5,62.5
       parent: 2
+  - uid: 7205
+    components:
+    - type: Transform
+      pos: 286.5,220.5
+      parent: 2
   - uid: 8962
     components:
     - type: Transform
@@ -7775,6 +7780,11 @@ entities:
     components:
     - type: Transform
       pos: 197.5,55.5
+      parent: 2
+  - uid: 14425
+    components:
+    - type: Transform
+      pos: 276.5,220.5
       parent: 2
   - uid: 14426
     components:
@@ -7927,12 +7937,6 @@ entities:
     - type: Transform
       pos: 272.5,222.5
       parent: 2
-  - uid: 18304
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 286.5,220.5
-      parent: 2
   - uid: 18308
     components:
     - type: Transform
@@ -7954,12 +7958,6 @@ entities:
     components:
     - type: Transform
       pos: 276.5,223.5
-      parent: 2
-  - uid: 18326
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 276.5,220.5
       parent: 2
   - uid: 18388
     components:
@@ -17701,6 +17699,104 @@ entities:
     components:
     - type: Transform
       pos: 313.49057,134.58273
+      parent: 2
+- proto: AfganZnamia
+  entities:
+  - uid: 18300
+    components:
+    - type: Transform
+      pos: 279.5,230.5
+      parent: 2
+  - uid: 18304
+    components:
+    - type: Transform
+      pos: 288.5,206.5
+      parent: 2
+  - uid: 18305
+    components:
+    - type: Transform
+      pos: 268.5,214.5
+      parent: 2
+  - uid: 18306
+    components:
+    - type: Transform
+      pos: 261.5,165.5
+      parent: 2
+  - uid: 18307
+    components:
+    - type: Transform
+      pos: 276.5,225.5
+      parent: 2
+  - uid: 18322
+    components:
+    - type: Transform
+      pos: 270.5,214.5
+      parent: 2
+  - uid: 18326
+    components:
+    - type: Transform
+      pos: 269.5,175.5
+      parent: 2
+  - uid: 18438
+    components:
+    - type: Transform
+      pos: 278.5,175.5
+      parent: 2
+  - uid: 30778
+    components:
+    - type: Transform
+      pos: 284.5,212.5
+      parent: 2
+  - uid: 34076
+    components:
+    - type: Transform
+      pos: 278.5,212.5
+      parent: 2
+  - uid: 34078
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 283.5,230.5
+      parent: 2
+  - uid: 34082
+    components:
+    - type: Transform
+      pos: 290.5,206.5
+      parent: 2
+  - uid: 34083
+    components:
+    - type: Transform
+      pos: 261.5,183.5
+      parent: 2
+  - uid: 34084
+    components:
+    - type: Transform
+      pos: 261.5,186.5
+      parent: 2
+  - uid: 34085
+    components:
+    - type: Transform
+      pos: 282.5,186.5
+      parent: 2
+  - uid: 34086
+    components:
+    - type: Transform
+      pos: 294.5,149.5
+      parent: 2
+  - uid: 34087
+    components:
+    - type: Transform
+      pos: 254.5,161.5
+      parent: 2
+  - uid: 34088
+    components:
+    - type: Transform
+      pos: 248.5,158.5
+      parent: 2
+  - uid: 34089
+    components:
+    - type: Transform
+      pos: 240.5,153.5
       parent: 2
 - proto: AfganZweihender
   entities:
@@ -147479,11 +147575,11 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 269.5,196.5
       parent: 2
-  - uid: 18305
+  - uid: 18321
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
-      pos: 279.5,230.5
+      pos: 278.5,230.5
       parent: 2
   - uid: 18333
     components:
@@ -166189,17 +166285,17 @@ entities:
     - type: InsideEntityStorage
 - proto: LuxuryPen
   entities:
-  - uid: 7205
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 278.68808,229.91473
-      parent: 2
   - uid: 18435
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 270.77667,231.39156
+      parent: 2
+  - uid: 34081
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 277.54657,229.81358
       parent: 2
 - proto: MagazineLightRifleAK
   entities:
@@ -166877,11 +166973,10 @@ entities:
       parent: 2
 - proto: PaperBin20
   entities:
-  - uid: 18300
+  - uid: 34080
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 278.5,230.5
+      pos: 277.5,230.5
       parent: 2
 - proto: Pechka
   entities:
@@ -167300,7 +167395,7 @@ entities:
   - uid: 18692
     components:
     - type: Transform
-      pos: 276.4123,225.56567
+      pos: 276.66165,226.64307
       parent: 2
     - type: Intercom
       supportedChannels: []
@@ -168769,18 +168864,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 276.5,226.5
       parent: 2
-  - uid: 18321
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 276.5,225.5
-      parent: 2
-  - uid: 18322
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 276.5,224.5
-      parent: 2
   - uid: 18561
     components:
     - type: Transform
@@ -169007,18 +169090,6 @@ entities:
     - type: Transform
       pos: 288.5,227.5
       parent: 2
-  - uid: 18306
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 278.5,230.5
-      parent: 2
-  - uid: 18307
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 278.5,229.5
-      parent: 2
   - uid: 18310
     components:
     - type: Transform
@@ -169165,17 +169236,22 @@ entities:
     - type: Transform
       pos: 250.5,112.5
       parent: 2
+  - uid: 34077
+    components:
+    - type: Transform
+      pos: 277.5,229.5
+      parent: 2
+  - uid: 34079
+    components:
+    - type: Transform
+      pos: 277.5,230.5
+      parent: 2
 - proto: TelecomServerFilledAfgan
   entities:
   - uid: 1171
     components:
     - type: Transform
       pos: 57.5,8.5
-      parent: 2
-  - uid: 30778
-    components:
-    - type: Transform
-      pos: 244.5,121.5
       parent: 2
 - proto: TelecomServerFilledCommon
   entities:
