@@ -17847,6 +17847,25 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 275.5,179.5
       parent: 2
+- proto: Ashtray
+  entities:
+  - uid: 34098
+    components:
+    - type: Transform
+      parent: 33383
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 34100
+    components:
+    - type: Transform
+      pos: 270.61157,196.3328
+      parent: 2
+  - uid: 34101
+    components:
+    - type: Transform
+      pos: 270.70532,198.72342
+      parent: 2
 - proto: AsteroidRock
   entities:
   - uid: 190
@@ -148519,8 +148538,8 @@ entities:
         immutable: False
         temperature: 293.14697
         moles:
-        - 1.8968438
-        - 7.1357465
+        - 1.8977377
+        - 7.139109
         - 0
         - 0
         - 0
@@ -148537,18 +148556,20 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 17554
-          - 17553
-          - 17555
-          - 15582
-          - 15583
-          - 17556
-          - 15584
-          - 15585
-          - 15586
-          - 19716
-          - 15588
+          - 34098
           - 15587
+          - 15588
+          - 19716
+          - 15586
+          - 15585
+          - 15584
+          - 17556
+          - 15583
+          - 15582
+          - 17555
+          - 17553
+          - 17554
+          - 34099
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -167544,6 +167565,20 @@ entities:
       containers:
         key_slots: !type:Container
           ents: []
+- proto: RagItem
+  entities:
+  - uid: 34099
+    components:
+    - type: Transform
+      parent: 33383
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 34102
+    components:
+    - type: Transform
+      pos: 270.36157,197.44217
+      parent: 2
 - proto: Railing
   entities:
   - uid: 9489
