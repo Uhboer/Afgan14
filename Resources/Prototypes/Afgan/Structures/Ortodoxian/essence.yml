@@ -21,7 +21,7 @@
     color: "#FF0000"
   - type: Stack
     count: 1
-    stackType: Bib
+    stackType: Essence
   - type: Currency
     price:
       Faith: 1
@@ -33,6 +33,7 @@
   - type: Tag
     tags:
       - Essence
+
 
 - type: stack
   id: Essence
